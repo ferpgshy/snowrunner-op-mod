@@ -1,0 +1,23 @@
+# Paks e arquivos binarios grandes
+*.pak
+*.sslbundle
+*.str
+*.cache_block
+
+# Pastas de conteudo/output
+CONTEUDOS/
+[ssl_cache]/
+[strings]/
+[media]/
+
+# Temp
+_op_mod_temp/
+_op_modio_temp/
+_modio_backup/
+__pycache__/
+
+# Scripts de diagnostico temporarios
+diag_*.py
+check_*.py
+scan_mods.py
+scan_mods_debug.py
