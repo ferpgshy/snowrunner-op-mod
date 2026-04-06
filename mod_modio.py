@@ -152,11 +152,15 @@ def mod_gearbox(content, filename):
     for (op_id, tag), stats in zip(LEVELS, GB_STATS):
         mv = stats["MaxVel"]
         gears = []
-        gear_count = 12
-        # Progressao geometrica: troca clean entre todas as marchas
-        gear_speeds = [round(1.5 * (mv / 1.5) ** (g / (gear_count - 1)), 2) for g in range(gear_count)]
+        # Ratio fixo 1.45x entre marchas (quantidade dinamica)
+        GEAR_RATIO = 1.45
+        gear_speeds = [1.5]
+        while gear_speeds[-1] * GEAR_RATIO < mv:
+            gear_speeds.append(round(gear_speeds[-1] * GEAR_RATIO, 2))
+        gear_speeds.append(mv)  # ultima marcha = MaxVel exato
         for i, spd in enumerate(gear_speeds):
-            fm = round(1.8 - 0.095 * i, 2)
+            fm = round(1.8 - (1.0 / max(len(gear_speeds) - 1, 1)) * i, 2)
+            fm = max(fm, 0.7)
             gears.append('\t\t<Gear AngVel="' + str(spd) + '" FuelModifier="' + str(fm) + '" />')
         rv = 1.5
         hv = round(gear_speeds[-2] + (gear_speeds[-1] - gear_speeds[-2]) * 0.5, 1)

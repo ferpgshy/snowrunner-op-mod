@@ -214,18 +214,16 @@ def mod_gearbox(content, filename):
     for (op_id, tag), stats in zip(LEVELS, GB_STATS):
         mv = stats["MaxVel"]
         gears = []
-        # 12 marchas com progressao linear (saltos iguais = troca clean)
-        gear_count = 12
-        gear_speeds = []
-        # Progressao geometrica: cada marcha e um multiplicador constante da anterior
-        # Isso garante troca clean (ex: 1.5 -> 2.0 -> 2.8 -> 3.8 em vez de 1.5 -> 5.9)
-        for g in range(gear_count):
-            spd = round(1.5 * (mv / 1.5) ** (g / (gear_count - 1)), 2)
-            gear_speeds.append(spd)
+        # Ratio fixo 1.45x entre marchas (quantidade dinamica)
+        GEAR_RATIO = 1.45
+        gear_speeds = [1.5]
+        while gear_speeds[-1] * GEAR_RATIO < mv:
+            gear_speeds.append(round(gear_speeds[-1] * GEAR_RATIO, 2))
+        gear_speeds.append(mv)  # ultima marcha = MaxVel exato
         # FuelModifier decrescente suave
-        fuel_mods = [1.8, 1.6, 1.4, 1.3, 1.2, 1.1, 1.0, 0.95, 0.9, 0.85, 0.8, 0.75]
         for i, spd in enumerate(gear_speeds):
-            fm = fuel_mods[i] if i < len(fuel_mods) else 0.8
+            fm = round(1.8 - (1.0 / max(len(gear_speeds) - 1, 1)) * i, 2)
+            fm = max(fm, 0.7)
             gears.append('\t\t<Gear AngVel="' + str(spd) + '" FuelModifier="' + str(fm) + '" />')
         rv = 1.5
         # HighGear entre a penultima e ultima marcha
