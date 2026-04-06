@@ -28,6 +28,13 @@ def main():
     shutil.copy2(GAME_PAK, pak_dest)
     print("    OK")
 
+    # 1b. Copiar INSTALAR.bat e LEIA-ME.txt
+    for fname in ["INSTALAR.bat"]:
+        src = os.path.join(WORKSPACE, fname)
+        if os.path.exists(src):
+            shutil.copy2(src, os.path.join(CONTEUDOS, fname))
+            print(f"    {fname} copiado")
+
     # 2. Copiar .modio/mods/
     modio_dest = os.path.join(CONTEUDOS, ".modio", "mods")
     os.makedirs(modio_dest, exist_ok=True)
