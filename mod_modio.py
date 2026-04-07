@@ -361,7 +361,7 @@ def mod_truck(content, filename):
                 y = float(y_str)
             except ValueError:
                 return full
-            new_y = round(y - 1.0, 2)
+            new_y = round(y - 0.5, 2)
             old_com = 'CenterOfMassOffset="(' + com_m.group(1) + '; ' + com_m.group(2).strip() + '; ' + com_m.group(3) + ')"'
             new_com = 'CenterOfMassOffset="(' + x + '; ' + str(new_y) + '; ' + z + ')"'
             if old_com in full:
