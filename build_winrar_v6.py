@@ -420,28 +420,6 @@ def mod_truck(content, filename):
         content = content.replace('DiffLockType="' + m.group(1) + '"', 'DiffLockType="Always"')
         changed = True
 
-    # Abaixar centro de massa para estabilidade em alta velocidade
-    def lower_com(match):
-        nonlocal changed
-        full = match.group(0)
-        com_m = re.search(r'CenterOfMassOffset="\(([^;]+);\s*([^;]+);\s*([^)]+)\)"', full)
-        if com_m:
-            x = com_m.group(1).strip()
-            y_str = com_m.group(2).strip()
-            z = com_m.group(3).strip()
-            try:
-                y = float(y_str)
-            except ValueError:
-                return full
-            new_y = round(y - 0.5, 2)
-            old_com = 'CenterOfMassOffset="(' + com_m.group(1) + '; ' + com_m.group(2).strip() + '; ' + com_m.group(3) + ')"'
-            new_com = 'CenterOfMassOffset="(' + x + '; ' + str(new_y) + '; ' + z + ')"'
-            if old_com in full:
-                changed = True
-                return full.replace(old_com, new_com)
-        return full
-    content = re.sub(r'<Body[^>]*CenterOfMassOffset="[^"]+"[^>]*>', lower_com, content)
-
     # Snorkel Origin Y -> 10.0 (muito alto = passa em agua profunda)
     def raise_snorkel(match):
         nonlocal changed
