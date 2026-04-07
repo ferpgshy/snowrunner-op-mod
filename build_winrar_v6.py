@@ -91,10 +91,6 @@ SUSP_STATS = [
     {"H": "0.80", "S": "0.14", "D": "0.78", "Damage": "99999", "Tag": "DEUS",        "Name": "Suspensao DEUS",           "Desc": "Lift: 20pol. QUALQUER roda cabe. Indestrutivel. Sem limites."},
 ]
 WINCH_STATS = [
-    {"Len": "30",  "Str": "3.0"},
-    {"Len": "45",  "Str": "5.0"},
-    {"Len": "60",  "Str": "8.0"},
-    {"Len": "80",  "Str": "12.0"},
     {"Len": "100", "Str": "20.0"},
 ]
 
@@ -259,31 +255,30 @@ def mod_gearbox(content, filename):
 def mod_winch(content, filename):
     if "</WinchVariants>" not in content:
         return content
-    entries = []
-    for (op_id, tag), stats in zip(LEVELS, WINCH_STATS):
-        entries.append(
-            '\t<Winch\r\n'
-            '\t\tName="op_winch_' + op_id + '"\r\n'
-            '\t\tLength="' + stats['Len'] + '"\r\n'
-            '\t\tStrengthMult="' + stats['Str'] + '"\r\n'
-            '\t\tIsEngineIgnitionRequired="false"\r\n'
-            '\t>\r\n'
-            '\t\t<GameData\r\n'
-            '\t\t\tPrice="100"\r\n'
-            '\t\t\tUnlockByExploration="false"\r\n'
-            '\t\t\tUnlockByRank="1"\r\n'
-            '\t\t>\r\n'
-            '\t\t\t<WinchParams\r\n'
-            '\t\t\t/>\r\n'
-            '\t\t\t<UiDesc\r\n'
-            '\t\t\t\tUiDesc="UI_WINCH_' + tag + '_DESC"\r\n'
-            '\t\t\t\tUiIcon30x30=""\r\n'
-            '\t\t\t\tUiIcon40x40=""\r\n'
-            '\t\t\t\tUiName="UI_WINCH_' + tag + '_NAME"\r\n'
-            '\t\t\t/>\r\n'
-            '\t\t</GameData>\r\n'
-            '\t</Winch>')
-    insert = "\r\n" + "\r\n".join(entries) + "\r\n"
+    stats = WINCH_STATS[0]
+    entry = (
+        '\t<Winch\r\n'
+        '\t\tName="op_winch_deus"\r\n'
+        '\t\tLength="' + stats['Len'] + '"\r\n'
+        '\t\tStrengthMult="' + stats['Str'] + '"\r\n'
+        '\t\tIsEngineIgnitionRequired="false"\r\n'
+        '\t>\r\n'
+        '\t\t<GameData\r\n'
+        '\t\t\tPrice="100"\r\n'
+        '\t\t\tUnlockByExploration="false"\r\n'
+        '\t\t\tUnlockByRank="1"\r\n'
+        '\t\t>\r\n'
+        '\t\t\t<WinchParams\r\n'
+        '\t\t\t/>\r\n'
+        '\t\t\t<UiDesc\r\n'
+        '\t\t\t\tUiDesc="UI_WINCH_DEUS_DESC"\r\n'
+        '\t\t\t\tUiIcon30x30=""\r\n'
+        '\t\t\t\tUiIcon40x40=""\r\n'
+        '\t\t\t\tUiName="UI_WINCH_DEUS_NAME"\r\n'
+        '\t\t\t/>\r\n'
+        '\t\t</GameData>\r\n'
+        '\t</Winch>')
+    insert = "\r\n" + entry + "\r\n"
     return content.replace("</WinchVariants>", insert + "</WinchVariants>")
 
 def mod_suspension(content, filename):
@@ -490,14 +485,10 @@ def get_op_strings():
     # Cambios, Guinchos, Pneus (fixos)
     for prefix, items in [
         ("GEARBOX", [
-            ("DEUS",       "Cambio DEUS",             "Cambio OP. AWD gratis. Ratio 1.6x. Indestrutivel. Sem limites."),
+            ("DEUS",       "Cambio DEUS",             "8 marchas. Ratio 1.65x. AWD gratis. Indestrutivel. Velocidade maxima 50."),
         ]),
         ("WINCH", [
-            ("FURIOSO",    "Guincho FURIOSO",         "Guincho OP nivel 1. 30m 3x forca."),
-            ("DEVASTADOR", "Guincho DEVASTADOR",      "Guincho OP nivel 2. 45m 5x forca."),
-            ("APOCALIPSE", "Guincho APOCALIPTICO",    "Guincho OP nivel 3. 60m 8x forca."),
-            ("TITA",       "Guincho TITA",            "Guincho OP nivel 4. 80m 12x forca."),
-            ("DEUS",       "Guincho DEUS",            "Guincho OP nivel 5. 100m 20x forca."),
+            ("DEUS",       "Guincho DEUS",            "Alcance 100m. Forca 20x. Funciona sem motor ligado. Puxa qualquer coisa."),
         ]),
         ("TIRE", [
             ("DEUS",            "Pneu DEUS",              "Grip 15.0 em tudo. OP sem perder contato com o solo."),

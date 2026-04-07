@@ -92,10 +92,6 @@ SUSP_STATS = [
 ]
 
 WINCH_STATS = [
-    {"Len": "30",  "Str": "3.0"},
-    {"Len": "45",  "Str": "5.0"},
-    {"Len": "60",  "Str": "8.0"},
-    {"Len": "80",  "Str": "12.0"},
     {"Len": "100", "Str": "20.0"},
 ]
 
@@ -197,31 +193,30 @@ def mod_gearbox(content, filename):
 def mod_winch(content, filename):
     if "</WinchVariants>" not in content:
         return content
-    entries = []
-    for (op_id, tag), stats in zip(LEVELS, WINCH_STATS):
-        entries.append(
-            '\t<Winch\r\n'
-            '\t\tName="op_winch_' + op_id + '"\r\n'
-            '\t\tLength="' + stats['Len'] + '"\r\n'
-            '\t\tStrengthMult="' + stats['Str'] + '"\r\n'
-            '\t\tIsEngineIgnitionRequired="false"\r\n'
-            '\t>\r\n'
-            '\t\t<GameData\r\n'
-            '\t\t\tPrice="100"\r\n'
-            '\t\t\tUnlockByExploration="false"\r\n'
-            '\t\t\tUnlockByRank="1"\r\n'
-            '\t\t>\r\n'
-            '\t\t\t<WinchParams\r\n'
-            '\t\t\t/>\r\n'
-            '\t\t\t<UiDesc\r\n'
-            '\t\t\t\tUiDesc="UI_WINCH_' + tag + '_DESC"\r\n'
-            '\t\t\t\tUiIcon30x30=""\r\n'
-            '\t\t\t\tUiIcon40x40=""\r\n'
-            '\t\t\t\tUiName="UI_WINCH_' + tag + '_NAME"\r\n'
-            '\t\t\t/>\r\n'
-            '\t\t</GameData>\r\n'
-            '\t</Winch>')
-    insert = "\r\n" + "\r\n".join(entries) + "\r\n"
+    stats = WINCH_STATS[0]
+    entry = (
+        '\t<Winch\r\n'
+        '\t\tName="op_winch_deus"\r\n'
+        '\t\tLength="' + stats['Len'] + '"\r\n'
+        '\t\tStrengthMult="' + stats['Str'] + '"\r\n'
+        '\t\tIsEngineIgnitionRequired="false"\r\n'
+        '\t>\r\n'
+        '\t\t<GameData\r\n'
+        '\t\t\tPrice="100"\r\n'
+        '\t\t\tUnlockByExploration="false"\r\n'
+        '\t\t\tUnlockByRank="1"\r\n'
+        '\t\t>\r\n'
+        '\t\t\t<WinchParams\r\n'
+        '\t\t\t/>\r\n'
+        '\t\t\t<UiDesc\r\n'
+        '\t\t\t\tUiDesc="UI_WINCH_DEUS_DESC"\r\n'
+        '\t\t\t\tUiIcon30x30=""\r\n'
+        '\t\t\t\tUiIcon40x40=""\r\n'
+        '\t\t\t\tUiName="UI_WINCH_DEUS_NAME"\r\n'
+        '\t\t\t/>\r\n'
+        '\t\t</GameData>\r\n'
+        '\t</Winch>')
+    insert = "\r\n" + entry + "\r\n"
     return content.replace("</WinchVariants>", insert + "</WinchVariants>")
 
 
@@ -417,10 +412,6 @@ def get_op_strings():
             ("DEUS",       "Cambio DEUS"),
         ]),
         ("WINCH", [
-            ("FURIOSO",    "Guincho FURIOSO"),
-            ("DEVASTADOR", "Guincho DEVASTADOR"),
-            ("APOCALIPSE", "Guincho APOCALIPTICO"),
-            ("TITA",       "Guincho TITA"),
             ("DEUS",       "Guincho DEUS"),
         ]),
         ("TIRE", [
