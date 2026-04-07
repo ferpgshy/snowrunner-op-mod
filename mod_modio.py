@@ -76,19 +76,19 @@ GB_STATS = [
 ]
 
 SUSP_STATS = [
-    {"H": "0.06", "S": "0.06", "D": "0.28", "Damage": "5000",  "Tag": "STOCK_PLUS",  "Name": "Suspensao STOCK+"},
-    {"H": "0.09", "S": "0.06", "D": "0.32", "Damage": "8000",  "Tag": "BAIXA_1",     "Name": "Suspensao BAIXA 1"},
-    {"H": "0.12", "S": "0.07", "D": "0.36", "Damage": "12000", "Tag": "BAIXA_2",     "Name": "Suspensao BAIXA 2"},
-    {"H": "0.15", "S": "0.07", "D": "0.40", "Damage": "16000", "Tag": "MEDIA_1",     "Name": "Suspensao MEDIA 1"},
-    {"H": "0.19", "S": "0.08", "D": "0.44", "Damage": "22000", "Tag": "MEDIA_2",     "Name": "Suspensao MEDIA 2"},
-    {"H": "0.23", "S": "0.09", "D": "0.48", "Damage": "30000", "Tag": "ALTA_1",      "Name": "Suspensao ALTA 1"},
-    {"H": "0.28", "S": "0.10", "D": "0.52", "Damage": "38000", "Tag": "ALTA_2",      "Name": "Suspensao ALTA 2"},
-    {"H": "0.33", "S": "0.10", "D": "0.56", "Damage": "48000", "Tag": "LIFTED_1",    "Name": "Suspensao LIFTED 1"},
-    {"H": "0.39", "S": "0.11", "D": "0.60", "Damage": "58000", "Tag": "LIFTED_2",    "Name": "Suspensao LIFTED 2"},
-    {"H": "0.46", "S": "0.12", "D": "0.64", "Damage": "68000", "Tag": "MONSTER_1",   "Name": "Suspensao MONSTER 1"},
-    {"H": "0.54", "S": "0.13", "D": "0.68", "Damage": "80000", "Tag": "MONSTER_2",   "Name": "Suspensao MONSTER 2"},
-    {"H": "0.65", "S": "0.13", "D": "0.72", "Damage": "92000", "Tag": "EXTREMA",     "Name": "Suspensao EXTREMA"},
-    {"H": "0.80", "S": "0.14", "D": "0.78", "Damage": "99999", "Tag": "DEUS",        "Name": "Suspensao DEUS"},
+    {"H": "0.06", "S": "0.06", "D": "0.28", "Damage": "5000",  "Tag": "STOCK_PLUS",  "Name": "Suspensao STOCK+",         "Desc": "Lift: 1.5pol. Para rodas originais (33-51pol). Firme e estavel."},
+    {"H": "0.09", "S": "0.06", "D": "0.32", "Damage": "8000",  "Tag": "BAIXA_1",     "Name": "Suspensao BAIXA 1",        "Desc": "Lift: 2.5pol. Para rodas de 35-56pol (1.05x-1.1x). Pouco acima do stock."},
+    {"H": "0.12", "S": "0.07", "D": "0.36", "Damage": "12000", "Tag": "BAIXA_2",     "Name": "Suspensao BAIXA 2",        "Desc": "Lift: 3pol. Para rodas de 40-61pol (1.15x-1.2x). Boa estabilidade."},
+    {"H": "0.15", "S": "0.07", "D": "0.40", "Damage": "16000", "Tag": "MEDIA_1",     "Name": "Suspensao MEDIA 1",        "Desc": "Lift: 4pol. Para rodas de 45-69pol (1.25x-1.35x). Equilibrada."},
+    {"H": "0.19", "S": "0.08", "D": "0.44", "Damage": "22000", "Tag": "MEDIA_2",     "Name": "Suspensao MEDIA 2",        "Desc": "Lift: 5pol. Para rodas de 50-77pol (1.4x-1.5x). Boa folga."},
+    {"H": "0.23", "S": "0.09", "D": "0.48", "Damage": "30000", "Tag": "ALTA_1",      "Name": "Suspensao ALTA 1",         "Desc": "Lift: 6pol. Para rodas de 56-82pol (1.5x-1.6x)."},
+    {"H": "0.28", "S": "0.10", "D": "0.52", "Damage": "38000", "Tag": "ALTA_2",      "Name": "Suspensao ALTA 2",         "Desc": "Lift: 7pol. Para rodas de 60-90pol (1.6x-1.8x). Bastante altura."},
+    {"H": "0.33", "S": "0.10", "D": "0.56", "Damage": "48000", "Tag": "LIFTED_1",    "Name": "Suspensao LIFTED 1",       "Desc": "Lift: 8pol. Para rodas de 66-102pol (1.8x-2.0x). Lifted truck."},
+    {"H": "0.39", "S": "0.11", "D": "0.60", "Damage": "58000", "Tag": "LIFTED_2",    "Name": "Suspensao LIFTED 2",       "Desc": "Lift: 10pol. Para rodas de 80-120pol (2.0x-2.25x). Monster truck."},
+    {"H": "0.46", "S": "0.12", "D": "0.64", "Damage": "68000", "Tag": "MONSTER_1",   "Name": "Suspensao MONSTER 1",      "Desc": "Lift: 12pol. Para rodas de 100-130pol (2.25x-2.5x). Passa por cima de tudo."},
+    {"H": "0.54", "S": "0.13", "D": "0.68", "Damage": "80000", "Tag": "MONSTER_2",   "Name": "Suspensao MONSTER 2",      "Desc": "Lift: 14pol. Para rodas de 110-153pol (2.5x-3.0x). Extremo."},
+    {"H": "0.65", "S": "0.13", "D": "0.72", "Damage": "92000", "Tag": "EXTREMA",     "Name": "Suspensao EXTREMA",        "Desc": "Lift: 16pol. Para rodas de 130-153pol (2.75x-3.0x). Altura absurda."},
+    {"H": "0.80", "S": "0.14", "D": "0.78", "Damage": "99999", "Tag": "DEUS",        "Name": "Suspensao DEUS",           "Desc": "Lift: 20pol. QUALQUER roda cabe. Indestrutivel. Sem limites."},
 ]
 
 WINCH_STATS = [
@@ -406,21 +406,21 @@ def get_op_strings():
     for stats in SUSP_STATS:
         tag = stats["Tag"]
         strs.append('UI_SUSP_' + tag + '_NAME\t\t\t\t"' + stats["Name"] + '"')
-        strs.append('UI_SUSP_' + tag + '_DESC\t\t\t\t"Suspensao OP"')
+        strs.append('UI_SUSP_' + tag + '_DESC\t\t\t\t"' + stats["Desc"] + '"')
     for prefix, items in [
         ("GEARBOX", [
-            ("DEUS",       "Cambio DEUS"),
+            ("DEUS",       "Cambio DEUS",       "8 marchas. Ratio 1.65x. AWD gratis. Indestrutivel. Velocidade maxima 50."),
         ]),
         ("WINCH", [
-            ("DEUS",       "Guincho DEUS"),
+            ("DEUS",       "Guincho DEUS",       "Alcance 100m. Forca 20x. Funciona sem motor ligado. Puxa qualquer coisa."),
         ]),
         ("TIRE", [
-            ("DEUS",       "Pneu DEUS"),
+            ("DEUS",       "Pneu DEUS",          "Grip 15.0 em tudo. OP sem perder contato com o solo."),
         ]),
     ]:
-        for tag, name in items:
+        for tag, name, desc in items:
             strs.append("UI_" + prefix + "_" + tag + '_NAME\t\t\t\t"' + name + '"')
-            strs.append("UI_" + prefix + "_" + tag + '_DESC\t\t\t\t"OP"')
+            strs.append("UI_" + prefix + "_" + tag + '_DESC\t\t\t\t"' + desc + '"')
     return "\r\n".join(strs) + "\r\n"
 
 
