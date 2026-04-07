@@ -72,10 +72,6 @@ ENGINE_STATS = [
 ]
 
 GB_STATS = [
-    {"MaxVel": 20,  "Damage": "9999"},
-    {"MaxVel": 28,  "Damage": "25000"},
-    {"MaxVel": 35,  "Damage": "50000"},
-    {"MaxVel": 42,  "Damage": "80000"},
     {"MaxVel": 50,  "Damage": "99999"},
 ]
 
@@ -148,58 +144,53 @@ def mod_engine(content, filename):
 def mod_gearbox(content, filename):
     if "</GearboxVariants>" not in content:
         return content
-    entries = []
-    for (op_id, tag), stats in zip(LEVELS, GB_STATS):
-        mv = stats["MaxVel"]
-        gears = []
-        # Ratio fixo 1.45x entre marchas (quantidade dinamica)
-        GEAR_RATIO = 1.45
-        gear_speeds = [1.5]
-        while gear_speeds[-1] * GEAR_RATIO < mv:
-            gear_speeds.append(round(gear_speeds[-1] * GEAR_RATIO, 2))
-        gear_speeds.append(mv)  # ultima marcha = MaxVel exato
-        for i, spd in enumerate(gear_speeds):
-            fm = round(1.8 - (1.0 / max(len(gear_speeds) - 1, 1)) * i, 2)
-            fm = max(fm, 0.7)
-            gears.append('\t\t<Gear AngVel="' + str(spd) + '" FuelModifier="' + str(fm) + '" />')
-        rv = 1.5
-        hv = round(gear_speeds[-2] + (gear_speeds[-1] - gear_speeds[-2]) * 0.5, 1)
-        gears_str = "\r\n".join(gears)
-        entries.append(
-            '\t<Gearbox\r\n'
-            '\t\tAWDConsumptionModifier="0.0"\r\n'
-            '\t\tCriticalDamageThreshold="0.99"\r\n'
-            '\t\tDamageCapacity="' + stats['Damage'] + '"\r\n'
-            '\t\tDamagedConsumptionModifier="1.0"\r\n'
-            '\t\tFuelConsumption="1.0"\r\n'
-            '\t\tIdleFuelModifier="0.1"\r\n'
-            '\t\tName="op_gearbox_' + op_id + '"\r\n'
-            '\t\tMinBreakFreq="0.0"\r\n'
-            '\t\tMaxBreakFreq="0.0"\r\n'
-            '\t>\r\n'
-            '\t\t<ReverseGear AngVel="' + str(rv) + '" FuelModifier="1.1" />\r\n'
-            '\t\t<HighGear AngVel="' + str(hv) + '" FuelModifier="1.0" />\r\n'
-            + gears_str + '\r\n'
-            '\t\t<GameData\r\n'
-            '\t\t\tPrice="100"\r\n'
-            '\t\t\tUnlockByExploration="false"\r\n'
-            '\t\t\tUnlockByRank="1"\r\n'
-            '\t\t>\r\n'
-            '\t\t\t<GearboxParams\r\n'
-            '\t\t\t\tIsHighGearExists="true"\r\n'
-            '\t\t\t\tIsLowerGearExists="true"\r\n'
-            '\t\t\t\tIsLowerPlusGearExists="false"\r\n'
-            '\t\t\t\tIsLowerMinusGearExists="false"\r\n'
-            '\t\t\t/>\r\n'
-            '\t\t\t<UiDesc\r\n'
-            '\t\t\t\tUiDesc="UI_GEARBOX_' + tag + '_DESC"\r\n'
-            '\t\t\t\tUiIcon30x30=""\r\n'
-            '\t\t\t\tUiIcon40x40=""\r\n'
-            '\t\t\t\tUiName="UI_GEARBOX_' + tag + '_NAME"\r\n'
-            '\t\t\t/>\r\n'
-            '\t\t</GameData>\r\n'
-            '\t</Gearbox>')
-    insert = "\r\n" + "\r\n".join(entries) + "\r\n"
+    mv = GB_STATS[0]["MaxVel"]
+    dmg = GB_STATS[0]["Damage"]
+    gears = []
+    GEAR_COUNT = 8
+    gear_speeds = [round(1.5 * (mv / 1.5) ** (g / (GEAR_COUNT - 1)), 2) for g in range(GEAR_COUNT)]
+    for i, spd in enumerate(gear_speeds):
+        fm = round(1.8 - (1.0 / max(len(gear_speeds) - 1, 1)) * i, 2)
+        fm = max(fm, 0.7)
+        gears.append('\t\t<Gear AngVel="' + str(spd) + '" FuelModifier="' + str(fm) + '" />')
+    rv = 1.5
+    hv = round(gear_speeds[-2] + (gear_speeds[-1] - gear_speeds[-2]) * 0.5, 1)
+    gears_str = "\r\n".join(gears)
+    entry = (
+        '\t<Gearbox\r\n'
+        '\t\tAWDConsumptionModifier="0.0"\r\n'
+        '\t\tCriticalDamageThreshold="0.99"\r\n'
+        '\t\tDamageCapacity="' + dmg + '"\r\n'
+        '\t\tDamagedConsumptionModifier="1.0"\r\n'
+        '\t\tFuelConsumption="1.0"\r\n'
+        '\t\tIdleFuelModifier="0.1"\r\n'
+        '\t\tName="op_gearbox_deus"\r\n'
+        '\t\tMinBreakFreq="0.0"\r\n'
+        '\t\tMaxBreakFreq="0.0"\r\n'
+        '\t>\r\n'
+        '\t\t<ReverseGear AngVel="' + str(rv) + '" FuelModifier="1.1" />\r\n'
+        '\t\t<HighGear AngVel="' + str(hv) + '" FuelModifier="1.0" />\r\n'
+        + gears_str + '\r\n'
+        '\t\t<GameData\r\n'
+        '\t\t\tPrice="100"\r\n'
+        '\t\t\tUnlockByExploration="false"\r\n'
+        '\t\t\tUnlockByRank="1"\r\n'
+        '\t\t>\r\n'
+        '\t\t\t<GearboxParams\r\n'
+        '\t\t\t\tIsHighGearExists="true"\r\n'
+        '\t\t\t\tIsLowerGearExists="true"\r\n'
+        '\t\t\t\tIsLowerPlusGearExists="false"\r\n'
+        '\t\t\t\tIsLowerMinusGearExists="false"\r\n'
+        '\t\t\t/>\r\n'
+        '\t\t\t<UiDesc\r\n'
+        '\t\t\t\tUiDesc="UI_GEARBOX_DEUS_DESC"\r\n'
+        '\t\t\t\tUiIcon30x30=""\r\n'
+        '\t\t\t\tUiIcon40x40=""\r\n'
+        '\t\t\t\tUiName="UI_GEARBOX_DEUS_NAME"\r\n'
+        '\t\t\t/>\r\n'
+        '\t\t</GameData>\r\n'
+        '\t</Gearbox>')
+    insert = "\r\n" + entry + "\r\n"
     return content.replace("</GearboxVariants>", insert + "</GearboxVariants>")
 
 
@@ -423,10 +414,6 @@ def get_op_strings():
         strs.append('UI_SUSP_' + tag + '_DESC\t\t\t\t"Suspensao OP"')
     for prefix, items in [
         ("GEARBOX", [
-            ("FURIOSO",    "Cambio FURIOSO"),
-            ("DEVASTADOR", "Cambio DEVASTADOR"),
-            ("APOCALIPSE", "Cambio APOCALIPSE"),
-            ("TITA",       "Cambio TITA"),
             ("DEUS",       "Cambio DEUS"),
         ]),
         ("WINCH", [
