@@ -12,6 +12,13 @@
 # CONTEUDOS - incluir bat e patch, excluir pak
 CONTEUDOS/initial.pak
 
+# Scripts locais (nao vao pro repo)
+build_winrar_v6.py
+build_conteudos.py
+mod_modio.py
+INSTALAR.bat
+README.md
+
 # Temp
 _op_mod_temp/
 _op_modio_temp/
@@ -23,3 +30,5 @@ diag_*.py
 check_*.py
 scan_mods.py
 scan_mods_debug.py
+pak.load_list
+initial.cache_block
