@@ -1,0 +1,70 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.8"
+	WidthRear="3.65"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_Bogger_Dually"
+			Name="Cheater BogRunner"
+			RearMassScale="2"
+			Mass="400"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="True Specs out of 10: DIRT 8.5 - MUD 9 - PAVEMENT 7 - DAMAGE RESISTANCE 5X" UiName="Cheater: BogRunner" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.032" SoftForceScale="0.20" />
+			<WheelFriction
+				BodyFriction="8.5"
+				BodyFrictionAsphalt="7.0"
+				SubstanceFriction="9.0"
+				UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_Bogger_Dually" Name="op_Cheater _Cheater_BogRunner_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+
+		<TruckRim Mesh="wheels/wheels_Standard_Dually" Name="Standard Dually">
+			<GameData>
+				<UiDesc UiDesc="Standard Dually" UiName="Standard Dually" />
+			</GameData>
+		</TruckRim>
+		
+		<TruckRim Mesh="wheels/wheels_K30_OE_Wheel_Dually" Name="OE Steelie Dually">
+			<GameData>
+				<UiDesc UiDesc="OE Steelie Dually" UiName="OE Steelie Dually" />
+			</GameData>
+		</TruckRim>
+
+		<TruckRim Mesh="wheels/wheels_BlackRhino_Arsenal_Dually" Name="Arsenal Dually">
+			<GameData>
+				<UiDesc UiDesc="Arsenal Dually" UiName="Arsenal Dually" />
+			</GameData>
+		</TruckRim>
+		
+		<TruckRim Mesh="wheels/wheels_Method_901_Dually" Name="901 Dually">
+			<GameData>
+				<UiDesc UiDesc="901 Dually" UiName="901 Dually" />
+			</GameData>
+		</TruckRim>	
+
+	</TruckRims>
+</TruckWheels>

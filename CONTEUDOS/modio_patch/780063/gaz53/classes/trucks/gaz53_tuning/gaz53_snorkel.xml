@@ -1,0 +1,19 @@
+<TruckAddon>
+	<Snorkel Origin="(1.052; 10.0; -1.017)" />
+	<PhysicsModel Mesh="trucks/hummer_h2_tuning/hummer_h2_snorkel_2" />
+	<GameData
+		CameraPreset="roof"
+		Category="snorkel"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_FRONTFACE_TALL_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_FRONTFACE_TALL_NAME"
+		/>
+		<InstallSocket Type="Gaz53Snorkel" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,87 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Mudtires _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Mudtires>
+		<Chains _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Chains> 		
+	</TruckTire>
+</_templates>
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.688"
+	WidthRear="1.688"
+>
+	<TruckTires>				
+		<TruckTire
+			_template="Mudtires"
+			Mesh="wheels/M_Series_tire_2"
+			Name="tire_1"
+			RearMassScale="1"
+			Mass="300"	
+		>
+			<GameData
+				Price="3750"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Vanilla [Dirt 3.0 / Asphalt 0.8 / Mud 1.5]" UiName="Vanilla: MM2 XL" />
+			</GameData>	
+			<WheelFriction
+				BodyFriction="3.0"
+				BodyFrictionAsphalt="0.8"
+				SubstanceFriction="1.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>	
+		<TruckTire
+			_template="Mudtires"
+			Mesh="wheels/M_Series_tire_2"
+			Name="tire_2"
+			RearMassScale="1"
+			Mass="300"	
+		>
+			<GameData
+				Price="3750"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Tuned [Dirt 5.0 / Asphalt 7.0 / Mud 5.0]" UiName="Tuned: MM2 XL" />
+			</GameData>	
+			<WheelFriction
+				BodyFriction="5.0"
+				BodyFrictionAsphalt="7.0"
+				SubstanceFriction="5.0"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Mudtires" Mesh="wheels/M_Series_tire_2" Name="op_ms2_tire_1_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>	
+		<TruckRim Mesh="wheels/M_Series_rim_21and2" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="M Series" UiName="S212" />
+			</GameData>
+		</TruckRim>	
+		<TruckRim Mesh="wheels/M_Series_rim_12" Name="rim_2">
+			<GameData>
+				<UiDesc UiDesc="M Series" UiName="S12" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>
+

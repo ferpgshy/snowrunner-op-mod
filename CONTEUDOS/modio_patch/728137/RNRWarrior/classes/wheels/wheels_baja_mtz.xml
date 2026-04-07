@@ -1,0 +1,50 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="0.992"
+	Width="2.0"
+	WidthRear="0.897"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_baja_mtz"
+			Name="offroad_baja_mtz"
+			RearMassScale="2"
+			Mass="150"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Risky's M/T MTZ" UiName="Risky's M/T MTZ" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_baja_mtz" Name="op_bmtz_offroad_baja_mtz_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_american_force" Name="american_force_rims">
+			<GameData>
+				<UiDesc UiDesc="Risky's American Power Rims" UiName="Risky's American Power Rims" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

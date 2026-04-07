@@ -1,0 +1,31 @@
+<!--==================== SUMMARY ====================-->
+<!-- models, textures & code created by Gaskellgames -->
+<!--=================================================-->
+
+<TruckAddon>
+	<PhysicsModel AcceptVisualDamage="false" Mesh="trucks/addons/gg_arctos_snorkel_1" >
+		<Body Mass="20">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+  <Snorkel Origin="(1.950; 10.0; 1.100)" />
+	<GameData
+		CameraPreset="addon_2"
+		Category="snorkel"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="gg tall snorkel"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Gg Tall Snorkel"
+		/>
+		<InstallSocket Type="ggArctosSnorkel" />
+	</GameData>
+</TruckAddon>
+
+<!--=================================================-->
+<!-- models, textures & code created by Gaskellgames -->
+<!--=================================================-->

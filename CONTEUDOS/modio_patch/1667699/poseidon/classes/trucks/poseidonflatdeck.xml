@@ -1,0 +1,614 @@
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.038"
+		DiffLockType="Always"
+		DiffLockInstalled="false"
+		EngineIconMesh="env/engine_default"
+		EngineIconScale="0.9"
+		EngineStartDelay="1.7"
+		ExhaustStartTime="1.6"
+		FuelCapacity="100"
+		Responsiveness="1.0"
+		SteerSpeed="0.035"
+		TruckImage=""
+		TruckType="SCOUT"
+	>
+		<WinchUpgradeSocket Default="w_mod_poseidon_default" IsUpgradable="true" Type="winches_mod_poseidon" />
+			<Wheels
+			DefaultRim="350Rim"
+			DefaultTire="350"
+			DefaultWheelType="wheels_scout1"
+		>
+            <Wheel
+			    ConnectedToHandbrake="true"
+                Location="front"
+                SteeringAngle="36"
+                SteeringCastor="0"
+                Torque="default"
+                Pos="(2.04; 0.45; 0.88)"
+				ParentFrame="BoneChassis_cdt"
+            />
+            <Wheel
+			    ConnectedToHandbrake="true"
+                Location="front"
+                RightSide="true"
+                SteeringAngle="36"
+                SteeringCastor="0"
+                Torque="default"
+                Pos="(2.04; 0.45; 0.88)"
+				ParentFrame="BoneChassis_cdt"
+            />
+            <Wheel
+                ConnectedToHandbrake="true"
+                Location="rear"
+				Torque="default" 
+                SteeringCastor="0"
+                Pos="(-2.26; 0.45; 0.88)"
+				ParentFrame="BoneChassis_cdt"
+            />
+            <Wheel
+                ConnectedToHandbrake="true"
+                Location="rear"
+				RightSide="true"
+                Torque="default"  
+                SteeringCastor="0"
+                Pos="(-2.26; 0.45; 0.88)"
+				ParentFrame="BoneChassis_cdt"				
+            />
+		</Wheels>
+		<SuspensionSocket
+			Default="mod_poseidon_suspension_default"
+			Type="s_mod_poseidon"
+			MaxWheelRadiusWithoutSuspension="1.5"
+		/>
+		<SteeringWheel Frame="steering" ParentFrame="ChassisBone_cdt"/>
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackLeft"
+			FrameSteerRight="BoneRackRight"
+			RackHalfSizeZ="0.636"
+		/>	
+		<SoundsWheels>
+			<WheelWater Sound="surfaces/surf_water_loop" />
+			<WheelSteer Sound="wheels/wheel_steer" />
+			<WheelSpinning Sound="wheels/wheel_spining_loop" />
+			<WheelMud Sound="surfaces/hit/hit_mud_rnd" />
+			<WheelExtrude Sound="" />
+			<WheelDamaged Sound="wheels/wheel_broken_rotate_loop" />
+			<WheelChains Sound="wheels/wheel_tires_chain_loop" />
+			<WaterHit Sound="trucks/common/truck_hit_water_rnd_set/truck_hit_water_rnd" />
+		</SoundsWheels>
+		<SoundsDamage>
+			<Wheels
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Suspension
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Gearbox
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<FuelTank
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Engine
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Critical
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_crit_rnd_set/truck_damage_crit_rnd"
+				VolumeMinMax="(0.5;1.0)"
+			/>
+			<Common
+				DamageAmount="(0.01;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_small_hard_rnd_set/truck_damage_small_hard_rnd"
+				VolumeMinMax="(0.2;1.0)"
+			/>
+		</SoundsDamage>
+		<Sounds
+			DisableReversePitch="true"
+			EngineHeavyVolume="0.6"
+			MinDist="8.0"
+			Origin="(1; 1.8; 0)"
+			MaxDist="200.0"
+		>
+			<Handbrake Sound="trucks/tuz_166/tuz_166_handbrake_on" />
+			<Gear Sound="trucks/tuz_166/tuz_166_gear_shift" />
+			<DiffLock Sound="trucks/tuz_166/tuz_166_diff_lock" />
+			<Reverse Sound="" />
+			<BrakePull Sound="" />
+			<EngineTurbo Sound="Turboloud" />
+			<BrakeRelease Sound="trucks/tuz_166/tuz_166_brake_release" />
+			<BrakesSqueal Sound="trucks/tuz_166/tuz_166_brakes_squeal" />
+			<Honk Sound="trucks/tuz_166/tuz_166_honk" />
+			<EngineRev Sound="heavyha" />
+			<EngineAccel Sound="heavy" />
+			<EngineStart Sound="start" />
+			<EngineStop Sound="stop" />
+			<EngineIdle Sound="idle" />
+			<EngineIdle_2d Sound="idle" IsSound2D="true" />
+			<EngineLow Sound="low" />
+			<EngineLow_2d Sound="low" IsSound2D="true" />
+			<EngineHigh Sound="high" />
+			<EngineHigh_2d Sound="high" IsSound2D="true" />
+			<EngineHeavy Sound="heavy" />
+			<EngineHeavy_2d Sound="heavy" IsSound2D="true" />
+			<HeadLight Sound="trucks/common/truck_headlight_switch" />
+			<HandbrakeOff Sound="trucks/common/truck_handbrake_switch_off" />
+			<AWD Sound="trucks/common/truck_awd_rnd_set/truck_awd_rnd" />
+			<ExhaustShot Sound="trucks/common/truck_exhaust_shot_rnd_set/truck_exhaust_shot_rnd" />
+			<ChassisStress Sound="trucks/common/truck_stress_small_rnd_set/truck_stress_small_rnd" />
+			<AbruptStop Sound="trucks/common/truck_swing_small_rnd_set/truck_swing_small_rnd" />
+			<WaterGurgle Sound="trucks/common/truck_exhaust_water_gurgle_loop" />
+			<WaterDropping Sound="" />
+			<EngineStalling Sound="trucks/common/truck_engine_stalling" />
+			<DamagedEngine Sound="trucks/common/truck_engine_damaged" />
+			<Cockpit IsSound2D="true" Sound="trucks/common/truck_cockpit_loop" />
+		</Sounds>
+		<Shafts>
+			<Shaft Mesh="env/shaft" SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft Mesh="env/shaft" SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+		</Shafts>
+		<OcclusionMap
+			HalfSizeZ="1.4"
+			Texture="trucks/occlusion/chassis_small__s_d_a.tga"
+			MinX="-2.2"
+			MaxX="2.2"
+		/>
+				<Dashboard>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.993; 0.12; 0.002)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh=""
+				Org="(0.501; 1.227; 0.509)"
+				OutputAngles="(-50;15)"
+			/>
+			<Gauge
+				Damping="0.9995"
+				Dir="(-0.993; 0.12; 0.002)"
+				InputRange="(0;1)"
+				InputType="rpm"
+				Mesh=""
+				Org="(0.503; 1.236; 0.429)"
+				OutputAngles="(-50;-5)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.993; 0.12; 0.002)"
+				InputRange="(0;160)"
+				InputType="speed"
+				Mesh=""
+				Org="(0.502; 1.237; 0.339)"
+				OutputAngles="(-105;105)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.993; 0.12; 0.002)"
+				InputRange="(0;1)"
+				InputType="fuel"
+				Mesh=""
+				Org="(0.503; 1.235; 0.249)"
+				OutputAngles="(-50;50)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.993; 0.12; 0.002)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh=""
+				Org="(0.502; 1.227; 0.17)"
+				OutputAngles="(-50;25)"
+			/>
+		</Dashboard>
+		<GearboxSocket Default="mod_poseidon_gearbox_default" Type="g_mod_poseidon" />
+		<FuelTank DamageCapacity="5000" />
+		<EngineSocket Default="mod_poseidon_engine_default" Type="e_mod_poseidon" />
+		<Driver AnimationSet="Scout" Pos="(0.54; 1.68; 0.46)" SteeringWheelPos="(0.835; 2.04; 0.45)" />
+		<Damage
+            Capacity="30000"
+            SensationMin="(-0.8; 1.2; -0.7)"
+            SensationMax="(0.6; 1.8; 0.7)"
+        >
+            <DamageArea
+                Type="Engine"
+                Min="(1.89; 2; -0.383)"
+                Max="(1.2; 1.6; 0.383)"
+                ParentFrame="BoneChassis_cdt"
+            />
+            <DamageArea
+                Type="FuelTank"
+                Min="(-2.2; 1.6; -0.66)"
+                Max="(-1.8; 1.89; -0.1)"
+                ParentFrame="BoneChassis_cdt"
+            />
+        </Damage>
+		<CompatibleWheels Scale="0.43" Type="bf" RearOffsetZ="0.1"/>
+		<CompatibleWheels Scale="0.48" Type="bf" RearOffsetZ="0.1"/>
+		<CompatibleWheels Scale="0.53" Type="bf" RearOffsetZ="0.12"/>
+		<CompatibleWheels Scale="0.58" Type="bf" RearOffsetZ="0.13"/>
+	
+		<CompatibleWheels Scale="0.48" Type="bogdual" RearOffsetZ="0.1"/>
+		<CompatibleWheels Scale="0.53" Type="bogdual" RearOffsetZ="0.15"/>
+		<CompatibleWheels Scale="0.58" Type="bogdual" RearOffsetZ="0.2"/>
+
+		<CompatibleWheels Scale="0.48" Type="dddual" RearOffsetZ="0.15"/>
+		<CompatibleWheels Scale="0.53" Type="dddual" RearOffsetZ="0.20"/>
+		<CompatibleWheels Scale="0.58" Type="dddual" RearOffsetZ="0.25"/>
+
+		<CompatibleWheels Scale="0.48" Type="irok" OffsetZ="0.1"/>
+		<CompatibleWheels Scale="0.53" Type="irok" OffsetZ="0.1"/>
+		<CompatibleWheels Scale="0.58" Type="irok" OffsetZ="0.1"/>
+
+		<CompatibleWheels Scale="0.48" Type="rdr" OffsetZ="0.1"/>
+		<CompatibleWheels Scale="0.53" Type="rdr" OffsetZ="0.1"/>
+		<CompatibleWheels Scale="0.58" Type="rdr" OffsetZ="0.1"/>
+		
+		<CompatibleWheels Scale="0.48" Type="usd" OffsetZ="0.1"/>
+		<CompatibleWheels Scale="0.53" Type="usd" OffsetZ="0.1"/>
+		<CompatibleWheels Scale="0.58" Type="usd" OffsetZ="0.1"/>
+		<CompatibleWheels RearOffsetZ="0.1" OffsetZ="0.1" Scale="0.559" Type="bf" />
+		<CompatibleWheels RearOffsetZ="0.1" OffsetZ="0.1" Scale="0.623" Type="bf" />
+		<CompatibleWheels RearOffsetZ="0.1" OffsetZ="0.1" Scale="0.688" Type="bf" />
+		<CompatibleWheels RearOffsetZ="0.1" OffsetZ="0.1" Scale="0.624" Type="bf" />
+		<CompatibleWheels RearOffsetZ="0.1" OffsetZ="0.1" Scale="0.696" Type="bf" />
+		<CompatibleWheels RearOffsetZ="0.1" OffsetZ="0.1" Scale="0.768" Type="bf" />
+		<CompatibleWheels RearOffsetZ="0.12" OffsetZ="0.12" Scale="0.689" Type="bf" />
+		<CompatibleWheels RearOffsetZ="0.12" OffsetZ="0.12" Scale="0.848" Type="bf" />
+		<CompatibleWheels RearOffsetZ="0.13" OffsetZ="0.13" Scale="0.754" Type="bf" />
+		<CompatibleWheels RearOffsetZ="0.13" OffsetZ="0.13" Scale="0.841" Type="bf" />
+		<CompatibleWheels RearOffsetZ="0.13" OffsetZ="0.13" Scale="0.928" Type="bf" />
+		<CompatibleWheels RearOffsetZ="0.1" OffsetZ="0.1" Scale="0.624" Type="bogdual" />
+		<CompatibleWheels RearOffsetZ="0.1" OffsetZ="0.1" Scale="0.696" Type="bogdual" />
+		<CompatibleWheels RearOffsetZ="0.1" OffsetZ="0.1" Scale="0.768" Type="bogdual" />
+		<CompatibleWheels RearOffsetZ="0.15" OffsetZ="0.15" Scale="0.689" Type="bogdual" />
+		<CompatibleWheels RearOffsetZ="0.15" OffsetZ="0.15" Scale="0.848" Type="bogdual" />
+		<CompatibleWheels RearOffsetZ="0.2" OffsetZ="0.2" Scale="0.754" Type="bogdual" />
+		<CompatibleWheels RearOffsetZ="0.2" OffsetZ="0.2" Scale="0.841" Type="bogdual" />
+		<CompatibleWheels RearOffsetZ="0.2" OffsetZ="0.2" Scale="0.928" Type="bogdual" />
+		<CompatibleWheels RearOffsetZ="0.15" OffsetZ="0.15" Scale="0.624" Type="dddual" />
+		<CompatibleWheels RearOffsetZ="0.15" OffsetZ="0.15" Scale="0.696" Type="dddual" />
+		<CompatibleWheels RearOffsetZ="0.15" OffsetZ="0.15" Scale="0.768" Type="dddual" />
+		<CompatibleWheels RearOffsetZ="0.20" OffsetZ="0.20" Scale="0.689" Type="dddual" />
+		<CompatibleWheels RearOffsetZ="0.20" OffsetZ="0.20" Scale="0.848" Type="dddual" />
+		<CompatibleWheels RearOffsetZ="0.25" OffsetZ="0.25" Scale="0.754" Type="dddual" />
+		<CompatibleWheels RearOffsetZ="0.25" OffsetZ="0.25" Scale="0.841" Type="dddual" />
+		<CompatibleWheels RearOffsetZ="0.25" OffsetZ="0.25" Scale="0.928" Type="dddual" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.624" Type="irok" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.696" Type="irok" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.768" Type="irok" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.689" Type="irok" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.848" Type="irok" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.754" Type="irok" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.841" Type="irok" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.928" Type="irok" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.624" Type="rdr" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.696" Type="rdr" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.768" Type="rdr" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.689" Type="rdr" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.848" Type="rdr" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.754" Type="rdr" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.841" Type="rdr" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.928" Type="rdr" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.624" Type="usd" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.696" Type="usd" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.768" Type="usd" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.689" Type="usd" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.848" Type="usd" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.754" Type="usd" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.841" Type="usd" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.928" Type="usd" />
+
+		<Camera Center="(-1.2; 0; 0)" RadiusMultiplier="0.8">
+			<Cockpit
+				LimitsHor="(-2.9; 2.4)"
+				LimitsVer="(-0.52; 0.2)"
+				ViewDir="(1; -0.05; 0)"
+				WindshieldDiffuseTexture="trucks/mod_scout_glass__d_a.tga"
+				WindshieldShadingTexture="trucks/mod_scout_glass__sh_d.tga"
+				ZoomViewDirOffset="(0; -0.05; 0)"
+				ViewPos="(0.35; 2.40; 0.47)"
+				ZoomViewPosOffset="(0.2; 0; 0)"
+			>
+				<Rear
+					HorTransitionEnd="-1.2"
+					HorTransitionStart="-1.1"
+					LimitsVer="(-1.2; 0.2)"
+					RollAngle="-15"
+					ViewDir="(1; -0.05; 0)"
+					ViewPosOffset="(0.2; -0.1; 0.55)"
+				/>
+				<Mirror
+					ClipDir="(-0.935; -0.192; 0.297)"
+					ClipOffset="0.1"
+					FOVScale="1"
+					MeshFrame="hp_mirror"
+					ReflectionDir="(-0.948; -0.086; 0.306)"
+					Size="(0.174; 0.065)"
+					Pos="(0.366; 1.655; 0.001)"
+				/>
+				<Mirror
+					ClipDir="(-1; 0; 0)"
+					ClipOffset="0.1"
+					FOVScale="2"
+					MeshFrame="mirror_left"
+					ReflectionDir="(-1; 0.1; 0)"
+					Size="(0.2; 0.238)"
+					Pos="(0.409; 1.322; 0.908)"
+				/>
+				<Mirror
+					ClipDir="(-1; 0; 0)"
+					ClipOffset="0.1"
+					FOVScale="2"
+					MeshFrame="mirror_right"
+					ReflectionDir="(-0.994; 0.099; -0.035)"
+					Size="(0.2; 0.238)"
+					Pos="(0.409; 1.322; -0.908)"
+				/>
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxleFront" />
+			<Axle Frame="BoneAxleRear" />
+		</Axles>
+	</TruckData>
+	<Snorkel Origin="(1.861; 10.0; 0)" />
+	<PhysicsModel Mesh="trucks/mod_poseidonflat">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="( -0.06; -0.55; 0)"
+			ImpactType="Truck"
+			Mass="4550"
+			NetSync="pv"
+		>
+			<Body
+				ModelFrame="BoneChassis_cdt"
+				CenterOfMassOffset="( -0.06; -0.55; 0)"
+				ImpactType="Truck"
+				Mass="4550"
+				NetSync="pv"
+			>
+				<Constraint Type="Fixed" /> 
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+	<StopSignals>		
+		</StopSignals>
+		<ReverseSignals>
+
+		</ReverseSignals>
+		<Ignition>
+			<Flare Pos="(2.60; 1.84; 0.755)" Color="g(180; 180; 255) x 8.6" Dir="(10; 0; 0)" DirAngle="90" Size="0.09" SizeAtDay="0.05"/>			
+			<Flare Pos="(2.60; 1.715; 0.755)" Color="g(180; 180; 255) x 8.6" Dir="(10; 0; 0)" DirAngle="90" Size="0.09" SizeAtDay="0.05"/>
+			<Flare Pos="(2.60; 1.84; -0.755)" Color="g(180; 180; 255) x 8.6" Dir="(10; 0; 0)" DirAngle="90" Size="0.09" SizeAtDay="0.05"/>			
+			<Flare Pos="(2.60; 1.715; -0.755)" Color="g(180; 180; 255) x 8.6" Dir="(10; 0; 0)" DirAngle="90" Size="0.09" SizeAtDay="0.05"/>
+
+
+																					
+		</Ignition>
+		<HeadLight>
+			<Flare Pos="(2.60; 1.84; 0.755)" Color="g(180; 180; 255) x 8.6" Dir="(10; 0; 0)" DirAngle="90" Size="0.09" SizeAtDay="0.05"/>			
+			<Flare Pos="(2.60; 1.715; 0.755)" Color="g(180; 180; 255) x 8.6" Dir="(10; 0; 0)" DirAngle="90" Size="0.09" SizeAtDay="0.05"/>
+			<Flare Pos="(2.60; 1.84; -0.755)" Color="g(180; 180; 255) x 8.6" Dir="(10; 0; 0)" DirAngle="90" Size="0.09" SizeAtDay="0.05"/>			
+			<Flare Pos="(2.60; 1.715; -0.755)" Color="g(180; 180; 255) x 8.6" Dir="(10; 0; 0)" DirAngle="90" Size="0.09" SizeAtDay="0.05"/>
+
+		</HeadLight>
+	</ModelAttachments>
+	<Landmark Mesh="landmarks/tuz_166_lmk" MinScale="1.8" MaxScale="3.8" />
+	<HeadLight
+		AttenEnd="150"
+		AttenStart="-20"
+		Color="g(180; 180; 255) x 10.5"
+		Dir="(1; -0.2; 0)"
+		InnerCone="0"
+		OuterCone="130"
+		Pos="(3.307; 2.028; 0)"
+		ParentFrame="BoneChassis_cdt"
+	/>
+	<GameData
+		Country=""
+		Price="4000"
+		Recallable="true"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(2.05; 1.55; 0.4)" />
+		<WinchSocket Pos="(2.05; 1.55; -0.4)" />
+		<WinchSocket Pos="(-2.69; 1.55; 0.4)" />
+		<WinchSocket Pos="(-2.69; 1.55; -0.4)" />	
+
+		<WinchSocket Pos="(-0.28; .9; 0.4)" />
+		<WinchSocket Pos="(-0.28; .9; -0.4)" />		
+		<WinchSocket Pos="(0.2; .9; 0.4)" />
+		<WinchSocket Pos="(0.2; .9; -0.4)" />				
+		<UiDesc
+			UiDesc="poseidon flatdeck"
+			UiIcon30x30="scoutVehicleImg30"
+			UiIcon328x458="shopImgModScout"
+			UiIcon40x40="scoutVehicleImg"
+			UiIconLogo="modScoutLogo80"
+			UiName="Poseidon Flatdeck"
+		/>
+		<CustomizationCameras>
+			<CameraPos
+				FOV="32.0"
+				Interior="true"
+				Name="mirror_mount"
+				InterestPosition="(8; 1.5; 2.4084)"
+				Position="(4.9; 2.45; -0.5)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Interior="true"
+				Name="bubble_head"
+				InterestPosition="(11; 0.5; 2.4084)"
+				Position="(4.9; 2.45; -0.5)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="roof"
+				InterestPosition="(5.474; 0.759; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="3"
+				Position="(13.148; 3.473; -2.51)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="wheels"
+				InterestPosition="(6.02; 0.191; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="3"
+				Position="(13.421; 1.608; -3.51)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="default"
+				InterestPosition="(5.735; 0.976; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="3"
+				Position="(13.78; 1.486; -3.957)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="rear"
+				InterestPosition="(5.141; 0.956; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="3"
+				Position="(-13.112; 1.595; 3.721)"
+			/>
+		</CustomizationCameras>
+		<AddonSockets>
+			<Socket Names="posstacks" Offset="( 0.0; 0.0; 0.0)" />
+			
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mod_stockbumpersf">
+			<Socket Names="posbump1" Offset="( 0.0; 0.0; 0.0)" />
+		</AddonSockets>		
+		
+		<AddonSockets>
+			<Socket Names="DodgeRamFifthWheelHitch" Offset="( -0.70; 0.75; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="possteps" Offset="( 0.0; 0.0; 0.0)" />
+		</AddonSockets>
+
+
+		<AddonSockets>
+            	<Socket
+                	InCockpit="true"
+                	Names="StuffAirfreshener"
+                	Offset="(1.07; 2.505; 0.000)"
+                	ParentFrame="BoneCabin_cdt"
+		>
+           	
+		</Socket>
+       		 </AddonSockets>
+        	<AddonSockets>  
+		
+           	<Socket
+                	InCockpit="true"
+                	Names="StuffPendant"
+                	Offset="(1.07; 2.505; 0.000)"
+                	ParentFrame="BoneCabin_cdt"
+		>
+           	
+		</Socket>
+       		 </AddonSockets>
+        	<AddonSockets>
+           	 <Socket
+               	 InCockpit="true"
+               	 Names="StuffDashboard"
+                	Offset="(1.30; 2.075; 0.08)"
+                	ParentFrame="BoneCabin_cdt"
+		>
+            	
+		</Socket>
+        	</AddonSockets>
+		<AddonSockets>
+            	<Socket
+                	InCockpit="true"
+                	Names="beans"
+                	Offset="(1.29; 2.09; -0.075)"
+                	ParentFrame="BoneCabin_cdt"
+		>
+           	</Socket>
+       		 </AddonSockets>
+
+
+		<AddonSockets>
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.35; 2.05; 0)" />
+            		<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.35; 2.10; 0)" />
+			<Socket Names="ScautTrailer,Trailer" Offset="(-3.22; 1.08; 0)" />
+			<Socket Names="DodgeRamGooseneck,DodgeRamGooseneckLifted" Offset="(-2.1; 1.98; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SaddleLow" Offset="(-2.35; 1.75; 0)" />
+			<Socket Names="SaddleHigh" Offset="(-2.35; 1.65; 0)" />
+		</AddonSockets>
+	</GameData>
+	<AutomaticIK>
+        <IKBone ModelFrame="Bone002" ParentFrame="BoneChassis_cdt">
+            <IKJoint Type="Hinge2" AxisLocal="(0;1;0)" />
+            <IKBone
+                ModelFrame="Bone001"
+                AttachToFrame="BoneAxleFront"
+                AttachOffset="(0; 0; 0)"
+            >
+                <IKJoint Type="Slider" AxisLocal="(0;1;0)" />
+            </IKBone>
+        </IKBone>
+        <IKBone ModelFrame="Bone004" ParentFrame="BoneChassis_cdt">
+            <IKJoint Type="Hinge2" AxisLocal="(0;1;0)" />
+            <IKBone
+                ModelFrame="Bone003"
+                AttachToFrame="BoneAxleFront"
+                AttachOffset="(0; 0; 0)"
+            >
+                <IKJoint Type="Slider" AxisLocal="(0;1;0)" />
+            </IKBone>
+        </IKBone>
+        <IKBone ModelFrame="Bone006" ParentFrame="BoneChassis_cdt">
+            <IKJoint Type="Hinge2" AxisLocal="(0;1;0)" />
+            <IKBone
+                ModelFrame="Bone005"
+                AttachToFrame="BoneAxleRear"
+                AttachOffset="(0; 0; 0)"
+            >
+                <IKJoint Type="Slider" AxisLocal="(0;1;0)" />
+            </IKBone>
+        </IKBone>
+        <IKBone ModelFrame="Bone008" ParentFrame="BoneChassis_cdt">
+            <IKJoint Type="Hinge2" AxisLocal="(0;1;0)" />
+            <IKBone
+                ModelFrame="Bone007"
+                AttachToFrame="BoneAxleRear"
+                AttachOffset="(0; 0; 0)"
+            >
+                <IKJoint Type="Slider" AxisLocal="(0;1;0)" />
+            </IKBone>
+        </IKBone>
+    </AutomaticIK>
+</Truck>

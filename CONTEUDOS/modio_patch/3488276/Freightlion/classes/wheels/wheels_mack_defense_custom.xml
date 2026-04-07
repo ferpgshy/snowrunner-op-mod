@@ -1,0 +1,60 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Average" />
+		</Offroad>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="999999" Radius="1" Width="1.765">
+	<TruckTires>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mack_defense_m917" Name="offroad">
+			<WheelFriction 
+				_template="Offroad"
+				BodyFriction="2.8"
+				BodyFrictionAsphalt="1.2"
+				SubstanceFriction="1.8"
+			/>
+			<GameData
+				Price="5700"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Vanilla [Dirt 2.8 / Asphalt 1.2 / Mud 1.8]" UiName="Vanilla: MC" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mack_defense_m917" Name="offroad1">
+			<WheelFriction 
+				_template="Offroad"
+				BodyFriction="5.0"
+				BodyFrictionAsphalt="7.0"
+				SubstanceFriction="5.0"
+			/>
+			<GameData
+				Price="5700"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Tuned [Dirt 5.0 / Asphalt 7.0 / Mud 5.0]" UiName="Tuned: MC" />
+			</GameData>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mack_defense_m917" Name="op_mdcustom_offroad_god">
+			<WheelFriction _template="Offroad" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_mack_defense_m917" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="" UiName="MC Rim" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

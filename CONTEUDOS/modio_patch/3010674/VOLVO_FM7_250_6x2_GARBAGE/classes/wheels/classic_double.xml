@@ -1,0 +1,274 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1.0"
+	Width="1.44"
+	WidthRear="3.125"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_ford_f750_1"
+			Name="highway_ford_f750"
+			RearMassScale="2"
+			Mass="450"
+		>
+			<GameData
+				Price="5000"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>			
+				<UiDesc UiDesc="UI_TIRE_HIGHWAY_DESC" UiName="UI_TIRE_FORD_F750_1_NAME" />
+			</GameData>
+			
+			<WheelTracks TextureAlpha="tracks/default_double_alpha__s_d.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/default_double_alpha__s_d.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.02" SoftForceScale="0.5" />
+			<WheelFriction
+				BodyFriction="5"
+				BodyFrictionAsphalt="2"
+				SubstanceFriction="5"
+				UiName="UI_TIRE_TYPE_HIGHWAY_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_ford_f750_offroad_1"
+			Name="offroad_1"
+			RearMassScale="2"
+			Mass="200"
+		>
+			<GameData
+				Price="5000"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_OFFROAD_DESC" UiName="UI_TIRE_OFFROAD_DOUBLE_1_NAME" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.02" SoftForceScale="0.5" />
+			<WheelFriction
+				BodyFriction="5"
+				BodyFrictionAsphalt="3"
+				SubstanceFriction="5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_ford_f750_offroad_2"
+			Name="offroad_2"
+			RearMassScale="2"
+			Mass="200"
+		>
+			<GameData
+				Price="5000"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_OFFROAD_DESC" UiName="UI_TIRE_OFFROAD_DOUBLE_2_NAME" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.02" SoftForceScale="0.5" />
+			<WheelFriction
+				BodyFriction="5"
+				BodyFrictionAsphalt="3.1"
+				SubstanceFriction="5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_ford_f750_offroad_3"
+			Name="offroad_3"
+			RearMassScale="2"
+			Mass="200"
+		>
+			<GameData
+				Price="5000"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_OFFROAD_DESC" UiName="UI_TIRE_OFFROAD_DOUBLE_3_NAME" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.02" SoftForceScale="0.5" />
+			<WheelFriction
+				BodyFriction="5"
+				BodyFrictionAsphalt="2.5"
+				SubstanceFriction="5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/babyswamper"
+			Name="dually_swampers"
+			RearMassScale="2"
+			Mass="250"
+		>
+			<GameData
+				Price="5000"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="" UiName="Dually Swampys" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5"
+				BodyFrictionAsphalt="1.8"
+				SubstanceFriction="5"
+				UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_ford_f750_chains"
+			Name="chains_all"
+			RearMassScale="2"
+			Mass="200"
+		>
+			<GameData
+				Price="5000"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_CHAINS_DESC" UiName="UI_TIRE_CHAINS_ALL_DOUBLE_NAME" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.02" SoftForceScale="0.5" />
+			<WheelFriction
+				BodyFriction="5"
+				BodyFrictionAsphalt="2.9"
+				SubstanceFriction="5"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_ford_f750_1" Name="op_cdouble_highway_ford_f750_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_ford_f750_offroad_1" Name="op_cdouble_offroad_1_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_ford_f750_offroad_2" Name="op_cdouble_offroad_2_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_ford_f750_offroad_3" Name="op_cdouble_offroad_3_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/babyswamper" Name="op_cdouble_dually_swampers_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_ford_f750_chains" Name="op_cdouble_chains_all_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	
+	
+	<TruckRims>
+		<TruckRim Mesh="wheels/classic_rim_black" Name="classic_rim_black">
+			<GameData>
+				<UiDesc UiDesc="classic steel wheel" UiName="classic rim" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_ford_f750_1" Name="rim_750">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_FORD_F750_1_DESC" UiName="UI_RIM_FORD_F750_1_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_medium_highway_allterrain_double_1" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MEDIUM_DOUBLE_1_DESC" UiName="UI_RIM_MEDIUM_DOUBLE_1_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_medium_highway_allterrain_double_2" Name="rim_2">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MEDIUM_DOUBLE_2_DESC" UiName="UI_RIM_MEDIUM_DOUBLE_2_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_medium_highway_allterrain_double_3" Name="rim_3">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MEDIUM_DOUBLE_3_DESC" UiName="UI_RIM_MEDIUM_DOUBLE_3_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_medium_highway_allterrain_double_4" Name="rim_4">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MEDIUM_DOUBLE_4_DESC" UiName="UI_RIM_MEDIUM_DOUBLE_4_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_medium_highway_allterrain_double_5" Name="rim_5">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MEDIUM_DOUBLE_5_DESC" UiName="UI_RIM_MEDIUM_DOUBLE_5_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_medium_highway_allterrain_double_6" Name="rim_6">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MEDIUM_DOUBLE_6_DESC" UiName="UI_RIM_MEDIUM_DOUBLE_6_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_medium_offroad_double_1" Name="rim_offroad_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MEDIUM_OFFROAD_DOUBLE_1_DESC" UiName="UI_RIM_MEDIUM_OFFROAD_DOUBLE_1_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_medium_offroad_double_2" Name="rim_offroad_2">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MEDIUM_OFFROAD_DOUBLE_2_DESC" UiName="UI_RIM_MEDIUM_OFFROAD_DOUBLE_2_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_medium_offroad_double_3" Name="rim_offroad_3">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MEDIUM_OFFROAD_DOUBLE_3_DESC" UiName="UI_RIM_MEDIUM_OFFROAD_DOUBLE_3_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_medium_offroad_double_4" Name="rim_offroad_4">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MEDIUM_OFFROAD_DOUBLE_4_DESC" UiName="UI_RIM_MEDIUM_OFFROAD_DOUBLE_4_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

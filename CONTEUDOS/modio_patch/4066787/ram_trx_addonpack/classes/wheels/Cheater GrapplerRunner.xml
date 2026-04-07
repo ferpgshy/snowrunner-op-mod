@@ -1,0 +1,121 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.825"
+	WidthRear="1.825"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_Nitto_TrailGrappler_19_Single"
+			Name="Cheater GrapplerRunner"
+			RearMassScale="1"
+			Mass="400"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="True Specs: DIRT 7 - MUD 7 - PAVEMENT 7 - DAMAGE RESISTANCE 10X" UiName="Cheater: GrapplerRunner"/>
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.032" SoftForceScale="0.20" />
+			<WheelFriction
+				BodyFriction="7.0"
+				BodyFrictionAsphalt="7.0"
+				SubstanceFriction="7.0"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_Nitto_TrailGrappler_19_Single" Name="op_Cheater _Cheater_GrapplerRunner_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+
+<!--DEFAULT WHEELS-->
+		<TruckRim Mesh="wheels/wheels_TRX_19_Single/4066798" Mass="500" Name="OE Beadlock">
+			<GameData>
+				<UiDesc UiDesc="OE Beadlock" UiName="OE Beadlock" />
+			</GameData>
+		</TruckRim>	
+
+		<TruckRim Mesh="wheels/wheels_Method_305_19_Single/4066798" Mass="500" Name="MR 305 Beadlock">
+			<GameData>
+				<UiDesc UiDesc="MR 305 Beadlock" UiName="MR 305 Beadlock" />
+			</GameData>
+		</TruckRim>	
+
+
+<!--ADDON PACK WHEELS-->
+		<TruckRim Mesh="wheels/wheels_Fifteen52_TurbomacHD_19_Single" Mass="500" Name="52 Turbomac HD">
+			<GameData>
+				<UiDesc UiDesc="Turbomac HD" UiName="Turbomac HD" />
+			</GameData>
+		</TruckRim>		
+		
+		<TruckRim Mesh="wheels/wheels_Fifteen52_TraverseHD_19_Single" Mass="500" Name="52 Traverse HD">
+			<GameData>
+				<UiDesc UiDesc="Traverse HD" UiName="Traverse HD" />
+			</GameData>
+		</TruckRim>		
+	
+		<TruckRim Mesh="wheels/wheels_Innoov8_G400_19_Single" Mass="500" Name="Innovate Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Innovate Beadlock" UiName="Innovate Beadlock" />
+			</GameData>
+		</TruckRim>	
+	
+		<TruckRim Mesh="wheels/wheels_KMC_Machete_19_Single" Mass="500" Name="KM Machete Beadlock">
+			<GameData>
+				<UiDesc UiDesc="KM Machete Beadlock" UiName="KM Machete Beadlock" />
+			</GameData>
+		</TruckRim>		
+		
+		<TruckRim Mesh="wheels/wheels_Method_101_19_Single" Mass="500" Name="MR 101 Beadlock">
+			<GameData>
+				<UiDesc UiDesc="MR 301 Beadlock" UiName="MR 301 Beadlock" />
+			</GameData>
+		</TruckRim>	
+
+		<TruckRim Mesh="wheels/wheels_Method_312_19_Single" Mass="500" Name="MR 312 Beadlock">
+			<GameData>
+				<UiDesc UiDesc="MR 312 Beadlock" UiName="MR 312 Beadlock" />
+			</GameData>
+		</TruckRim>		
+
+		<TruckRim Mesh="wheels/wheels_Raceline_Ryno_19_Single" Mass="500" Name="RL Ryno Cast Beadlock">
+			<GameData>
+				<UiDesc UiDesc="RL Ryno Cast Beadlock" UiName="RL Ryno Cast Beadlock" />
+			</GameData>
+		</TruckRim>
+	
+		<TruckRim Mesh="wheels/wheels_Raceline_Avenger_19_Single" Mass="500" Name="RL Avenger Beadlock">
+			<GameData>
+				<UiDesc UiDesc="RL Avenger Beadlock" UiName="RL Avenger Beadlock" />
+			</GameData>
+		</TruckRim>			
+				
+		<TruckRim Mesh="wheels/wheels_Raceline_Monster_19_Single" Mass="500" Name="RL Monster Beadlock">
+			<GameData>
+				<UiDesc UiDesc="RL Monster Beadlock" UiName="RL Monster Beadlock" />
+			</GameData>
+		</TruckRim>	
+	
+		<TruckRim Mesh="wheels/wheels_Walker_Evans_19_Single" Mass="500" Name="Walker Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Walker Beadlock" UiName="Walker Beadlock" />
+			</GameData>
+		</TruckRim>		
+
+	</TruckRims>
+</TruckWheels>

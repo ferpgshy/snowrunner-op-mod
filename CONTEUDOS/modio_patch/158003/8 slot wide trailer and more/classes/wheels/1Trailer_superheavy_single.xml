@@ -1,0 +1,491 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Soft" />
+		</Offroad>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="999999" Radius="1" Width="2.795">
+	<TruckTires>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_superheavy_mudtires_1" Name="mudtires_1">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MAX" UiName="Snow Ice Mudtires 1" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_superheavy_mudtires_2" Name="mudtires_2">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MAX" UiName="Snow Ice Mudtires 2" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_superheavy_mudtires_3" Name="mudtires_3">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MAX" UiName="Snow Ice Mudtires 3" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_superheavy_mudtires_4_cat745" Name="mudtires_cat745">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MAX" UiName="Snow Ice Mudtires 4" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/mud4" Name="mudtest">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_CHAINS_DESC" UiName="Mud Snow Single superheavy" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_kirovets_k700" Name="mudtires_kirovets_k700">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MAX" UiName="farm Snow Ice Mudtires" />
+			</GameData>
+		</TruckTire>
+
+		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_mudtires_10" Name="JAT MHS I">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MAX" UiName="UI_TIRE_HEAVY_MUDTIRES_10_NAME" />
+			</GameData>
+		</TruckTire>
+
+		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_mudtires_11" Name="JAT MHS II">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MAX" UiName="UI_TIRE_HEAVY_MUDTIRES_11_NAME" />
+			</GameData>
+		</TruckTire>
+
+		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_mudtires_12" Name="JAT MHS III">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MAX" UiName="UI_TIRE_HEAVY_MUDTIRES_12_NAME" />
+			</GameData>
+		</TruckTire>
+
+		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_mudtires_13" Name="JAT MHS IV">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MAX" UiName="UI_TIRE_HEAVY_MUDTIRES_13_NAME" />
+			</GameData>
+		</TruckTire>
+
+		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_mudtires_14" Name="JAT MHS V">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MAX" UiName="UI_TIRE_HEAVY_MUDTIRES_14_NAME" />
+			</GameData>
+		</TruckTire>
+
+		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_mudtires_15" Name="JAT MHS VI">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MAX" UiName="UI_TIRE_HEAVY_MUDTIRES_15_NAME" />
+			</GameData>
+		</TruckTire>
+
+		<TruckTire _template="Offroad" Mesh="wheels/tire_superheavy_mudtires_10" Name="JAT MSH I">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MAX" UiName="UI_TIRE_SUPERHEAVY_MUDTIRES_10_NAME" />
+			</GameData>
+		</TruckTire>
+
+		<TruckTire _template="Offroad" Mesh="wheels/tire_superheavy_mudtires_11" Name="JAT MSH II">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MAX" UiName="UI_TIRE_SUPERHEAVY_MUDTIRES_11_NAME" />
+			</GameData>
+		</TruckTire>
+
+		<TruckTire _template="Offroad" Mesh="wheels/tire_superheavy_mudtires_12" Name="JAT MSH III">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MAX" UiName="UI_TIRE_SUPERHEAVY_MUDTIRES_12_NAME" />
+			</GameData>
+		</TruckTire>
+
+		<TruckTire _template="Offroad" Mesh="wheels/tire_futom_7290ra" Name="tire_futom_7290ra">
+			<WheelFriction _template="Highway" SubstanceFriction="6.55" BodyFrictionAsphalt="3.0" BodyFriction="3.0" IsIgnoreIce="true"/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_MUDTIRES_DESC" UiName="UI_TIRE_SUPERHEAVY_MUDTIRES_FUTOM_7290RA_NAME" />
+			</GameData>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_superheavy_mudtires_1" Name="op_1ssingle_mudtires_1_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_superheavy_mudtires_2" Name="op_1ssingle_mudtires_2_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_superheavy_mudtires_3" Name="op_1ssingle_mudtires_3_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_superheavy_mudtires_4_cat745" Name="op_1ssingle_mudtires_cat745_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/mud4" Name="op_1ssingle_mudtest_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_kirovets_k700" Name="op_1ssingle_mudtires_kirovets_k700_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_mudtires_10" Name="op_1ssingle_JAT_MHS_I_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_mudtires_11" Name="op_1ssingle_JAT_MHS_II_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_mudtires_12" Name="op_1ssingle_JAT_MHS_III_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_mudtires_13" Name="op_1ssingle_JAT_MHS_IV_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_mudtires_14" Name="op_1ssingle_JAT_MHS_V_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_mudtires_15" Name="op_1ssingle_JAT_MHS_VI_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_superheavy_mudtires_10" Name="op_1ssingle_JAT_MSH_I_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_superheavy_mudtires_11" Name="op_1ssingle_JAT_MSH_II_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_superheavy_mudtires_12" Name="op_1ssingle_JAT_MSH_III_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_futom_7290ra" Name="op_1ssingle_tire_futom_7290ra_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_futom_7290ra" Name="rim_futom_7290ra">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SUPERHEAVY_MUDTIRES_1_DESC" UiName="UI_RIM_SUPERHEAVY_MUDTIRES_FUTOM_7290RA_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_ankatra_1160" Name="ankatra_1160">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SUPERHEAVY_MUDTIRES_1_DESC" UiName="UI_RIM_HEAVY_MUDTIRES_ANKATRA_1160_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_superheavy_mudtires_1" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SUPERHEAVY_MUDTIRES_1_DESC" UiName="UI_RIM_SUPERHEAVY_MUDTIRES_1_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_superheavy_mudtires_2" Name="rim_2">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SUPERHEAVY_MUDTIRES_2_DESC" UiName="UI_RIM_SUPERHEAVY_MUDTIRES_2_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_superheavy_mudtires_3" Name="rim_3">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SUPERHEAVY_MUDTIRES_3_DESC" UiName="UI_RIM_SUPERHEAVY_MUDTIRES_3_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_heavy_mudtires_single_tayga_1" Name="TAYGA">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_MUDTIRES_SINGLE_TAYGA_1_DESC" UiName="UI_RIM_HEAVY_MUDTIRES_SINGLE_TAYGA_1_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_scout_default1_1" Name="rim_4">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SCOUT_HIGHWAY_1_DESC" UiName="UI_RIM_SCOUT_HIGHWAY_1_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_scout_default1_2" Name="rim_5">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SCOUT_HIGHWAY_2_DESC" UiName="UI_RIM_SCOUT_HIGHWAY_2_NAME" />
+			</GameData>
+		</TruckRim>
+ 		<TruckRim Mesh="wheels/rim_scout_offroad_1" Name="rim_6">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SCOUT_OFFROAD_1_DESC" UiName="UI_RIM_SCOUT_OFFROAD_1_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_scout_offroad_2" Name="rim_7">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SCOUT_OFFROAD_2_DESC" UiName="UI_RIM_SCOUT_OFFROAD_2_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_scout_btr_1" Name="rim_8">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SCOUT_BTR_1_DESC" UiName="UI_RIM_SCOUT_BTR_1_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_scout_apache_1" Name="rim_9">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SCOUT_APACHE_1_DESC" UiName="UI_RIM_SCOUT_APACHE_1_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_heavy_mudtires_single_1" Name="rim_o3">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_MUDTIRES_SINGLE_1_DESC" UiName="UI_RIM_HEAVY_MUDTIRES_SINGLE_1_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_heavy_mudtires_single_2" Name="rim_o4">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_MUDTIRES_SINGLE_2_DESC" UiName="UI_RIM_HEAVY_MUDTIRES_SINGLE_2_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_kirovets_k700" Name="rim_kirovets_k700">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SUPERHEAVY_MUDTIRES_1_DESC" UiName="farm" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_medium_offroad_double_front_3" Name="rim_offroado_3">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MEDIUM_OFFROAD_DOUBLE_3_DESC" UiName="UI_RIM_MEDIUM_OFFROAD_DOUBLE_3_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rimmudtest6" Name="testtest6">
+			<GameData>
+				<UiDesc UiDesc="Big Mud Snow" UiName="Big Mud Snow" />
+			</GameData>
+		</TruckRim>
+
+		<TruckRim Mesh="wheels/rim_heavy_mudtires_10" Name="JAT MHS I">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_JAT_DESC" UiName="UI_RIM_HEAVY_MUDTIRES_SINGLE_10_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_heavy_mudtires_11" Name="JAT MHS II">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_JAT_DESC" UiName="UI_RIM_HEAVY_MUDTIRES_SINGLE_11_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_heavy_mudtires_12" Name="JAT MHS III">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_JAT_DESC" UiName="UI_RIM_HEAVY_MUDTIRES_SINGLE_12_NAME" />
+			</GameData>
+		</TruckRim>
+
+		<TruckRim Mesh="wheels/rim_heavy_mudtires_12" Name="JAT MHS IV">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_JAT_DESC" UiName="UI_RIM_HEAVY_MUDTIRES_SINGLE_14_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_heavy_mudtires_13" Name="JAT MHS V">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_JAT_DESC" UiName="UI_RIM_HEAVY_MUDTIRES_SINGLE_15_NAME" />
+			</GameData>
+		</TruckRim>
+
+
+		<TruckRim Mesh="wheels/rim_superheavy_mudtires_10" Name="JAT MSH I">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_JAT_DESC" UiName="UI_RIM_SUPERHEAVY_MUDTIRES_10_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_superheavy_mudtires_11" Name="JAT MSH II">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_JAT_DESC" UiName="UI_RIM_SUPERHEAVY_MUDTIRES_11_NAME" />
+			</GameData>
+		</TruckRim>
+
+		<TruckRim Mesh="wheels/rim_scout_allterrain_10" Name="Ultima AT I">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SCOUT_OFFROAD_1_DESC" UiName="UI_RIM_SCOUT_ALLTERRAIN_10_NAME" />
+			</GameData>
+		</TruckRim>
+        <TruckRim Mesh="wheels/rim_scout_allterrain_11" Name="Ultima AT II">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SCOUT_OFFROAD_1_DESC" UiName="UI_RIM_SCOUT_ALLTERRAIN_11_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_scout_allterrain_13" Name="Ultima AT III">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SCOUT_OFFROAD_1_DESC" UiName="UI_RIM_SCOUT_ALLTERRAIN_12_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_scout_allterrain_12" Name="Ultima AT IV">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SCOUT_OFFROAD_1_DESC" UiName="UI_RIM_SCOUT_ALLTERRAIN_13_NAME" />
+			</GameData>
+		</TruckRim>
+
+	</TruckRims>
+</TruckWheels>

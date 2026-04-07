@@ -1,0 +1,987 @@
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.02"
+		DiffLockType="Always"
+		EngineIconMesh="env/engine_default"
+		EngineIconScale="1.3"
+		EngineStartDelay="1.9"
+		ExhaustStartTime="1.8"
+		FuelCapacity="300"
+		Responsiveness="0.2"
+		SteerSpeed="0.023"
+		TruckImage="zetrosmchr"
+		TruckType="OFFROAD"
+	>
+		<WinchUpgradeSocket Default="w_zetros_default" IsUpgradable="true" Type="winches_zetros" />
+		<Wheels
+			DefaultRim="rim_2"
+			DefaultTire="offroad_3"
+			DefaultWheelType="wheels_zetros_1"
+		>
+			<Wheel
+				Pos="(2.133; 0.597; 1.122)"
+				Location="front"
+				SteeringAngle="36"
+				SteeringCastor="7"
+				SteeringJointOffset="0.27"
+				Torque="default"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Wheel
+				RightSide="true"
+				Pos="(2.133; 0.597; 1.122)"
+				Location="front"
+				SteeringAngle="36"
+				SteeringCastor="7"
+				SteeringJointOffset="0.27"
+				Torque="default"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Wheel
+				Pos="(-2.903; 0.597; 0.950)"
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+				
+			/>
+			<Wheel
+				RightSide="true"
+				Pos="(-2.903; 0.597; 0.950)"
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+			/>
+			<Wheel
+				Pos="(-4.441; 0.597; 0.95)"
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+			/>
+			<Wheel
+				RightSide="true"
+				Pos="(-4.441; 0.597; 0.95)"
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+			/>
+		</Wheels>
+		<SuspensionSocket
+			Default="zetros_suspension_default"
+			Type="s_zetros"
+			MaxWheelRadiusWithoutSuspension="0.65"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackLeft"
+			FrameSteerRight="BoneRackRight"
+			RackHalfSizeZ="0.756"
+		/>
+		<Steam Origin="(0.594; 1.406; 0)" />
+		<Steam Origin="(2.238; 1.15; 0)" />
+		<SoundsWheels>
+			<WheelWater Sound="surfaces/surf_water_loop" />
+			<WheelSteer Sound="wheels/wheel_steer" />
+			<WheelSpinning Sound="wheels/wheel_spining_loop" />
+			<WheelMud Sound="surfaces/hit/hit_mud_rnd" />
+			<WheelExtrude Sound="" />
+			<WheelDamaged Sound="wheels/wheel_broken_rotate_loop" />
+			<WheelChains Sound="wheels/wheel_tires_chain_loop" />
+			<WaterHit Sound="trucks/common/truck_hit_water_rnd_set/truck_hit_water_rnd" />
+		</SoundsWheels>
+		<SoundsDamage>
+			<Wheels
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Suspension
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Gearbox
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<FuelTank
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Engine
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Critical
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_crit_rnd_set/truck_damage_crit_rnd"
+				VolumeMinMax="(0.5;1.0)"
+			/>
+			<Common
+				DamageAmount="(0.01;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_big_hard_rnd_set/truck_damage_big_hard_rnd"
+				VolumeMinMax="(0.2;1.0)"
+			/>
+		</SoundsDamage>
+		<Sounds
+			AirHissInterval="12.0"
+			DisableReversePitch="false"
+			EngineHeavyVolume="0.4"
+			Origin="(2.45; 1.55; 0)"
+			MinDist="11.0"
+			ParentFrame="BoneCabin_cdt"
+			MaxDist="200.0"
+		>
+			<Honk			Sound="trucks/chevrolet_kodiakc70/chevrolet_kodiakc70_honk" />
+			<Handbrake		Sound="trucks/voron_grad/voron_grad_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/voron_grad/voron_grad_handbrake_off" />
+			<BrakesSqueal	Sound="trucks/voron_grad/voron_grad_brakes_squeal" />
+			<BrakeRelease	Sound="trucks/common/truck_brake_release_alt3_rnd_set/truck_brake_release_alt3_rnd" />
+			<Reverse		Sound="trucks/voron_grad/voron_grad_reverse" />
+			<EngineRev		Sound="trucks/voron_grad/voron_grad_rev" />
+			<EngineAccel	Sound="trucks/voron_grad/voron_grad_acc" />
+			<EngineStart	Sound="trucks/voron_grad/voron_grad_start" />
+			<EngineStop		Sound="trucks/voron_grad/voron_grad_stop" />
+			<EngineIdle		Sound="trucks/voron_grad/voron_grad_idle" />
+			<EngineIdle_2d	Sound="trucks/voron_grad/voron_grad_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/voron_grad/voron_grad_low" />
+			<EngineLow_2d	Sound="trucks/voron_grad/voron_grad_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/voron_grad/voron_grad_high" />
+			<EngineHigh_2d	Sound="trucks/voron_grad/voron_grad_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="trucks/voron_grad/voron_grad_heavy" />
+			<EngineHeavy_2d	Sound="trucks/voron_grad/voron_grad_heavy_2d"	IsSound2D="true" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+			<HeadLight Sound="trucks/common/truck_headlight_switch" />
+			<AWD Sound="trucks/common/truck_awd_rnd_set/truck_awd_rnd" />
+			<DiffLock Sound="trucks/common/truck_diff_lock_rnd_set/truck_diff_lock_rnd" />
+			<Gear Sound="trucks/common/truck_gear_shift_heavy_rnd_set/truck_gear_shift_heavy_rnd" />
+			<ExhaustShot Sound="trucks/common/truck_exhaust_shot_rnd_set/truck_exhaust_shot_rnd" />
+			<BrakePull		Sound="trucks/voron_grad/voron_grad_brake_pull" />
+			<ChassisStress Sound="trucks/common/truck_stress_small_rnd_set/truck_stress_small_rnd" />
+			<WaterGurgle Sound="trucks/common/truck_exhaust_water_gurgle_loop" />
+			<WaterDropping Sound="" />
+			<EngineStalling Sound="trucks/common/truck_engine_stalling" />
+			<DamagedEngine Sound="trucks/common/truck_engine_damaged" />
+			<Cockpit IsSound2D="true" Sound="trucks/common/truck_cockpit_loop" />
+		</Sounds>
+		<Shakers>			
+			<Shaker Frame="BoneAntenna" MinAngle="(0.3; 0.3; 0.3)" MaxAngle="(.7; .7; .7)" MaxFrequency="1.2" />
+		</Shakers>
+		<Shafts>
+			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+			<Shaft SocketPointA="Shaft4a" SocketPointB="Shaft4b" />
+			<Shaft SocketPointA="Shaft5a" SocketPointB="Shaft5b" />
+		</Shafts>
+		<OcclusionMap HalfSizeZ="1.9" MinX="-5.309" MaxX="3.693" />
+		<LimitedFluid
+			Center="(-0.889; 0.95; -0.87)"
+			SizeX="1.24"
+			SizeY="0.46"
+			SizeZ="0.60"
+			Type="Box"
+			ParentFrame="BoneChassis_cdt"
+		/>
+		<Intake Dir="(1; 0; 0)" Origin="(3.503; 1.662; -0)" Size="1.220" />
+		<GearboxSocket Default="g_zetros_offroad" Type="gearboxes_zetros" />
+		<FuelTank DamageCapacity="90" />		
+		<EngineSocket Default="zetros_engine_0" Type="e_zetros" />
+		<Driver
+			AnimationSet="Truck"
+			Pos="(1.112; 1.9; 0.723)"
+			SteeringWheelPos="(1.515; 2.25; 0.723)"
+			ParentFrame="BoneCabin_cdt"
+		/>
+		<Dashboard>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.896; 0.444; 0)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/zetros_arrow_02"
+				Org="(1.832; 2.174; 0.697)"
+				OutputAngles="(88;27)"
+			/>			
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.896; 0.444; 0)"
+				InputRange="(0;1)"
+				InputType="rpm"
+				Mesh="trucks/arrows/zetros_arrow_01"
+				Org="(1.843; 2.208; 0.612)"
+				OutputAngles="(-109;165)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.896; 0.444; 0)"
+				InputRange="(0;80)"
+				InputType="speed"
+				Mesh="trucks/arrows/zetros_arrow_01"
+				Org="(1.843; 2.208; 0.832)"
+				OutputAngles="(-120;160)"
+			/>			
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.896; 0.444; 0)"
+				InputRange="(0;1)"
+				InputType="fuel"
+				Mesh="trucks/arrows/zetros_arrow_02"
+				Org="(1.832; 2.174; 0.748)"
+				OutputAngles="(-88;7)"
+			/>
+		</Dashboard>
+		<Damage
+			Capacity="500"
+			SensationMin="(0.412; 2.204; -0.949)"
+			SensationMax="(2.24; 2.945; 0.949)"
+			ParentFrame="BoneCabin_cdt"
+		>
+			<DamageArea
+				Type="Engine"
+				Min="(2.309; 1.189; -1.136)"
+				Max="(3.579; 1.932; 1.165)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<DamageArea
+				Type="FuelTank"
+				Min="(-1.923; 0.701; -1.211)"
+				Max="(-0.57; 1.227; -0.553)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</Damage>
+		<CompatibleWheels RearOffsetZ=".08" Scale="0.65" Type="wheels_zetros_1" />		
+		<CompatibleWheels RearOffsetZ=".08" Scale="0.65" Type="wheels_zetros_2" />				
+		<CompatibleWheels RearOffsetZ=".08" Scale="0.65" Type="wheels_zetros_3" />
+		<CompatibleWheels RearOffsetZ=".08" Scale="0.65" Type="wheels_zetros_4" />
+		<CompatibleWheels RearOffsetZ=".08" Scale="0.65" Type="wheels_zetros_5" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="0.845" Type="wheels_zetros_1" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="0.943" Type="wheels_zetros_1" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="1.04" Type="wheels_zetros_1" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="0.845" Type="wheels_zetros_2" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="0.943" Type="wheels_zetros_2" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="1.04" Type="wheels_zetros_2" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="0.845" Type="wheels_zetros_3" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="0.943" Type="wheels_zetros_3" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="1.04" Type="wheels_zetros_3" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="0.845" Type="wheels_zetros_4" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="0.943" Type="wheels_zetros_4" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="1.04" Type="wheels_zetros_4" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="0.845" Type="wheels_zetros_5" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="0.943" Type="wheels_zetros_5" />
+		<CompatibleWheels RearOffsetZ=".08" OffsetZ=".08" Scale="1.04" Type="wheels_zetros_5" />		
+		
+		<Camera Center="(-2.25; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Cockpit
+				WindshieldDiffuseTexture="trucks/glass__d_a.tga"
+				WindshieldShadingTexture="trucks/glass__sh_d.tga"
+				ViewPos="(1.035; 2.56; 0.723)"
+				LimitsHor="(-2.8; 2.4)"
+				LimitsVer="(-0.12; 0.2)"
+				ViewDir="(1; -0.05; 0)"
+				ZoomViewDirOffset="(0; -0.05; 0)"
+				ZoomViewPosOffset="(0.2; 0; 0)"
+			>
+				<Rear
+					HorTransitionEnd="-1.5"
+					HorTransitionStart="-1.2"
+					LimitsVer="(-1.2; 0.2)"
+					RollAngle="-15"
+					ViewDir="(1; -0.05; 0)"
+					ViewPosOffset="(0.25; -0.1; 0.7)"
+				/>
+				<Mirror
+					ClipDir="(-0.866; 0; -0.5)"
+					FOVScale="1.7"
+					MeshFrame="mirror_left"
+					ReflectionDir="(-0.906; -0.056; -0.361)"
+					Size="(0.14; 0.34)"
+					Pos="(1.686; 2.569; 1.44)"
+					LookAtOffset="(0; -0.05; 0)"
+				>
+					<SecondaryView
+						ClipDir="(-0.866; -0.03; -0.5)"
+						CurveAngle="5"
+						FOVScale="1.5"
+						MeshFrame="mirror_left_1"
+						Size="(0.21; 0.20)"
+						Pos="(1.72; 2.257; 1.458)"
+					/>
+				</Mirror>
+				<Mirror
+					ClipDir="(-0.866; -0; 0.5)"
+					FOVScale="1.8"
+					MeshFrame="mirror_right"
+					ReflectionDir="(-0.839; -0.066; 0.64)"
+					Size="(0.14; 0.34)"
+					Pos="(1.686; 2.569; -1.44)"
+					ClipOffset=".1"
+				>
+					<SecondaryView
+						ClipDir="(-0.863; 0; 0.504)"
+						CurveAngle="30"
+						FOVScale="1.5"
+						MeshFrame="mirror_right_1"
+						Size="(0.21; 0.20)"
+						Pos="(1.72; 2.257; -1.458)"
+					/>
+				</Mirror>
+				<Mirror
+					ClipDir="(0; -0.452; 0.092)"
+					FOVScale="1.5"
+					MeshFrame="mirror_side"
+					ReflectionDir="(0; -0.452; 0.112)"
+					Size="(0.25; 0.17)"
+					Pos="(1.227; 2.701; -1.211)"
+					ClipOffset=".1"
+				>			
+				</Mirror>
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" />
+			<Axle Frame="BoneAxle2" />
+			<Axle Frame="BoneAxle3" />
+		</Axles>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/zetros">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(-0.3; -0.6; 0)"
+			ImpactType="Truck"
+			Mass="7500"			
+			NetSync="pv"
+		>
+			<Body
+				CenterOfMassOffset="(0.3; -0.5; 0)"
+				ImpactType="Truck"
+				Mass="5600"
+				ModelFrame="BoneCabin_cdt"
+				NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-10"
+					MaxLimit="10"
+				>
+					<Motor Damping="26000" Spring="700000" Type="Spring" />
+				</Constraint>				
+			</Body>			
+			<Body ModelFrame="BoneMudFlabRight_cdt" Collisions="None" Mass="10">
+				<Constraint
+				    AxisLocal="(0; 0; 1)"
+					MinLimit="-25"
+					MaxLimit="15"
+					Type="Hinge"
+				>
+					<Motor Damping="1" Spring="10" Type="Spring" />
+				</Constraint>
+			</Body>
+			    <Body ModelFrame="BoneMudFlabLeft_cdt" Collisions="None" Mass="10">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					MinLimit="-25"
+					MaxLimit="15"
+					Type="Hinge"
+			    >
+					<Motor Damping="1" Spring="10" Type="Spring" />
+				</Constraint>
+			</Body>			
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>		
+		<Ignition>
+			<Light
+				Pos="(-6.4; 0.777; 0.57)"
+				AttenEnd="5"
+				Color="g(255; 0; 0) x 0.3"
+				Dir="(-1; -0.2; 0)"
+				InnerCone="20"
+				OuterCone="160"
+			/>
+			<Light
+				Pos="(-6.4; 0.777; -0.57)"
+				AttenEnd="5"
+				Color="g(255; 0; 0) x 0.3"
+				Dir="(-1; -0.2; 0)"
+				InnerCone="20"
+				OuterCone="160"
+			/>						
+			<Flare
+				Pos="(2.876; 1.381; 1.337)"
+				ParentFrame="BoneCabin_cdt"
+				AttenEnd="200"
+				AttenStart="1"
+				Color="g(238; 195; 34) x 0.5"
+				ColorMultAtDay="0.5"
+				Size="0.2"
+			/>
+			<Flare
+				Pos="(2.876; 1.381; -1.337)"
+				ParentFrame="BoneCabin_cdt"
+				AttenEnd="200"
+				AttenStart="1"
+				Color="g(238; 195; 34) x 0.5"
+				ColorMultAtDay="0.5"
+				Size="0.2"
+			/>					
+			<Flare
+				Color="g(255; 0; 0) x 0.6"
+				Size="0.15"
+				Pos="(-5.759; 1.055; 1.091)"
+				AspectRatio="1.4"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+			/>
+			<Flare
+				Color="g(255; 0; 0) x 0.6"
+				Size="0.15"
+				Pos="(-5.759; 1.055; -1.091)"
+				AspectRatio="1.4"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+			/>			
+			<Flare
+				Pos="(1.964; 2.877; 0.913)"
+				ParentFrame="BoneCabin_cdt"
+				AttenEnd="200"
+				AttenStart="1"
+				Color="g(200; 200; 200) x 0.5"
+				ColorMultAtDay="0.5"
+				Size="0.2"
+			/>
+			<Flare
+				Pos="(1.964; 2.877; -0.913)"
+				ParentFrame="BoneCabin_cdt"
+				AttenEnd="200"
+				AttenStart="1"
+				Color="g(200; 200; 200) x 0.5"
+				ColorMultAtDay="0.5"
+				Size="0.2"
+			/>
+			<Flare
+				Pos="(3.29; 1.402; 1.125)"
+				ParentFrame="BoneCabin_cdt"
+				AttenEnd="200"
+				AttenStart="1"
+				Color="g(238; 195; 34) x 0.5"
+				ColorMultAtDay="0.5"
+				Size="0.3"
+			/>
+			<Flare
+				Pos="(3.29; 1.402; -1.125)"
+				ParentFrame="BoneCabin_cdt"
+				AttenEnd="200"
+				AttenStart="1"
+				Color="g(238; 195; 34) x 0.5"
+				ColorMultAtDay="0.5"
+				Size="0.3"
+			/>	
+		</Ignition>
+		<ReverseSignals>
+			<Light
+                Pos="(-6.4; 0.777; 0.57)"
+                AttenEnd="15.0"
+                Color="(200; 200; 200)"
+                Dir="(-1; -0.3; 0)"
+                InnerCone="120"
+                OuterCone="160"
+            />
+			<Light
+                Pos="(-6.4; 0.777; -0.57)"
+                AttenEnd="15.0"
+                Color="(200; 200; 200)"
+                Dir="(-1; -0.3; 0)"
+                InnerCone="120"
+                OuterCone="160"
+            />
+			<Flare
+				Size="0.4"
+				Pos="(-5.763; 0.979; 0.933)"
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.4"
+				ColorMultAtDay="0.55"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+				Reflections="true"
+				SizeMultAtDay="0.3"
+			/>
+			<Flare
+				Size="0.2"
+				Pos="(-5.763; 0.979; -0.933)"
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.4"
+				ColorMultAtDay="0.55"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+				Reflections="true"
+				SizeMultAtDay="0.3"
+			/>
+			<Flare
+				Color="g(220; 220; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				Pos="(-5.763; 0.979; 0.933)"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				Texture="sfx/flare_line__s_d.tga"
+			/>
+			<Flare
+				Color="g(220; 220; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.4"
+				Pos="(-5.763; 0.979; -0.933)"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				Texture="sfx/flare_line__s_d.tga"
+			/>
+		</ReverseSignals>
+		<StopSignals>
+			<Light
+				Pos="(-6.4; 0.777; 0.57)"
+				AttenEnd="4"
+				Color="(102; 1; 1)"
+				Dir="(-1; -0.2; 0)"
+				InnerCone="120"
+				OuterCone="160"
+			/>
+			<Light
+				Pos="(-6.4; 0.777; -0.57)"
+				AttenEnd="4"
+				Color="(102; 1; 1)"
+				Dir="(-1; -0.2; 0)"
+				InnerCone="120"
+				OuterCone="160"
+			/>
+			<Flare
+				Size="0.3"
+				Pos="(-5.763; 1.04; 0.939)"
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.4"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+				Reflections="true"
+				SizeMultAtDay="0.5"
+			/>
+			<Flare
+				Size="0.3"
+				Pos="(-5.763; 1.04; -0.939)"
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.4"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+				Reflections="true"
+				SizeMultAtDay="0.5"
+			/>
+		</StopSignals>		
+	</ModelAttachments>
+	<Landmark Mesh="landmarks/voron_d53233_lmk" MinScale="1.8" MaxScale="3.8" />
+	<HeadLight
+		Pos="(3.284; 1.4; 0)"
+		ParentFrame="BoneCabin_cdt"
+		AttenEnd="55"
+		AttenStart="-20"
+		Color="g(255; 212; 154) x 6.5"
+		Dir="(1; -0.2; 0)"
+		InnerCone="0"
+		OuterCone="80"
+	/>
+	<GameData
+		Country=""
+		Price="46100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(3.654; 0.990; 0)" ParentFrame="BoneCabin_cdt" />
+		<WinchSocket Pos="(1.063; 1.05; -1.085)" ParentFrame="BoneCabin_cdt" />
+		<WinchSocket Pos="(1.063; 1.05; 1.085)" ParentFrame="BoneCabin_cdt" />
+		<WinchSocket Pos="(-5.8; 1; 0)" />
+		<WinchSocket Pos="(-3.7; 1.15; -0.478)" />
+		<WinchSocket Pos="(-3.7; 1.15; 0.478)" />
+		
+		<UiDesc
+			UiDesc="The Zetros is the result of more than 120 years of experience and know-how. Manufactured in Wörth at the largest truck assembly plant in the world, this unique off-road truck stands for the excellent quality that is associated with the Made in Germany label."
+			UiIcon30x30="offroadVehicleImg30"
+			UiIcon328x458="shopImgZetros"
+			UiIcon40x40="offroadVehicleImg"
+			UiIconLogo="ZetrosLogo80"
+			UiName="Mercedes-Benz Zetros"
+		/>
+		<CustomizationCameras>
+			<CameraPos
+				FOV="32.0"
+				Name="addon_1"
+				InterestPosition="(0.697; 1.869; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-7.265; 3.31; 8.244)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="addon_2"
+				InterestPosition="(3.194; 1.807; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-8.093; 2.337; -6.718)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="side_r"
+				InterestPosition="(4.764; 1.97; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-0.226; 4.969; -4.508)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="roof"
+				InterestPosition="(5.584; 1.615; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(9.203; 3.854; 5.047)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="side_l"
+				InterestPosition="(4.737; 2.557; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(9.507; 4.376; -3.37)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="hoods"
+				InterestPosition="(5.275; 1.623; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(12.823; 1.44; -4.73)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="wheels"
+				InterestPosition="(4.756; 1.133; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-4.539; 2.191; -5.755)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="default"
+				InterestPosition="(5.275; 1.623; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(12.823; 1.44; -4.73)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="rear"
+				InterestPosition="(4.777; 1.589; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(0.811; 3.681; 4.794)"
+			/>
+			<CameraPos
+				FOV="36.0"
+				InterestPosition="(7.805;1.392;2.100)"
+				Interior="true"
+				Name="bubble_head"
+				Position="(4.320;2.700;-0.9)"
+			/>			
+			<CameraPos FOV="32.0"
+				InterestPosition="(7.7362;2.9361;2.7084)"
+				Interior="true"
+				Name="mirror_mount"
+				Position="(4.6299;2.617;-1)"
+			/>			
+		</CustomizationCameras>
+		<CraneSocket Pos="(3.654; 0.990; 0)" ParentFrame="BoneCabin_cdt" />		
+		<CraneSocket Pos="(-5.375; 1.081; 0)" />
+
+		<!-- A D D O N S -->
+
+		<!--Trailer -->
+
+		<AddonSockets>			
+			<Socket Names="Trailer" Offset="(-5.638; 0.964; 0)">
+				<AddonsShift Offset="(-0.82; 0; 0)"  Types="ZetrosChassisExtension" />
+			</Socket>
+		</AddonSockets>
+		
+		<!--Difflock -->
+
+		<AddonSockets DefaultAddon="zetros_diff_lock_default">
+			<Socket Names="ZetrosDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+
+		<!--Cranes -->
+		<AddonSockets>
+		    <Socket Names="BunkLog" NamesBlock="BigUSCraneZetros, ZetrosFenderFlat, MinicraneRearZRU, MinicraneRear" Offset="(-7.2; 1.27; 0)" ParentFrame="BoneChassis_cdt" />
+	    </AddonSockets>
+		
+		<AddonSockets>
+		    <Socket Names="BigUSCraneZetros" NamesBlock="ZetrosFenderFlat, ZetrosRadar, ZetrosRearProtector, MinicraneZ, LogLift" Offset="(-3.888; 1.255; 0)" />
+		    <Socket Names="LogLift" NamesBlock="ZetrosRadar, ZetrosFenderFlat, ZetrosToolkitBig, ZetrosToolkit, ZetrosWheelAddon, ZetrosSchmitz, ZetrosWrecker, ZetrosFlatbed, ZetrosSchmitzTent,  FrameAddonTank, FrameAddonKung, MinicraneZRU, FrameAddonLogShort, MinicraneZ, ZetrosSpareTire" Offset="(-0.5; 1.27; 0)" />
+		    <Socket Names="MinicraneZ" NamesBlock="ZetrosSchmitzLong, ZetrosExhaustCustom, ZetrosRadar, ZetrosRearProtector, FrameAddonTank, FrameAddonKung, MinicraneZRU" Offset="(-0.5; 1.27; 0)">				
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />							
+		    </Socket>
+			<Socket Names="MinicraneZRU" NamesBlock="ZetrosFuelTanker, ZetrosFlatbed, ZetrosSchmitz, ZetrosSchmitzLong, ZetrosRadar, ZetrosRearProtector, ZetrosExhaustCustom, FrameAddonTank, FrameAddonKung, MinicraneZRU" Offset="(-0.5; 1.27; 0)">				
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />							
+		    </Socket>			
+			<Socket Names="MinicraneRear" NamesBlock="ZetrosFuelTanker, ZetrosFlatbed, ZetrosSchmitz, ZetrosSchmitzLong, ZetrosRearProtector, FrameAddonTank, FrameAddonKung, MinicraneZRU" Offset="(-6.08; 1.27; 0)">				
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />							
+		    </Socket>
+			<Socket Names="MinicraneRearZRU" NamesBlock="ZetrosFuelTanker, ZetrosFlatbed, ZetrosSchmitz, ZetrosSchmitzLong, ZetrosRearProtector, FrameAddonTank, FrameAddonKung, MinicraneZRU" Offset="(-6.08; 1.27; 0)">				
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />							
+		    </Socket>
+		</AddonSockets>
+
+		<!--Beds and Cranes -->
+		
+		<AddonSockets>
+			<Socket Names="ZetrosSchmitz" NamesBlock="BunkLog, LogLift, BigUSCraneZetros, MinicraneRear, ZetrosRearProtector, ZetrosSchmitzRearCrane, ZetrosFlatbedRearCrane" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="ZetrosSchmitzLong" NamesBlock="BunkLog, LogLift, BigUSCraneZetros, ZetrosRadar, ZetrosRearProtector, ZetrosExhaustCustom, ZetrosSpareTire, MinicraneRear, ZetrosSchmitzRearCrane, ZetrosFlatbedRearCrane" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="ZetrosWrecker" NamesBlock="MinicraneZRU, MinicraneRearZRU, BunkLog, LogLift, BigUSCraneZetros, ZetrosFenderFlat, ZetrosRadar, ZetrosRearProtector, ZetrosSchmitz, FrameAddonTank, ZetrosSchmitzTent, zetros_bigcraneus, MinicraneZ, ZetrosSpareTire, ZetrosRearBumper2, MinicraneRear, ZetrosSchmitzRearCrane, ZetrosFlatbedRearCrane" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="ZetrosFlatbed" NamesBlock="BunkLog, LogLift, BigUSCraneZetros, ZetrosFenderFlat, ZetrosRearProtector, ZetrosWrecker, ZetrosSchmitz, FrameAddonTank, ZetrosSchmitzTent, zetros_bigcraneus, MinicraneRear, ZetrosSchmitzRearCrane, ZetrosFlatbedRearCrane" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="ZetrosFuelTanker" NamesBlock="BunkLog, LogLift, MinicraneZ, BigUSCraneZetros, ZetrosFenderFlat, ZetrosRearProtector, MinicraneRear, ZetrosSchmitzRearCrane, ZetrosFlatbedRearCrane" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneRearZRU, ZetrosFenderFlat, MinicraneZ, MinicraneZRU, BunkLog, LogLift, BigUSCraneZetros, ZetrosRadar, ZetrosRearProtector, ZetrosExhaustCustom, ZetrosSpareTire, ZetrosSchmitzRearCrane, ZetrosFlatbedRearCrane" Offset="(-2.48; 1.265; 0)" />
+
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ZetrosSchmitzRearCrane" NamesBlock="MinicraneZ, MinicraneZRU, BunkLog, LogLift, BigUSCraneZetros, ZetrosRadar, ZetrosRearProtector" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="ZetrosFlatbedRearCrane" NamesBlock="MinicraneZ, MinicraneZRU, BunkLog, LogLift, BigUSCraneZetros, ZetrosRadar, ZetrosRearProtector, ZetrosWrecker, ZetrosSchmitz, FrameAddonTank, ZetrosSchmitzTent, zetros_bigcraneus" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+	
+		<!-- Snorkels -->			
+
+		<AddonSockets DefaultAddon="zetros_snorkel_1">
+			<Socket Names="ZetrosSnorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		
+		<!-- Exhausts -->			
+
+		<AddonSockets DefaultAddon="zetros_exhaust_1">
+			<Socket Names="ZetrosExhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="ZetrosExhaustCustom" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>		
+
+		<!-- Rear Bumpers -->		
+		<AddonSockets>
+			<Socket Names="ZetrosRearBumper" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" >			
+				<AddonsShift Offset="(-0.68; 0; 0)" Types="ZetrosChassisExtension" />
+			</Socket>
+			<Socket Names="ZetrosRearBumper2" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" >			
+				<AddonsShift Offset="(-0.68; 0; 0)" Types="ZetrosChassisExtension" />
+			</Socket>
+		</AddonSockets>
+
+		<!-- Front Bumpers -->		
+
+	    <AddonSockets DefaultAddon="zetros_bumper_default">
+			<Socket Names="ZetrosBumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="ZetrosBumperBar" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>	
+		
+		<!-- Spare Tire -->
+
+		<AddonSockets>
+			<Socket Names="ZetrosSpareTire" NamesBlock="MinicraneZRU, ZetrosRadar, MinicraneZ, FrameAddonTank, ZetrosSchmitzRearCrane, ZetrosFlatbedRearCrane" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" >			
+				<AddonsShift Offset="(-0.2; 0; 0)" Types="ZetrosExhaustCustom" />
+			</Socket>
+			<Socket Names="ZetrosWheelAddon" NamesBlock="ZetrosToolkitBig" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		
+ 		<!-- Miscellenious Addons -->
+
+		<AddonSockets>			
+			<Socket Names="ZetrosToolkitBig" NamesBlock="ZetrosRadar" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+
+		<AddonSockets>			
+			<Socket Names="ZetrosBeacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+
+		<AddonSockets>			
+			<Socket Names="ZetrosChassisExtension" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket Names="ZetrosToolkit" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+
+		<AddonSockets>			
+			<Socket Names="ZetrosHoodFlasher" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+
+		<AddonSockets>
+			<Socket Names="ZetrosCabinProtector" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="ZetrosCabLight" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="ZetrosRoofRack"  NamesBlock="ZetrosBeacon, ZetrosHorn, ZetrosHorn2" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />				
+		</AddonSockets>
+
+		<AddonSockets>
+			<Socket Names="ZetrosRearProtector" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+				<AddonsShift Offset="(0.6; 0; 0)" Types="LogLift" />
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="ZetrosRadar" />
+			</Socket>		
+		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket Names="ZetrosHorn" NamesBlock="ZetrosBeacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="ZetrosHorn2" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />			
+		</AddonSockets>	
+
+		<AddonSockets>
+			<Socket Names="ZetrosLogo" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />				
+		</AddonSockets>
+
+		<AddonSockets>
+			<Socket Names="ZetrosRadar" Offset="(0; 0; 0)" NamesBlock="ZetrosExhaustCustom" ParentFrame="BoneCabin_cdt">
+			     <AddonsShift Offset="(0.08; 0; 0)" Types="ZetrosFuelTanker" />
+		    </Socket>						
+		</AddonSockets>
+
+		<AddonSockets>
+			<Socket Names="ZetrosFender" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="ZetrosFenderFlat" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />				
+		</AddonSockets>
+
+		<!--Interior Stuff -->
+
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffDashboard"
+				Offset="(2.022; 2.25; 0.165)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffAirfreshener"
+				Offset="(1.83; 2.88; 0.35)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>			
+	</GameData>
+<AutomaticIK>
+		<IKBone ModelFrame="BoneDamperRT1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneDamperRB1"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	
+	  <IKBone ModelFrame="BoneDamperLT1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneDamperLB1"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	
+	    <IKBone ModelFrame="BoneDamperRT2" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneDamperRB2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+        <IKBone ModelFrame="BoneDamperLT2" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneDamperLB2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+        <IKBone ModelFrame="BoneFrontS1" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BoneFrontS2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+		<IKBone ModelFrame="BoneFrontS3" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BoneFrontS4"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	
+       <IKBone ModelFrame="BoneFrontT1" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BoneFrontT2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+		<IKBone ModelFrame="BoneFrontT3" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BoneFrontT4"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+	</AutomaticIK>
+</Truck>

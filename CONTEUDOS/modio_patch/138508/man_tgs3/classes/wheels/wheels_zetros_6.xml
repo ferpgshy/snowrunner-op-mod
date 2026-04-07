@@ -1,0 +1,92 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Mudtires _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Mudtires>
+		<Chains _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Chains> 		
+	</TruckTire>
+</_templates>
+
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="2.0"
+	WidthRear="2.0"
+>
+	<TruckTires>		
+		<TruckTire
+			_template="Mudtires"
+			Mesh="wheels/tire_zetros_bel"
+			Name="offroad_3"
+			RearMassScale="2"
+			Mass="280"	
+		>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MM2 2800 R20 XZL" UiName="MM2 2800 R20 XZL" />
+			</GameData>	
+			<WheelFriction
+				BodyFriction="2.4"
+				BodyFrictionAsphalt="2.1"
+				SubstanceFriction="2.4"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			_template="Mudtires"
+			Mesh="wheels/tire_zetros_kmz"
+			Name="offroad_4"
+			RearMassScale="2"
+			Mass="280"	
+		>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MM2 2700 R20 XZL" UiName="MM2 2700 R20 XZL" />
+			</GameData>	
+			<WheelFriction
+				BodyFriction="2.4"
+				BodyFrictionAsphalt="2.1"
+				SubstanceFriction="2.4"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>		
+	
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_zetros_bel" Name="op_z6_offroad_3_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_zetros_kmz" Name="op_z6_offroad_4_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>		
+		<TruckRim Mesh="wheels/rim_zetros_bel" Name="rim_12">
+			<GameData>
+				<UiDesc UiDesc="Zetros Default Rim" UiName="Zetros Default Rim" />
+			</GameData>
+		</TruckRim>		
+	</TruckRims>
+</TruckWheels>

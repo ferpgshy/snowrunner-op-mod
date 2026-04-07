@@ -1,0 +1,93 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Mudtires _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Mudtires>
+		<Chains _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Chains>		
+	</TruckTire>
+</_templates>
+
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="2.0"
+	WidthRear="2.0"
+>
+	<TruckTires>		
+		<TruckTire
+			_template="Mudtires"
+			Mesh="wheels/tire_tx_kmz_single_1"
+			Name="offroad_2"
+			RearMassScale="2"
+			Mass="280"	
+		>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="M2 2100 XXL" UiName="M2 2100 XXL"/>
+			</GameData>	
+			<WheelFriction
+				BodyFriction="2.4"
+				BodyFrictionAsphalt="2.2"
+				SubstanceFriction="2.4"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			_template="Chains"		
+			Mesh="wheels/tire_tx_kmz_single_chain_1"
+			Name="chains_2"
+			RearMassScale="2"
+			Mass="280"				
+		>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="M1 2100 XXL Winter" UiName="M1 2100 XXL Winter" />
+			</GameData>
+			<WheelFriction
+				BodyFriction="2.4"
+				BodyFrictionAsphalt="2.2"
+				SubstanceFriction="2.4"
+				IsIgnoreIce="True"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+		</TruckTire>		
+	
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_tx_kmz_single_1" Name="op_tkmz_offroad_2_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Chains" Mesh="wheels/tire_tx_kmz_single_chain_1" Name="op_tkmz_chains_2_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>	
+		<TruckRim Mesh="wheels/rim_tx_michelin_single_1" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="M1 Rim" UiName="M1 Rim"/>
+			</GameData>
+		</TruckRim>		
+	</TruckRims>
+</TruckWheels>

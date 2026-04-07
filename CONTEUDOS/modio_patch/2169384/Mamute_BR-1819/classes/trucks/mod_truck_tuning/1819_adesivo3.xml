@@ -1,0 +1,19 @@
+<TruckAddon>
+	<Snorkel Origin="(0.850; 10.0; -0.864)" />
+	<PhysicsModel Mesh="trucks/mod_truck_tuning/1819_adesivo3" />
+	<GameData
+		CameraPreset="hoods"
+		Category="miscellenious"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_STICKER_1"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_STICKER_1"
+		/>
+		<InstallSocket Type="1819_adesivo3" />
+	</GameData>
+</TruckAddon>

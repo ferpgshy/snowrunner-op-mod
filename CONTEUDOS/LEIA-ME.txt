@@ -2,29 +2,31 @@
   SNOWRUNNER OP MOD - COMO INSTALAR
 ============================================================
 
-PASSO 1 - initial.pak:
-  Copie o arquivo 'initial.pak' para:
-  C:\Program Files (x86)\Steam\steamapps\common\SnowRunner\preload\paks\client\
-  (substitua o que ja tem la)
+Execute INSTALAR.bat como administrador.
+Ele faz tudo automaticamente.
 
-PASSO 2 - Mods (.modio):
-  Copie a PASTA '.modio' para:
-  C:\Users\SEU_USUARIO\Documents\My Games\SnowRunner\base\Mods\
-  (substitua/mescle com a que ja tem la)
+OU instale manualmente:
+
+PASSO 1 - initial.pak:
+  Copie 'initial.pak' para:
+  C:\Program Files (x86)\Steam\steamapps\common\SnowRunner\preload\paks\client\
+
+PASSO 2 - Mods modio (pasta modio_patch):
+  Para cada subpasta em modio_patch/, injete os XMLs no .pak correspondente
+  usando WinRAR: WinRAR a -afzip -o+ -r <pak_path> *
 
   IMPORTANTE: Voce precisa estar inscrito nos mesmos mods no mod.io!
-  Se nao estiver, os mods nao vao aparecer no jogo.
 
 ============================================================
-  O QUE CADA MOD FAZ
+  O QUE O MOD FAZ
 ============================================================
 
-MOTORES: 20 opcoes (ECO 80K ate INFINITO 5M)
-CAMBIOS: 5 opcoes, 12 marchas, AWD gratis, sem freio motor
-SUSPENSOES: 13 opcoes ATIVAS (sobe/desce), de STOCK+ ate DEUS
-GUINCHOS: 5 opcoes (30m ate 100m, forca 3x ate 20x)
+MOTORES: 7 opcoes (700hp ate 3000hp)
+CAMBIOS: 3 opcoes (4, 5 e 8 marchas), AWD gratis, indestrutivel
+SUSPENSOES: 13 opcoes, de STOCK+ ate DEUS
+GUINCHOS: 100m, forca 20x, funciona sem motor
 PNEUS: DEUS em cada modelo (grip 15, indestrutivel, 2.5x largura)
-TRUCKS: DiffLock sempre ativo, Snorkel alto, centro de massa baixo
+TRUCKS: DiffLock sempre ativo, Snorkel alto
 RODAS: 3 escalas extras por veiculo (1.3x, 1.45x, 1.6x)
 
 Divirta-se!

@@ -1,0 +1,26 @@
+<TruckAddon>
+
+	<Snorkel Origin="(0.873; 10.0; -0.87)" />
+
+	<PhysicsModel AcceptVisualDamage="false" Mesh="trucks/TRX_Parts/addon_Snorkel">
+			<Body ImpactType="Truck" Mass="5" ModelFrame="BoneAddon_cdt" >
+			<Constraint Type="Rigid" />
+			</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="SNORKEL_1"
+		Category="OFF-ROAD PARTS & MISC"
+		IsCustomizable="true"
+		Price="680"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc=""
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Snorkel: Fender Mount"
+		/>
+		<InstallSocket Type="Snorkel_TRX" />
+	</GameData>
+</TruckAddon>

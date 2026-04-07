@@ -1,0 +1,45 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad _template="Heavy" mass="1550" >
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Soft" />
+		</Offroad>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="999999" Radius="1" Width="2.795">
+	<TruckTires>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_medium_chains_all_double" Name="chains_2">
+			<WheelFriction _template="Chains" />
+			<GameData
+				Price="6800"
+				UnlockByExploration="false"
+				UnlockByRank="14"
+			>
+				<UiDesc UiDesc="UI_TIRE_CHAINS_DESC" UiName="UI_TIRE_HEAVY_CHAINS_DOUBLE_1_NAME" />
+			</GameData>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_medium_chains_all_double" Name="op_logpolew_chains_2_god">
+			<WheelFriction _template="Chains" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_medium_highway_allterrain_double_3" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_OFFROAD_DOUBLE_1_DESC" UiName="UI_RIM_HEAVY_OFFROAD_DOUBLE_1_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_heavy_offroad_double_p16" Name="rim_14">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_OFFROAD_DOUBLE_P16_DESC" UiName="UI_RIM_HEAVY_OFFROAD_DOUBLE_P16_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

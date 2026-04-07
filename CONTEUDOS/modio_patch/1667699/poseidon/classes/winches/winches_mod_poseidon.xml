@@ -1,0 +1,64 @@
+<WinchVariants>
+	<Winch
+		Name="w_mod_poseidon_default"
+		Length="40"
+		StrengthMult="1.5"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="0"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="Offline Winch"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Tow Strap"
+			/>
+		</GameData>
+	</Winch>
+	<Winch
+		Name="w_mod_poseidon_longstrap"
+		Length="160"
+		StrengthMult="8.5"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="20"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="Offline Winch"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Long Tow Strap"
+			/>
+		</GameData>
+	</Winch>
+
+	<Winch
+		Name="op_winch_deus"
+		Length="100"
+		StrengthMult="20.0"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="UI_WINCH_DEUS_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_WINCH_DEUS_NAME"
+			/>
+		</GameData>
+	</Winch>
+</WinchVariants>

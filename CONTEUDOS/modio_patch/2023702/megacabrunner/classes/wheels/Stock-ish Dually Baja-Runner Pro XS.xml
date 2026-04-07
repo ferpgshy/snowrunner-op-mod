@@ -1,0 +1,58 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.475"
+	WidthRear="3.875"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_BajaProXS_Dually"
+			Name="Stock-ish Dually Baja-Runner Pro XS"
+			RearMassScale="2"
+			Mass="400"
+		>
+			<GameData
+				Price="3000"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="True Specs out of 10: DIRT 2.3 - MUD 3 - PAVEMENT 1.8 - DEFAULT DAMAGE" UiName="Stock-ish: Dually Baja-Runner Pro XS" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.05" SoftForceScale="0.11" />
+			<WheelFriction
+				BodyFriction="2.3"
+				BodyFrictionAsphalt="1.8"
+				SubstanceFriction="3.0"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_BajaProXS_Dually" Name="op_Stock-is_Stock_ish_Dually_Baja_Runner_Pro_XS_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+
+		<TruckRim Mesh="wheels/wheels_hutchinson_Beadlock_Dually" Name="Militant Recovery Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Militant Recovery Beadlock" UiName="Militant Recovery Beadlock" />
+			</GameData>
+		</TruckRim>
+		
+		<TruckRim Mesh="wheels/wheels_BlackRhino_Arsenal_Dually" Name="Arsenal Dually">
+			<GameData>
+				<UiDesc UiDesc="Arsenal Dually" UiName="Arsenal Dually" />
+			</GameData>
+		</TruckRim>
+		
+	</TruckRims>
+</TruckWheels>

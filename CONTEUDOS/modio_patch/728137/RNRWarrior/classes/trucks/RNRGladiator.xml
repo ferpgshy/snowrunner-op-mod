@@ -1,0 +1,792 @@
+<_templates Include="trucks" />
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.025"
+		DiffLockType="Always"
+		EngineIconMesh="env/engine_small"
+		EngineIconScale="1.15"
+		EngineStartDelay="1.2"
+		ExhaustStartTime="1.6"
+		FuelCapacity="120"
+		Responsiveness="1"
+		SteerSpeed="0.038"
+		TruckImage="modScoutmchr"
+		TruckType="SCOUT"
+	>
+		<WinchUpgradeSocket Default="w_mod_rexxy_wj_offline" IsUpgradable="true" Type="winches_RNRGladiator" />
+		<Wheels
+			DefaultRim="hardrock_rims"
+			DefaultTire="offroad_duratrac"
+			DefaultWheelType="wheels_duratracs"
+		>
+			<Wheel
+				Location="front"
+				SteeringAngle="45"
+				SteeringCastor="2"
+				Torque="default"
+				Pos="(1.855; 0.758; 0.978)"
+			/>
+			<Wheel
+				Location="front"
+				RightSide="true"
+				SteeringAngle="45"
+				SteeringCastor="2"
+				Torque="default"
+				Pos="(1.855; 0.758; 0.978)"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+				Pos="(-1.327; 0.758; 0.978)"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="rear"
+				RightSide="true"
+				Torque="default"
+				Pos="(-1.327; 0.758; 0.978)"
+			/>
+		</Wheels>
+		<SuspensionSocket
+			Default="suspension_stock"
+			HardpointY="0.424"
+			Type="s_rnrgladiator"
+			MaxWheelRadiusWithoutSuspension="79"
+		/>
+		<SuspensionSocket
+			Default="suspension_raised"
+			HardpointY="0.424"
+			Type="s_rnrgladiator"
+			MaxWheelRadiusWithoutSuspension="79"
+		/>
+		<SuspensionSocket
+			Default="suspension_low_cog"
+			HardpointY="0.424"
+			Type="s_rnrgladiator"
+			MaxWheelRadiusWithoutSuspension="79"
+		/>
+		<SuspensionSocket
+			Default="suspension_tow_tuned"
+			HardpointY="0.424"
+			Type="s_rnrgladiator"
+			MaxWheelRadiusWithoutSuspension="79"
+		/>	
+		<SuspensionSocket
+			Default="suspension_active"
+			HardpointY="0.424"
+			Type="s_rnrgladiator"
+			MaxWheelRadiusWithoutSuspension="79"
+		/>
+		<SteeringWheel Frame="BoneSteeringWheel" />
+		<SteeringRack
+			Frame="FrontRack"
+			FrameSteerLeft="FrontLeft"
+			FrameSteerRight="FrontRight"
+			RackHalfSizeZ="0.1"
+		/>
+		<Steam Origin="(1.241; 0.866; 0)" />
+		<SoundsWheels>
+			<WheelWater Sound="surfaces/surf_water_loop" />
+			<WheelSteer Sound="wheels/wheel_steer" />
+			<WheelSpinning Sound="wheels/wheel_spining_loop" />
+			<WheelMud Sound="surfaces/hit/hit_mud_rnd" />
+			<WheelExtrude Sound="" />
+			<WheelDamaged Sound="wheels/wheel_broken_rotate_loop" />
+			<WheelChains Sound="wheels/wheel_tires_chain_loop" />
+			<WaterHit Sound="trucks/common/truck_hit_water_rnd_set/truck_hit_water_rnd" />
+		</SoundsWheels>
+		<SoundsDamage>
+			<Wheels
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Suspension
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Gearbox
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<FuelTank
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Engine
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Critical
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_crit_rnd_set/truck_damage_crit_rnd"
+				VolumeMinMax="(0.5;1.0)"
+			/>
+			<Common
+				DamageAmount="(0.01;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_small_hard_rnd_set/truck_damage_small_hard_rnd"
+				VolumeMinMax="(0.2;1.0)"
+			/>
+		</SoundsDamage>
+		<Sounds
+			DisableReversePitch="true"
+			EngineHeavyVolume="0.8"
+			MinDist="8.0"
+			Origin="(1.58; 1.596; 0)"
+			MaxDist="200"
+		>
+			<Handbrake Sound="trucks/tuz_166/tuz_166_handbrake_on" />
+			<Gear Sound="trucks/tuz_166/tuz_166_gear_shift" />
+			<DiffLock Sound="trucks/tuz_166/tuz_166_diff_lock" />
+			<Reverse Sound="" />
+			<BrakePull Sound="" />
+			<BrakeRelease Sound="trucks/tuz_166/tuz_166_brake_release" />
+			<BrakesSqueal Sound="trucks/tuz_166/tuz_166_brakes_squeal" />
+			<Honk Sound="trucks/Hellcat/bruhGetoutofMyFiles" />
+
+			<EngineRev Sound="trucks/jeep_wj_sounds/risky_4.7_rev" />
+			<EngineAccel Sound="trucks\Hellcat\accel" />
+			<EngineStart Sound="trucks/Hellcat/start" />
+			<EngineStop Sound="trucks/Hellcat/stop" />
+			<EngineIdle Sound="trucks/Hellcat/idle" />
+			<EngineIdle_2d Sound="trucks/Hellcat/idle" IsSound2D="true" />
+			<EngineLow Sound="trucks/Hellcat/low" />
+			<EngineLow_2d Sound="trucks/Hellcat/low" IsSound2D="true" />
+			<EngineHigh Sound="trucks/Hellcat/high" />
+			<EngineHigh_2d Sound="trucks/Hellcat/high" IsSound2D="true" />
+			<EngineHeavy Sound="trucks/Hellcat/heavy" />
+			<EngineHeavy_2d Sound="trucks/Hellcat/heavy" IsSound2D="true" />
+
+			<HeadLight Sound="trucks/common/truck_headlight_switch" />
+			<HandbrakeOff Sound="trucks/common/truck_handbrake_switch_off" />
+			<AWD Sound="trucks/common/truck_awd_rnd_set/truck_awd_rnd" />
+			<ExhaustShot Sound="trucks/common/truck_exhaust_shot_rnd_set/truck_exhaust_shot_rnd" />
+			<ChassisStress Sound="trucks/common/truck_stress_small_rnd_set/truck_stress_small_rnd" />
+			<AbruptStop Sound="trucks/common/truck_swing_small_rnd_set/truck_swing_small_rnd" />
+			<WaterGurgle Sound="trucks/common/truck_exhaust_water_gurgle_loop" />
+			<WaterDropping Sound="" />
+			<EngineStalling Sound="trucks/common/truck_engine_stalling" />
+			<DamagedEngine Sound="trucks/common/truck_engine_damaged" />
+			<Cockpit IsSound2D="true" Sound="trucks/common/truck_cockpit_loop" />
+		</Sounds>
+		<OcclusionMap
+			HalfSizeZ="1.4"
+			Texture="trucks/occlusion/chassis_small__s_d_a.tga"
+			MinX="-2.2"
+			MaxX="2.2"
+		/>
+		<GearboxSocket Default="RNRGladiatorgearbox1" Type="gearboxes_RNRGladiator" />
+		<FuelTank DamageCapacity="5000" />
+		<EngineSocket Default="RNRGladiatorengine1" Type="e_RNRGladiator" />
+		<Driver AnimationSet="Scout" Pos="(0.347; 1.538; 0.357)" SteeringWheelPos="(0.703; 1.933; 0.357)" />
+		<Damage
+			Capacity="2300"
+			SensationMin="(-0.8; 1.2; -0.7)"
+			SensationMax="(0.6; 1.8; 0.7)"
+		>
+			<DamageArea
+				Type="Engine"
+				Min="(0.6; 0.45; -0.4)"
+				Max="(1.8; 1.3; 0.4)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<DamageArea
+				Type="FuelTank"
+				Min="(-1.85; 0.4; -0.8)"
+				Max="(-0.7; 0.9; 0.8)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</Damage>
+		<CompatibleWheels Scale="0.47" Type="wheels_duratracs" />
+		<CompatibleWheels Scale="0.47" Type="wheels_pitbull_rockers" />
+		<CompatibleWheels Scale="0.47" Type="wheels_nitto_terra_grapplers" />
+		<CompatibleWheels Scale="0.47" Type="wheels_baja_mtz" />
+		
+		<CompatibleWheels Scale="0.51" Type="wheels_duratracs" />
+		<CompatibleWheels Scale="0.51" Type="wheels_pitbull_rockers" />
+		<CompatibleWheels Scale="0.51" Type="wheels_nitto_terra_grapplers" />
+		<CompatibleWheels Scale="0.51" Type="wheels_baja_mtz" />
+		<CompatibleWheels Scale="0.611" Type="wheels_duratracs" />
+		<CompatibleWheels Scale="0.681" Type="wheels_duratracs" />
+		<CompatibleWheels Scale="0.752" Type="wheels_duratracs" />
+		<CompatibleWheels Scale="0.611" Type="wheels_pitbull_rockers" />
+		<CompatibleWheels Scale="0.681" Type="wheels_pitbull_rockers" />
+		<CompatibleWheels Scale="0.752" Type="wheels_pitbull_rockers" />
+		<CompatibleWheels Scale="0.611" Type="wheels_nitto_terra_grapplers" />
+		<CompatibleWheels Scale="0.681" Type="wheels_nitto_terra_grapplers" />
+		<CompatibleWheels Scale="0.752" Type="wheels_nitto_terra_grapplers" />
+		<CompatibleWheels Scale="0.611" Type="wheels_baja_mtz" />
+		<CompatibleWheels Scale="0.681" Type="wheels_baja_mtz" />
+		<CompatibleWheels Scale="0.752" Type="wheels_baja_mtz" />
+		<CompatibleWheels Scale="0.663" Type="wheels_duratracs" />
+		<CompatibleWheels Scale="0.739" Type="wheels_duratracs" />
+		<CompatibleWheels Scale="0.816" Type="wheels_duratracs" />
+		<CompatibleWheels Scale="0.663" Type="wheels_pitbull_rockers" />
+		<CompatibleWheels Scale="0.739" Type="wheels_pitbull_rockers" />
+		<CompatibleWheels Scale="0.816" Type="wheels_pitbull_rockers" />
+		<CompatibleWheels Scale="0.663" Type="wheels_nitto_terra_grapplers" />
+		<CompatibleWheels Scale="0.739" Type="wheels_nitto_terra_grapplers" />
+		<CompatibleWheels Scale="0.816" Type="wheels_nitto_terra_grapplers" />
+		<CompatibleWheels Scale="0.663" Type="wheels_baja_mtz" />
+		<CompatibleWheels Scale="0.739" Type="wheels_baja_mtz" />
+		<CompatibleWheels Scale="0.816" Type="wheels_baja_mtz" />
+		<Camera Center="(0.34; 1.752; 0)" RadiusMultiplier="0.4">
+			<Cockpit
+				LimitsHor="(-2.8; 2.4)"
+				LimitsVer="(-0.32; 0.2)"
+				ViewDir="(1; -0.05; 0)"
+				ZoomViewDirOffset="(0; -0.05; 0)"
+				ViewPos="(0.156; 2.227; 0.365)"
+				ZoomViewPosOffset="(0.2; 0; 0)"
+			>
+				<Rear
+					HorTransitionEnd="-1.2"
+					HorTransitionStart="-1.1"
+					LimitsVer="(-1.2; 0.2)"
+					RollAngle="-15"
+					ViewDir="(1; -0.05; 0)"
+					ViewPosOffset="(0.2; -0.1; 0.55)"
+				/>
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="AxleFront" />
+			<Axle Frame="AxleRear" />
+		</Axles>
+	</TruckData>
+	<Snorkel Origin="(2.021; 10.0; 0.514)" />
+	<PhysicsModel Mesh="trucks/RNRGladiator">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(0.139; -0.712; 0)"
+			ImpactType="Truck"
+			Mass="3700"
+			NetSync="pv"
+		>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<ReverseSignals>
+			<Light
+				AttenEnd="7"
+				Color="(255; 255; 255)"
+				Dir="(-1; -0.2; 0)"
+				InnerCone="120"
+				OuterCone="160"
+				Pos="(-2.9; 1.635; 0.775)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Light
+				AttenEnd="7"
+				Color="(255; 255; 255)"
+				Dir="(-1; -0.2; 0)"
+				InnerCone="120"
+				OuterCone="160"
+				Pos="(-2.273; 1.783; -0.775)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1"
+				Color="g(255; 255; 255) x 0.5"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.1"
+				SizeMultAtDay="0.1"
+				Pos="(-2.396; 1.763; -0.769)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1"
+				Color="g(255; 255; 255) x 0.5"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.1"
+				SizeMultAtDay="0.1"
+				Pos="(-2.396; 1.763; 0.769)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1"
+				Color="g(255; 255; 255) x 0.5"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.1"
+				SizeMultAtDay="0.1"
+				Pos="(-2.396; 1.615; 0.769)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1"
+				Color="g(255; 255; 255) x 0.5"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.1"
+				SizeMultAtDay="0.1"
+				Pos="(-2.396; 1.615; -0.769)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</ReverseSignals>
+		<StopSignals>
+			<Light
+				AttenEnd="7"
+				Color="(200; 1; 1)"
+				Dir="(-1; -0.2; 0)"
+				InnerCone="120"
+				OuterCone="160"
+				Pos="(-2.9; 1.635; 0.775)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Light
+				AttenEnd="7"
+				Color="(200; 1; 1)"
+				Dir="(-1; -0.2; 0)"
+				InnerCone="120"
+				OuterCone="160"
+				Pos="(-2.273; 1.783; -0.775)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="2.7"
+				Color="g(255; 1; 1) x 0.1"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="1"
+				SizeMultAtDay="0.1"
+				Pos="(-2.434; 1.745; -0.713)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="2.7"
+				Color="g(255; 1; 1) x 0.1"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="1"
+				SizeMultAtDay="0.1"
+				Pos="(-2.434; 1.745; 0.713)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="2.7"
+				Color="g(255; 1; 1) x 0.1"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="1"
+				SizeMultAtDay="0.1"
+				Pos="(-2.434; 1.637; 0.713)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="2.7"
+				Color="g(255; 1; 1) x 0.1"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="1"
+				SizeMultAtDay="0.1"
+				Pos="(-2.434; 1.637; -0.713)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="2.7"
+				Color="g(255; 1; 1) x 0.1"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="1"
+				SizeMultAtDay="0.1"
+				Pos="(-2.434; 1.691; -0.713)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="2.7"
+				Color="g(255; 1; 1) x 0.1"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="1"
+				SizeMultAtDay="0.1"
+				Pos="(-2.434; 1.691; 0.713)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</StopSignals>
+		<Ignition>
+			<Light
+				AttenEnd="10"
+				Color="g(255; 255; 255) x 2"
+				Dir="(1; -0.3; 0)"
+				InnerCone="20"
+				OuterCone="120"
+				Pos="(2.634; 1.588; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Light
+				AttenEnd="2"
+				Color="(255; 169; 148) x 0.1"
+				Dir="(-1; -0.2; 0)"
+				InnerCone="120"
+				OuterCone="160"
+				Pos="(-2.273; 1.783; 0.713)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Light
+				AttenEnd="2"
+				Color="(255; 169; 148) x 0.1"
+				Dir="(-1; -0.2; 0)"
+				InnerCone="120"
+				OuterCone="160"
+				Pos="(-2.273; 1.783; -0.713)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</Ignition>
+		<HeadLight>
+			<Model
+				Dir="(1; -0.1; 0)"
+				Mesh="env/light_ray"
+				Org="(2.179; 1.689; -0.445)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Model
+				Dir="(1; -0.1; 0)"
+				Mesh="env/light_ray"
+				Org="(2.179; 1.689; 0.445)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.3"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.3"
+				SizeMultAtDay="0.5"
+				Pos="(2.179; 1.689; -0.445)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.3"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.3"
+				SizeMultAtDay="0.5"
+				Pos="(2.179; 1.689; 0.445)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</HeadLight>
+	</ModelAttachments>
+	<Landmark Mesh="landmarks/tuz_166_lmk" MinScale="1.8" MaxScale="3.8" />
+	<HeadLight
+		AttenEnd="55"
+		AttenStart="-20"
+		Color="g(255; 255; 255) x 6.5"
+		Dir="(1; -0.2; 0)"
+		InnerCone="0"
+		OuterCone="80"
+		Pos="(1.707; 0.928; 0)"
+		ParentFrame="BoneChassis_cdt"
+	/>
+	<GameData
+		Country="US"
+		Price="9000"
+		Recallable="true"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(0; 1.222; -0.793)" />
+		<WinchSocket Pos="(0; 1.222; 0.793)" />
+		<WinchSocket Pos="(-2.522; 1.232; 0)" />
+		<WinchSocket Pos="(2.521; 1.349; 0)" />
+		<WinchSocket Pos="(-2.93; 1.322; 0)" />
+		<WinchSocket Pos="(0.2; 2.442; 0)" />
+		<UiDesc
+			UiDesc="R&R Customs Warrior"
+			UiIcon30x30="scoutVehicleImg30"
+			UiIcon328x458="shopImgRNRGladiator"
+			UiIcon40x40="scoutVehicleImg"
+			UiIconLogo="randrcustoms"
+			UiName="R&R Customs Warrior"
+		/>
+		<CustomizationCameras>
+			<CameraPos
+				FOV="32.0"
+				Name="addon_1"
+				InterestPosition="(1.036; 1.692; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-6.923; 2.071; 10.147)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="addon_2"
+				InterestPosition="(4.991; 1.77; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(10.328; 3.173; 3.632)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="side_r"
+				InterestPosition="(4.990; 0.759; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.402; 2.059; -3.713)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="roof"
+				InterestPosition="(5.474; 0.759; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(10.148; 3.473; -2.51)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="side_l"
+				InterestPosition="(5.944; 0.759; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(9.22; 3.041; 3.401)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="hoods"
+				InterestPosition="(5.735; 0.976; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(10.78; 1.486; -3.957)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="wheels"
+				InterestPosition="(6.02; 0.191; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.421; 1.608; -3.51)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="default"
+				InterestPosition="(5.735; 0.976; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(10.78; 1.486; -3.957)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="rear"
+				InterestPosition="(5.141; 0.956; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-0.112; 1.595; 3.721)"
+			/>
+			<CameraPos
+                FOV="32.0"
+                InterestPosition="(5.420; 1.420; 1.690)"
+                Interior="true"
+                Name="bubble_head"
+                Position="(4.420; 2.420; -0.690)"
+            />
+			<CameraPos
+                FOV="32.0"
+                InterestPosition="(5.420; 1.420; 1.690)"
+                Interior="true"
+                Name="sticker"
+                Position="(4.420; 2.420; -0.690)"
+            />
+			<CameraPos
+                FOV="32.0"
+                InterestPosition="(5.420; 1.420; 1.10)"
+                Interior="true"
+                Name="sticker_1"
+                Position="(4.420; 2.420; -0.690)"
+            />
+			<CameraPos
+                FOV="32.0"
+                InterestPosition="(5.420; 1.420; 1.690)"
+                Interior="true"
+                Name="mirror_mount"
+                Position="(4.420; 2.420; -0.690)"
+            />
+		</CustomizationCameras>
+		<CraneSocket Pos="(1.859; 0.738; -0.381)" />
+		<CraneSocket Pos="(1.859; 0.738; 0.381)" />
+		<CraneSocket Pos="(-1.872; 0.727; 0)" />
+		<CraneSocket Pos="(-0.119; 0.503; 0.854)" />
+		<CraneSocket Pos="(-0.119; 0.503; -0.854)" />
+		<AddonSockets>
+			<Socket InCockpit="true" Names="BobbleHeadRNR" Offset="(0.946; 2.047; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="AirFreshenerRNR" Offset="(0.776; 2.239; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="stickers" Offset="(0; 0; 0)" ParentFrame="BoneHood_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="snorkels" Offset="(0; 0; 0)" />
+			<Socket Names="antennas" Offset="(0; 0; 0)"/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="hood_bodycolor">
+			<Socket Names="hood_bodycolor" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="grill_stock_default">
+			<Socket Names="grill_default" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="fenders_stock_default" ParentFrame="BoneFenders_cdt">
+				<Socket Names="fenders_stock" Offset="(0; 0; 0)" />
+			</AddonSockets>
+		<AddonSockets>
+			<Socket Names="light_covers" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="RNRGladiator_doors" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="cans_bedrear" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="cans_rackmini" Offset="(0; 0; 0)" NamesBlock="bag_rackmini" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="toolbox_topbox" Offset="(0; 0; 0)" NamesBlock="bag_rackmini" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="tops" Offset="(0; 0; 0)" />
+			<Socket Names="tube_rollcage" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="bed_cap" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="top_left" Offset="(0; 0; 0)" />
+		</AddonSockets>		
+		<AddonSockets>
+			<Socket Names="top_right" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="hitch_pintel" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="racks" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="rackcanopy" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="top_tiremount" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="spares" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="bed_tiremount" Offset="(0; 0; 0)">
+				<AddonsShift Offset="(-0.3; 0.0; 0)" Types="cans_bedrear" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="spares_bed" Offset="(0; 0; 0)">
+			<AddonsShift Offset="(-0.3; 0.0; 0)" Types="cans_bedrear" />
+			<AddonsShift Offset="(0; -0.25; 0)" Types="top_bedcap" />
+			<AddonsShift Offset="(0; -0.25; 0)" Types="top_bedcapblack" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="bag_rackmini" Offset="(0; 0; 0)" />
+			<Socket Names="bag_racklong" Offset="(0; 0; 0)" />
+			<Socket Names="kayiak" Offset="(0; 0; 0)" />
+			<Socket Names="tent" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="hitch_gooseneck" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScautTrailer" Offset="(-2.73; 1.156; 0)" />
+			<Socket Names="Trailer" Offset="(-2.73; 1.156; 0)" />
+			<Socket Names="trailer_wedge" Offset="(-1.514; 1.687; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="bed_cap" />
+			<Socket Names="trailer_flat" Offset="(-1.514; 1.687; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="bed_cap" />
+		</AddonSockets>
+	</GameData>
+	<AutomaticIK>
+		<IKBone ModelFrame="FrontRightIKBoneTop" ParentFrame="BoneChassis_cdt">
+			<IKJoint Type="Hinge2" AxisLocal="(0;1;0)" />
+			<IKBone
+                ModelFrame="FrontRightIKBoneBottom"
+                AttachToFrame="AxleFront"
+                AttachOffset="(0; 0; 0)"
+            >
+				<IKJoint Type="Slider" AxisLocal="(0;1;0)" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="FrontLeftIKBoneTop" ParentFrame="BoneChassis_cdt">
+			<IKJoint Type="Hinge2" AxisLocal="(0;1;0)" />
+			<IKBone
+                ModelFrame="FrontLeftIKBoneBottom"
+                AttachToFrame="AxleFront"
+                AttachOffset="(0; 0; 0)"
+            >
+				<IKJoint Type="Slider" AxisLocal="(0;1;0)" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="RearRightIKBoneTop" ParentFrame="BoneChassis_cdt">
+			<IKJoint Type="Hinge2" AxisLocal="(0;1;0)" />
+			<IKBone
+                ModelFrame="RearRightIKBoneBottom"
+                AttachToFrame="AxleRear"
+                AttachOffset="(0; 0; 0)"
+            >
+				<IKJoint Type="Slider" AxisLocal="(0;1;0)" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="RearLeftIKBoneTop" ParentFrame="BoneChassis_cdt">
+			<IKJoint Type="Hinge2" AxisLocal="(0;1;0)" />
+			<IKBone
+                ModelFrame="RearLeftIKBoneBottom"
+                AttachToFrame="AxleRear"
+                AttachOffset="(0; 0; 0)"
+            >
+				<IKJoint Type="Slider" AxisLocal="(0;1;0)" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>

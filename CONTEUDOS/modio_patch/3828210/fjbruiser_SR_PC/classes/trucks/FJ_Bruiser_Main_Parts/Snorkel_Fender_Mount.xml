@@ -1,0 +1,28 @@
+<TruckAddon>
+
+	<Snorkel Origin="(0.60; 10.0; -0.75)" />
+
+	<PhysicsModel AcceptVisualDamage="false" Mesh="trucks/Bruiser_Parts/addon_Snorkel">
+			<Body ImpactType="Truck" Mass="5" ModelFrame="BoneAddon_cdt" >
+			<Constraint Type="Rigid" />
+			</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="FRONT_DRIVER_SIDE_1"
+		Category="HOOD - ENGINE - SNORKEL"
+		IsCustomizable="true"
+		Price="480"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="Must install the NAZCAR Air Cleaner first. This is a 2-piece setup. Not compatible with the Bruiser Air Intake or Fender Emblems. Remove the hood to see the setup."
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Snorkel: Safari"
+		/>
+		<InstallSocket Type="Snorkel_Fender_FJBruiser" />	
+		<RequiredAddon Types="Engine_Air_Cleaner" />
+
+	</GameData>
+</TruckAddon>

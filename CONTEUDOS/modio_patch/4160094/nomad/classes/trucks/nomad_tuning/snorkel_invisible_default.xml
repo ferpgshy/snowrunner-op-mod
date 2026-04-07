@@ -1,0 +1,19 @@
+<TruckAddon>
+	<Snorkel Origin="(1.977; 10.0; 0)" />
+	<PhysicsModel Mesh="trucks/addons/invisible_mesh" />
+	<GameData
+		CameraPreset="snorkel2"
+		Category="BODY TUNNING"
+		Price="0"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="At Engine intake position / realistic"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Snorkel: Invisible 1"
+		/>
+		<InstallSocket Type="NomadSnorkel_invis" />
+	</GameData>
+</TruckAddon>

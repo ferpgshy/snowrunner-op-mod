@@ -1,0 +1,155 @@
+﻿<_templates Include="trucks">
+	<Wheel>
+		<TrailerWheelFirm
+			SuspensionHeight="0.01"
+			SuspensionStrength="0.5"
+			ConnectedToHandbrake="true"
+			Torque="default"
+			Type="wheels_pitbull_rockers"
+			SuspensionMin="-0.1"
+		/>
+	</Wheel>
+</_templates>
+<Truck Type="Trailer">
+	<TruckData
+		RepairsCapacity="1500"
+		WheelRepairsCapacity="8"
+	>
+		<RepairsHide>
+			<Mesh Frame="ToolBox" HideThreshold="0" />
+		</RepairsHide>
+		 <Wheels
+			 DefaultRim="decoy_rims"
+			 DefaultTire="offroad_trepador"
+			 DefaultWheelType="wheels_pitbull_rockers"
+		 >
+			<Wheel _template="TrailerWheelFirm" Pos="(-12.387; 0.855; 1.1)" />
+			<Wheel _template="TrailerWheelFirm" Pos="(-12.387; 0.855; 1.1)" RightSide="true"/>
+			<Wheel _template="TrailerWheelFirm" Pos="(-11.48; 0.855; 1.1)" />
+			<Wheel _template="TrailerWheelFirm" Pos="(-11.48; 0.855; 1.1)" RightSide="true"/>
+			<Wheel _template="TrailerWheelFirm" Pos="(-10.57; 0.855; 1.1)" />
+			<Wheel _template="TrailerWheelFirm" Pos="(-10.57; 0.855; 1.1)" RightSide="true"/>
+		</Wheels>
+		<OcclusionMap
+			HalfSizeZ="1.842"
+			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
+			MinX="-15"
+			MaxX="5"
+		/>
+		<Constraint
+			PlaneAxisLocal="(0; 1; 0)"
+			TwistAxisLocal="(0; 0; 1)"
+			Type="Ragdoll"
+			PlaneMin="-3"
+			PlaneMax="3"
+			TwistMin="-150"
+			TwistMax="150"
+			ConeMin="-160"
+			ConeMax="160"
+		/>
+		<Camera Center="(-7; 0; 0)" />
+		<CompatibleWheels Scale="0.445" Type="wheels_pitbull_rockers" />
+		<CompatibleWheels Scale="0.579" Type="wheels_pitbull_rockers" />
+		<CompatibleWheels Scale="0.645" Type="wheels_pitbull_rockers" />
+		<CompatibleWheels Scale="0.712" Type="wheels_pitbull_rockers" />
+		<Axles>
+			<Axle Frame="TrailerAxle1" />
+			<Axle Frame="TrailerAxle2" />
+			<Axle Frame="TrailerAxle3" />
+		</Axles>
+	</TruckData>
+	<PoweredConstraints>
+		<Group
+			Id="anchors_position"
+			ParentBodies="BoneRamp_cdt"
+			LocaleUid="UI_HUD_INTERATION_PANEL_ACTIVATE_ADDON"
+			ExternalUi="true"
+		>
+			<Constraint
+				InitialFix="true"
+				Name="Runner"
+				SpeedMult="0.5"
+				Position="128"
+			/>
+		</Group>
+		<Group Id="_trailer_foot">
+			<Constraint
+				InitialFix="true"
+				Name="Leg"
+				TerminalFix="true"
+				Position="1.1"
+            />
+		</Group>
+	</PoweredConstraints>
+	<PhysicsModel Mesh="trucks/dodge3500risky_tuning/trailer_wedge">
+		<Body
+			Friction="5"
+			CenterOfMassOffset="(-5.9; 1.227; 0)"
+			ImpactType="Truck"
+			Mass="2000"
+			ParentFrame="TrailerChassis_cdt"
+		>
+			<Body
+					Friction="5"
+					Mass="200"
+					ModelFrame="BoneRamp_cdt"
+					NoFoliageCollisions="true"
+					NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Name="Runner"
+					Type="Hinge"
+					MinLimit="0"
+					MaxLimit="120"
+				>
+					<Motor
+						Damping="1.0"
+						Force="25000"
+						Tau="0.04"
+						Type="Position"
+					/>
+				</Constraint>
+			</Body>
+			<Body
+					Collisions="Default"
+					ImpactType="Truck"
+					Mass="75"
+					ModelFrame="BoneLegL_cdt"
+            >
+				<Constraint
+                    AxisLocal="(0; 1; 0)"
+                    Name="Leg"
+                    Type="Prismatic"
+                    MinLimit="0"
+                    MaxLimit="0.7"
+                    AngularDamping="999999"
+                >
+					<Motor Damping="1" Force="150000" Type="Position" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/semitrailer_gooseneck_4_lmk" MinScale="1.2" MaxScale="2.2" />
+	<GameData ExcludedCargoTypes="" Price="2500">
+		<WinchSocket Pos="(-9.632; 1.304; -0.887)" />
+		<WinchSocket Pos="(-9.632; 1.304; 0.887)" />
+		<WinchSocket Pos="(-1.8; 1.62; 0)" />
+		<UiDesc
+			UiDesc="R&R Custom Built Wedge Trailer. Includes Repair."
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="R&R Wedge Trailer"
+		/>
+		<InstallSocket Type="trailer_wedge" Offset="(-1.8; 1.62; 0)" />
+		<WinchSocket Pos="(-9.632; 1.304; -0.887)" />
+		<WinchSocket Pos="(-9.632; 1.304; 0.887)" />
+		<WinchSocket Pos="(-1.8; 1.62; 0)" />
+		<AddonSlots
+			InitialOffset="(-3.034; 3.706; 0)"
+			OffsetStep="(-3.034; 3.706; 0)"
+			ParentFrames="TrailerChassis_cdt"
+			Quantity="1"
+		/>
+	</GameData>
+</Truck>

@@ -1,0 +1,110 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Mudtires _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Mudtires>
+		<Chains _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Chains> 		
+	</TruckTire>
+</_templates>
+			<!-- Tire giude iceberg
+			<Tire Types>
+				UI_TIRE_TYPE_OFFROAD_NAME
+				UI_TIRE_TYPE_MUDTIRES_NAME
+				UI_TIRE_TYPE_HIGHWAY_NAME
+				UI_TIRE_TYPE_CHAINS_NAME
+				UI_TIRE_TYPE_ALLTERRAIN_NAME			
+			</Tire Types>
+			<WheelSoftness>
+				<Stiff RadiusOffset="0.02" SoftForceScale="0.32" />
+				<Soft RadiusOffset="0.03" SoftForceScale="0.12" />
+				<ScoutStiff RadiusOffset="0.02" SoftForceScale="0.32" />
+				<ScoutSoft RadiusOffset="0.1" SoftForceScale="0.2" />
+				<ScoutDefault RadiusOffset="0.025" SoftForceScale="0.24" />
+				<Average RadiusOffset="0.025" SoftForceScale="0.24" />
+			</WheelSoftness>
+			<WheelTracks>
+				<TwoWheels TextureAlpha="tracks/two_wheels_alpha__s_d.tga" TextureHeight="tracks/two_wheels_height__s_d.tga" />
+				<Offroad TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+				<DefaultDouble TextureAlpha="tracks/default_double_alpha__s_d.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+				<Default TextureAlpha="tracks/default_alpha__s_d.tga" TextureHeight="tracks/default_height__s_d.tga" />
+			</WheelTracks>
+			-->	
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.587"
+	WidthRear="1.587"
+>
+	<TruckTires>		
+		<TruckTire
+			_template="Mudtires"
+			Mesh="wheels/M_Series_tire_1"
+			Name="tire_1"
+			RearMassScale="1"
+			Mass="300"	
+		>
+			<GameData
+				Price="3500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Vanilla [Dirt 3.0 / Asphalt 0.8 / Mud 1.5]" UiName="Vanilla: MM1 XL" />
+			</GameData>	
+			<WheelFriction
+				BodyFriction="3.0"
+				BodyFrictionAsphalt="0.8"
+				SubstanceFriction="1.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>	
+		<TruckTire
+			_template="Mudtires"
+			Mesh="wheels/M_Series_tire_1"
+			Name="tire_2"
+			RearMassScale="1"
+			Mass="300"	
+		>
+			<GameData
+				Price="3500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Tuned [Dirt 5.0 / Asphalt 7.0 / Mud 5.0]" UiName="Tuned: MM1 XL" />
+			</GameData>	
+			<WheelFriction
+				BodyFriction="5.0"
+				BodyFrictionAsphalt="7.0"
+				SubstanceFriction="5.0"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Mudtires" Mesh="wheels/M_Series_tire_1" Name="op_ms1_tire_1_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>	
+		<TruckRim Mesh="wheels/M_Series_rim_21and2" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="M Series" UiName="S212" />
+			</GameData>
+		</TruckRim>	
+		<TruckRim Mesh="wheels/M_Series_rim_11" Name="rim_2">
+			<GameData>
+				<UiDesc UiDesc="M Series" UiName="S11" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>
+

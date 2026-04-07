@@ -1,0 +1,30 @@
+<TruckAddon>
+	<Snorkel Origin="(0.904; 10.0; -0.710)" />
+	 <TruckData>
+		<Shakers>
+			<Shaker
+				Frame="BoneSnorkel"
+				MinAngle="(0.3; 0.3; 0.3)"
+				MaxAngle="(.7; .7; .7)"
+				MaxFrequency="0.8"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mtvr_4x4_tuning/mtvr4_snorkel_2" />
+	<GameData
+		CameraPreset="roof"
+		Category="snorkel"
+		Price="1100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="Snorkel 2"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Snorkel 2"
+		/>
+		<InstallSocket Type="Mtvr4x4Snorkel2" />
+	</GameData>
+</TruckAddon>

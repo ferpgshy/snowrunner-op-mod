@@ -29,50 +29,31 @@ LEVELS = [
 ]
 
 ENGINE_STATS = [
-    {"id": "eco",       "Torque": "80000",   "Fuel": "0.3", "Damage": "50000", "Resp": "0.15",
-     "Tag": "ECO",      "Name": "Motor ECO 80K",        "Desc": "Motor ultra economico. 80K Nm. Consumo quase zero. Viagem longa."},
-    {"id": "city",      "Torque": "150000",  "Fuel": "1.0", "Damage": "30000", "Resp": "0.2",
-     "Tag": "CITY",     "Name": "Motor CITY 150K",      "Desc": "Motor urbano. 150K Nm. Leve, economico, bom pra estrada."},
-    {"id": "street",    "Torque": "200000",  "Fuel": "2.0", "Damage": "30000", "Resp": "0.2",
-     "Tag": "STREET",   "Name": "Motor STREET 200K",    "Desc": "Motor de rua. 200K Nm. Resposta suave, bom pra asfalto."},
-    {"id": "rally",     "Torque": "250000",  "Fuel": "3.5", "Damage": "25000", "Resp": "0.35",
-     "Tag": "RALLY",    "Name": "Motor RALLY 250K",     "Desc": "Motor rally. 250K Nm. Resposta agressiva, feito pra velocidade."},
-    {"id": "offroad",   "Torque": "350000",  "Fuel": "3.0", "Damage": "40000", "Resp": "0.2",
-     "Tag": "OFFROAD",  "Name": "Motor OFFROAD 350K",   "Desc": "Motor offroad. 350K Nm. Equilibrio entre torque e consumo."},
-    {"id": "turbo",     "Torque": "400000",  "Fuel": "5.0", "Damage": "35000", "Resp": "0.4",
-     "Tag": "TURBO",    "Name": "Motor TURBO 400K",     "Desc": "Motor turbo. 400K Nm. Resposta rapida, gasta mais combustivel."},
-    {"id": "mud",       "Torque": "500000",  "Fuel": "4.0", "Damage": "50000", "Resp": "0.15",
-     "Tag": "MUD",      "Name": "Motor LAMA 500K",      "Desc": "Motor pra lama. 500K Nm. Torque bruto, resposta lenta e controlada."},
-    {"id": "tow",       "Torque": "550000",  "Fuel": "3.0", "Damage": "65000", "Resp": "0.18",
-     "Tag": "TOW",      "Name": "Motor REBOQUE 550K",   "Desc": "Motor de reboque. 550K Nm. Feito pra puxar cargas pesadas. Resistente."},
-    {"id": "diesel",    "Torque": "600000",  "Fuel": "3.5", "Damage": "60000", "Resp": "0.2",
-     "Tag": "DIESEL",   "Name": "Motor DIESEL 600K",    "Desc": "Motor diesel pesado. 600K Nm. Torque alto, muito resistente."},
-    {"id": "v6t",       "Torque": "650000",  "Fuel": "4.5", "Damage": "45000", "Resp": "0.3",
-     "Tag": "V6T",      "Name": "Motor V6 TURBO 650K",  "Desc": "Motor V6 turbo. 650K Nm. Rapido e potente, gasta bastante."},
-    {"id": "v8",        "Torque": "700000",  "Fuel": "6.0", "Damage": "45000", "Resp": "0.3",
-     "Tag": "V8",       "Name": "Motor V8 700K",        "Desc": "Motor V8 bruto. 700K Nm. Potencia absurda, bebe combustivel."},
-    {"id": "superv8",   "Torque": "800000",  "Fuel": "5.0", "Damage": "55000", "Resp": "0.25",
-     "Tag": "SUPERV8",  "Name": "Motor SUPER V8 800K",  "Desc": "Motor V8 reforcado. 800K Nm. Mais resistente que o V8, menos consumo."},
-    {"id": "beast",     "Torque": "850000",  "Fuel": "4.0", "Damage": "80000", "Resp": "0.2",
-     "Tag": "BEAST",    "Name": "Motor BEAST 850K",     "Desc": "Motor monstro. 850K Nm. Quase indestrutivel, puxa qualquer coisa."},
-    {"id": "war",       "Torque": "900000",  "Fuel": "3.0", "Damage": "85000", "Resp": "0.18",
-     "Tag": "WAR",      "Name": "Motor WAR 900K",       "Desc": "Motor militar. 900K Nm. Blindado, consumo controlado, torque brutal."},
-    {"id": "titan",     "Torque": "1000000", "Fuel": "2.0", "Damage": "90000", "Resp": "0.2",
-     "Tag": "TITAN",    "Name": "Motor TITAN 1M",       "Desc": "Motor titan. 1M Nm. Torque maximo com consumo baixo."},
-    {"id": "nuclear",   "Torque": "1200000", "Fuel": "0.5", "Damage": "95000", "Resp": "0.2",
-     "Tag": "NUCLEAR",  "Name": "Motor NUCLEAR 1.2M",   "Desc": "Motor nuclear. 1.2M Nm. Quase nao gasta combustivel. Potencia insana."},
-    {"id": "predator",  "Torque": "1500000", "Fuel": "3.0", "Damage": "85000", "Resp": "0.35",
-     "Tag": "PREDATOR", "Name": "Motor PREDATOR 1.5M",  "Desc": "Motor predador. 1.5M Nm. Resposta agressiva, torque extremo."},
-    {"id": "god",       "Torque": "2000000", "Fuel": "0.1", "Damage": "99999", "Resp": "0.2",
-     "Tag": "GOD",      "Name": "Motor DEUS 2M",        "Desc": "Motor divino. 2M Nm. Torque infinito, nao quebra, nao gasta."},
-    {"id": "omega",     "Torque": "3000000", "Fuel": "0.1", "Damage": "99999", "Resp": "0.15",
-     "Tag": "OMEGA",    "Name": "Motor OMEGA 3M",       "Desc": "Motor omega. 3M Nm. Alem do divino. Resposta suave, poder absoluto."},
-    {"id": "infinity",  "Torque": "5000000", "Fuel": "0.01","Damage": "99999", "Resp": "0.1",
-     "Tag": "INFINITY", "Name": "Motor INFINITO 5M",    "Desc": "Motor infinito. 5M Nm. O mais forte que existe. Consumo zero. Eterno."},
+    {"id": "i6t",       "Torque": "500000",    "Fuel": "1.0", "Damage": "60000", "Resp": "0.18",
+     "Tag": "I6T",      "Name": "I6 Diesel Turbo 700hp",       "Desc": "6 cilindros em linha, turbo diesel. 700 cavalos. Duravel e economico."},
+    {"id": "i6bt",      "Torque": "600000",    "Fuel": "1.2", "Damage": "65000", "Resp": "0.20",
+     "Tag": "I6BT",     "Name": "I6 Diesel Biturbo 800hp",     "Desc": "6 cilindros em linha, biturbo diesel. 800 cavalos. Resposta rapida."},
+    {"id": "v8t",       "Torque": "700000",    "Fuel": "1.5", "Damage": "70000", "Resp": "0.22",
+     "Tag": "V8T",      "Name": "V8 Diesel Turbo 900hp",       "Desc": "V8 turbo diesel. 900 cavalos. Torque alto, construcao solida."},
+    {"id": "v8bt",      "Torque": "800000",    "Fuel": "1.0", "Damage": "75000", "Resp": "0.20",
+     "Tag": "V8BT",     "Name": "V8 Diesel Biturbo 1000hp",    "Desc": "V8 biturbo diesel. 1000 cavalos. Potencia bruta, baixo consumo."},
+    {"id": "v12t",      "Torque": "1200000",   "Fuel": "0.8", "Damage": "85000", "Resp": "0.18",
+     "Tag": "V12T",     "Name": "V12 Diesel Turbo 1500hp",     "Desc": "V12 turbo diesel. 1500 cavalos. Forca extrema, consumo controlado."},
+    {"id": "v16t",      "Torque": "1600000",   "Fuel": "0.5", "Damage": "90000", "Resp": "0.15",
+     "Tag": "V16T",     "Name": "V16 Diesel Turbo 2000hp",     "Desc": "V16 turbo diesel. 2000 cavalos. Industrial, quase indestrutivel."},
+    {"id": "v20bt",     "Torque": "2500000",   "Fuel": "0.3", "Damage": "99999", "Resp": "0.12",
+     "Tag": "V20BT",    "Name": "V20 Diesel Biturbo 3000hp",   "Desc": "V20 biturbo diesel. 3000 cavalos. O mais potente. Indestrutivel."},
 ]
 
 GB_STATS = [
-    {"MaxVel": 50,  "Damage": "99999"},
+    {"id": "8a", "Gears": 8, "MaxVel": 25, "Damage": "99999", "Tag": "8A",
+     "Name": "8 Marchas 45km/h", "Desc": "~45 km/h. Forca bruta para lama, neve e carga pesada."},
+    {"id": "8b", "Gears": 8, "MaxVel": 27, "Damage": "99999", "Tag": "8B",
+     "Name": "8 Marchas 49km/h", "Desc": "~49 km/h. Equilibrado para trilha e estrada."},
+    {"id": "8c", "Gears": 8, "MaxVel": 29, "Damage": "99999", "Tag": "8C",
+     "Name": "8 Marchas 52km/h", "Desc": "~52 km/h. Rapido em estrada e terreno misto."},
+    {"id": "8d", "Gears": 8, "MaxVel": 31, "Damage": "99999", "Tag": "8D",
+     "Name": "8 Marchas 56km/h", "Desc": "~56 km/h. Velocidade maxima, feito pra estrada."},
 ]
 
 SUSP_STATS = [
@@ -140,53 +121,58 @@ def mod_engine(content, filename):
 def mod_gearbox(content, filename):
     if "</GearboxVariants>" not in content:
         return content
-    mv = GB_STATS[0]["MaxVel"]
-    dmg = GB_STATS[0]["Damage"]
-    gears = []
-    GEAR_COUNT = 8
-    gear_speeds = [round(1.5 * (mv / 1.5) ** (g / (GEAR_COUNT - 1)), 2) for g in range(GEAR_COUNT)]
-    for i, spd in enumerate(gear_speeds):
-        fm = round(1.8 - (1.0 / max(len(gear_speeds) - 1, 1)) * i, 2)
-        fm = max(fm, 0.7)
-        gears.append('\t\t<Gear AngVel="' + str(spd) + '" FuelModifier="' + str(fm) + '" />')
-    rv = 1.5
-    hv = round(gear_speeds[-2] + (gear_speeds[-1] - gear_speeds[-2]) * 0.5, 1)
-    gears_str = "\r\n".join(gears)
-    entry = (
-        '\t<Gearbox\r\n'
-        '\t\tAWDConsumptionModifier="0.0"\r\n'
-        '\t\tCriticalDamageThreshold="0.99"\r\n'
-        '\t\tDamageCapacity="' + dmg + '"\r\n'
-        '\t\tDamagedConsumptionModifier="1.0"\r\n'
-        '\t\tFuelConsumption="1.0"\r\n'
-        '\t\tIdleFuelModifier="0.1"\r\n'
-        '\t\tName="op_gearbox_deus"\r\n'
-        '\t\tMinBreakFreq="0.0"\r\n'
-        '\t\tMaxBreakFreq="0.0"\r\n'
-        '\t>\r\n'
-        '\t\t<ReverseGear AngVel="' + str(rv) + '" FuelModifier="1.1" />\r\n'
-        '\t\t<HighGear AngVel="' + str(hv) + '" FuelModifier="1.0" />\r\n'
-        + gears_str + '\r\n'
-        '\t\t<GameData\r\n'
-        '\t\t\tPrice="100"\r\n'
-        '\t\t\tUnlockByExploration="false"\r\n'
-        '\t\t\tUnlockByRank="1"\r\n'
-        '\t\t>\r\n'
-        '\t\t\t<GearboxParams\r\n'
-        '\t\t\t\tIsHighGearExists="true"\r\n'
-        '\t\t\t\tIsLowerGearExists="true"\r\n'
-        '\t\t\t\tIsLowerPlusGearExists="false"\r\n'
-        '\t\t\t\tIsLowerMinusGearExists="false"\r\n'
-        '\t\t\t/>\r\n'
-        '\t\t\t<UiDesc\r\n'
-        '\t\t\t\tUiDesc="UI_GEARBOX_DEUS_DESC"\r\n'
-        '\t\t\t\tUiIcon30x30=""\r\n'
-        '\t\t\t\tUiIcon40x40=""\r\n'
-        '\t\t\t\tUiName="UI_GEARBOX_DEUS_NAME"\r\n'
-        '\t\t\t/>\r\n'
-        '\t\t</GameData>\r\n'
-        '\t</Gearbox>')
-    insert = "\r\n" + entry + "\r\n"
+    entries = []
+    for stats in GB_STATS:
+        mv = stats["MaxVel"]
+        dmg = stats["Damage"]
+        gc = stats["Gears"]
+        gid = stats["id"]
+        tag = stats["Tag"]
+        gears = []
+        gear_speeds = [round(1.41 * (mv / 1.41) ** (g / (gc - 1)), 2) for g in range(gc)]
+        for i, spd in enumerate(gear_speeds):
+            fm = round(1.8 - (1.0 / max(gc - 1, 1)) * i, 2)
+            fm = max(fm, 0.7)
+            gears.append('\t\t<Gear AngVel="' + str(spd) + '" FuelModifier="' + str(fm) + '" />')
+        rv = 1.5
+        hv = round(gear_speeds[-2] + (gear_speeds[-1] - gear_speeds[-2]) * 0.5, 1)
+        gears_str = "\r\n".join(gears)
+        entry = (
+            '\t<Gearbox\r\n'
+            '\t\tAWDConsumptionModifier="0.0"\r\n'
+            '\t\tCriticalDamageThreshold="0.99"\r\n'
+            '\t\tDamageCapacity="' + dmg + '"\r\n'
+            '\t\tDamagedConsumptionModifier="1.0"\r\n'
+            '\t\tFuelConsumption="1.0"\r\n'
+            '\t\tIdleFuelModifier="0.1"\r\n'
+            '\t\tName="op_gearbox_' + gid + '"\r\n'
+            '\t\tMinBreakFreq="0.0"\r\n'
+            '\t\tMaxBreakFreq="0.0"\r\n'
+            '\t>\r\n'
+            '\t\t<ReverseGear AngVel="' + str(rv) + '" FuelModifier="1.1" />\r\n'
+            '\t\t<HighGear AngVel="' + str(hv) + '" FuelModifier="1.0" />\r\n'
+            + gears_str + '\r\n'
+            '\t\t<GameData\r\n'
+            '\t\t\tPrice="100"\r\n'
+            '\t\t\tUnlockByExploration="false"\r\n'
+            '\t\t\tUnlockByRank="1"\r\n'
+            '\t\t>\r\n'
+            '\t\t\t<GearboxParams\r\n'
+            '\t\t\t\tIsHighGearExists="true"\r\n'
+            '\t\t\t\tIsLowerGearExists="true"\r\n'
+            '\t\t\t\tIsLowerPlusGearExists="false"\r\n'
+            '\t\t\t\tIsLowerMinusGearExists="false"\r\n'
+            '\t\t\t/>\r\n'
+            '\t\t\t<UiDesc\r\n'
+            '\t\t\t\tUiDesc="UI_GEARBOX_' + tag + '_DESC"\r\n'
+            '\t\t\t\tUiIcon30x30=""\r\n'
+            '\t\t\t\tUiIcon40x40=""\r\n'
+            '\t\t\t\tUiName="UI_GEARBOX_' + tag + '_NAME"\r\n'
+            '\t\t\t/>\r\n'
+            '\t\t</GameData>\r\n'
+            '\t</Gearbox>')
+        entries.append(entry)
+    insert = "\r\n" + "\r\n".join(entries) + "\r\n"
     return content.replace("</GearboxVariants>", insert + "</GearboxVariants>")
 
 
@@ -409,7 +395,9 @@ def get_op_strings():
         strs.append('UI_SUSP_' + tag + '_DESC\t\t\t\t"' + stats["Desc"] + '"')
     for prefix, items in [
         ("GEARBOX", [
-            ("DEUS",       "Cambio DEUS",       "8 marchas. Ratio 1.65x. AWD gratis. Indestrutivel. Velocidade maxima 50."),
+            ("4SPD",      "Cambio 4 Marchas",       "4 marchas. Simples e direto. AWD gratis. Indestrutivel."),
+            ("5SPD",      "Cambio 5 Marchas",       "5 marchas. Mais opcoes de marcha. AWD gratis. Indestrutivel."),
+            ("8SPD",      "Cambio 8 Marchas",   "8 marchas. Trocas suaves, progressao geometrica. AWD gratis. Indestrutivel."),
         ]),
         ("WINCH", [
             ("DEUS",       "Guincho DEUS",       "Alcance 100m. Forca 20x. Funciona sem motor ligado. Puxa qualquer coisa."),
@@ -457,7 +445,7 @@ def process_mod_pak(pak_path, mod_name):
             if entry.filename.endswith(".xml") and "classes/engines/" in entry.filename:
                 try:
                     txt = zf.read(entry.filename).decode("utf-8", errors="replace")
-                    if "op_engine_eco" in txt:
+                    if "op_engine_i6t" in txt:
                         print(f"  JA MODDADO - pulando")
                         return None
                 except:

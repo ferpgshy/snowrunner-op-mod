@@ -1,0 +1,1668 @@
+<!--==================== SUMMARY ====================-->
+<!-- models, textures & code created by Gaskellgames -->
+<!--=================================================-->
+
+<_templates Include="trucks">
+	<Wheel>
+		<FrontAxle
+			Location="front"
+			SteeringAngle="42"
+			SteeringCastor="0"
+			SteeringJointOffset="0.23"
+			Torque="connectable"
+			ConnectedToHandbrake="true"
+			SuspensionMin="-0.3"
+			ParentFrame="BoneChassis_cdt"
+		/>
+		<FrontAxle2
+			_template="FrontAxle"
+			SteeringAngle="30"
+		/>
+		<RearAxle
+			Location="rear"
+			Torque="default"
+			ConnectedToHandbrake="true"
+			SuspensionMin="-0.3"
+			ParentFrame="BoneChassis_cdt"
+		/>
+	</Wheel>
+	<Flare>
+		<LightWhiteInner
+			AspectRatio="1.4"
+			Color="g(150; 175; 200) x 0.6"
+			ColorMultAtDay="0.5"
+			DirAngle="90"
+			Size="0.15"
+			ParentFrame="BoneChassis_cdt"
+		/>
+		<LightWhiteOuter
+			AspectRatio="1.4"
+			Color="g(150; 175; 200) x 0.3"
+			ColorMultAtDay="0.5"
+			DirAngle="135"
+			Size="0.45"
+			ParentFrame="BoneChassis_cdt"
+		/>
+		<LightWhiteBeamInner
+			AspectRatio="1.4"
+			Color="g(150; 175; 200) x 2.0"
+			ColorMultAtDay="0.5"
+			DirAngle="90"
+			Size="0.15"
+			ParentFrame="BoneChassis_cdt"
+		/>
+		<LightWhiteBeamOuter
+			AspectRatio="1.4"
+			Color="g(150; 175; 200) x 0.6"
+			ColorMultAtDay="0.5"
+			DirAngle="135"
+			Size="0.45"
+			ParentFrame="BoneChassis_cdt"
+		/>
+		<LightYellowInner
+			AspectRatio="1.4"
+			Color="g(223; 179; 000) x 0.7"
+			ColorMultAtDay="0.5"
+			DirAngle="90"
+			Size="0.03"
+			ParentFrame="BoneChassis_cdt"
+		/>
+		<LightYellowOuter
+			AspectRatio="1.4"
+			Color="g(223; 179; 000) x 0.4"
+			ColorMultAtDay="0.5"
+			DirAngle="135"
+			Size="0.10"
+			ParentFrame="BoneChassis_cdt"
+		/>
+		<LightRedInner
+			AspectRatio="1.4"
+			Color="g(223; 050; 050) x 0.5"
+			ColorMultAtDay="0.5"
+			DirAngle="90"
+			Size="0.15"
+			ParentFrame="BoneChassis_cdt"
+		/>
+		<LightRedOuter
+			AspectRatio="1.4"
+			Color="g(223; 050; 050) x 0.2"
+			ColorMultAtDay="0.5"
+			DirAngle="135"
+			Size="0.45"
+			ParentFrame="BoneChassis_cdt"
+		/>
+		<LightRedStopInner
+			AspectRatio="1.4"
+			Color="g(223; 050; 050) x 2.0"
+			ColorMultAtDay="0.5"
+			DirAngle="90"
+			Size="0.15"
+			ParentFrame="BoneChassis_cdt"
+		/>
+		<LightRedStopOuter
+			AspectRatio="1.4"
+			Color="g(223; 050; 050) x 0.6"
+			ColorMultAtDay="0.5"
+			DirAngle="135"
+			Size="0.45"
+			ParentFrame="BoneChassis_cdt"
+		/>
+	</Flare>
+</_templates>
+
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.025"
+		DiffLockType="Always"
+		EngineIconMesh="env/engine_default"
+		EngineIconScale="1.5"
+		EngineStartDelay="3.2"
+		ExhaustStartTime="2.8"
+		FuelCapacity="600"
+		Responsiveness="0.45"
+		SteerSpeed="0.03"
+		TruckImage="ggmchr"
+		TruckType="HIGHWAY"
+		SuspensionMarkerOffset="(-1; 0.5; 0)"
+	>
+<!--[expeditions] SCOUT-->
+<!--[snowrunner] HIGHWAY-->
+<!--Info-->
+		<Inventory MaxLimit="8" />
+		<DeployCost Cost = "0"/>	
+		
+<!--wheels-->
+		<Wheels
+			DefaultRim="rim_double_01"
+			DefaultTire="tire_double_1a"
+			DefaultWheelType="gg_wheels_double"
+		>
+			<Wheel _template="FrontAxle" Pos="(2.275; 0; 1.005)" />
+			<Wheel _template="FrontAxle" Pos="(2.275; 0; 1.005)" RightSide="true" />
+			<Wheel _template="FrontAxle2" Pos="(0.250; 0; 1.005)" />
+			<Wheel _template="FrontAxle2" Pos="(0.250; 0; 1.005)" RightSide="true" />
+			<Wheel _template="RearAxle" Pos="(-2.250; 0; 1.005)" />
+			<Wheel _template="RearAxle" Pos="(-2.250; 0; 1.005)" RightSide="true" />
+			<Wheel _template="RearAxle" Pos="(-3.550; 0; 1.005)" />
+			<Wheel _template="RearAxle" Pos="(-3.550; 0; 1.005)" RightSide="true" />
+		</Wheels>
+		<CompatibleWheels Scale="0.57" OffsetZ=" 0.000" RearOffsetZ="-0.150" Type="gg_tweak_wheels_double"/>
+		<CompatibleWheels Scale="0.57" OffsetZ=" 0.000" RearOffsetZ="-0.150" Type="gg_wheels_double"/>
+		<CompatibleWheels RearOffsetZ="-0.150" OffsetZ=" 0.000" Scale="0.741" Type="gg_tweak_wheels_double" />
+		<CompatibleWheels RearOffsetZ="-0.150" OffsetZ=" 0.000" Scale="0.826" Type="gg_tweak_wheels_double" />
+		<CompatibleWheels RearOffsetZ="-0.150" OffsetZ=" 0.000" Scale="0.912" Type="gg_tweak_wheels_double" />
+		<CompatibleWheels RearOffsetZ="-0.150" OffsetZ=" 0.000" Scale="0.741" Type="gg_wheels_double" />
+		<CompatibleWheels RearOffsetZ="-0.150" OffsetZ=" 0.000" Scale="0.826" Type="gg_wheels_double" />
+		<CompatibleWheels RearOffsetZ="-0.150" OffsetZ=" 0.000" Scale="0.912" Type="gg_wheels_double" />
+
+<!--required xml sockets-->
+		<EngineSocket
+			Type="engines_gg_arctos_8x4-4"
+			Default="e_gg_arctos_8x4-4_02"
+		/>
+		<GearboxSocket
+			Type="gearboxes_gg_arctos"
+			Default="g_gg_arctos_01_stock"
+		/>
+		<SuspensionSocket
+			Type="suspensions_gg_arctos_8x4-4"
+			Default="s_gg_arctos_8x4-4_01_stock"
+			MaxWheelRadiusWithoutSuspension="1"
+		/>
+		<WinchUpgradeSocket
+			Type="winches_gg_arctos"
+			Default="w_gg_arctos_1_stock"
+			IsUpgradable="true"
+		/>
+
+<!--damage-->
+		<Damage
+			Capacity="300"
+			SensationMin="(-0.8; 1.2; -0.7)"
+			SensationMax="(0.6; 1.8; 0.7)"
+		>
+			<DamageArea
+				Type="Engine"
+				Min="(1.15; 0.75; -0.15)"
+				Max="(1.70; 1.00; 0.15)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<DamageArea
+				Type="FuelTank"
+				Min="(-1.80; 0.75; -0.30)"
+				Max="(-2.20; 1.00; 0.30)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</Damage>
+		<FuelTank DamageCapacity="250" />
+
+<!--air modifiers-->
+		<Intake Dir="(1; 0; 0)" Origin="(3.665; 1.425; 0.790)" Size="0.3" />
+		<Intake Dir="(1; 0; 0)" Origin="(3.665; 1.425; -0.790)" Size="0.3" />
+		<Steam Origin="(3.585; 1.075; 0)" />
+
+<!--sounds-->
+		<SoundsWheels>
+			<WheelWater Sound="surfaces/surf_water_loop" />
+			<WheelSteer Sound="wheels/wheel_steer" />
+			<WheelSpinning Sound="wheels/wheel_spining_loop" />
+			<WheelMud Sound="surfaces/hit/hit_mud_rnd" />
+			<WheelExtrude Sound="" />
+			<WheelDamaged Sound="wheels/wheel_broken_rotate_loop" />
+			<WheelChains Sound="wheels/wheel_tires_chain_loop" />
+			<WaterHit Sound="trucks/common/truck_hit_water_rnd_set/truck_hit_water_rnd" />
+		</SoundsWheels>
+		<SoundsDamage>
+			<Wheels
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Suspension
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Gearbox
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<FuelTank
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Engine
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Critical
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_crit_rnd_set/truck_damage_crit_rnd"
+				VolumeMinMax="(0.5;1.0)"
+			/>
+			<Common
+				DamageAmount="(0.01;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_small_hard_rnd_set/truck_damage_small_hard_rnd"
+				VolumeMinMax="(0.2;1.0)"
+			/>
+		</SoundsDamage>
+		<Sounds
+			DisableReversePitch="true"
+			EngineHeavyVolume="1.0"
+			MinDist="8.0"
+			MaxDist="200.0"
+			Origin="(2.2; 0.8; 0)"
+		>
+			<!--vehicle specific [snowrunner]-->
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+			<BrakeRelease	Sound="trucks/western_star_49x/western_star_49x_brake_release" />
+			<BrakesSqueal	Sound="trucks/western_star_49x/western_star_49x_brakes_squeal" />
+			<BrakePull		Sound="trucks/western_star_49x/western_star_49x_brake_pull" />
+			<Handbrake		Sound="trucks/western_star_49x/western_star_49x_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/western_star_49x/western_star_49x_handbrake_off" />
+			<Reverse		Sound="trucks/western_star_49x/western_star_49x_back_beeper" />
+			<Honk			Sound="trucks/western_star_49x/western_star_49x_honk" />
+			<!--other [snowrunner]-->
+			<Gear			Sound="trucks/common/truck_gear_shift_light_rnd_set/truck_gear_shift_light_rnd" />
+			<GearFail		Sound="trucks/common/truck_gear_wrong/truck_gear_wrong_small_old" />
+			<EngineStalling Sound="trucks/common/truck_engine_stalling" />
+			<DamagedEngine	Sound="trucks/common/truck_engine_damaged" />
+			<WaterGurgle	Sound="trucks/common/truck_exhaust_water_gurgle_loop" />
+			<ExhaustShot	Sound="trucks/common/truck_exhaust_shot_rnd_set/truck_exhaust_shot_rnd" />
+			<!--common sounds [snowrunner]-->
+			<AWD			Sound="trucks/common/truck_awd_rnd_set/truck_awd_rnd" />
+			<ChassisStress	Sound="trucks/common/truck_stress_small_rnd_set/truck_stress_small_rnd" />
+			<Cockpit		Sound="trucks/common/truck_cockpit_loop" IsSound2D="true" />
+			<DiffLock		Sound="trucks/common/truck_diff_lock_rnd_set/truck_diff_lock_rnd" />
+			<HeadLight		Sound="trucks/common/truck_headlight_switch" />
+			<WaterDropping	Sound="" />
+			<!--engine [snowrunner]-->
+			<EngineStart	Sound="trucks/western_star_49x/western_star_49x_start" />
+			<EngineRev		Sound="trucks/western_star_49x/western_star_49x_rev" />
+			<EngineAccel	Sound="trucks/western_star_49x/western_star_49x_acc" />
+			<EngineTrans	Sound="" />
+			<EngineTurbo	Sound="" />
+			<EngineLow		Sound="trucks/western_star_49x/western_star_49x_low" />
+			<EngineHigh		Sound="trucks/western_star_49x/western_star_49x_high" />
+			<EngineHeavy	Sound="trucks/ws_6900xd_twin/ws_6900xd_twin_heavy" />
+			<EngineStop		Sound="trucks/western_star_49x/western_star_49x_stop" />
+			<EngineIdle		Sound="trucks/western_star_49x/western_star_49x_idle" />
+			<EngineIdle_2d	Sound="trucks/western_star_49x/western_star_49x_idle_2d"	IsSound2D="true" />
+			<EngineLow_2d	Sound="trucks/western_star_49x/western_star_49x_low_2d"	IsSound2D="true" />
+			<EngineHigh_2d	Sound="trucks/western_star_49x/western_star_49x_high_2d"	IsSound2D="true" />
+			<EngineHeavy_2d	Sound="trucks/ws_6900xd_twin/ws_6900xd_twin_heavy_2d"	IsSound2D="true" />
+			
+			<!--vehicle specific [expeditions]
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+			<BrakePull		Sound="trucks/step_310e/step_310e_brake_pull" />
+			<BrakesSqueal	Sound="trucks/step_310e/step_310e_brakes_squeal" />
+			<BrakeRelease	Sound="trucks/common/truck_brake_release_alt2_rnd_set/truck_brake_release_alt2_rnd" />
+			<Handbrake		Sound="trucks/afim_1960/afim_1960_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/afim_1960/afim_1960_handbrake_off" />
+			<Reverse		Sound="trucks/afim_1960/afim_1960_reverse" />
+			<Honk			Sound="trucks/tatra_805/tatra_805_honk" />
+			-->
+			<!--other [expeditions]
+			<Gear			Sound="trucks/common/truck_gear_shift_light_rnd_set/truck_gear_shift_light_rnd" />
+			<GearFail		Sound="trucks/common/truck_gear_wrong/truck_gear_wrong_small_old" />
+			<EngineStalling	Sound="trucks/common/truck_engine_stalling" />
+			<DamagedEngine	Sound="trucks/common/truck_engine_damaged" />
+			<WaterGurgle	Sound="trucks/common/truck_exhaust_water_gurgle_loop" />
+			<ExhaustShot	Sound="trucks/common/truck_exhaust_shot_rnd_set/truck_exhaust_shot_rnd" />
+			-->
+			<!--common sounds [expeditions]
+			<AWD			Sound="trucks/common/truck_awd_rnd_set/truck_awd_rnd" />
+			<ChassisStress	Sound="trucks/common/truck_stress_small_rnd_set/truck_stress_small_rnd" />
+			<Cockpit		Sound="trucks/common/truck_cockpit_loop"				IsSound2D="true" />
+			<DiffLock		Sound="trucks/common/truck_diff_lock_rnd_set/truck_diff_lock_rnd" />
+			<HeadLight		Sound="trucks/common/truck_headlight_switch" />
+			<WaterDropping	Sound="" />
+			-->
+			<!--engine [expeditions]
+			<EngineStart	Sound="trucks/krs_58_bandit/krs_58_bandit_start" />
+			<EngineStop		Sound="trucks/krs_58_bandit/krs_58_bandit_stop" />
+			<EngineRev		Sound="trucks/collie_pug_293/collie_pug_293_rev" />
+			<EngineAccel	Sound="trucks/collie_pug_293/collie_pug_293_acc" />
+			<EngineTrans	Sound="" />
+			<EngineTurbo	Sound="" />
+			<EngineIdle		Sound="trucks/ank_mk38/ank_mk38_idle" />
+			<EngineIdle_2d	Sound="trucks/ank_mk38/ank_mk38_idle_2d"				IsSound2D="true" />
+			<EngineLow		Sound="trucks/tatra_force/tatra_force_low" />
+			<EngineLow_2d	Sound="trucks/tatra_force/tatra_force_low_2d"			IsSound2D="true" />
+			<EngineHigh		Sound="trucks/collie_pug_293/collie_pug_293_high" />
+			<EngineHigh_2d	Sound="trucks/collie_pug_293/collie_pug_293_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="trucks/collie_pug_293/collie_pug_293_heavy" />
+			<EngineHeavy_2d	Sound="trucks/collie_pug_293/collie_pug_293_heavy_2d"	IsSound2D="true" />
+			-->
+		</Sounds>
+
+<!--under vehicle-->
+		<Shafts>
+			<Shaft
+				Mesh="env/shaft"
+				SocketPointA="Shaft1Axle"
+				SocketPointB="Shaft1Box"
+			/>
+			<Shaft
+				Mesh="env/shaft"
+				SocketPointA="Shaft2Box"
+				SocketPointB="Shaft2Axle"
+			/>
+			<Shaft
+				Mesh="env/shaft"
+				SocketPointA="Shaft3Box"
+				SocketPointB="Shaft3Axle"
+			/>
+			<Shaft
+				Mesh="env/shaft"
+				SocketPointA="Shaft4Box"
+				SocketPointB="Shaft4Axle"
+			/>
+		</Shafts>
+		<OcclusionMap
+			HalfSizeZ="1.5"
+			Texture="trucks/occlusion/chassis_small__s_d_a.tga"
+			MinX="-4"
+			MaxX="3.5"
+		/>
+
+<!--driver & steering-->
+		<Driver
+			DriverCharacter="driver_m_ru"
+			AnimationSet="Scout"
+			Pos="(2.55; 1.4; -0.699)"
+			LegsOffset="(0.200; 0.000; 0.000)"
+			SteeringWheelPos="(3.023; 1.758; -0.699)"
+			ParentFrame="BoneCabin_cdt"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack1"
+			FrameSteerLeft="BoneRack1Left"
+			FrameSteerRight="BoneRack1Right"
+			RackHalfSizeZ="0.9"
+		/>
+		<SteeringRack
+			Frame="BoneRack2"
+			FrameSteerLeft="BoneRack2Left"
+			FrameSteerRight="BoneRack2Right"
+			RackHalfSizeZ="0.9"
+		/>
+		<Axles>
+			<Axle Frame="BoneAxle1" IsIndependent="false" />
+			<Axle Frame="BoneAxle2" IsIndependent="false" />
+			<Axle Frame="BoneAxle4" IsIndependent="false" />
+			<Axle Frame="BoneAxle5" IsIndependent="false" />
+		</Axles>
+
+<!--interior gauges-->
+		<Dashboard>
+			<!--
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.993; 0.12; 0.002)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/gg_arctos_arrow_01"
+				Org="(0.501; 1.227; 0.509)"
+				OutputAngles="(-50;15)"
+			/>
+			<Gauge
+				Damping="0.9995"
+				Dir="(-0.993; 0.12; 0.002)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/gg_arctos_arrow_01"
+				Org="(0.503; 1.236; 0.429)"
+				OutputAngles="(-50;-5)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.993; 0.12; 0.002)"
+				InputRange="(0;160)"
+				InputType="speed"
+				Mesh="trucks/arrows/gg_arctos_arrow_02"
+				Org="(0.502; 1.237; 0.339)"
+				OutputAngles="(-105;105)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.993; 0.12; 0.002)"
+				InputRange="(0;1)"
+				InputType="fuel"
+				Mesh="trucks/arrows/gg_arctos_arrow_01"
+				Org="(0.503; 1.235; 0.249)"
+				OutputAngles="(-50;50)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.993; 0.12; 0.002)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/gg_arctos_arrow_01"
+				Org="(0.502; 1.227; 0.17)"
+				OutputAngles="(-50;25)"
+			/>
+			-->
+		</Dashboard>
+
+<!--driving camera positions-->
+		<Camera Center="(-2; 0; 0)" RadiusMultiplier="1.25" >
+			<Cockpit
+				_template="Default"
+				WindshieldDiffuseTexture="trucks/gg_arctos_glass__d_a.tga"
+				WindshieldShadingTexture="trucks/gg_arctos_glass__sh_d.tga"
+				ViewPos="(2.545; 2.129; -0.678)"
+				LimitsVer="(-0.5; 0.7)"
+			>
+				<Rear
+					_inheritRemove="true"
+				/>
+				<Mirror
+					MeshFrame="dash_camera"
+					Size="(0.3; 0.3)"
+					Pos="(3.142; 1.733; -0.223)"
+					FOVScale="2.5"
+					ClipDir="(-1; 0.1; 0.15)"
+					ClipOffset="1.75"
+					ReflectionDir="(-1; -0.4; -0.325)"
+					LookAtOffset="(0; 0.75; 0)"
+					InCockpit="true"
+					ParentFrame="BoneCabin_cdt"
+				/>
+				<Mirror
+					MeshFrame="mirror_left_1"
+					ParentFrame="BoneCabin_cdt"
+					InCockpit="true"
+					ClipDir="(-1; 0; 0)"
+					ClipOffset="0.1"
+					Pos="(3.173; 2.184; 1.448)"
+					Size="(0.3; 0.3)"
+					FOVScale="3"
+					ReflectionDir="(-1; -0.1; -0.65)"
+					LookAtOffset="(0; 0; 0.1)"
+				/>
+				<Mirror
+					MeshFrame="mirror_left_2"
+					ParentFrame="BoneCabin_cdt"
+					InCockpit="true"
+					ClipDir="(-1; 0; 0.1)"
+					ClipOffset="0.1"
+					Pos="(3.203; 1.859; 1.421)"
+					Size="(0.3; 0.5)"
+					FOVScale="2"
+					ReflectionDir="(-1; 0.1; -0.7)"
+					LookAtOffset="(0; 0; 0.1)"
+				/>
+				<Mirror
+					MeshFrame="mirror_left_3"
+					ParentFrame="BoneCabin_cdt"
+					InCockpit="true"
+					ClipDir="(0; -1; 0)"
+					ClipOffset="0.1"
+					Pos="(2.770; 2.643; 1.324)"
+					Size="(0.4; 0.2)"
+					FOVScale="3"
+					ReflectionDir="(-0.1; -1; -0.6)"
+					LookAtOffset="(0; 0; 0.4)"
+				/>
+				<Mirror
+					MeshFrame="mirror_right_1"
+					ParentFrame="BoneCabin_cdt"
+					InCockpit="true"
+					ClipDir="(-1; 0; 0)"
+					ClipOffset="0.1"
+					Pos="(3.173; 2.184; -1.448)"
+					Size="(0.3; 0.3)"
+					FOVScale="3"
+					ReflectionDir="(-1; -0.1; 0.3)"
+					LookAtOffset="(0; 0; 0)"
+				/>
+				<Mirror
+					MeshFrame="mirror_right_2"
+					ParentFrame="BoneCabin_cdt"
+					InCockpit="true"
+					ClipDir="(-1; 0; -0.1)"
+					ClipOffset="0.1"
+					Pos="(3.203; 1.859; -1.421)"
+					Size="(0.3; 0.5)"
+					FOVScale="2"
+					ReflectionDir="(-1; 0.1; 0.45)"
+					LookAtOffset="(0; 0; -0.2)"
+				/>
+			</Cockpit>
+		</Camera>
+	</TruckData>
+
+<!--collision positions-->
+	<Snorkel Origin="(2.4; 10.0; 0)" />
+	<PhysicsModel AcceptVisualDamage="false" Mesh="trucks/gg_arctos_8x4-4" >
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			ImpactType="Truck"
+			Mass="250"
+			NetSync="pv"
+		>
+			<Body
+				CenterOfMassOffset="(-3; 0; 0)"
+				ImpactType="Truck"
+				Mass="13000"
+				ModelFrame="BoneChassis_cdt"
+				NetSync="pv"
+			>
+				<Constraint Type="Fixed" />
+				<Body
+					CenterOfMassOffset="(0; -1.0; 0.0)"
+					ForceBodyParams="true"
+					ImpactType="Truck"
+					Mass="3000"
+					ModelFrame="BoneCabin_cdt"
+					NetSync="pv"
+				>
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						PivotOffset="(0; 0; 0)"
+						Type="Hinge"
+						MinLimit="-3"
+						MaxLimit="3"
+					>
+						<Motor Damping="35000" Spring="500000" Type="Spring" />
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+
+<!--lights-->
+	<ModelAttachments>
+		<Ignition>
+			<!--headlight left-->
+			<Light
+				AttenEnd="4"
+				Color="g(150; 175; 200) x 2"
+				Dir="(1; -0.2; 0)"
+				InnerCone="20"
+				OuterCone="150"
+				Pos="(3.595; 0.485; 0.960)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare _template="LightWhiteInner" Dir="(1; 0; 0)" Pos="(3.595; 0.485; 0.960)" />
+			<Flare _template="LightWhiteOuter" Dir="(1; 0; 0)" Pos="(3.595; 0.485; 0.960)" />
+			<!--headlight right-->
+			<Light
+				AttenEnd="4"
+				Color="g(150; 175; 200) x 2"
+				Dir="(1; -0.2; 0)"
+				InnerCone="20"
+				OuterCone="150"
+				Pos="(3.595; 0.485; -0.960)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare _template="LightWhiteInner" Dir="(1; 0; 0)" Pos="(3.595; 0.485; -0.960)" />
+			<Flare _template="LightWhiteOuter" Dir="(1; 0; 0)" Pos="(3.595; 0.485; -0.960)" />
+			<!--side lights-->
+			<Flare _template="LightYellowInner" Dir="(0; 0; 1)" Pos="(1.650; 0.925; 1.185)" />
+			<Flare _template="LightYellowOuter" Dir="(0; 0; 1)" Pos="(1.650; 0.925; 1.185)" />
+			<Flare _template="LightYellowInner" Dir="(0; 0; -1)" Pos="(1.650; 0.925; -1.185)" />
+			<Flare _template="LightYellowOuter" Dir="(0; 0; -1)" Pos="(1.650; 0.925; -1.185)" />
+		</Ignition>
+		<!--main beam-->
+		<HeadLight>
+			<Model
+				Dir="(1; -0.1; 0)"
+				Mesh="env/light_ray"
+				Org="(3.595; 0.485; 0.960)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare _template="LightWhiteBeamInner" Dir="(1; -0.2; 0)" Pos="(3.595; 0.485; 0.960)" />
+			<Flare _template="LightWhiteBeamOuter" Dir="(1; -0.2; 0)" Pos="(3.595; 0.485; 0.960)" />
+			<Model
+				Dir="(1; -0.1; 0)"
+				Mesh="env/light_ray"
+				Org="(3.595; 0.485; -0.960)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare _template="LightWhiteBeamInner" Dir="(1; -0.2; 0)" Pos="(3.595; 0.485; -0.960)" />
+			<Flare _template="LightWhiteBeamOuter" Dir="(1; -0.2; 0)" Pos="(3.595; 0.485; -0.960)" />
+		</HeadLight>
+	</ModelAttachments>
+	<HeadLight
+		AttenEnd="150"
+		AttenStart="-20"
+		Color="g(150; 175; 200) x 7"
+		Dir="(1; 0.3; 0)"
+		InnerCone="27"
+		OuterCone="127"
+		Pos="(3.595; 0.485; 0)"
+		ParentFrame="BoneChassis_cdt"
+	/>
+
+<!--Truck info-->
+	<Landmark Mesh="landmarks/gg_arctos_8x4-4_landmark" MinScale="1.2" MaxScale="2.2" />
+	<GameData
+		Country=""
+		Price="21000"
+		RecoveryPrice="2500"
+		Recallable="true"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		ExcludeAddons="big_crane_us"
+	>
+		<UiDesc
+			UiIcon30x30="highwayVehicleImg30"
+			UiIcon40x40="highwayVehicleImg"
+			UiIcon328x458="shopImggg_arctos_8x4-4"
+			UiIconLogo="ggImg80"
+			UiName="Gg Arctos 8x4/4"
+			UiDesc="Part of the gg Highway Series line of trucks. This modern cabover has been designed for exceptional highway performance and has suprisingly good offroad potential. AXLES: 8x4/4. DIMENSIONS: 8690mm x 2605mm x 3800mm. DRIVER POSITION: Right hand drive. FUEL TANK: 600L. The gg Arctos gets its name from the Arctic Wolf. Also known as the Polar Wolf. (Genus: Canis Lupus Arctos). Designed by Gaskellgames"
+		/>
+		<!--Shop img [EXPEDITIONS]
+			UiIcon576x640="shopImggg_arctos_8x4-4a"
+            UiIcon576x640Bw="shopImggg_arctos_8x4-4b"
+		-->
+
+<!--garage camera positions-->
+		<CustomizationCameras>
+			<CameraPos
+				Name="default"
+				FOV="32.0"
+				InterestPosition="(4; 0.7; 0)"
+				Position="(15; 2.7; -5)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Interior="false"
+			/>
+			<CameraPos
+				Name="hoods"
+				FOV="32.0"
+				InterestPosition="(4.75; 1.25; 0)"
+				Position="(12; 4; -6)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Interior="false"
+			/>
+			<CameraPos
+				Name="rear"
+				FOV="32.0"
+				InterestPosition="(1.5; 0.7; 0)"
+				Position="(-5.0; 2.7; 5)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Interior="false"
+			/>
+			<CameraPos
+				Name="wheels"
+				FOV="32.0"
+				InterestPosition="(3; 0.2; 0)"
+				Position="(7; 1.2; -7.5)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Interior="false"
+			/>
+			<CameraPos
+				Name="addon_1"
+				FOV="32.0"
+				InterestPosition="(1; 2; 0)"
+				Position="(-8.5; 4.5; 10)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Interior="false"
+			/>
+			<CameraPos
+				Name="addon_2"
+				FOV="32.0"
+				InterestPosition="(1; 2; 0)"
+				Position="(-8.5; 4.5; 10)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Interior="false"
+			/>
+			<CameraPos
+				Name="roof"
+				FOV="32.0"
+				InterestPosition="(4.75; 1.25; 0)"
+				Position="(12; 4; -6)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Interior="false"
+			/>
+			<CameraPos
+				Name="roof_sticker"
+				FOV="32.0"
+				InterestPosition="(4.75; 1.25; 0)"
+				Position="(12; 4; -6)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Interior="false"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="side_l"
+				InterestPosition="(6.27; 1.678; 0)"
+				Position="(11.866; 4.684; -4.55)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Interior="false"
+			/>
+			<CameraPos
+				Name="door_l_sticker"
+				FOV="32.0"
+				InterestPosition="(5.687; 0.590; -0.027)"
+				Position="(3.945; 1.686; -4.845)"
+				MaxXRotation="5"
+				MaxYRotation="5"
+				MaxZoom="1"
+				Interior="true"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="side_r"
+				InterestPosition="(4.764; 1.170; -0)"
+				Position="(-0.226; 4.169; -4.508)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Interior="false"
+			/>
+			<CameraPos
+				Name="door_r_sticker"
+				FOV="32.0"
+				InterestPosition="(7.153; 0.578; 0.659)"
+				Position="(3.896; 1.366; 4.82)"
+				MaxXRotation="5"
+				MaxYRotation="5"
+				MaxZoom="1"
+				Interior="false"
+			/>
+			<CameraPos
+				Name="mirror_mount"
+				OV="32.0"
+				InterestPosition="(10; 1.25; 0)"
+				Position="(6.1; 2.25; 0.7)"
+				Interior="true"
+			/>
+			<CameraPos
+				Name="bubble_head"
+				OV="32.0"
+				InterestPosition="(10; 1.25; 0)"
+				Position="(6.1; 2.25; 0.7)"
+				Interior="true"
+			/>
+			<CameraPos
+				Name="hood_ornament"
+				OV="32.0"
+				InterestPosition="(10; 1.25; 0)"
+				Position="(6.1; 2.25; 0.7)"
+				Interior="true"
+			/>
+			<CameraPos
+				Name="curtain"
+				OV="32.0"
+				InterestPosition="(10; 1.25; 0)"
+				Position="(6.1; 2.25; 0.7)"
+				Interior="true"
+			/>
+			<CameraPos
+				Name="sticker"
+				OV="32.0"
+				InterestPosition="(10; 1.4; 1)"
+				Position="(6.1; 2.25; 0.7)"
+				Interior="true"
+			/>
+			<CameraPos
+				Name="sticker_1"
+				OV="32.0"
+				InterestPosition="(10; 1.4; 1)"
+				Position="(6.1; 2.25; 0.7)"
+				Interior="true"
+			/>
+			<CameraPos
+				Name="sticker_2"
+				OV="32.0"
+				InterestPosition="(10; 1.4; 1)"
+				Position="(6.1; 2.25; 0.7)"
+				Interior="true"
+			/>
+			<CameraPos
+				Name="glass_sticker"
+				OV="32.0"
+				InterestPosition="(5; 1; -1)"
+				Position="(9.7; 2.4; -0.5)"
+				Interior="false"
+			/>
+			<CameraPos
+				Name="capote_sticker"
+				OV="32.0"
+				InterestPosition="(7; 2.2; -1.7)"
+				Position="(9; 4.2; 0)"
+				Interior="false"
+			/>
+		</CustomizationCameras>
+
+<!--winch & crane points-->
+		<WinchSocket Pos="(3.685; 0.470; 0.695)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(3.685; 0.470; 0.695)" ParentFrame="BoneChassis_cdt" />
+		<WinchSocket Pos="(3.685; 0.470; -0.695)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(3.685; 0.470; -0.695)" ParentFrame="BoneChassis_cdt" />
+		<WinchSocket Pos="(1.655; 0.925; 1.160)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(1.655; 0.925; 1.160)" ParentFrame="BoneChassis_cdt" />
+		<WinchSocket Pos="(1.655; 0.925; -1.160)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(1.655; 0.925; -1.160)" ParentFrame="BoneChassis_cdt" />
+		<WinchSocket Pos="(-4.450; 0.300; -0.000)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(-4.450; 0.300; -0.000)" ParentFrame="BoneChassis_cdt" />
+
+<!--trailer addons-->
+		<AddonSockets>
+			<Socket
+				Names="ScautTrailer"
+				NamesBlock="FrameAddonSeismicVibrator, FrameAddonMaintainer"
+				Offset="(-4.475; 0.450; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Socket
+				Names="Trailer, LogTrailer"
+				NamesBlock="FrameAddonSeismicVibrator, FrameAddonMaintainer"
+				Offset="(-4.450; 0.300; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Socket
+				Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog"
+				NamesBlock="FrameAddonSeismicVibrator, FrameAddonMaintainer"
+				Offset="(-2.975; 1; 0)"
+				CablesName="env/trailer_cable"
+				TruckCablesPos="(1.500; 0.495; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-0.250;-0.050; 0.000)" Types="SaddleMotorized" />
+				<AddonsShift Offset="(-0.550; 0.000; 0.000)" Types="FrameAddonFlatbed1" />
+				<AddonsShift Offset="(-0.550; 0.000; 0.000)" Types="ggArctosUtility, ggMinicrane" />
+			</Socket>
+			
+			<Socket
+				Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog"
+				Offset="(-1.625; 1.000; 0.000)"
+				CablesName="env/trailer_cable"
+				TruckCablesPos="(1.500; 0.495; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-0.250;-0.050; 0.000)" Types="SaddleMotorized" />
+			</Socket>
+			
+			<Socket
+				Names="LargeSemitrailer, LargeSemitrailerOiltank"
+				NamesBlock="FrameAddonSeismicVibrator, FrameAddonMaintainer"
+				Offset="(-2.975; 1.200; 0.000)"
+				CablesName="env/trailer_cable"
+				TruckCablesPos="(1.500; 0.495; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-0.550; 0.000; 0.000)" Types="FrameAddonFlatbed1" />
+				<AddonsShift Offset="(-0.550; 0.000; 0.000)" Types="ggArctosUtility, ggMinicrane" />
+			</Socket>
+		</AddonSockets>
+
+<!--utility & cargo addons [snowrunner]-->
+		<AddonSockets>
+			<Socket
+				Names="ggMinicrane"
+				NamesBlock="ggAddonLogsCrane, FrameAddonMaintainer"
+				Offset="(0.400; 0.670; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-1.35; 0; 0)" TrailerNamesBlock="FrameAddon, ggAddonLogs, FrameAddonSeismicVibrator, ggBunklogFront, SaddleMotorized" Types="ggArctosUtility" />
+				<AddonsShift Offset="(-1.35; 0; 0)" TrailerNamesBlock="FrameAddon, ggAddonLogs, FrameAddonSeismicVibrator, ggBunklogFront, SaddleMotorized" Types="ggArctosUtility" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_addon_00_saddle_1_low" >
+			<Socket
+				Names="ggBunklogFront"
+				NamesBlock="FrameAddonFlatbed1, FrameAddon, ggAddonLogs, ggAddonLogsCrane, FrameAddonSeismicVibrator, FrameAddonMaintainer"
+				Offset="(-2.975; 0.670; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Socket
+				Names="ggSaddleLow"
+				NamesBlock="FrameAddon, ggAddonLogs, ggAddonLogsCrane, FrameAddonSeismicVibrator, FrameAddonMaintainer"
+				Offset="(-2.975; 0.670; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-0.55; 0; 0)" TrailerNamesBlock="ggArctosFenderRearBed8" Types="FrameAddonFlatbed1" />
+				<AddonsShift Offset="(-0.55; 0; 0)" TrailerNamesBlock="ggArctosFenderRearBed8" Types="ggArctosUtility, ggMinicrane" />
+			</Socket>
+			<Socket
+				Names="ggSaddleHigh"
+				NamesBlock="FrameAddon, ggAddonLogs, ggAddonLogsCrane, FrameAddonSeismicVibrator, FrameAddonMaintainer"
+				Offset="(-2.975; 0.680; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-0.55; 0; 0)" TrailerNamesBlock="ggArctosFenderRearBed8" Types="FrameAddonFlatbed1" />
+				<AddonsShift Offset="(-0.55; 0; 0)" TrailerNamesBlock="ggArctosFenderRearBed8" Types="ggArctosUtility, ggMinicrane" />
+			</Socket>
+			<Socket
+				Names="SaddleMotorized"
+				NamesBlock="FrameAddonFlatbed1, FrameAddon, ggAddonLogs, ggAddonLogsCrane, FrameAddonSeismicVibrator, FrameAddonMaintainer"
+				Offset="(-1.850;-0.650; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.000)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.000)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.200; 0.000; 0.000)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.200; 0.000; 0.000)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.200; 0.000; 0.000)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="FrameAddonFlatbed1"
+				NamesBlock=""
+				Offset="(-0.650; 0.670; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-1.30; 0; 0)" TrailerNamesBlock="ggSaddleLow, ggSaddleHigh" Types="ggMinicrane" />
+				<AddonsShift Offset="(-1.30; 0; 0)" TrailerNamesBlock="ggSaddleLow, ggSaddleHigh" Types="ggArctosUtility" />
+			</Socket>
+			<Socket
+				Names="FrameAddon"
+				NamesBlock="ggSaddleLow, ggSaddleHigh"
+				Offset="(-1.550; 0.670; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-1.20; 0; 0)" TrailerNamesBlock="ScautTrailer, Trailer" Types="ggMinicrane" />
+				<AddonsShift Offset="(-1.20; 0; 0)" TrailerNamesBlock="ScautTrailer, Trailer" Types="ggArctosUtility" />
+			</Socket>
+			<Socket
+				Names="ggAddonLogs"
+				NamesBlock="ggSaddleLow, ggSaddleHigh, ggBunklogFront"
+				Offset="(-1.550; 0.670; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-1.4; 0; 0)" TrailerNamesBlock="ScautTrailer, Trailer" Types="ggMinicrane" />
+				<AddonsShift Offset="(-1.4; 0; 0)" TrailerNamesBlock="ScautTrailer, Trailer" Types="ggArctosUtility" />
+			</Socket>
+			<Socket
+				Names="ggAddonLogsCrane"
+				NamesBlock="ggSaddleLow, ggSaddleHigh, ggArctosUtility, ggMinicrane, ggBunklogFront"
+				Offset="(-1.550; 0.670; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Socket
+				Names="FrameAddonSeismicVibrator"
+				NamesBlock="Trailer, ScautTrailer, ggSaddleLow, ggSaddleHigh, ScautTrailer, Trailer"
+				Offset="(0.500; 0.687; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-0.80; 0; 0)" Types="ggMinicrane" />
+				<AddonsShift Offset="(-0.80; 0; 0)" Types="ggArctosUtility" />
+			</Socket>
+			<Socket
+				Names="FrameAddonMaintainer"
+				NamesBlock="Trailer, ScautTrailer, ggSaddleLow, ggSaddleHigh, ggArctosUtility, ggMinicrane"
+				Offset="(-2.200; -0.400; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+
+		<!--utility & cargo addons [expeditions]
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggSaddleLow"
+				NamesBlock="FrameAddonSeismicVibrator, FrameModuleFlatbed2, FrameModuleFlatbedSideboard"
+				Offset="(-2.975; 0.670; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Socket
+				Names="ggSaddleHigh"
+				NamesBlock="FrameAddonSeismicVibrator, FrameModuleFlatbed2, FrameModuleFlatbedSideboard"
+				Offset="(-2.975; 0.680; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="FrameAddonSeismicVibrator"
+				NamesBlock="ScautTrailer, Trailer, ggSaddleLow, ggSaddleHigh"
+				Offset="(0.500; 0.687; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-1.25; 0; 0)" TrailerNamesBlock="" Types="ggArctosUtility" />
+			</Socket>
+			<Socket
+				Names="FrameModuleFlatbed1"
+				NamesBlock=""
+				Offset="(0.900; 0.687; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-1.25; 0; 0)" TrailerNamesBlock="ggSaddleLow, ggSaddleHigh" Types="ggArctosUtility" />
+			</Socket>
+			<Socket
+				Names="FrameModuleFlatbed2"
+				NamesBlock="ggSaddleLow, ggSaddleHigh"
+				Offset="(0.900; 0.687; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-1.25; 0; 0)" TrailerNamesBlock="" Types="ggArctosUtility" />
+			</Socket>
+			<Socket
+				Names="FrameModuleFlatbedSideboard"
+				NamesBlock="ggSaddleLow, ggSaddleHigh"
+				Offset="(0.900; 0.687; 0.000)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-1.25; 0; 0)" TrailerNamesBlock="" Types="ggArctosUtility" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="FrameModule"
+				Offset="(-0.25; 0.49; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>-->
+
+<!--gg custom chassis addons-->
+		<AddonSockets DefaultAddon="gg_arctos_rear_lights" RequiredAddonIfNoConflicts="gg_arctos_rear_lights" >
+			<Socket
+				Names="ggArctosRearLights"
+				NamesBlock=""
+				Offset="(-2.6; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosUtility"
+				NamesBlock="ggAddonLogsCrane, FrameAddonMaintainer"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosSnorkel"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosSpotlightsRoof"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosSpotlightsBumper"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosSpotlightsRear"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosGrill"
+				NamesBlock="ggArctosESGrill2, ggArctosESGrill3"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosESGrill1"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosESGrill2"
+				NamesBlock="ggArctosGrill"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosESGrill3"
+				NamesBlock="ggArctosGrill"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosESLightBar"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosHorns"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_reg_front" >
+			<Socket
+				Names="ggArctosRegFront"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(0.020; 0.280; 0.000)" Types="ggArctosBumperOffroad" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_reg_rear" >
+			<Socket
+				Names="ggArctosRegRear"
+				NamesBlock=""
+				Offset="(-2.6; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_cable_rack" >
+			<Socket
+				Names="ggArctosCables"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_exhaust_1" >
+			<Socket
+				Names="ggArctosExhaust"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_fuel_tank_square" >
+			<Socket
+				Names="ggArctosTank"
+				NamesBlock=""
+				Offset="(-1.35; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_fuel_can" >
+			<Socket
+				Names="ggArctosTankSmall"
+				NamesBlock=""
+				Offset="(-1.35; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosFenderSideRear"
+				NamesBlock=""
+				Offset="(-1.35; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosFenderRearBed8"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_mudguard_a2f" >
+			<Socket
+				Names="ggArctosMudguardA2F"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_mudguard_a4f" >
+			<Socket
+				Names="ggArctosMudguardA4F"
+				NamesBlock="ggArctosMudguardD1"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_mudguard_a5r" >
+			<Socket
+				Names="ggArctosMudguardA5R"
+				NamesBlock="ggArctosMudguardD1"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosMudguardD1"
+				NamesBlock="ggArctosMudguardA4F, ggArctosMudguardA5R"
+				Offset="(-1.300; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_bumper_1" RequiredAddonIfNoConflicts="gg_arctos_bumper_1" >
+			<Socket
+				Names="ggArctosBumper"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_bumper_1" RequiredAddonIfNoConflicts="gg_arctos_bumper_1" >
+			<Socket
+				Names="ggArctosBumperOffroad"
+				NamesBlock="ggArctosBumper"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_logo_1a" RequiredAddonIfNoConflicts="gg_arctos_logo_1a" >
+			<Socket
+				Names="ggArctosLogo"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+
+<!--gg custom cab addons-->
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosFenderSide"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosFenderRoof"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="" >
+			<Socket
+				Names="ggArctosFenderFront"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_cabin_conditioner" >
+			<Socket
+				Names="ggArctosCabinTopPanel"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_cabin_rear_panel_1" >
+			<Socket
+				Names="ggArctosCabinRearPanel"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				InCockpit="true"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_cabin_furnishing_1" >
+			<Socket
+				Names="ggArctosCabinFurnishings"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				InCockpit="true"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_cabin_bunk_1" >
+			<Socket
+				Names="ggArctosCabinBunk"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				InCockpit="true"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+
+<!--gg transmission & differential addons-->
+		<AddonSockets DefaultAddon="gg_arctos_diff_lock_1">
+			<Socket
+				Names="ggArctosDiffLock"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="gg_arctos_transferbox_8_1">
+			<Socket
+				Names="ggArctosTransferBox8"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Socket
+				Names="ggArctosTransferBox8"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</AddonSockets>
+
+<!--custom sticker addons-->
+		<AddonSockets>
+			<Socket
+			  Names="ggStickerLeft"
+			  NamesBlock=""
+			  Offset="(2.000; 1.305; 1.250)"
+			  Dir="(0.000; 0.000; 1.000)"
+			  UpDir="(0.000; 1.000; 0.000)"
+			  ParentFrame="BoneCabin_cdt"
+		  />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+			  Names="ggStickerRight"
+			  NamesBlock=""
+			  Offset="(2.000; 1.305; -1.250)"
+			  Dir="(0.000; 0.000; 1.000)"
+			  UpDir="(0.000; 1.000; 0.000)"
+			  ParentFrame="BoneCabin_cdt"
+		  />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+			  Names="ggStickerTop"
+			  NamesBlock=""
+			  Offset="(3.200; 3.050; 0.000)"
+			  Dir="(0.000; 0.000; 1.000)"
+			  UpDir="(0.250; 1.000; 0.000)"
+			  ParentFrame="BoneCabin_cdt"
+		  />
+		</AddonSockets>
+
+<!--stickers and customisation addons [snowrunner]-->
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffDashboard"
+				Offset="(3.145; 1.825; -0.050)"
+				Dir="(-0.490; 0; 0.870)"
+				UpDir="(0.250; 1; 0.085)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffAirfreshener"
+				Offset="(3.190; 2.525; -0.115)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffHoodPacificP16"
+				Offset="(-0.985; -0.743; 0.322)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffCurtainFordClt9000"
+				Offset="(-0.35; -0.6; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="azov64131Sticker_GlassTop"
+				Offset="(-0.9; 0.6; 0)"
+				UpDir="(0.3; 1; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="azov64131Sticker_GlassBottom"
+				Offset="(-0.9; 0.5; 0)"
+				UpDir="(0.3; 1; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="azov64131Sticker_Door_L"
+				Offset="(-1.6; -0.875; 0.19)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="azov64131Sticker_Door_R"
+				Offset="(-1.6; -0.875; -0.19)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="ws6900XdTwinSticker_Roof"
+				Offset="(-2.31; 1.282; 0)"
+				UpDir="(0.37; 1; 0)"
+				ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="fordClt9000Sticker_1x2_01"
+				Offset="(-0.32; -0.577; -0.8)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="fordClt9000Sticker_1x2_02"
+				Offset="(-0.33; -0.577; -0.2)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+
+<!--stickers and customisation addons [expeditions]
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffDashboard"
+				Offset="(3.145; 1.825; -0.050)"
+				Dir="(-0.490; 0; 0.870)"
+				UpDir="(0.250; 1; 0.085)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffAirfreshener"
+				Offset="(3.190; 2.525; -0.115)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffHoodPacificP16"
+				Offset="(-0.985; -0.743; 0.322)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="Afim1960Sticker_Door_L"
+				Offset="(-0.350;-0.225; 0.187)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="Afim1960Sticker_Door_R"
+				Offset="(-0.350;-0.225;-0.187)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>-->
+	</GameData>
+
+<!--springs and pistons-->
+	<AutomaticIK>
+		<!--axle 1 steering piston-->
+		<IKBone ModelFrame="BoneSteerTR1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRack1Right"
+				ModelFrame="BoneSteerBR1"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+		<!--axle 2 steering piston-->
+		<IKBone ModelFrame="BoneSteerTR2" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRack2Right"
+				ModelFrame="BoneSteerBR2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+		<!--axle 4 air suspension-->
+		<IKBone ModelFrame="BoneAirSusTL4" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle4"
+				ModelFrame="BoneAirSusBL4"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneAirSusTR4" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle4"
+				ModelFrame="BoneAirSusBR4"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+		<!--axle 5 air suspension-->
+		<IKBone ModelFrame="BoneAirSusTL5" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle5"
+				ModelFrame="BoneAirSusBL5"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneAirSusTR5" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle5"
+				ModelFrame="BoneAirSusBR5"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+		<!--axle 4 dampener-->
+		<IKBone ModelFrame="BoneDampTL4" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle4"
+				ModelFrame="BoneDampBL4"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneDampTR4" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle4"
+				ModelFrame="BoneDampBR4"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+		<!--axle 5 dampener-->
+		<IKBone ModelFrame="BoneDampTL5" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle5"
+				ModelFrame="BoneDampBL5"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneDampTR5" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle5"
+				ModelFrame="BoneDampBR5"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>
+
+<!--=================================================-->
+<!-- models, textures & code created by Gaskellgames -->
+<!--=================================================-->

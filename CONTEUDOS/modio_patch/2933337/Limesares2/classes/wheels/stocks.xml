@@ -1,0 +1,78 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1.0"
+	Width="1.0"
+	WidthRear="1.0"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_mod_stocks"
+			Name="stocks"
+			RearMassScale="1"
+			Mass="400"
+		>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="stock tires" UiName="stocks" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/tire_heavy_mudtires_single_tayga_1.tga" TextureHeight="tracks/default_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/tire_heavy_mudtires_single_tayga_1.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.02" SoftForceScale="0.5" />
+			<WheelFriction
+				BodyFriction="50"
+				BodyFrictionAsphalt="10.0"
+				SubstanceFriction="10.2"
+				UiName="UI_TIRE_TYPE_HIGHWAY_NAME"
+				IsIgnoreIce="true"
+			/>
+		</TruckTire>
+		
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mod_stocks" Name="op_stocks_stocks_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+	
+		<TruckRim Mesh="wheels/rim_mod_stocks" Name="black and chrome">
+			<GameData>
+				<UiDesc UiDesc="its a rim" UiName="Custom Black Rim" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_mod_stocksblue" Name="black and blue">
+			<GameData>
+				<UiDesc UiDesc="its a rim" UiName="Custom Blue Rim" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_mod_stocksgreen" Name="black and green">
+			<GameData>
+				<UiDesc UiDesc="its a rim" UiName="Custom Green Rim" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_mod_stocksred" Name="black and red">
+			<GameData>
+				<UiDesc UiDesc="its a rim" UiName="Custom Red Rim" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_mod_stockchrome" Name="chrome">
+			<GameData>
+				<UiDesc UiDesc="its a rim" UiName="Custom Chrome Rim" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_mod_stocksor" Name="black and orange">
+			<GameData>
+				<UiDesc UiDesc="its a rim" UiName="Custom Chrome Rim" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

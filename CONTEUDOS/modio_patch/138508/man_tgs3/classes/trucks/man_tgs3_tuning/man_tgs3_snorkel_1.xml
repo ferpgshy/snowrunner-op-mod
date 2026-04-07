@@ -1,0 +1,19 @@
+<TruckAddon>
+	<Snorkel Origin="(2.075; 10.0; -1.106)" />
+	<PhysicsModel Mesh="trucks/man_tgs3_tuning/man_tgs3_snorkel_1" />
+	<GameData
+		CameraPreset="roof"
+		Category="snorkel"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_ROUNDCAP_SHORT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_ROUNDCAP_SHORT_NAME"
+		/>
+		<InstallSocket Type="ManTgs3Snorkel" />
+	</GameData>
+</TruckAddon>

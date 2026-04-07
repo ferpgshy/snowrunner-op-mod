@@ -1,0 +1,61 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.85"
+	WidthRear="1.85"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_MT_BajaProXS_Spike_Single"
+			Name="Stock-ish BajaRunner XS Spikes"
+			RearMassScale="1"
+			Mass="400"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="True Specs: DIRT 2.2 - MUD 3.2 - PAVEMENT 1.4 - ICE/SPIKES - DEFAULT DAMAGE" UiName="Stock-ish: BajaRunner XS Spikes" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.032" SoftForceScale="0.20" />
+			<WheelFriction
+				BodyFriction="2.2"
+				BodyFrictionAsphalt="1.4"
+				SubstanceFriction="3.2"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_MT_BajaProXS_Spike_Single" Name="op_Stock-is_Stock_ish_BajaRunner_XS_Spikes_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+
+<!--DEFAULT WHEELS-->
+		<TruckRim Mesh="wheels/wheels_TRX_19_Single" Mass="500" Name="OE Beadlock">
+			<GameData>
+				<UiDesc UiDesc="OE Beadlock" UiName="OE Beadlock" />
+			</GameData>
+		</TruckRim>	
+
+		<TruckRim Mesh="wheels/wheels_Method_305_19_Single" Mass="500" Name="MR 305 Beadlock">
+			<GameData>
+				<UiDesc UiDesc="MR 305 Beadlock" UiName="MR 305 Beadlock" />
+			</GameData>
+		</TruckRim>	
+
+
+	</TruckRims>
+</TruckWheels>

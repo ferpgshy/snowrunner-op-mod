@@ -1,0 +1,571 @@
+<_templates>
+	<TruckWheels>
+		<ggWheelsSingle
+			Width="2.0"
+			WidthRear="2.0"
+		/>
+		<ggWheelsDouble
+			Width="1.5"
+			WidthRear="3.0"
+		/>
+		<ggWheelsWide
+			Width="3.5"
+			WidthRear="3.5"
+		/>
+	</TruckWheels>
+	<WheelFriction>
+		<gg_OPFriction
+			BodyFrictionAsphalt="5.0"
+			BodyFriction="5.0"
+			SubstanceFriction="5.0"
+			IsIgnoreIce="true"
+		/>
+	</WheelFriction>
+	<TruckTire>
+		<ggTireSingle
+			RearMassScale="1"
+			Mass="200"
+		>
+			<WheelTracks
+				TextureAlpha="tracks/default_alpha__s_d.tga"
+				TextureHeight="tracks/default_height__s_d.tga"
+			/>
+			<WheelTracks
+				TextureAlpha="tracks/default_alpha__s_d.tga"
+				TextureHeight="tracks/default_height__s_d.tga"
+				Rear="true"
+			/>
+			<WheelSoftness
+				RadiusOffset="0.025"
+				SoftForceScale="0.320"
+			/>
+		</ggTireSingle>
+		<ggTireDouble
+			RearMassScale="2"
+			Mass="200"
+		>
+			<WheelTracks
+				TextureAlpha="tracks/default_alpha__s_d.tga"
+				TextureHeight="tracks/default_height__s_d.tga"
+			/>
+			<WheelTracks
+				Rear="true"
+				TextureAlpha="tracks/default_double_alpha__s_d.tga"
+				TextureHeight="tracks/default_double_height__s_d.tga"
+			/>
+			<WheelSoftness
+				RadiusOffset="0.025"
+				SoftForceScale="0.320"
+			/>
+		</ggTireDouble>
+		<ggTireWide
+			RearMassScale="1"
+			Mass="400"
+		>
+			<WheelTracks
+				TextureAlpha="tracks/default_alpha__s_d.tga"
+				TextureHeight="tracks/default_height__s_d.tga"
+			/>
+			<WheelTracks
+				TextureAlpha="tracks/default_alpha__s_d.tga"
+				TextureHeight="tracks/default_height__s_d.tga"
+				Rear="true"
+			/>
+			<WheelSoftness
+				RadiusOffset="0.025"
+				SoftForceScale="0.320"
+			/>
+		</ggTireWide>
+	</TruckTire>
+	<TiresInflationSystemSettings>
+		<gg_TireInflation>
+			<Low
+				OnModelFriction="10.0"
+				BodyFriction="10.0"
+				BodyFrictionAsphalt="10.0"
+				SubstanceFriction="10.0"
+				FuelConsumptionModifier="1.5"
+				SteeringSpeedModifier="0.7"
+				AdditionalRadiusOffset="0.1"
+			>
+				<TickDamageParams
+					MinVel = "2.55"
+					MaxVel = "5.0"
+					MinDamage = "2"
+					MaxDamage = "4"
+					DamageTick = "5"
+				/>
+			</Low>
+			<Reduced
+				OnModelFriction="7.5"
+				BodyFriction="7.5"
+				BodyFrictionAsphalt="7.5"
+				SubstanceFriction="7.5"
+				FuelConsumptionModifier="1.25"
+				SteeringSpeedModifier="0.85"
+				AdditionalRadiusOffset="0.05"
+			>
+				<TickDamageParams
+					MinVel = "7.0"
+					MaxVel = "10.0"
+					MinDamage = "2"
+					MaxDamage = "4"
+					DamageTick = "5"
+				/>
+			</Reduced>
+			<Increased
+				OnModelFriction="5.0"
+				BodyFriction="5.0"
+				BodyFrictionAsphalt="5.0"
+				SubstanceFriction="5.0"
+				DamageMult = "1.25"
+				FuelConsumptionModifier="0.9"
+			/>
+			<High
+				OnModelFriction="2.5"
+				BodyFriction="2.5"
+				BodyFrictionAsphalt="2.5"
+				SubstanceFriction="2.5"
+				DamageMult = "1.75"
+				FuelConsumptionModifier="0.75"
+			/>
+		</gg_TireInflation>
+	</TiresInflationSystemSettings>
+</_templates>
+
+<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ END OF TEMPLATES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
+<TruckWheels
+	Radius="1.0"
+	DamageCapacity="999999"
+	_template="ggWheelsDouble"
+>
+
+<!--tires-->
+	<TruckTires>
+		<!--highway-->
+		<TruckTire
+			Name="tire_double_1a"
+			Mesh="wheels/tires/gg_tire_double_highway"
+			_template="ggTireDouble"
+		>
+			<GameData
+				Price="1500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Gg double highway tire I (Asphalt: 4.0 | Allterrain: 2.0 | Mud: 1.5 | Ice: No)"
+					UiName="Gg DHT I [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="4.0"
+				BodyFriction="2.0"
+				SubstanceFriction="1.5"
+				IsIgnoreIce="false"
+				UiName="UI_TIRE_TYPE_HIGHWAY_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Name="tire_double_1b"
+			Mesh="wheels/tires/gg_tire_double_highway"
+			_template="ggTireDouble"
+		>
+			<GameData
+				Price="1500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Gg double highway tire I (Asphalt: 5.0 | Allterrain: 5.0 | Mud: 5.0 | Ice: Yes)"
+					UiName="Gg DHT I [OP]"
+				/>
+			</GameData>
+			<WheelFriction
+				_template="gg_OPFriction"
+				UiName="UI_TIRE_TYPE_HIGHWAY_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		
+		<!--allterrain-->
+		<TruckTire
+			Name="tire_double_2a"
+			Mesh="wheels/tires/gg_tire_double_allterrain"
+			_template="ggTireSingle"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Gg double allterrain tire I (Asphalt: 2.3 | Allterrain: 2.8 | Mud: 2.3 | Ice: No)"
+					UiName="Gg DAT I [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="2.3"
+				BodyFriction="2.8"
+				SubstanceFriction="2.3"
+				IsIgnoreIce="false"
+				UiName="UI_TIRE_TYPE_ALLTERRAIN_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Name="tire_double_2b"
+			Mesh="wheels/tires/gg_tire_double_allterrain"
+			_template="ggTireSingle"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Gg double allterrain tire I (Asphalt: 5.0 | Allterrain: 5.0 | Mud: 5.0 | Ice: Yes)"
+					UiName="Gg DAT I [OP]"
+				/>
+			</GameData>
+			<WheelFriction
+				_template="gg_OPFriction"
+				UiName="UI_TIRE_TYPE_ALLTERRAIN_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+
+		<!--offroad-->
+		<TruckTire
+			Name="tire_double_3a"
+			Mesh="wheels/tires/gg_tire_double_offroad"
+			_template="ggTireSingle"
+		>
+			<GameData
+				Price="3500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Gg double offroad tire I (Asphalt: 2.3 | Allterrain: 2.3 | Mud: 2.8 | Ice: No)"
+					UiName="Gg DOT I [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="2.3"
+				BodyFriction="2.3"
+				SubstanceFriction="2.8"
+				IsIgnoreIce="false"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Name="tire_double_3b"
+			Mesh="wheels/tires/gg_tire_double_offroad"
+			_template="ggTireSingle"
+		>
+			<GameData
+				Price="3500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Gg double offroad tire I (Asphalt: 5.0 | Allterrain: 5.0 | Mud: 5.0 | Ice: Yes)"
+					UiName="Gg DOT I [OP]"
+				/>
+			</GameData>
+			<WheelFriction
+				_template="gg_OPFriction"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		
+		<!--mud-->
+		<TruckTire
+			Name="tire_double_4a"
+			Mesh="wheels/tires/gg_tire_double_mud"
+			_template="ggTireSingle"
+		>
+			<GameData
+				Price="4500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Gg double mud tire I (Asphalt: 1.5 | Allterrain: 2.0 | Mud: 4.0 | Ice: No)"
+					UiName="Gg DMT I [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="1.5"
+				BodyFriction="2.0"
+				SubstanceFriction="4.0"
+				IsIgnoreIce="false"
+				UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Name="tire_double_4b"
+			Mesh="wheels/tires/gg_tire_double_mud"
+			_template="ggTireSingle"
+		>
+			<GameData
+				Price="4500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Gg double mud tire I (Asphalt: 5.0 | Allterrain: 5.0 | Mud: 5.0 | Ice: Yes)"
+					UiName="Gg DMT I [OP]"
+				/>
+			</GameData>
+			<WheelFriction
+				_template="gg_OPFriction"
+				UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		
+		<!--chain-->
+		<TruckTire
+			Name="tire_double_5a"
+			Mesh="wheels/tires/gg_tire_double_snow"
+			_template="ggTireSingle"
+		>
+			<GameData
+				Price="5500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Gg double snow tire I (Asphalt: 1.5 | Allterrain: 2.0 | Mud: 4.0 | Ice: Yes)"
+					UiName="Gg DST I [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="1.5"
+				BodyFriction="2.0"
+				SubstanceFriction="4.0"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Name="tire_double_5b"
+			Mesh="wheels/tires/gg_tire_double_snow"
+			_template="ggTireSingle"
+		>
+			<GameData
+				Price="5500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Gg double snow tire I (Asphalt: 5.0 | Allterrain: 5.0 | Mud: 5.0 | Ice: Yes)"
+					UiName="Gg DST I [OP]"
+				/>
+			</GameData>
+			<WheelFriction
+				_template="gg_OPFriction"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+	
+		<TruckTire _template="ggTireDouble" Mesh="wheels/tires/gg_tire_double_highway" Name="op_gdouble_tire_double_1a_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="ggTireSingle" Mesh="wheels/tires/gg_tire_double_allterrain" Name="op_gdouble_tire_double_2a_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="ggTireSingle" Mesh="wheels/tires/gg_tire_double_offroad" Name="op_gdouble_tire_double_3a_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="ggTireSingle" Mesh="wheels/tires/gg_tire_double_mud" Name="op_gdouble_tire_double_4a_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="ggTireSingle" Mesh="wheels/tires/gg_tire_double_snow" Name="op_gdouble_tire_double_5a_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+
+
+<!--rims-->
+	<TruckRims>
+		<!--gg rims-->
+		<TruckRim
+			Mesh="wheels/rims/gg_rim_double_nutcheck"
+			Name="rim_double_01"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="Gg Nut Checker Rims (double-series)"
+					UiName="Gg DS I"
+				/>
+			</GameData>
+		</TruckRim>
+
+		<!--gg tweak: wheels_medium_double-->
+		<TruckRim
+			Mesh="wheels/rim_medium_highway_allterrain_double_1"
+			Name="rim_double_02"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_DOUBLE_1_DESC"
+					UiName="UI_RIM_MEDIUM_DOUBLE_1_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_highway_allterrain_double_2"
+			Name="rim_double_03"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_DOUBLE_2_DESC"
+					UiName="UI_RIM_MEDIUM_DOUBLE_2_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_highway_allterrain_double_3"
+			Name="rim_double_04"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_DOUBLE_3_DESC"
+					UiName="UI_RIM_MEDIUM_DOUBLE_3_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_highway_allterrain_double_4"
+			Name="rim_double_05">
+			>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_DOUBLE_4_DESC"
+					UiName="UI_RIM_MEDIUM_DOUBLE_4_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_highway_allterrain_double_5"
+			Name="rim_double_06"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_DOUBLE_5_DESC"
+					UiName="UI_RIM_MEDIUM_DOUBLE_5_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_highway_allterrain_double_6"
+			Name="rim_double_07"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_DOUBLE_6_DESC"
+					UiName="UI_RIM_MEDIUM_DOUBLE_6_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_offroad_double_1"
+			Name="rim_double_08"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_OFFROAD_DOUBLE_1_DESC"
+					UiName="UI_RIM_MEDIUM_OFFROAD_DOUBLE_1_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_offroad_double_2"
+			Name="rim_double_09"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_OFFROAD_DOUBLE_2_DESC"
+					UiName="UI_RIM_MEDIUM_OFFROAD_DOUBLE_2_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_offroad_double_3"
+			Name="rim_double_10"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_OFFROAD_DOUBLE_3_DESC"
+					UiName="UI_RIM_MEDIUM_OFFROAD_DOUBLE_3_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_offroad_double_4"
+			Name="rim_double_11"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_OFFROAD_DOUBLE_4_DESC"
+					UiName="UI_RIM_MEDIUM_OFFROAD_DOUBLE_4_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>
+
+<!--
+UI_TIRE_TYPE_HIGHWAY_NAME
+UI_TIRE_TYPE_ALLTERRAIN_NAME
+UI_TIRE_TYPE_OFFROAD_NAME
+UI_TIRE_TYPE_MUDTIRES_NAME
+UI_TIRE_TYPE_CHAINS_NAME
+-->

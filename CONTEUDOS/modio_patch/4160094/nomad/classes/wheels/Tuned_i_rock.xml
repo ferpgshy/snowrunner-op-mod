@@ -1,0 +1,158 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="2.075"
+	WidthRear="2.075"
+>
+			<!-- Tire giude iceberg
+			<Tire Types>
+				UI_TIRE_TYPE_OFFROAD_NAME
+				UI_TIRE_TYPE_MUDTIRES_NAME
+				UI_TIRE_TYPE_HIGHWAY_NAME
+				UI_TIRE_TYPE_CHAINS_NAME
+				UI_TIRE_TYPE_ALLTERRAIN_NAME			
+			</Tire Types>
+			<WheelSoftness>
+				<Stiff RadiusOffset="0.02" SoftForceScale="0.32" />
+				<Soft RadiusOffset="0.03" SoftForceScale="0.12" />
+				<ScoutStiff RadiusOffset="0.02" SoftForceScale="0.32" />
+				<ScoutSoft RadiusOffset="0.1" SoftForceScale="0.2" />
+				<ScoutDefault RadiusOffset="0.025" SoftForceScale="0.24" />
+				<Average RadiusOffset="0.025" SoftForceScale="0.24" />
+			</WheelSoftness>
+			-->			
+	<TruckTires>		
+		<TruckTire
+			Mesh="wheels/tire_interco_tsl_irok"
+			Name="Tuned_I_Rock"
+			RearMassScale="1"
+			Mass="300"
+		>
+			<GameData
+				Price="3500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Tuned [Dirt 5.0 / Asphalt 7.0 / Mud 6.0]" UiName="Tuned: I Rock" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.04" SoftForceScale="0.19" />
+			<WheelFriction
+				BodyFriction="5.0"
+				BodyFrictionAsphalt="7.0"
+				SubstanceFriction="6.0"
+				UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
+			/>
+		</TruckTire>		
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_interco_tsl_irok" Name="op_Tirock_Tuned_I_Rock_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+
+	<TruckRims>
+		<TruckRim Mesh="wheels/wheels_fuel_d694_bronze" Name="f_D964_bronze">
+			<GameData>
+				<UiDesc UiDesc="f_D964_bronze Beadlock" UiName="f_D964_bronze" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/wheels_fuel_d694_grey" Name="f_D964_grey">
+			<GameData>
+				<UiDesc UiDesc="f_D964_grey Beadlock" UiName="f_D964_grey" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/wheels_fuel_d694_black" Name="f_D964_black">
+			<GameData>
+				<UiDesc UiDesc="f_D964_black Beadlock" UiName="f_D964_black" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/wheels_fuel_d694_jr" Name="f_D964_jr">
+			<GameData>
+				<UiDesc UiDesc="f_D964_red Beadlock" UiName="f_D964_red" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/wheels_fuel_rebel_6_beadlock" Name="f-6 Beadlock">
+			<GameData>
+				<UiDesc UiDesc="f-6 Beadlock" UiName="f-6 Beadlock" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/wheels_fuel_syndicate" Name="f-7">
+			<GameData>
+				<UiDesc UiDesc="f-7" UiName="f-7" />
+			</GameData>
+		</TruckRim>	
+		<TruckRim Mesh="wheels/wheels_hutchson_105" Name="hutch 105">
+			<GameData>
+				<UiDesc UiDesc="hutch 105" UiName="hutch 105" />
+			</GameData>
+		</TruckRim>			
+		<TruckRim Mesh="wheels/wheels_kmc_1_black" Name="km 1 black">
+			<GameData>
+				<UiDesc UiDesc="km 1 black" UiName="kmc 1 black" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/wheels_kmc_1_bronze" Name="km 1 bronze">
+			<GameData>
+				<UiDesc UiDesc="km 1 bronze" UiName="km 1 bronze" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/wheels_kmc_2" Name="km 2">
+			<GameData>
+				<UiDesc UiDesc="km 2" UiName="km 2" />
+			</GameData>
+		</TruckRim>	
+		<TruckRim Mesh="wheels/wheels_method_305" Name="meth 305">
+			<GameData>
+				<UiDesc UiDesc="meth 305" UiName="meth 305" />
+			</GameData>
+		</TruckRim>	
+		<TruckRim Mesh="wheels/wheels_military_spec" Name="military spec">
+			<GameData>
+				<UiDesc UiDesc="military spec" UiName="military spec" />
+			</GameData>
+		</TruckRim>	
+		<TruckRim Mesh="wheels/wheels_pro_rim_black" Name="pro rim black">
+			<GameData>
+				<UiDesc UiDesc="pro rim black" UiName="pro rim black" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/wheels_pro_rim_bronze" Name="pro rim bronze">
+			<GameData>
+				<UiDesc UiDesc="pro rim bronze" UiName="pro rim bronze" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/wheels_pro_rim_silver" Name="pro rim silver">
+			<GameData>
+				<UiDesc UiDesc="pro rim silver" UiName="pro rim silver" />
+			</GameData>
+		</TruckRim>		
+		<TruckRim Mesh="wheels/wheels_steel_rim_black" Name="steel rim black">
+			<GameData>
+				<UiDesc UiDesc="steel rim black" UiName="steel rim black" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/wheels_steel_rim_silver" Name="steel rim silver">
+			<GameData>
+				<UiDesc UiDesc="steel rim silver" UiName="steel rim silver" />
+			</GameData>
+		</TruckRim>	
+		<TruckRim Mesh="wheels/wheels_ts_black" Name="ts black">
+			<GameData>
+				<UiDesc UiDesc="ts black" UiName="ts black" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/wheels_vision_warrior_375" Name="warrior 375">
+			<GameData>
+				<UiDesc UiDesc="warrior 375" UiName="warrior 375" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

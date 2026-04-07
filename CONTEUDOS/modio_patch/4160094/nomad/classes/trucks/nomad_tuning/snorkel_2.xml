@@ -1,0 +1,19 @@
+<TruckAddon>
+	<Snorkel Origin="(0.819; 10.0; -0.656)" />
+	<PhysicsModel Mesh="trucks/nomad_tuning/snorkel_2" />
+	<GameData
+		CameraPreset="snorkel2"
+		Category="BODY TUNNING"
+		Price="800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc=""
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Snorkel - Front Facing Small"
+		/>
+		<InstallSocket Type="NomadSnorkel_vis" />
+	</GameData>
+</TruckAddon>

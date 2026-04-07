@@ -1,0 +1,98 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Highway _template="Heavy" RearMassScale="2">
+			<WheelTracks _template="Default" />
+			<WheelTracks _template="DefaultDouble" Rear="true" />
+			<WheelSoftness _template="Stiff" />
+			<WheelFriction _template="Highway" />
+		</Highway>
+		<Allterrain _template="Heavy" RearMassScale="2">
+			<WheelTracks _template="Default" />
+			<WheelTracks _template="DefaultDouble" Rear="true" />
+			<WheelSoftness _template="Average" />
+			<WheelFriction _template="Allterrain" />
+		</Allterrain>
+	</TruckTire>
+</_templates>
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.45"
+	WidthRear="2.83"
+>
+	<TruckTires>
+		<TruckTire _template="Highway" Mass="900" Mesh="wheels/tire_magnum_double_1" Name="highway_1">
+			<WheelFriction _template="Highway" SubstanceFriction="0.4"/>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_HIGHWAY_DESC" UiName="UI_TIRE_MEDIUM_HIGHWAY_DOUBLE_1_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Allterrain" Mass="900" Mesh="wheels/tire_magnum_double_2" Name="allterrain_1">
+			<WheelFriction _template="Allterrain" BodyFrictionAsphalt="1.9"/>
+			<GameData
+				Price="4900"
+				UnlockByExploration="false"
+				UnlockByRank="9"
+			>
+				<UiDesc UiDesc="UI_TIRE_ALLTERRAIN_DESC" UiName="UI_TIRE_MEDIUM_ALLTERRAIN_DOUBLE_1_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Allterrain" Mass="900"  Mesh="wheels/tire_magnum_cheins" Name="whels_cheins" >
+		    <WheelFriction _template="Chains" BodyFrictionAsphalt="1.9" BodyFriction="2.0" SubstanceFriction="3.0" />
+			<GameData
+				Price="6600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_CHAINS_DESC" UiName="CHAINS-C" />
+			</GameData>
+	    </TruckTire>
+	
+		<TruckTire _template="Highway" Mesh="wheels/tire_magnum_double_1" Name="op_mdefolt_highway_1_god">
+			<WheelFriction _template="Highway" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Allterrain" Mesh="wheels/tire_magnum_double_2" Name="op_mdefolt_allterrain_1_god">
+			<WheelFriction _template="Allterrain" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Allterrain" Mesh="wheels/tire_magnum_cheins" Name="op_mdefolt_whels_cheins_god">
+			<WheelFriction _template="Chains" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_magnum" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MEDIUM_DOUBLE_1_DESC" UiName="UI_RIM_MEDIUM_DOUBLE_1_NAME" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_magnum_r" Name="rim_2">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MEDIUM_DOUBLE_2_DESC" UiName="UI_RIM_MEDIUM_DOUBLE_2_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

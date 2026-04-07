@@ -1,0 +1,26 @@
+<TruckAddon>
+
+	<Snorkel Origin="(1.25; 10.0; -0.90)" />
+
+	<PhysicsModel AcceptVisualDamage="false" Mesh="trucks/mod_scout_tuning/addon_Snorkel">
+			<Body ImpactType="Truck" Mass="2" ModelFrame="BoneAddon_cdt" >
+			<Constraint Type="Rigid" />
+			</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkel"
+		Category="OFF ROAD PARTS & ACCESSORIES"
+		IsCustomizable="true"
+		Price="650"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="Not compatible with the Cold Air Intake. You cannot see the spinning turbo turbines with this installed."
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Snorkel: Fender Mounted"
+		/>
+		<InstallSocket Type="Snorkel_Fender_F350_NEW" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,59 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="2.0"
+	WidthRear="2.0"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_SwamperTSL_SXII_19_Single"
+			Name="Stock-ish SwampRunner SX II"
+			RearMassScale="1"
+			Mass="400"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="True Specs: DIRT 2.4 - MUD 3.1 - PAVEMENT 1.3 - DEFAULT DAMAGE" UiName="Stock-ish: SwampRunner SXII" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.032" SoftForceScale="0.20" />
+			<WheelFriction
+				BodyFriction="2.4"
+				BodyFrictionAsphalt="1.3"
+				SubstanceFriction="3.1"
+				UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_SwamperTSL_SXII_19_Single" Name="op_Stock-is_Stock_ish_SwampRunner_SX_II_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+
+<!--DEFAULT WHEELS-->
+		<TruckRim Mesh="wheels/wheels_Method_305_19_HUB_Single" Mass="500" Name="MR 305 Beadlock">
+			<GameData>
+				<UiDesc UiDesc="MR 305 Beadlock" UiName="MR 305 Beadlock" />
+			</GameData>
+		</TruckRim>	
+		
+		<TruckRim Mesh="wheels/wheels_Raceline_Monster_19_HUB_Single" Mass="500" Name="RL Monster Beadlock">
+			<GameData>
+				<UiDesc UiDesc="RL Monster Beadlock" UiName="RL Monster Beadlock" />
+			</GameData>
+		</TruckRim>		
+
+	</TruckRims>
+</TruckWheels>

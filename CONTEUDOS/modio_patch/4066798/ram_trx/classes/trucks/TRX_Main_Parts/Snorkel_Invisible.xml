@@ -1,0 +1,21 @@
+<TruckAddon>
+
+	<Snorkel Origin="(0.873; 10.0; -0.87)" />
+	
+	<PhysicsModel Mesh="trucks/addons/invisible_mesh" />
+	<GameData
+		CameraPreset="SNORKEL_1"
+		Category="OFF-ROAD PARTS & MISC"
+		Price="0"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="Has the same specs as the fender snorkel but is invisible for aesthetics."
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Snorkel: Invisible"
+		/>
+		<InstallSocket Type="Snorkel_TRX" />
+	</GameData>
+</TruckAddon>

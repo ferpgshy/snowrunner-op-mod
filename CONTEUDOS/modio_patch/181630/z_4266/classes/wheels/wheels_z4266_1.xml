@@ -1,0 +1,129 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Mudtires _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Mudtires>
+		<Chains _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Chains> 		
+	</TruckTire>
+</_templates>
+
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.45"
+	WidthRear="1.45"
+>
+	<TruckTires>		
+		<TruckTire
+			_template="Mudtires"
+			Mesh="wheels/tire_z4266_offroad_double_1"
+			Name="offroad_3"
+			RearMassScale="2"
+			Mass="280"	
+		>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MM2 1600 R20 XZL" UiName="MM2 1600 R20 XZL" />
+			</GameData>	
+			<WheelFriction
+				BodyFriction="2.6"
+				BodyFrictionAsphalt="1.5"
+				SubstanceFriction="2.6"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			_template="Mudtires"		
+			Mesh="wheels/tire_z4266_offroad_double_2"
+			Name="offroad_4"
+			RearMassScale="2"
+			Mass="280"				
+		>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MM1 1200 R20 XCL" UiName="MM1 1200 R20 XCL" />
+			</GameData>
+			<WheelFriction
+				BodyFriction="2.6"
+				BodyFrictionAsphalt="1.5"
+				SubstanceFriction="2.6"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			_template="Chains"		
+			Mesh="wheels/tire_z4266_offroad_double_1_chain"
+			Name="chains_2"
+			RearMassScale="2"
+			Mass="280"				
+		>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MM2 1600 R20 XZL Chains" UiName="MM2 1600 R20 XZL Chains" />
+			</GameData>
+			<WheelFriction
+				BodyFriction="2.6"
+				BodyFrictionAsphalt="1.5"
+				SubstanceFriction="2.6"
+				IsIgnoreIce="True"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_z4266_offroad_double_1" Name="op_z1_offroad_3_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_z4266_offroad_double_2" Name="op_z1_offroad_4_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Chains" Mesh="wheels/tire_z4266_offroad_double_1_chain" Name="op_z1_chains_2_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>		
+		<TruckRim Mesh="wheels/rim_z4266_offroad_double_1" Name="rim_2">
+			<GameData>
+				<UiDesc UiDesc="Zetros Default Rim" UiName="Zetros Default Rim" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_z4266_offroad_double_2" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="Zetros Default Rim Black Color" UiName="Zetros Default Rim Black" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

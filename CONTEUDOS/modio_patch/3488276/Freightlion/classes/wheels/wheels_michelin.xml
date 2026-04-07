@@ -1,0 +1,98 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.762"
+	WidthRear="2.975"
+>
+			<!-- Tire giude iceberg
+			<Tire Types>
+				UI_TIRE_TYPE_OFFROAD_NAME
+				UI_TIRE_TYPE_MUDTIRES_NAME
+				UI_TIRE_TYPE_HIGHWAY_NAME
+				UI_TIRE_TYPE_CHAINS_NAME
+				UI_TIRE_TYPE_ALLTERRAIN_NAME			
+			</Tire Types>
+			<WheelSoftness>
+				<Stiff RadiusOffset="0.02" SoftForceScale="0.32" />
+				<Soft RadiusOffset="0.03" SoftForceScale="0.12" />
+				<ScoutStiff RadiusOffset="0.02" SoftForceScale="0.32" />
+				<ScoutSoft RadiusOffset="0.1" SoftForceScale="0.2" />
+				<ScoutDefault RadiusOffset="0.025" SoftForceScale="0.24" />
+				<Average RadiusOffset="0.025" SoftForceScale="0.24" />
+			</WheelSoftness>
+			<WheelTracks>
+				<TwoWheels TextureAlpha="tracks/two_wheels_alpha__s_d.tga" TextureHeight="tracks/two_wheels_height__s_d.tga" />
+				<Offroad TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+				<DefaultDouble TextureAlpha="tracks/default_double_alpha__s_d.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+				<Default TextureAlpha="tracks/default_alpha__s_d.tga" TextureHeight="tracks/default_height__s_d.tga" />
+			</WheelTracks>
+			-->	
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_michelin_double"
+			Name="offroad_1"
+			RearMassScale="2"
+			Mass="300"
+		>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Vanilla [Dirt 3.0 / Asphalt 1.2 / Mud 1.3]" UiName="Vanilla: Mich XZY 3" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/default_double_alpha__s_d.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+			<WheelFriction
+				BodyFriction="3.0"
+				BodyFrictionAsphalt="1.2"
+				SubstanceFriction="1.3"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_michelin_double"
+			Name="offroad_2"
+			RearMassScale="2"
+			Mass="300"
+		>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Tuned [Dirt 5.0 / Asphalt 7.0 / Mud 6.0]" UiName="Tuned: Mich XZY 3" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/default_double_alpha__s_d.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+			<WheelFriction
+				BodyFriction="5.0"
+				BodyFrictionAsphalt="7.0"
+				SubstanceFriction="6.0"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_michelin_double" Name="op_michelin_offroad_1_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_michelin_double" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="10 Lug on 285mm chrome polished wheel" UiName="Steel polished wheel" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

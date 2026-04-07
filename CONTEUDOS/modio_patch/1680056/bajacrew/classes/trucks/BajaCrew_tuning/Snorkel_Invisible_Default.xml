@@ -1,0 +1,19 @@
+<TruckAddon>
+	<Snorkel Origin="(0.38; 10.0; -0.85)" />
+	<PhysicsModel Mesh="trucks/addons/invisible_mesh" />
+	<GameData
+		CameraPreset="default1"
+		Category="OFF ROAD ESSENTIALS"
+		Price="0"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="This snorkel integrates with the in-cabin roll cage. The military-grade tech was developed under the project code name ‘Un-horn the Unicorn’ in collaboration with The U.S. Dept. of Defense, NASA, and Spongebob Squarepants. Use it with pride."
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Invisible Roll Cage Snorkel"
+		/>
+		<InstallSocket Type="Snorkel_BajaCrew" />
+	</GameData>
+</TruckAddon>

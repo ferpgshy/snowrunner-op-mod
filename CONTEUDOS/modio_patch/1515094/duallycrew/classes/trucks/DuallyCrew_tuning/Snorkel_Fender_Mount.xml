@@ -1,0 +1,26 @@
+<TruckAddon>
+
+	<Snorkel Origin="(0.36; 10.0; 0.80)" />
+
+	<PhysicsModel Mesh="trucks/mod_scout_tuning/addon_Snorkel">
+			<Body ImpactType="Truck" Mass="10" ModelFrame="BoneAddon_cdt" >
+			<Constraint Type="Rigid" />
+			</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkel"
+		Category="OFF ROAD PARTS & ACCESSORIES"
+		IsCustomizable="true"
+		Price="350"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc=""
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Snorkel - Fender Mounted"
+		/>
+		<InstallSocket Type="Snorkel_78DuallyCrew" />
+	</GameData>
+</TruckAddon>

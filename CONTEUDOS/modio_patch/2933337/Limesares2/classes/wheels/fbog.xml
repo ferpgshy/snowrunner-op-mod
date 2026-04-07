@@ -1,0 +1,55 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1.00"
+	Width="1.0"
+	WidthRear="1.0"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_mod_dbogger"
+			Name="bogger"
+			RearMassScale="1"
+			Mass="400"
+		>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="bogger tires" UiName="boggers" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/tire_heavy_mudtires_single_tayga_1.tga" TextureHeight="tracks/default_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/tire_heavy_mudtires_single_tayga_1.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.02" SoftForceScale="0.5" />
+			<WheelFriction
+				BodyFriction="8"
+				BodyFrictionAsphalt="8.0"
+				SubstanceFriction="8.0"
+				UiName="UI_TIRE_TYPE_HIGHWAY_NAME"
+				IsIgnoreIce="true"
+			/>
+		</TruckTire>
+		
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mod_dbogger" Name="op_fbog_bogger_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+	
+		<TruckRim Mesh="wheels/rim_mod_f1" Name=" rims">
+			<GameData>
+				<UiDesc UiDesc="its a rim" UiName="Custom  Rim" />
+			</GameData>
+		</TruckRim>
+
+
+	</TruckRims>
+</TruckWheels>

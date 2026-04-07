@@ -1,0 +1,82 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.45"
+	WidthRear="1.45"
+>
+	<TruckTires>		
+		<TruckTire
+			Mesh="wheels/tire_mtvr_offroad_double_2"
+			Name="offroad_2"
+			RearMassScale="2"
+			Mass="200"
+		>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="GoodDay 21.00R22 AC-4A OfRoad Tire" UiName="GoodDay 21.00R22 AC-4A" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />			
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+			<WheelFriction
+				BodyFriction="3.0"
+				BodyFrictionAsphalt="0.8"
+				SubstanceFriction="3.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>		
+		<TruckTire
+			Mesh="wheels/tire_mtvr_chains_all_double_2"
+			Name="chains_2"
+			RearMassScale="2"
+			Mass="200"
+		>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="GoodDay 21.00R22 AC-4A Studded" UiName="GoodDay 21.00R22 AC-4A Studded" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />			
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+			<WheelFriction
+				BodyFriction="3.0"
+				BodyFrictionAsphalt="0.8"
+				SubstanceFriction="3.5"
+				IsIgnoreIce="True"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mtvr_offroad_double_2" Name="op_om23_offroad_2_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mtvr_chains_all_double_2" Name="op_om23_chains_2_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>		
+		<TruckRim Mesh="wheels/rim_mtvr_offroad_double_2" Name="rim_3">
+			<GameData>
+				<UiDesc UiDesc="MTVR Default Rim" UiName="MTVR Default Rim" />
+			</GameData>
+		</TruckRim>		
+	</TruckRims>
+</TruckWheels>

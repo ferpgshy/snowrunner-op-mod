@@ -1,0 +1,24 @@
+<_templates Include="trucks" />
+<TruckAddon IsChassisFullOcclusion="true" >
+	<Snorkel Origin="(0.84; 10.0; -0.689)" />
+	<PhysicsModel Mesh="trucks/RNRGladiator_tuning/snorkel_stock">
+		<Body ImpactType="Truck" Mass="10">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="rear"
+		Category="snorkel"
+		Price="145"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="R&R's Custom Modeled Snorkel"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="R&R's Snorkel"
+		/>
+		<InstallSocket Type="snorkels" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,104 @@
+<WinchVariants>
+	<Winch
+		Name="w_kwc500_default"
+		Length="54"
+		StrengthMult="6.0"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="12000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="Offline can reach a fair distance"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Stock offline winch"
+			/>
+		</GameData>
+	</Winch>
+	<Winch
+		Name="w_kwc500_ext"
+		Length="77"
+		StrengthMult="10.0"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="7500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="Offline extended.  Maximum power.  Reaches a little further then stock"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Extended range offline winch"
+			/>
+		</GameData>
+	</Winch>
+	<Winch
+		Name="w_kwc500_pow"
+		Length="50"
+		StrengthMult="10"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="5000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="The biggest brute of the bunch.  Can pull continents back together"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Max range and power offline CONSOLE"
+			/>
+		</GameData>
+	</Winch>
+	<Winch
+		Name="w_kwc500_offline"
+		Length="100"
+		StrengthMult="10"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="5000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="The biggest brute of the bunch.  Can pull continents back together"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Max range and power offline"
+			/>
+		</GameData>
+	</Winch>
+
+	<Winch
+		Name="op_winch_deus"
+		Length="100"
+		StrengthMult="20.0"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="UI_WINCH_DEUS_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_WINCH_DEUS_NAME"
+			/>
+		</GameData>
+	</Winch>
+</WinchVariants>

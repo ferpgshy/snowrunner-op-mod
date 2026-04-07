@@ -1,0 +1,46 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Mudtires _template="Superheavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Average" />
+			<WheelFriction _template="HeavyMudtires" />
+		</Mudtires>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="999999" Radius="1" Width="1.675">
+	<TruckTires>
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_scout_btr_1" Name="offroad_btr_1">
+			<WheelFriction _template="Mudtires" 
+			BodyFrictionAsphalt="1.2"
+			BodyFriction="3.0"
+			SubstanceFriction="8.0"/>
+			<GameData
+				Price="500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc 
+				UiDesc="Specialized tire set providing great traction in the worst of circumstances without sacrificing too much on-road performance.Asphalt: 1.2, Dirt: 3.0, Mud: 8.0" 
+				UiName="UI_TIRE_SCOUT_BTR_1_NAME" />
+			</GameData>
+		</TruckTire>
+	
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_scout_btr_1" Name="op_mSbtr_offroad_btr_1_god">
+			<WheelFriction _template="Mudtires" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_scout_btr_1" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SCOUT_BTR_1_DESC" UiName="UI_RIM_SCOUT_BTR_1_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

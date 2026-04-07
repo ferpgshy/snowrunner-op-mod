@@ -1,0 +1,45 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad _template="Superheavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Average" />
+		</Offroad>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="999999" Radius="1" Width="1.765">
+	<TruckTires>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mack_defense_m917" Name="offroad">
+			<WheelFriction 
+			_template="Offroad"
+				BodyFriction="2.8"
+				BodyFrictionAsphalt="1.2"
+				SubstanceFriction="1.8"
+			/>
+			<GameData
+				Price="5700"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_OFFROAD_DESC" UiName="Heavy Military Tire" />
+			</GameData>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mack_defense_m917" Name="op_mSm917_offroad_god">
+			<WheelFriction _template="Offroad" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_mack_defense_m917" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MACK_DEFENSE_DESC" UiName="Military Steel Wheel" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

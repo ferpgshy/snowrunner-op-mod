@@ -1,0 +1,2772 @@
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.05"
+		DiffLockType="Always"
+		DiffLockInstalled="True"
+		EngineIconMesh="env/engine_default"
+		EngineIconScale="0.9"
+		EngineStartDelay="1.5"
+		ExhaustStartTime="1.6"
+		FuelCapacity="225"
+		Responsiveness="1"
+		SteerSpeed="0.04"
+		TruckImage="MegaCab_NORSimg"
+		TruckType="SCOUT"
+	>
+		<WinchUpgradeSocket Default="TrailRunner Spec 12-Volt Winch" IsUpgradable="true" Type="winches_classictruck" />
+		<Wheels
+			DefaultRim="Arsenal Beadlock"
+			DefaultTire="Stock-ish Single Military-Runner MVT"
+			DefaultWheelType="Stock-ish Single Military-Runner MVT"
+		>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="front"
+				SteeringAngle="40"
+				SteeringCastor="8"
+				Torque="full"
+				Pos="(1.79; 0.20; 1.1)"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="front"
+				RightSide="true"
+				SteeringAngle="40"
+				SteeringCastor="8"
+				Torque="full"
+				Pos="(1.79; 0.20; 1.1)"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+				Pos="(-4.20; 0.20; 1.14)"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="rear"
+				RightSide="true"
+				Torque="default"
+				Pos="(-4.20; 0.20 1.14)"
+			/>
+		</Wheels>
+		<SuspensionSocket
+			Default="Mega Trail Spec - Active"
+			HardpointY="0.424"
+			Type="s_MegaCabRunner"
+			MaxWheelRadiusWithoutSuspension="0.74"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackDriver"
+			FrameSteerRight="BoneRackPass"
+			RackHalfSizeZ="0.755"
+		/>
+		
+<!-- 		<SteeringRack
+			Frame="BoneRackRS"
+			FrameSteerLeft="BoneRackDriverRS"
+			FrameSteerRight="BoneRackPassRS"
+			RackHalfSizeZ="0.755"
+		/>		 -->
+		
+		<Steam Origin="(1.241; 0.866; 0)" />
+		<SoundsWheels>
+			<WheelWater Sound="surfaces/surf_water_loop" />
+			<WheelSteer Sound="wheels/wheel_steer" />
+			<WheelSpinning Sound="wheels/wheel_spining_loop" />
+			<WheelMud Sound="surfaces/hit/hit_mud_rnd" />
+			<WheelExtrude Sound="" />
+			<WheelDamaged Sound="wheels/wheel_broken_rotate_loop" />
+			<WheelChains Sound="wheels/wheel_tires_chain_loop" />
+			<WaterHit Sound="trucks/common/truck_hit_water_rnd_set/truck_hit_water_rnd" />
+		</SoundsWheels>
+		<SoundsDamage>
+			<Wheels
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Suspension
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Gearbox
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<FuelTank
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Engine
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Critical
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_crit_rnd_set/truck_damage_crit_rnd"
+				VolumeMinMax="(0.5;1.0)"
+			/>
+			<Common
+				DamageAmount="(0.01;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_small_hard_rnd_set/truck_damage_small_hard_rnd"
+				VolumeMinMax="(0.2;1.0)"
+			/>
+		</SoundsDamage>
+		<!--Green Engine Marker Icon is Orgin Below-->
+		<Sounds
+			DisableReversePitch="true"
+			EngineHeavyVolume="0.6"
+			MinDist="8.0"
+			Origin="(1.80; 1.3; 0)"
+			MaxDist="200.0"
+		>
+			<Handbrake		Sound="trucks/chevrolet_kodiakc70/chevrolet_kodiakc70_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/chevrolet_kodiakc70/chevrolet_kodiakc70_handbrake_off" />
+			<Gear Sound="trucks/common/truck_gear_shift_heavy_rnd_set/truck_gear_shift_heavy_rnd" />
+			<GearFail Sound="trucks/ford_f750/ford_f750_gear_wrong" />
+			<DiffLock Sound="trucks/tuz_166/tuz_166_diff_lock" />
+			<Reverse Sound="trucks/cat_ct680/cat_ct680_back_beeper" />
+			<BrakesSqueal Sound="trucks/freightliner_m916a1/freightliner_m916a1_brakes_squeal" />
+			<Honk Sound="tuning/ChooChoo" />
+			<EngineTurbo Sound="engine/turbo_whistle" />	
+			<EngineTurbo_2d Sound="engine/turbo_whistle_2d" IsSound2D="true" />	
+			<EngineRev		Sound="trucks/int_hx520/int_hx520_rev" />
+			<EngineAccel	Sound="trucks/int_hx520/int_hx520_acc" />
+			<EngineStart Sound="engine/Cummins_6.7_Startup" />
+			<EngineStop		Sound="trucks/int_hx520/int_hx520_stop" />
+			<EngineIdle Sound="engine/Cummins_6.7_Idle" />
+			<EngineIdle_2d Sound="engine/Cummins_6.7_Idle_2d" IsSound2D="true" />	
+			<EngineLow		Sound="trucks/freightliner_m916a1/freightliner_m916a1_low" />
+			<EngineLow_2d	Sound="trucks/freightliner_m916a1/freightliner_m916a1_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/int_hx520/int_hx520_high" />
+			<EngineHigh_2d	Sound="trucks/int_hx520/int_hx520_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="trucks/int_hx520/int_hx520_heavy" />
+			<EngineHeavy_2d	Sound="trucks/int_hx520/int_hx520_heavy_2d"	IsSound2D="true" />
+			<HandbrakeOff	Sound="trucks/ford_f750/ford_f750_handbrake_off" />
+			<HeadLight 		Sound="tuning/modern_switch_click" />
+			<AWD Sound="trucks/common/truck_awd_rnd_set/truck_awd_rnd" />
+			<ExhaustShot Sound="trucks/common/truck_exhaust_shot_rnd_set/truck_exhaust_shot_rnd" />
+			<ChassisStress	Sound="trucks/common/truck_stress_rnd_set/truck_stress_rnd" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_old_rnd_set/truck_swing_big_old_rnd" />
+			<WaterGurgle Sound="trucks/common/truck_exhaust_water_gurgle_loop" />
+			<WaterDropping Sound="" />
+			<EngineStalling Sound="trucks/common/truck_engine_stalling" />
+			<DamagedEngine Sound="trucks/common/truck_engine_damaged" />
+			<Cockpit IsSound2D="true" Sound="trucks/common/truck_cockpit_loop" />
+		</Sounds>
+		
+		<Shakers>
+			<Shaker
+				Frame="BoneEngineShaker"
+				MinAngle="(0.2; 0.2; 0.2)"
+				MaxAngle="(0.2; 0.2; 0.2)"
+				MaxFrequency="0.1"
+				ParentFrame=""
+			/>
+		</Shakers>
+		
+		<Shafts>
+			<Shaft Mesh="env/shaft" SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft Mesh="env/shaft" SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft Mesh="env/shaft" SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+			<Shaft Mesh="env/shaft" SocketPointA="Shaft4a" SocketPointB="Shaft4b" />				
+			<Shaft Mesh="env/shaft" SocketPointA="Shaft5a" SocketPointB="Shaft5b" />	
+			<Shaft Mesh="env/shaft" SocketPointA="Shaft6a" SocketPointB="Shaft6b" />	
+		</Shafts>
+		
+		
+		
+		<OcclusionMap
+			HalfSizeZ="2.6"
+			Texture="trucks/occlusion/chassis_small__s_d_a.tga"
+			MinX="-2.2"
+			MaxX="2.2"
+		/>
+		<GearboxSocket Default="Stock-ish HD 6-Speed" Type="gearboxes_MegaCabRunner" />
+		<FuelTank DamageCapacity="500" />
+
+<!-- 		<Exhaust
+			Dir="(-1; -0.75; 0)"
+			IsLight="true"
+			Origin="(-3.60; 0.46; -0.775)"
+			Speed="0.3"
+		/>
+		<Exhaust
+			Dir="(-1; -0.75; 0)"
+			IsLight="true"
+			Origin="(-3.60; 0.46; 0.775)"
+			Speed="0.3"
+		/> -->
+
+		<EngineSocket Default="Stock-ish HD - Triple Turbo Spec" Type="e_MegaCabRunner" />
+		<Driver AnimationSet="Scout" Pos="(0.18; 1.15; 0.54)" SteeringWheelPos="(0.585; 1.55; 0.53)" LegsOffset="(0.16; -0.12; 0)" />
+		<Dashboard>
+		<!--SPEEDO GAUGE RIGHT-->
+			<Gauge
+				Damping="0.9"
+				Scale="1"
+				Dir="(-0.993; 0.12; 0.002)"
+				InputRange="(0;120)"
+				InputType="speed"
+				Mesh="trucks/arrows/gauge_needle_Large_Ram"
+				Org="(0.91; 1.56; 0.432)"
+				OutputAngles="(-175;160)"
+			/>	
+		<!--TACH GAUGE LEFT -->			
+			<Gauge
+				Damping="0.9"
+				Scale="1"
+				Dir="(-1.896; 0.444; 0)"
+				InputRange="(0;1)"
+				InputType="rpm"
+				Mesh="trucks/arrows/gauge_needle_Large_Ram"
+				Org="(0.912; 1.56; 0.62)"
+				OutputAngles="(-100;280)"
+			/>
+		<!--FUEL RIGHT-->
+			<Gauge
+				Damping="0.1"
+				Scale="1"
+				Dir="(-0.896; 0.444; 0)"
+				InputRange="(0;1)"
+				InputType="fuel"
+				Mesh="trucks/arrows/gauge_needle_Small_Ram"
+				Org="(0.902; 1.526; 0.394)"
+				OutputAngles="(-90;90)"
+			/>
+		<!--COOLANT TEMP LEFT-->	
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.993; 0.12; 0.002)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/gauge_needle_Small_Ram"
+				Org="(0.902; 1.526; 0.655)"
+				OutputAngles="(-90;35)"
+			/>
+		</Dashboard>
+		<Damage
+			Capacity="300"
+			SensationMin="(-0.8; 1.2; -0.7)"
+			SensationMax="(0.6; 1.8; 0.7)"
+		>
+			<DamageArea
+				Type="Engine"
+				Min="(2.35; 1.38; -0.33)"
+				Max="(1.40; 0.62; 0.33)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<DamageArea
+				Type="FuelTank"
+				Min="(-4.39; 0.50; -0.38)"
+				Max="(-5.15; 0.80; 0.38)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</Damage>
+
+
+		
+		<!--Wheels-->		
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Stock-ish Single Military-Runner MVT" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Stock-ish Single GrapplerRunner KOH" />				
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Stock-ish Single TrepadorRunner" />				
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Stock-ish Single Baja-Runner Pro XS" />		
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Stock-ish Single BogRunner" />		
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Stock-ish Single SwampRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Stock-ish Single SnowRunner-Studded" />		
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.01" Scale="0.70" Type="Stock-ish Dually Military-Runner MVT" />			
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.01" Scale="0.70" Type="Stock-ish Dually Baja-Runner Pro XS" />		
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.01" Scale="0.70" Type="Stock-ish Dually SnowRunner-Studded" />		
+		
+				
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Redline Single Military-Runner MVT" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Redline Single GrapplerRunner KOH" />				
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Redline Single TrepadorRunner" />				
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Redline Single Baja-Runner Pro XS" />		
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Redline Single BogRunner" />		
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Redline Single SwampRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Redline Single SnowRunner-Studded" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.01" Scale="0.70" Type="Redline Dually Military-Runner MVT" />			
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.01" Scale="0.70" Type="Redline Dually Baja-Runner Pro XS" />		
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.01" Scale="0.70" Type="Redline Dually SnowRunner-Studded" />					
+		
+			
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Cheater Single Military-Runner MVT" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Cheater Single GrapplerRunner KOH" />				
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Cheater Single TrepadorRunner" />				
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Cheater Single Baja-Runner Pro XS" />		
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Cheater Single BogRunner" />		
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Cheater Single SwampRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.70" Type="Cheater Single SnowRunner-Studded" />		
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.01" Scale="0.70" Type="Cheater Dually Military-Runner MVT" />			
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.01" Scale="0.70" Type="Cheater Dually Baja-Runner Pro XS" />		
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.01" Scale="0.70" Type="Cheater Dually SnowRunner-Studded" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Stock-ish Single Military-Runner MVT" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Stock-ish Single Military-Runner MVT" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Stock-ish Single Military-Runner MVT" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Stock-ish Single GrapplerRunner KOH" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Stock-ish Single GrapplerRunner KOH" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Stock-ish Single GrapplerRunner KOH" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Stock-ish Single TrepadorRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Stock-ish Single TrepadorRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Stock-ish Single TrepadorRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Stock-ish Single Baja-Runner Pro XS" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Stock-ish Single Baja-Runner Pro XS" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Stock-ish Single Baja-Runner Pro XS" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Stock-ish Single BogRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Stock-ish Single BogRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Stock-ish Single BogRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Stock-ish Single SwampRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Stock-ish Single SwampRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Stock-ish Single SwampRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Stock-ish Single SnowRunner-Studded" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Stock-ish Single SnowRunner-Studded" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Stock-ish Single SnowRunner-Studded" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="0.91" Type="Stock-ish Dually Military-Runner MVT" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.015" Type="Stock-ish Dually Military-Runner MVT" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.12" Type="Stock-ish Dually Military-Runner MVT" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="0.91" Type="Stock-ish Dually Baja-Runner Pro XS" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.015" Type="Stock-ish Dually Baja-Runner Pro XS" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.12" Type="Stock-ish Dually Baja-Runner Pro XS" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="0.91" Type="Stock-ish Dually SnowRunner-Studded" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.015" Type="Stock-ish Dually SnowRunner-Studded" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.12" Type="Stock-ish Dually SnowRunner-Studded" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Redline Single Military-Runner MVT" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Redline Single Military-Runner MVT" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Redline Single Military-Runner MVT" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Redline Single GrapplerRunner KOH" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Redline Single GrapplerRunner KOH" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Redline Single GrapplerRunner KOH" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Redline Single TrepadorRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Redline Single TrepadorRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Redline Single TrepadorRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Redline Single Baja-Runner Pro XS" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Redline Single Baja-Runner Pro XS" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Redline Single Baja-Runner Pro XS" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Redline Single BogRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Redline Single BogRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Redline Single BogRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Redline Single SwampRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Redline Single SwampRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Redline Single SwampRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Redline Single SnowRunner-Studded" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Redline Single SnowRunner-Studded" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Redline Single SnowRunner-Studded" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="0.91" Type="Redline Dually Military-Runner MVT" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.015" Type="Redline Dually Military-Runner MVT" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.12" Type="Redline Dually Military-Runner MVT" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="0.91" Type="Redline Dually Baja-Runner Pro XS" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.015" Type="Redline Dually Baja-Runner Pro XS" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.12" Type="Redline Dually Baja-Runner Pro XS" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="0.91" Type="Redline Dually SnowRunner-Studded" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.015" Type="Redline Dually SnowRunner-Studded" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.12" Type="Redline Dually SnowRunner-Studded" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Cheater Single Military-Runner MVT" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Cheater Single Military-Runner MVT" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Cheater Single Military-Runner MVT" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Cheater Single GrapplerRunner KOH" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Cheater Single GrapplerRunner KOH" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Cheater Single GrapplerRunner KOH" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Cheater Single TrepadorRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Cheater Single TrepadorRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Cheater Single TrepadorRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Cheater Single Baja-Runner Pro XS" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Cheater Single Baja-Runner Pro XS" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Cheater Single Baja-Runner Pro XS" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Cheater Single BogRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Cheater Single BogRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Cheater Single BogRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Cheater Single SwampRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Cheater Single SwampRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Cheater Single SwampRunner" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.91" Type="Cheater Single SnowRunner-Studded" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.015" Type="Cheater Single SnowRunner-Studded" />
+		<CompatibleWheels OffsetZ="0.01" Scale="1.12" Type="Cheater Single SnowRunner-Studded" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="0.91" Type="Cheater Dually Military-Runner MVT" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.015" Type="Cheater Dually Military-Runner MVT" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.12" Type="Cheater Dually Military-Runner MVT" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="0.91" Type="Cheater Dually Baja-Runner Pro XS" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.015" Type="Cheater Dually Baja-Runner Pro XS" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.12" Type="Cheater Dually Baja-Runner Pro XS" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="0.91" Type="Cheater Dually SnowRunner-Studded" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.015" Type="Cheater Dually SnowRunner-Studded" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="0.07" Scale="1.12" Type="Cheater Dually SnowRunner-Studded" />	
+
+
+
+		
+		<Camera Center="(-1.5; 0; 0)" RadiusMultiplier="0.8">
+			<Cockpit
+				LimitsHor="(-1.0; 2.4)"
+				LimitsVer="(-0.70; 0.2)"
+				ViewDir="(1; -0.05; 0)"
+				WindshieldDiffuseTexture="trucks/glass_mat__d_a.tga"
+				WindshieldShadingTexture="trucks/glass_mat__sh_d.tga"
+				ZoomViewDirOffset="(0; -0.05; 0)"
+				ViewPos="(-0.10; 1.88; 0.55)"
+				ZoomViewPosOffset="(0.2; 0; 0)"
+			>
+				<Rear
+					HorTransitionEnd="-1.2"
+					HorTransitionStart="-1.1"
+					LimitsVer="(-1.2; 0.2)"
+					RollAngle="-15"
+					ViewDir="(1; -0.05; 0)"
+					ViewPosOffset="(0.2; -0.1; 0.55)"
+				/>
+						
+		
+				<Mirror
+					ClipDir="(-0.935; -0.92; 0.297)"
+					ClipOffset="5.4"
+					FOVScale="2.4"
+					MeshFrame="Rearview_Mirror"
+					ReflectionDir="(-0.548; -0.042; 0.15)"
+					Size="(0.374; 0.165)"
+					Pos="(0.72; 1.96; 0)"
+				/>	
+
+				<Mirror
+					ClipDir="(-1; 0; 0)"
+					ClipOffset="0.1"
+					FOVScale="1.8"
+					MeshFrame="Door_Mirror_Driver"
+					ReflectionDir="(-0.75; 0.1; -0.2)"
+					Size="(0.4; 0.4)"
+					Pos="(0.72; 1.71; 1.20)"
+				>
+					<SecondaryView
+					ClipDir="(-0.866; 0; -0.5)"
+					CurveAngle="5"
+					FOVScale="1.8"
+					MeshFrame="Info_Mirror 2"
+					Size="(0.10; 0.08)"
+					Pos="(0.749; 1.535; 0.0435)"
+					/>
+				</Mirror>						
+				
+				<Mirror
+					ClipDir="(-1; 0; 0)"
+					ClipOffset="0.1"
+					FOVScale="1.8"
+					MeshFrame="Door_Mirror_Pass"
+					ReflectionDir="(-0.85; 0.1; 0.50)"
+					Size="(0.4; 0.4)"
+					Pos="(0.72; 1.71; -1.20)"
+				>
+					<SecondaryView
+					ClipDir="(-0.866; 0; -0.5)"
+					CurveAngle="5"
+					FOVScale="1.8"
+					MeshFrame="Info_Mirror 3"
+					Size="(0.10; 0.08)"
+					Pos="(0.749; 1.535; -0.0435)"
+					/>
+				</Mirror>						
+				
+				<Mirror
+					ClipDir="(0.9; 0.8; 0)"
+					ClipOffset="1.4"
+					FOVScale="3.2"
+					LookAtOffset="(-1.9; 0.5; 0)"
+					MeshFrame="Info_Mirror 1"
+					ReflectionDir="(-1; 0.218; -0.24)"		
+					Size="(0.20; 0.15)"
+					Pos="(0.785; 1.62; 0)"
+				/>
+				<!--ReflectionDir -- X will angle towards the driver more or less-->
+
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxleFront" />
+			<Axle Frame="BoneAxleRear" />
+		</Axles>
+	</TruckData>
+	<Snorkel Origin="(0.10; 10.0; 0)" />
+
+	<Rotator EngineTorqueFactor="0.9" Frame="BoneTurbo1Driver" RotationSpeed="200" RotationAxis="(1; 0; 0)" />
+	<Rotator EngineTorqueFactor="0.9" Frame="BoneTurbo2Pass" RotationSpeed="200" RotationAxis="(1; 0; 0)" />
+
+	<PhysicsModel Mesh="trucks/MegaCabRunner">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(-0.1; -0.5; 0)"
+			ImpactType="Truck"
+			Mass="3600"
+		>
+			<Body
+				CenterOfMassOffset="(-0.2; -0.5; 0)"
+				Friction="0.1"
+				ImpactType="Truck"
+				Mass="2800"
+				ModelFrame="BoneCabin_cdt"
+			>
+		
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-10"
+					MaxLimit="10"
+				>
+					<Motor Damping="80000" Spring="1800000" Type="Spring" />
+				</Constraint>	
+
+			</Body>		
+	</Body>
+	</PhysicsModel>	
+	
+	
+	<ModelAttachments>
+		<!--Taillights Red Center Diffused Brake Light on Ground - When Braking-->	
+		<StopSignals>
+			<Light
+				AttenEnd="4"
+				Color="(102; 1; 1)"
+				Dir="(-1; -0.2; 0)"
+				InnerCone="120"
+				OuterCone="160"
+				Pos="(-5.5; 0.95; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			
+			<!--Pass Brake Light X 2-->
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.2"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.6"
+				SizeMultAtDay="0.5"
+				Pos="(-5.41; 1.42; 0.93)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.2"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.6"
+				SizeMultAtDay="0.5"
+				Pos="(-5.41; 1.135; 0.93)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+
+			<!--Driver Brake Light X 2-->
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.2"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.6"
+				SizeMultAtDay="0.5"
+				Pos="(-5.41; 1.42; -0.93)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.15"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.6"
+				SizeMultAtDay="0.5"
+				Pos="(-5.41; 1.135; -0.93)"
+				ParentFrame="BoneChassis_cdt"
+			/>	
+			
+		<!--Roof 3rd Brake Light X 6-->
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.15"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-2.51; 2.15; 0.10)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.15"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-2.51; 2.15; 0.063)"
+				ParentFrame="BoneCabin_cdt"
+			/>			
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.15"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-2.51; 2.15; 0.023)"
+				ParentFrame="BoneCabin_cdt"
+			/>							
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.15"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-2.51; 2.15; -0.023)"
+				ParentFrame="BoneCabin_cdt"
+			/>					
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.15"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-2.51; 2.15; -0.063)"
+				ParentFrame="BoneCabin_cdt"
+			/>				
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.15"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-2.51; 2.15; -0.10)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			
+		<!--Bed 4th Brake Light X 3-->
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.2"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-5.365; 0.98; 0.17)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.2"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-5.365; 0.98; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>			
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.2"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-5.365; 0.98; -0.17)"
+				ParentFrame="BoneChassis_cdt"
+			/>			
+			
+		</StopSignals>
+
+		
+		<Ignition>
+		<!--HeadLights White Diffused Under Bumper Light ON Ground with Ignition-->		
+			<Light
+				AttenEnd="4"
+				Color="g(255; 255; 255) x 2"
+				Dir="(1; -0.3; 0)"
+				InnerCone="20"
+				OuterCone="160"
+				Pos="(2.2; 2.5; 0.80)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Light
+				AttenEnd="4"
+				Color="g(255; 255; 255) x 2"
+				Dir="(1; -0.3; 0)"
+				InnerCone="20"
+				OuterCone="160"
+				Pos="(2.2; 2.5; -0.80)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			
+		<!--Taillights - Wide Red Diffused Light Shadow Light on Ground-->
+			<Light
+				AttenEnd="5"
+				Color="g(128; 0; 0) x 3"
+				Dir="(-1; -0.2; 0)"
+				InnerCone="20"
+				OuterCone="160"
+				Pos="(-5.5; 0.67; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			
+		<!--Taillights - Red Diffused Lights on with Ignition-->
+		<!--Pass Taillight Running Light X 2-->
+			<Flare
+				AspectRatio="1.4"
+				Color="g(169; 0; 0) x 1.5"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 1)"
+				DirAngle="90"
+				Size="0.25"
+				Pos="(-5.41; 1.42; 0.93)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(169; 0; 0) x 1.5"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 1)"
+				DirAngle="90"
+				Size="0.25"
+				Pos="(-5.40; 1.135; 0.93)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		<!--Driver Taillight Running Light X 2-->
+			<Flare
+				AspectRatio="1.4"
+				Color="g(169; 0; 0) x 1.5"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; -1)"
+				DirAngle="90"
+				Size="0.25"
+				Pos="(-5.41; 1.42; -0.93)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(169; 0; 0) x 1.5"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; -1)"
+				DirAngle="90"
+				Size="0.25"
+				Pos="(-5.40; 1.135; -0.93)"
+				ParentFrame="BoneChassis_cdt"
+			/>			
+		
+		<!--Roof 3rd Brake Light X 6-->
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.1"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-2.51; 2.15; 0.10)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.1"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-2.51; 2.15; 0.063)"
+				ParentFrame="BoneCabin_cdt"
+			/>			
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.1"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-2.51; 2.15; 0.023)"
+				ParentFrame="BoneCabin_cdt"
+			/>							
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.1"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-2.51; 2.15; -0.023)"
+				ParentFrame="BoneCabin_cdt"
+			/>					
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.1"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-2.51; 2.15; -0.063)"
+				ParentFrame="BoneCabin_cdt"
+			/>				
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.1"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-2.51; 2.15; -0.10)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+
+		<!--Bed 4th Brake Light X 3-->
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.2"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-5.365; 0.98; 0.17)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.2"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-5.365; 0.98; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>			
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.2"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.5"
+				Pos="(-5.365; 0.98; -0.17)"
+				ParentFrame="BoneChassis_cdt"
+			/>				
+		
+	</Ignition>
+
+		<HeadLight>
+			<Model
+				Dir="(1; -0.1; 0)"
+				Mesh="env/light_ray"
+				Org="(2.44; 1.27; 0.905)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Model
+				Dir="(1; -0.1; 0)"
+				Mesh="env/light_ray"
+				Org="(2.44; 1.27; -0.905)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			
+			<!--Projector Beam HeadLights-->
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.18"
+				SizeMultAtDay="0.5"
+				Pos="(2.44; 1.27; 0.905)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.18"
+				SizeMultAtDay="0.5"
+				Pos="(2.44; 1.27; -0.905)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			
+			<!--Quad Beams HeadLights-->
+			
+			<!--Driver-->
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.505; 1.29; 0.775)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.56; 1.29; 0.705)"
+				ParentFrame="BoneCabin_cdt"
+			/>			
+			
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.505; 1.25; 0.775)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.56; 1.25; 0.705)"
+				ParentFrame="BoneCabin_cdt"
+			/>		
+			
+			<!--Pass-->
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.505; 1.29; -0.775)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.56; 1.29; -0.705)"
+				ParentFrame="BoneCabin_cdt"
+			/>			
+			
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.505; 1.25; -0.775)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.56; 1.25; -0.705)"
+				ParentFrame="BoneCabin_cdt"
+			/>				
+			
+		
+			
+			<!--HeadLights Not Sure What this Does - Flare Does not give off light-->
+			<Flare
+				AspectRatio="5.0"
+				Color="g(255; 255; 255) x 0.05"
+				ColorMultAtDay="0"
+				Dir="(1; 0; 0)"
+				DirAngle="45"
+				Size="0.5"
+				Texture="sfx/flare_line__s_d.tga"
+				Pos="(2.44; 1.27; 0.905)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="5.0"
+				Color="g(255; 255; 255) x 0.05"
+				ColorMultAtDay="0"
+				Dir="(1; 0; 0)"
+				DirAngle="45"
+				Size="0.5"
+				Texture="sfx/flare_line__s_d.tga"
+				Pos="(2.44; 1.27; -0.905)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+
+	<!--DRL Driver-->
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.38; 1.13; 0.94)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.43; 1.13; 0.89)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.48; 1.13; 0.83)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.52; 1.13; 0.775)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+	<!--DRL Pass-->
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.38; 1.13; -0.94)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.43; 1.13; -0.89)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.48; 1.13; -0.83)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.55"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; -1)"
+				DirAngle="135"
+				Reflections="true"
+				Size="0.05"
+				SizeMultAtDay="0.5"
+				Pos="(2.52; 1.13; -0.775)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+
+
+			
+
+		<!--HEADLIGHT SIDE Markers Yellow-->
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.24"
+				ColorMultAtDay="0.3"
+				Dir="(1; 0; 1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(2.325; 1.295; 1.0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.24"
+				ColorMultAtDay="0.3"
+				Dir="(1; 0; 1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(2.325; 1.205; 1.0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.24"
+				ColorMultAtDay="0.3"
+				Dir="(1; 0; -1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(2.325; 1.295; -1.0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.24"
+				ColorMultAtDay="0.3"
+				Dir="(1; 0; -1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(2.325; 1.205; -1.0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+
+		<!--Roof Markers Yellow-->
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.25"
+				ColorMultAtDay="0.3"
+				Dir="(1; 1; 1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(0.445; 2.16; 0.59)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.25"
+				ColorMultAtDay="0.3"
+				Dir="(1; 1; 1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(0.445; 2.16; 0.57)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.25"
+				ColorMultAtDay="0.3"
+				Dir="(1; 1; 1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(0.52; 2.17; 0.228)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.25"
+				ColorMultAtDay="0.3"
+				Dir="(1; 1; 1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(0.52; 2.17; 0.205)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+						
+			
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.25"
+				ColorMultAtDay="0.3"
+				Dir="(1; 1; 1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(0.535; 2.17; 0.012)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.25"
+				ColorMultAtDay="0.3"
+				Dir="(1; 1; -1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(0.535; 2.17; -0.012)"
+				ParentFrame="BoneCabin_cdt"
+			/>			
+			
+
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.25"
+				ColorMultAtDay="0.3"
+				Dir="(1; 1; -1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(0.445; 2.16; -0.59)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.25"
+				ColorMultAtDay="0.3"
+				Dir="(1; 1; -1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(0.445; 2.16; -0.57)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.25"
+				ColorMultAtDay="0.3"
+				Dir="(1; 1; -1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(0.52; 2.17; -0.228)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.25"
+				ColorMultAtDay="0.3"
+				Dir="(1; 1; -1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(0.52; 2.17; -0.205)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+						
+
+
+		<!--Bed  Marker Lights - Yellow-->
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.2"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(-4.90; 0.99; 1.24)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.2"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(-4.88; 0.99; 1.25)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.2"
+				ColorMultAtDay="0.3"
+				Dir="(1; 0; 1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(-3.355; 0.99; 1.25)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.2"
+				ColorMultAtDay="0.3"
+				Dir="(1; 0; 1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(-3.335; 0.98; 1.245)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+
+
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.2"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; -1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(-4.90; 0.99; -1.24)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.2"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; -1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(-4.88; 0.99; -1.25)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.2"
+				ColorMultAtDay="0.3"
+				Dir="(1; 0; -1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(-3.355; 0.99; -1.25)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				AspectRatio="1.5"
+				Color="g(252; 194; 3) x 0.2"
+				ColorMultAtDay="0.3"
+				Dir="(1; 0; -1)"
+				DirAngle="90"
+				Size="0.1"
+				Pos="(-3.335; 0.98; -1.245)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			
+		<!--License Plate Lights-->
+			<Flare
+				Pos="(-5.43; 0.90; 0.30)"
+				Color="g(255; 255; 255) x 0.16"				
+				Size="0.3"
+				AspectRatio="1.4"
+				ColorMultAtDay="0.8"
+				Dir="(-1; 0; 1)"
+				DirAngle="140"
+				Reflections="true"
+				SizeMultAtDay="0.7"
+				ParentFrame="BoneChassis_cdt"
+			/>	
+			<Flare
+				Pos="(-5.43; 0.90; -0.30)"
+				Color="g(255; 255; 255) x 0.16"				
+				Size="0.3"
+				AspectRatio="1.4"
+				ColorMultAtDay="0.8"
+				Dir="(-1; 0; -1)"
+				DirAngle="140"
+				Reflections="true"
+				SizeMultAtDay="0.7"
+				ParentFrame="BoneChassis_cdt"
+			/>			
+			
+		</HeadLight>
+		
+
+	<ReverseSignals>
+		<!--Rear Reverse Lights-->	
+		<!--Driver-->
+			<Light
+                Pos="(-6.5; 1.50; 0.90)"
+                Color="(102; 102; 102) x 15.5"
+                AttenEnd="15.0"
+                Dir="(-1; -0.2; 0)"
+                InnerCone="120"
+                OuterCone="160"
+				ParentFrame="BoneChassis_cdt"
+            />
+			
+		<!--Driver Middle Lights-->			
+			<Flare
+				Pos="(-5.40; 1.28; 0.92)"
+				Color="g(255; 255; 255) x 0.2"				
+				Size="0.5"
+				AspectRatio="1.4"
+				ColorMultAtDay="0.8"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+				Reflections="true"
+				SizeMultAtDay="0.7"
+				ParentFrame="BoneChassis_cdt"
+			/>			
+			
+			<Flare
+				Pos="(-5.40; 1.31; 0.93)"			
+				Color="g(255; 255; 255) x 0.02"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>	
+			<Flare
+				Pos="(-5.40; 1.26; 0.93)"			
+				Color="g(255; 255; 255) x 0.02"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>			
+			
+			<!--Driver Top Lights-->							
+			<Flare
+				Pos="(-5.35; 1.37; 0.945)"
+				Color="g(255; 255; 255) x 0.3"				
+				Size="0.5"
+				AspectRatio="1.4"
+				ColorMultAtDay="0.8"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+				Reflections="true"
+				SizeMultAtDay="0.7"
+				ParentFrame="BoneChassis_cdt"
+			/>		
+			<Flare
+				Pos="(-5.32; 1.37; 0.998)"			
+				Color="g(255; 255; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				Pos="(-5.35; 1.37; 0.945)"			
+				Color="g(255; 255; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>		
+			<Flare
+				Pos="(-5.39; 1.37; 0.898)"			
+				Color="g(255; 255; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>					
+
+			<!--Driver Bottom Lights-->							
+			<Flare
+				Pos="(-5.35; 1.19; 0.945)"
+				Color="g(255; 255; 255) x 0.3"				
+				Size="0.5"
+				AspectRatio="1.4"
+				ColorMultAtDay="0.8"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+				Reflections="true"
+				SizeMultAtDay="0.7"
+				ParentFrame="BoneChassis_cdt"
+			/>		
+			<Flare
+				Pos="(-5.32; 1.19; 0.998)"			
+				Color="g(255; 255; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				Pos="(-5.35; 1.19; 0.945)"			
+				Color="g(255; 255; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>		
+			<Flare
+				Pos="(-5.39; 1.19; 0.898)"			
+				Color="g(255; 255; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>			
+
+
+		<!--Pass-->
+			<Light
+                Pos="(-6.5; 1.50; -0.90)"
+                Color="(102; 102; 102) x 15.5"
+                AttenEnd="15.0"
+                Dir="(-1; -0.2; 0)"
+                InnerCone="120"
+                OuterCone="160"
+				ParentFrame="BoneChassis_cdt"
+            />
+			
+		<!--Pass Middle Lights-->			
+			<Flare
+				Pos="(-5.40; 1.28; -0.92)"
+				Color="g(255; 255; 255) x 0.2"				
+				Size="0.5"
+				AspectRatio="1.4"
+				ColorMultAtDay="0.8"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+				Reflections="true"
+				SizeMultAtDay="0.7"
+				ParentFrame="BoneChassis_cdt"
+			/>			
+			
+			<Flare
+				Pos="(-5.40; 1.31; -0.93)"			
+				Color="g(255; 255; 255) x 0.02"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>	
+			<Flare
+				Pos="(-5.40; 1.26; -0.93)"			
+				Color="g(255; 255; 255) x 0.02"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>			
+			
+			<!--Pass Top Lights-->							
+			<Flare
+				Pos="(-5.35; 1.37; -0.945)"
+				Color="g(255; 255; 255) x 0.3"				
+				Size="0.5"
+				AspectRatio="1.4"
+				ColorMultAtDay="0.8"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+				Reflections="true"
+				SizeMultAtDay="0.7"
+				ParentFrame="BoneChassis_cdt"
+			/>		
+			<Flare
+				Pos="(-5.32; 1.37; -0.998)"			
+				Color="g(255; 255; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				Pos="(-5.35; 1.37; -0.945)"			
+				Color="g(255; 255; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>		
+			<Flare
+				Pos="(-5.39; 1.37; -0.898)"			
+				Color="g(255; 255; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>					
+
+			<!--Pass Bottom Lights-->							
+			<Flare
+				Pos="(-5.35; 1.19; -0.945)"
+				Color="g(255; 255; 255) x 0.3"				
+				Size="0.5"
+				AspectRatio="1.4"
+				ColorMultAtDay="0.8"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+				Reflections="true"
+				SizeMultAtDay="0.7"
+				ParentFrame="BoneChassis_cdt"
+			/>		
+			<Flare
+				Pos="(-5.32; 1.19; -0.998)"			
+				Color="g(255; 255; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare
+				Pos="(-5.35; 1.19; -0.945)"			
+				Color="g(255; 255; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>		
+			<Flare
+				Pos="(-5.39; 1.19; -0.898)"			
+				Color="g(255; 255; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.2"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				ParentFrame="BoneChassis_cdt"
+			/>	
+	</ReverseSignals>
+	
+	</ModelAttachments>
+	<Landmark Mesh="landmarks_chevrolet_ck1500_lmk" MinScale="1.8" MaxScale="3.8" />
+	<HeadLight
+		AttenEnd="90"
+		AttenStart="-20"
+		Color="g(255; 255; 255) x 3"
+		Dir="(1; -0.2; 0)"
+		InnerCone="0"
+		OuterCone="120"
+		Pos="(3.0; 1.17; 0)"
+		ParentFrame="BoneCabin_cdt"
+	/>
+
+	<GameData
+		Country=""
+		Price="38000"
+		Recallable="true"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+
+		
+		<!--Winch Center-->		
+		<WinchSocket Pos="(2.65; 0.63; 0)" />
+		
+		<!--Middle/Side of Truck-->
+		<WinchSocket Pos="(-1.15; 0.50; 0.59)" />
+		<WinchSocket Pos="(-1.15; 0.50; -0.59)" />
+		
+		<!--Back Bumper Corners-->
+		<WinchSocket Pos="(-5.49; 0.835; 0.965)" />
+		<WinchSocket Pos="(-5.49; 0.835; -0.965)" />
+		
+		<!--Trailer Hitch-->
+		<WinchSocket Pos="(-5.42; 0.63; 0)" />
+
+
+		<UiDesc
+			UiDesc="Mega Cab Runner - NO Rear Steer"
+			UiIcon30x30=""
+			UiIcon328x458="shopImgMegaCabRunnerNORS"
+			UiIcon40x40=""
+			UiIconLogo="RedLineCreationsLogo"
+			UiName="Mega Cab Runner - NO Rear Steer"
+		/>
+		
+		
+		<CustomizationCameras>
+		
+		<!--SUPER WIDE SHOT OF BACK OF TRUCK-->
+			<CameraPos
+				FOV="24.0"
+				Name="addon_1"
+				InterestPosition="(1.036; 1.692; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-6.923; 2.071; 10.147)"
+			/>
+			
+		<!--GOOD GENERIC WIDER SHOT FRONT TO REAR AND SHOWS DOORS HOOD AND ROOF WELL-->
+			<CameraPos
+				FOV="40.0"
+				Name="addon_2"
+				InterestPosition="(-5.0; 2.5; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.0; 3.0; -2.0)"
+			/>
+
+		<!--GOOD GENERIC WIDER SHOT FRONT TO REAR AND SHOWS DOORS HOOD AND ROOF WELL-->
+			<CameraPos
+				FOV="32.0"
+				Name="addon_3"
+				InterestPosition="(2.991; 1.77; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(10.328; 3.6; 2.1)"
+			/>	
+			
+		<!--GOOD GENERIC WIDER SHOT FRONT TO REAR AND SHOWS DOORS HOOD AND ROOF WELL-->
+			<CameraPos
+				FOV="24.0"
+				Name="addon_4"
+				InterestPosition="(1.036; 1.692; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-7.0; 3.5; 4.0)"
+			/>		
+
+			<!--GENERIC MED SHOT FRONT BUMPER TO DRIVER DOOR INCLUDING WHEEL-->
+			<CameraPos
+				FOV="40.0"
+				Name="side_r"
+				InterestPosition="(3.990; 0.759; 3.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-0.1; 2.5; -5.713)"
+			/>
+			
+			<!--GOOD HIGH ANGLE OF FRONT HOOD-->
+			<CameraPos
+				FOV="32.0"
+				Name="roof"
+				InterestPosition="(5.474; 0.759; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(10.148; 3.473; -2.51)"
+			/>
+			
+			<!--CABIN ENGINE COVER-->
+			<CameraPos
+				FOV="32.0"
+				Name="cabin_engine_cover"
+				InterestPosition="(4.0; 0.0; 3.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(5.7; 2.0; -1.12)"
+			/>			
+		
+			<!--BOBBLE HEAD-->
+			<CameraPos
+				FOV="40.0"
+				InterestPosition="(10.813; 0.5; 3.5)"
+				Interior="true"
+				Name="bubble_head"
+				Position="(4.3; 2.0; -0.75)"
+			/>
+		
+			<!--AIR FRESHENER-->
+			<CameraPos
+				FOV="30.0"
+				InterestPosition="(10.813; 0.5; 2.5)"
+				Interior="true"
+				Name="mirror_mount"
+				Position="(4.5; 2.0; -0.4694)"
+			/>		
+
+			<!--INTERIOR-->
+			<CameraPos
+				FOV="45.0"
+				InterestPosition="(10.813; 0.5; 2.5)"
+				Interior="true"
+				Name="interior"
+				Position="(6.2; 1.95; -0.4)"
+			/>
+
+			<!--INTERIOR-->
+			<CameraPos
+				FOV="35.0"
+				InterestPosition="(10.813; 0.5; 2.5)"
+				Interior="true"
+				Name="interior2"
+				Position="(4.5; 2.0; -0.45)"
+			/>
+			
+			<!--INTERIOR-->
+			<CameraPos
+				FOV="45.0"
+				Name="interior3"
+				Interior="true"
+				InterestPosition="(6.8; 0.8; -0.8)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(5.3; 1.6; 1.25)"
+			/>		
+			
+			<!--UPPER A BIT WIDE INTERIOR-->
+			<CameraPos
+				FOV="40.0"
+				InterestPosition="(10.813; 0.5; 1.5)"
+				Interior="true"
+				Name="steeringwheel"
+				Position="(4.8; 1.4; -0.6)"
+			/>
+
+			<!--UPPER A BIT WIDE INTERIOR-->
+			<CameraPos
+				FOV="35.0"
+				InterestPosition="(10.813; 0.5; 1.5)"
+				Interior="true"
+				Name="gauges"
+				Position="(6.2; 1.92; -0.65)"
+			/>
+			
+			<!--WIDE SHOT FRONT TO REAR BUMPER SHOWS FENDERS WELL-->
+			<CameraPos
+				FOV="32.0"
+				Name="side_l"
+				InterestPosition="(5.944; 0.759; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(9.22; 3.041; 3.401)"
+			/>
+			
+			<!--WIDE SHOT FRONT TO REAR BUMPER SHOWS FENDERS WELL-->
+			<CameraPos
+				FOV="32.0"
+				Name="snorkel"
+				InterestPosition="(5.944; 2.2; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.22; 2.4; 3.401)"
+			/>			
+
+			<!--WIDE SHOT FRONT TO REAR BUMPER SHOWS FENDERS WELL-->
+			<CameraPos
+				FOV="32.0"
+				Name="snorkel2"
+				InterestPosition="(5.944; 2.2; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.22; 2.4; 3.401)"
+			/>
+			
+			<!--WIDE SHOT FRONT TO REAR BUMPER SHOWS FENDERS WELL-->
+			<CameraPos
+				FOV="50.0"
+				Name="snorkel3"
+				InterestPosition="(-2.5; 2.2; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(1.0; 2.4; 3.4)"
+			/>	
+			
+		   <!--LOWER WIDE SHOT OF BOTTOM ROCKERS - GOOD FOR ROCK SLIDER PARTS-->
+			<CameraPos
+				FOV="42.0"
+				Name="side_l_low"
+				InterestPosition="(4.0; 0.75; -1.3)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.8; 1.041; 5.0)"
+			/>
+			
+		   <!--LOWER WIDE SHOT OF BOTTOM ROCKERS - GOOD FOR ROCK SLIDER PARTS-->
+			<CameraPos
+				FOV="30.0"
+				Name="side_l_low2"
+				InterestPosition="(1.944; 0.759; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(4.5; 1.041; 3.401)"
+			/>			
+			
+		   <!--LOWER WIDE SHOT OF BOTTOM ROCKERS - GOOD FOR ROCK SLIDER PARTS-->
+			<CameraPos
+				FOV="45.0"
+				Name="side_l_low3"
+				InterestPosition="(5.0; 0.759; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(6.0; 1.041; 3.401)"
+			/>			
+			
+			
+		 <!--LOWER WIDE SHOT OF BOTTOM ROCKERS - GOOD FOR ROCK SLIDER PARTS-->
+			<CameraPos
+				FOV="32.0"
+				Name="side_l_side"
+				InterestPosition="(5.944; 0.759; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(3.5; 1.0; 5.0)"
+			/>
+			
+			<!--ROOF WORKS BETTER FOR HOODS SINCE IT AT A HIGHER ANGLE-->
+			<CameraPos
+				FOV="32.0"
+				Name="hoods2"
+				InterestPosition="(5.735; 0.976; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(10.78; 1.486; -3.957)"
+			/>
+
+			<!--ROOFMARKER LIGHTS-->
+			<CameraPos
+				FOV="32.0"
+				Name="roof_marker_lights"
+				InterestPosition="(5.735; 1.2; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(9.5; 4.0; -3.957)"
+			/>
+
+			<!--ROOFMARKER LIGHTS-->
+			<CameraPos
+				FOV="32.0"
+				Name="roof_marker_lights2"
+				InterestPosition="(4.0; 1.5; 1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(9.5; 2.6; -3.95)"
+			/>
+
+			<!--ROOFMARKER LIGHTS-->
+			<CameraPos
+				FOV="40.0"
+				Name="roof_marker_lights3"
+				InterestPosition="(-2.0; 1.5; 1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(6.5; 3.0; -2.5)"
+			/>
+
+			
+			<!--FRONT BUMPER-->
+			<CameraPos
+				FOV="32.0"
+				Name="front_bumper"
+				InterestPosition="(5.735; 0.976; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(10.70; 1.486; -2.0)"
+			/>			
+
+			<CameraPos
+				FOV="35.0"
+				Name="wheels"
+				InterestPosition="(6.0; 0.5; -1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(12.0; 1.0; -4.5)"
+			/>
+			
+			<CameraPos
+				FOV="35.0"
+				Name="wheels2"
+				InterestPosition="(5.02; 0.5; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(5.421; 1.0; -4.51)"
+			/>			
+			
+			<!--GENERIC WIDE FRONT END-->
+			<CameraPos
+				FOV="38.0"
+				Name="default"
+				InterestPosition="(6.0; 0.5; -1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(12.0; 2.2; -4.5)"
+			/>
+
+			<!--CLOSE FRONT END-->
+			<CameraPos
+				FOV="40.0"
+				Name="default1"
+				InterestPosition="(2.735; 0.976; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(10.0; 0.8; -1.5)"
+			/>	
+
+			<!--CLOSE FRONT END-->
+			<CameraPos
+				FOV="40.0"
+				Name="default2"
+				InterestPosition="(2.735; 0.976; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(10.5; 1.486; -1.5)"
+			/>	
+			
+			<!--CLOSE FRONT END-->
+			<CameraPos
+				FOV="40.0"
+				Name="default3"
+				InterestPosition="(2.735; 0.976; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(10.0; 3.0; -1.5)"
+			/>	
+
+		<!--GENERIC WIDE FRONT END-->
+			<CameraPos
+				FOV="40.0"
+				Name="default4"
+				InterestPosition="(5.735; 0.976; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(10.78; 1.486; -3.957)"
+			/>
+			
+			<!--MID HEIGHT WIDER BACK SHOT OF BED...CAN'T SEE INTO BED THOUGH-->
+			<CameraPos
+				FOV="45.0"
+				Name="rear"
+				InterestPosition="(7.141; 2.0; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-0.112; 2.595; 4.721)"
+			/>
+			<!--BACK WINDOW MID HEIGHT WIDER BACK SHOT OF BED...CAN'T SEE INTO BED THOUGH-->
+			<CameraPos
+				FOV="15.0"
+				Name="rear2"
+				InterestPosition="(7.141; 2.0; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-0.2; 1.5; 0)"
+			/>
+			
+		 <!--EXHAUST STACKS-->
+			<CameraPos
+				FOV="40.0"
+				Name="exhaust_stacks"
+				InterestPosition="(5.9; 1.5; 2.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(0.2; 1.8; 4.0)"
+			/>
+
+		 <!--EXHAUST STACKS-->
+			<CameraPos
+				FOV="45.0"
+				Name="exhaust_stacks2"
+				InterestPosition="(9.944; 1.5; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(2.6; 1.8; 1.85)"
+			/>
+
+		 <!--EXHAUST STACKS-->
+			<CameraPos
+				FOV="40.0"
+				Name="exhaust_stacks3"
+				InterestPosition="(7.44; 0.1; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(3.9; 1.8; 0.8)"
+			/>
+
+		 <!--EXHAUST LOW MUFFLER-->
+			<CameraPos
+				FOV="33.0"
+				Name="exhaust_stacks4"
+				InterestPosition="(7.44; 0.9; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(1.0; 0.5; 0.25)"
+			/>
+
+		 <!--REAR COILOVER LOW	-->
+			<CameraPos
+				FOV="33.0"
+				Name="rear_coilover_low"
+				InterestPosition="(4.44; 0.9; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-0.45; 0.8; 0.32)"
+			/>
+
+
+
+		 <!--ENGINE-->
+			<CameraPos
+				FOV="40.0"
+				Name="engine_l700"
+				InterestPosition="(14.944; 0.5; 3.5)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(3.5; 1.5; -0.1)"
+			/>
+			
+		 <!--ENGINE-->
+			<CameraPos
+				FOV="40.0"
+				Name="engine_l700_2"
+				InterestPosition="(14.944; 0.5; -1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(3.5; 1.5; 0.3)"
+			/>
+			
+		 <!--HIGHER SHOT LOOKING INTO THE BED-->
+			<CameraPos
+				FOV="45.0"
+				Name="bed"
+				InterestPosition="(5.944; 0.759; -3.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-4.5; 1.0; 4.0)"
+			/>
+		 <!--HIGHER SHOT LOOKING INTO THE BED-->
+			<CameraPos
+				FOV="40.0"
+				Name="bed2"
+				InterestPosition="(6.0; 0.5; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-3.8; 1.8; 1.2)"
+			/>	
+		 <!--HIGHER SHOT LOOKING INTO THE BED-->
+			<CameraPos
+				FOV="45.0"
+				Name="bed3"
+				InterestPosition="(5.944; -0.75; -3.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-1.5; 2.5; 1.2)"
+			/>
+			<!--GENERIC BACK BUMPER - GOOD FOR LICENSE PLATES-->
+			<CameraPos
+				FOV="50.0"
+				Name="rear_bumper"
+				InterestPosition="(7.141; 0.5; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-1.0; 1.595; 2.5)"
+			/>
+			<!--LOWER HITCH GENERIC BACK BUMPER - GOOD FOR LICENSE PLATES-->
+			<CameraPos
+				FOV="50.0"
+				Name="rear_bumper2"
+				InterestPosition="(7.141; 0.5; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-2.6; 1.2; 0.6)"
+			/>	
+			<CameraPos
+				FOV="50.0"
+				Name="rear_bumper3"
+				InterestPosition="(7.141; 0.5; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(1.2; 2.5; 1.2)"
+			/>	
+			<CameraPos
+				FOV="45.0"
+				Name="rear_bumper4"
+				InterestPosition="(7.141; 0.5; 3.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-4.0; 1.0; -0.8)"
+			/>
+			<CameraPos
+				FOV="50.0"
+				Name="rear_bumper5"
+				InterestPosition="(7.141; 0.4; 6.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-3.0; 0.8; -1.0)"
+			/>	
+			
+			<!--LOWER HITCH GENERIC BACK BUMPER - GOOD FOR LICENSE PLATES-->
+			<CameraPos
+				FOV="50.0"
+				Name="rear_bumper6"
+				InterestPosition="(7.141; 0.5; -1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-2.6; 1.0; 1.0)"
+			/>				
+			
+			<CameraPos
+				FOV="45.0"
+				Name="roof_back"
+				InterestPosition="(7.141; 0.5; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-1.0; 2.5; 0.9)"
+			/>				
+		</CustomizationCameras>
+
+
+
+		<!--Front Bumper Corners-->
+		
+		<!--Winch Center-->		
+		<CraneSocket Pos="(2.65; 0.63; 0)" ParentFrame="BoneChassis_cdt" />
+
+		<!--Back Bumper Corners-->
+		<CraneSocket Pos="(-5.49; 0.835; 0.965)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(-5.49; 0.835; -0.965)" ParentFrame="BoneChassis_cdt" />
+		
+		<!--Trailer Hitch-->
+		<CraneSocket Pos="(-5.42; 0.63; 0)" ParentFrame="BoneChassis_cdt" />
+
+		<!--Roof-->
+		<CraneSocket Pos="(-2.35; 2.16; 0.65)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(-2.35; 2.16; -0.65)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(0.35; 2.16; 0.65)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(0.35; 2.16; -0.65)" ParentFrame="BoneChassis_cdt" />		
+		
+		
+		
+		<AddonSockets DefaultAddon="Radar_Unit_Default" >
+			<Socket Names="RadarUnit_MegaCab" InCockpit="true" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>					
+		
+		<AddonSockets DefaultAddon="Hood_Default" >
+			<Socket Names="Hood_MegaCab" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>			
+	
+		<AddonSockets DefaultAddon="Tailgate_Default" >
+			<Socket Names="Tailgate_MegaCab" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>		
+	
+		<AddonSockets DefaultAddon="Front_Bumper_Stock_Default" >
+			<Socket Names="FrontBumpers_MegaCab" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+
+		<AddonSockets DefaultAddon="Exhaust_Mufflers_Default" >
+			<Socket Names="Exhaust_MegaCab" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="RoofRack_MegaCab" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>	
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="RockSliders_MegaCab" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>	
+	
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="LightBar_MegaCab" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>			
+
+		<AddonSockets DefaultAddon="License_Plate_Default" >
+			<Socket Names="LicensePlate_MegaCab" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>		
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Pintle_MegaCab" NamesBlock="ScautTrailer" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="ShortyHitch_MegaCab" NamesBlock="Trailer" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket Names="Gooseneck_MegaCab" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+		
+		<AddonSockets>
+			<Socket Names="TowAdditional_MegaCab" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>		
+			
+		<AddonSockets>
+			<Socket Names="Trailer" Offset="(-5.76; 0.62; 0)"/>
+			<Socket Names="ScautTrailer" Offset="(-5.77; 0.66; 0)"/>
+			<Socket Names="DodgeRamGooseneck,DodgeRamGooseneckLifted" Offset="(-4.17; 1.30; 0)" />
+		</AddonSockets>
+		
+		
+		
+		
+<!-- 		<AddonSockets>
+			<Socket InCockpit="true" Names="StuffDashboard" Offset="(1.045; 1.69; 0.15)" ParentFrame="BoneCabin_cdt">
+			<ExtraParent Offset="(0; 0; 0)" Frame="BoneCabin_cdt"/>
+			</Socket>
+		</AddonSockets>
+
+		<AddonSockets>
+			<Socket InCockpit="true" Names="StuffAirfreshener" Offset="(0.77; 1.98; 0)" ParentFrame="BoneCabin_cdt">
+			<ExtraParent Offset="(0; 0; 0)" Frame="BoneCabin_cdt"/>
+			</Socket>
+		</AddonSockets> -->
+
+
+	
+		<AddonSockets DefaultAddon="Diff_Lock_Default">
+			<Socket Names="ModScoutDiffLock_MegaCab" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+
+
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="DamageControl_MegaCab" />
+		</AddonSockets>
+			
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Goodies1_MegaCab" />
+		</AddonSockets>
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Goodies2_MegaCab" />
+		</AddonSockets>
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Goodies3_MegaCab" />
+		</AddonSockets>
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Goodies4_MegaCab" />
+		</AddonSockets>
+		
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Goodies5_MegaCab" />
+		</AddonSockets>		
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Goodies6_MegaCab" />
+		</AddonSockets>		
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Goodies7_MegaCab" />
+		</AddonSockets>
+	</GameData>
+
+
+
+
+<AutomaticIK>
+<!-- Front Coilovers -->
+		<IKBone ModelFrame="BoneFDriverTopCoil" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneFDriverBottomCoil"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+		<IKBone ModelFrame="BoneFPassTopCoil" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneFPassBottomCoil"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+<!-- Aux Front Shocks - Back Set -->
+		<IKBone ModelFrame="BoneFDriverTopAuxShock" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneFDriverBottomAuxShock"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+		<IKBone ModelFrame="BoneFPassTopAuxShock" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneFPassBottomAuxShock"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Front Coilovers -->
+
+
+<!-- Rear Coilovers -->
+		<IKBone ModelFrame="BoneRDriverTopCoil" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneRDriverBottomCoil"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+		<IKBone ModelFrame="BoneRPassTopCoil" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneRPassBottomCoil"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	
+<!-- Aux Rear Shocks - Back Set -->
+		<IKBone ModelFrame="BoneRDriverTopAuxShock" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneRDriverBottomAuxShock"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+		<IKBone ModelFrame="BoneRPassTopAuxShock" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneRPassBottomAuxShock"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>	
+<!-- Rear Coilovers -->
+
+
+<!-- Control Arms Front-->
+		<IKBone ModelFrame="BoneTopLink1FDriver" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneTopLink2FDriver"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneTopLink1FPass" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneTopLink2FPass"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneBottomLink1FDriver" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneBottomLink2FDriver"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneBottomLink1FPass" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneBottomLink2FPass"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Control Arms Front-->
+<!-- Control Arms Rear-->
+		<IKBone ModelFrame="BoneTopLink1RDriver" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneTopLink2RDriver"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneTopLink1RPass" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneTopLink2RPass"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneBottomLink1RDriver" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneBottomLink2RDriver"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneBottomLink1RPass" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneBottomLink2RPass"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Control Arms Rear-->
+
+<!-- Panhard Bars -->
+		<IKBone ModelFrame="BoneFPanhardBarLink1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneFPanhardBarLink2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneRPanhardBarLink1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneRPanhardBarLink2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Panhard Bars -->
+
+<!-- Rear Swaybars -->
+		<IKBone ModelFrame="BoneSwaybarDriverLink1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneSwaybarDriverLink2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneSwaybarPassLink1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneSwaybarPassLink2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Rear Swaybars -->
+
+<!-- Front Swaybars -->
+		<IKBone ModelFrame="BoneSwaybarFrontDriverLink1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneSwaybarFrontDriverLink2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneSwaybarFrontPassLink1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneSwaybarFrontPassLink2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Front Swaybars -->
+
+
+<!-- Front Hydro Steering Pass -->
+		<IKBone ModelFrame="BoneSteerStabilizerP2" ParentFrame="BoneAxleFront">
+			<IKJoint AxisLocal="(0; -1; -1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackPass"
+				ModelFrame="BoneSteerStabilizerP1"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Front Hydro Steering Pass -->
+
+<!-- Front Hydro Steering Driver -->
+		<IKBone ModelFrame="BoneSteerStabilizerD2" ParentFrame="BoneAxleFront">
+			<IKJoint AxisLocal="(0; -1; -1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackDriver"
+				ModelFrame="BoneSteerStabilizerD1"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Front Hydro Steering Driver -->
+
+<!-- Rear Hydro Steering Pass -->
+		<IKBone ModelFrame="BoneSteerStabilizerP2RS" ParentFrame="BoneAxleRear">
+			<IKJoint AxisLocal="(0; -1; -1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackPassRS"
+				ModelFrame="BoneSteerStabilizerP1RS"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Rear Hydro Steering Pass -->
+
+<!-- Rear Hydro Steering Driver -->
+		<IKBone ModelFrame="BoneSteerStabilizerD2RS" ParentFrame="BoneAxleRear">
+			<IKJoint AxisLocal="(0; -1; -1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackDriverRS"
+				ModelFrame="BoneSteerStabilizerD1RS"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Rear Hydro Steering Driver -->
+
+
+</AutomaticIK>
+</Truck>

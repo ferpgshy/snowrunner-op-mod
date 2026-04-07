@@ -1,0 +1,62 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Mudtires _template="Superheavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Mudtires>
+	</TruckTire>
+</_templates>
+
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.45"
+	WidthRear="1.95"
+>
+	<TruckTires>		
+		<TruckTire
+			_template="Mudtires"		
+			Mesh="wheels/tire_zetros_offroad_double_3"
+			Name="offroad_1"
+			RearMassScale="2"
+			Mass="330"				
+		>
+			<GameData
+				Price="3800"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="MM4 3100 R40 SCL" UiName="MM4 3100 R40 SCL" />
+			</GameData>
+			<WheelFriction
+				BodyFriction="2.5"
+				BodyFrictionAsphalt="1.7"
+				SubstanceFriction="2.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>		
+	
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_zetros_offroad_double_3" Name="op_z2_offroad_1_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_zetros_offroad_double_3" Name="rim_3">
+			<GameData>
+				<UiDesc UiDesc="Zetros Rim 2" UiName="Zetros Default Rim" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_zetros_offroad_double_5" Name="rim_5">
+			<GameData>
+				<UiDesc UiDesc="Zetros Rim 3" UiName="Zetros Default Rim Black" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

@@ -1,0 +1,19 @@
+<TruckAddon>
+	<Snorkel Origin="(1.846; 10.0; -1.239)" />
+	<PhysicsModel Mesh="trucks/z4266_tuning/z4266_snorkel_1" />
+	<GameData
+		CameraPreset="roof"
+		Category="snorkel"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="Default Snorkel"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Default Snorkel"
+		/>
+		<InstallSocket Type="z4266Snorkel" />
+	</GameData>
+</TruckAddon>

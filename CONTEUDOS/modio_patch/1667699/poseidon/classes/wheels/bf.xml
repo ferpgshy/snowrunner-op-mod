@@ -1,0 +1,57 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1.0"
+	Width="1.5"
+	WidthRear="3.5"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_mod_bf2"
+			Name="HD Tires"
+			RearMassScale="1"
+			Mass="750"
+		>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="tires that are tire like" UiName="Hd Tires" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/default_alpha__s_d.tga" TextureHeight="tracks/default_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/default_double_alpha__s_d.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.02" SoftForceScale="0.5" />
+			<WheelFriction
+				BodyFriction="8.0"
+				BodyFrictionAsphalt="8.0"
+				SubstanceFriction="8.0"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+
+	
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mod_bf2" Name="op_bf_HD_Tires_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+
+		<TruckRim Mesh="wheels/rim_mod_bf2" Name="S Forged">
+			<GameData>
+				<UiDesc UiDesc="S dually made by capone" UiName="S" />
+			</GameData>
+		</TruckRim>
+
+
+
+	</TruckRims>
+</TruckWheels>

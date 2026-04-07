@@ -4,11 +4,13 @@
 *.str
 *.cache_block
 
-# Pastas de conteudo/output
-CONTEUDOS/
+# Pastas de conteudo extraido
 [ssl_cache]/
 [strings]/
 [media]/
+
+# CONTEUDOS - incluir bat e patch, excluir pak
+CONTEUDOS/initial.pak
 
 # Temp
 _op_mod_temp/

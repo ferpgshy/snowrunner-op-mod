@@ -1,0 +1,112 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.8"
+	WidthRear="1.8"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_trepador_18_Single"
+			Name="Redline TrepadorRunner"
+			RearMassScale="1"
+			Mass="400"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="True Specs out of 10: DIRT 4.5 - MUD 8 - PAVEMENT 8 - DAMAGE RESISTANCE 2X" UiName="Redline: TrepadorRunner"/>
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.032" SoftForceScale="0.20" />
+			<WheelFriction
+				BodyFriction="4.5"
+				BodyFrictionAsphalt="8.0"
+				SubstanceFriction="8.0"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_trepador_18_Single" Name="op_Redline _Redline_TrepadorRunner_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+
+		<TruckRim Mesh="wheels/wheels_raptor_18" Name="Stock Wheel">
+			<GameData>
+				<UiDesc UiDesc="Stock Wheel" UiName="Stock Wheel" />
+			</GameData>
+		</TruckRim>
+
+		<TruckRim Mesh="wheels/wheels_kmc_trek_18_Single" Name="Trek Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Trek Beadlock" UiName="Trek Beadlock" />
+			</GameData>
+		</TruckRim>
+		
+		<TruckRim Mesh="wheels/wheels_icon_six_speed_18_Single" Name="Six Speed Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Six Speed Beadlock" UiName="Six Speed Beadlock" />
+			</GameData>
+		</TruckRim>				
+
+		<TruckRim Mesh="wheels/wheels_method_305NV_18_Single" Name="305 Beadlock">
+			<GameData>
+				<UiDesc UiDesc="305 Beadlock" UiName="305 Beadlock" />
+			</GameData>
+		</TruckRim>
+		
+		<TruckRim Mesh="wheels/wheels_method_101_18_Single" Name="Race 101 Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Race 101 Beadlock" UiName="Race 101 Beadlock" />
+			</GameData>
+		</TruckRim>			
+
+		<TruckRim Mesh="wheels/wheels_walker_evans_18_Single" Name="Walker Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Walker Beadlock" UiName="Walker Beadlock" />
+			</GameData>
+		</TruckRim>			
+	
+		<TruckRim Mesh="wheels/wheels_kmc_machete_18_Single" Name="Machete Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Machete Beadlock" UiName="Machete Beadlock" />
+			</GameData>
+		</TruckRim>	
+		
+		<TruckRim Mesh="wheels/wheels_turbomac_18_Single" Name="Turbomac-HD Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Turbomac-HD Beadlock" UiName="Turbomac-HD Beadlock" />
+			</GameData>
+		</TruckRim>
+		
+		<TruckRim Mesh="wheels/wheels_rhinochamber_18_Single" Name="Chamber Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Chamber Beadlock" UiName="Chamber Beadlock" />
+			</GameData>
+		</TruckRim>	
+				
+		<TruckRim Mesh="wheels/wheels_rhinobarricade_18_Single" Name="Barricade Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Barricade Beadlock" UiName="Barricade Beadlock" />
+			</GameData>
+		</TruckRim>
+
+		<TruckRim Mesh="wheels/wheels_rhinoarmory_18_Single" Name="Armory Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Armory Beadlock" UiName="Armory Beadlock" />
+			</GameData>
+		</TruckRim>
+		
+	</TruckRims>
+</TruckWheels>

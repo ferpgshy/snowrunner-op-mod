@@ -1,0 +1,61 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1.00"
+	Width="0.875"
+	WidthRear="0.875"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_mod_rdr"
+			Name="rdr"
+			RearMassScale="1"
+			Mass="550"
+		>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Custom cut mega truck tire made by TheBgamerBB" UiName="Cut T1" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/tire_heavy_mudtires_single_tayga_1.tga" TextureHeight="tracks/default_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/tire_heavy_mudtires_single_tayga_1.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.04" SoftForceScale="0.4" />
+			<WheelFriction
+				BodyFriction="8.5"
+				BodyFrictionAsphalt="8.8"
+				SubstanceFriction="8.5"
+				UiName="UI_TIRE_TYPE_MUDTIRES_NAME"			
+				IsIgnoreIce="true"
+			/>
+		</TruckTire>
+		
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mod_rdr" Name="op_rdr_rdr_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+	
+		<TruckRim Mesh="wheels/rim_mod_rdr" Name="DR rims">
+			<GameData>
+				<UiDesc UiDesc="dr rim By Capone custom" UiName="DR" />
+			</GameData>
+		</TruckRim>	
+		<TruckRim Mesh="wheels/rim_mod_rdrb" Name="silverDR rims">
+			<GameData>
+				<UiDesc UiDesc="silver DR rim By Capone custom" UiName="Silver DR" />
+			</GameData>
+		</TruckRim>	
+
+
+
+	</TruckRims>
+</TruckWheels>

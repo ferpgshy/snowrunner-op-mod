@@ -1,0 +1,65 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.725"
+	WidthRear="3.5"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_Snowrunner_20Studded_Dually"
+			Name="Stock-ish SnowRunner Studded"
+			RearMassScale="2"
+			Mass="400"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="True Specs out of 10: DIRT 2.2 - MUD 3.2 - PAVEMENT 1.4 - DEFAULT DAMAGE" UiName="Stock-ish: SnowRunner Studded" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.032" SoftForceScale="0.20" />
+			<WheelFriction
+				BodyFriction="2.2"
+				BodyFrictionAsphalt="1.4"
+				SubstanceFriction="3.2"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_Snowrunner_20Studded_Dually" Name="op_Stock-is_Stock_ish_SnowRunner_Studded_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+
+		<TruckRim Mesh="wheels/wheels_Standard_20Dually" Name="Standard Dually">
+			<GameData>
+				<UiDesc UiDesc="Standard Dually" UiName="Standard Dually" />
+			</GameData>
+		</TruckRim>
+		
+		<TruckRim Mesh="wheels/wheels_Fuel_Maverick_20Dually" Name="Maverick Dually">
+			<GameData>
+				<UiDesc UiDesc="Maverick Dually" UiName="Maverick Dually" />
+			</GameData>
+		</TruckRim>
+
+		<TruckRim Mesh="wheels/wheels_BlackRhino_Arsenal_20Dually" Name="Arsenal Custom Dually">
+			<GameData>
+				<UiDesc UiDesc="Arsenal Custom Dually" UiName="Arsenal Custom Dually" />
+			</GameData>
+		</TruckRim>
+
+	</TruckRims>
+</TruckWheels>

@@ -1,0 +1,64 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.475"
+	WidthRear="1.425"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_goodyearMVT_Single"
+			Name="Stock-ish Single Military-Runner MVT"
+			RearMassScale="1"
+			Mass="400"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="True Specs out of 10: DIRT 1.9 - MUD 2.4 - PAVEMENT 2.3 - DEFAULT DAMAGE" UiName="Stock-ish: Single Military-Runner MVT" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.05" SoftForceScale="0.11" />
+			<WheelFriction
+				BodyFriction="1.9"
+				BodyFrictionAsphalt="2.3"
+				SubstanceFriction="2.4"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_goodyearMVT_Single" Name="op_Stock-is_Stock_ish_Single_Military_Runner_MVT_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		
+		<TruckRim Mesh="wheels/wheels_rhinobarricade_18_Single" Name="Barricade Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Barricade Beadlock" UiName="Barricade Beadlock" />
+			</GameData>
+		</TruckRim>
+
+		<TruckRim Mesh="wheels/wheels_rhinoarmory_18_Single" Name="Armory Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Armory Beadlock" UiName="Armory Beadlock" />
+			</GameData>
+		</TruckRim>
+
+		<TruckRim Mesh="wheels/wheels_rhinoarsenal_18_Single" Name="Arsenal Beadlock">
+			<GameData>
+				<UiDesc UiDesc="Arsenal Beadlock" UiName="Arsenal Beadlock" />
+			</GameData>
+		</TruckRim>
+
+	</TruckRims>
+</TruckWheels>

@@ -1,0 +1,69 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.825"
+	WidthRear="1.825"
+>
+			<!-- softness guide
+			<WheelSoftness>
+				<Stiff RadiusOffset="0.02" SoftForceScale="0.32" />
+				<Soft RadiusOffset="0.03" SoftForceScale="0.12" />
+				<ScoutStiff RadiusOffset="0.02" SoftForceScale="0.32" />
+				<ScoutSoft RadiusOffset="0.1" SoftForceScale="0.2" />
+				<ScoutDefault RadiusOffset="0.025" SoftForceScale="0.24" />
+				<Average RadiusOffset="0.025" SoftForceScale="0.24" />
+			</WheelSoftness>
+			-->
+			
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_h1"
+			Name="tire_1"
+			RearMassScale="1"
+			Mass="300"
+		>
+			<GameData
+				Price="1500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>	
+				<UiDesc UiDesc="Tuned [Dirt 4.0 / Asphalt 4.0 / Mud 3.0]" UiName="A/T RR 3" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.04" SoftForceScale="0.19" />
+			<WheelFriction
+				BodyFriction="4.0"
+				BodyFrictionAsphalt="4.0"
+				SubstanceFriction="3.0"
+				UiName="UI_TIRE_TYPE_ALLTERRAIN_NAME"
+			/>
+		</TruckTire>
+		
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_h1" Name="op_Thswheel_tire_1_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_rr_3" Name="rim_1"> 
+			<GameData>
+				<UiDesc UiDesc="H1 Stock Rim" UiName="H1 Rim 1" />
+			</GameData>
+		</TruckRim>
+		
+		<TruckRim Mesh="wheels/rim_rr_4" Name="rim_2"> 
+			<GameData>
+				<UiDesc UiDesc="H1 Stock Rim" UiName="H1 Rim 2" />
+			</GameData>
+		</TruckRim>
+
+	</TruckRims>
+</TruckWheels>

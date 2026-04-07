@@ -1,0 +1,57 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.75"
+	WidthRear="1.75"
+>
+	<TruckTires>
+	
+	<TruckTire
+			Mesh="wheels/monster_mud_tyre"
+			Name="monster_mud_tyre"
+			RearMassScale="2"
+			Mass="700"
+		>
+			<GameData
+				Price=""
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="monster_mud_tyre" UiName="monster_mud_tyre" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga"  />
+			<WheelSoftness RadiusOffset="0.04" SoftForceScale="0.6" />
+			<WheelFriction
+				BodyFriction="3.70"
+				BodyFrictionAsphalt="3"
+				SubstanceFriction="2.8"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+			</TruckTire>
+		
+	
+	
+		<TruckTire _template="Offroad" Mesh="wheels/monster_mud_tyre" Name="op_mmud_monster_mud_tyre_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+
+	<TruckRims>
+		
+		<TruckRim Mesh="wheels/monster_mud_rim" Name="monster_mud_rim">
+			<GameData>
+				<UiDesc UiDesc="monster_mud_rim" UiName="monster_mud_rim" />
+			</GameData>
+		</TruckRim>
+		
+	</TruckRims>
+</TruckWheels>

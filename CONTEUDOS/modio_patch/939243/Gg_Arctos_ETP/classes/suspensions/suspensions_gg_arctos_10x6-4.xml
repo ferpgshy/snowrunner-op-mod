@@ -1,0 +1,384 @@
+<!--==================== SUMMARY ====================-->
+<!-- models, textures & code created by Gaskellgames -->
+<!--=================================================-->
+	
+<_templates>
+	<SuspensionSet>
+		<gg_Suspension
+			BrokenWheelDamageMultiplier="1.2"
+			CriticalDamageThreshold="0.9"
+			DamageCapacity="500"
+		/>
+	</SuspensionSet>
+</_templates>
+<SuspensionSetVariants>
+
+<!--suspension 1-->
+	<SuspensionSet
+		_template="gg_Suspension"
+		Name="s_gg_arctos_10x6-4_01_stock"
+	>
+	<Suspension Damping="0.5" Height="0.10" Strength="0.060" WheelType="front" BrokenSuspensionMax="0.30" SuspensionMin="-0.20" />
+	<Suspension Damping="0.5" Height="0.10" Strength="0.035" WheelType="rear" BrokenSuspensionMax="0.30" SuspensionMin="-0.20" />
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="gg Stock Suspension (Active: No | Offroad: No | Towing: Yes | Max Wheel: 43')"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Gg Stock Suspension [V]"
+			/>
+		</GameData>
+	</SuspensionSet>
+
+<!--suspension 2-->
+	<SuspensionSet
+		_template="gg_Suspension"
+		Name="s_gg_arctos_10x6-4_02_raised"
+	>
+	<Suspension Damping="0.5" Height="0.25" Strength="0.060" WheelType="front" BrokenSuspensionMax="0.30" SuspensionMin="-0.20" />
+	<Suspension Damping="0.5" Height="0.25" Strength="0.035" WheelType="rear" BrokenSuspensionMax="0.30" SuspensionMin="-0.20" />
+		<GameData
+			Price="5000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="gg Raised Suspension (Active: No | Offroad: Yes | Towing: Yes | Max Wheel: 43')"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Gg Raised Suspension [V]"
+			/>
+		</GameData>
+	</SuspensionSet>
+
+	<!--suspension 3 [Snowrunner]-->
+	<SuspensionSet
+		_template="gg_Suspension"
+		Name="s_gg_arctos_10x6-4_03_active"
+		DeviationDelta="0.003"
+	>
+		<Suspension Damping="0.5" Height="0.10" Strength="0.060" WheelType="front" BrokenSuspensionMax="0.30" SuspensionMin="-0.20" DeviationMax="0.15" />
+		<Suspension Damping="0.5" Height="0.10" Strength="0.035" WheelType="rear" BrokenSuspensionMax="0.30" SuspensionMin="-0.20" DeviationMax="0.15" />
+		<GameData
+			Price="5000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="gg Active Suspension (Active: Yes | Offroad: Yes | Towing: Yes | Max Wheel: 43')"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Gg Active Suspension [V]"
+			/>
+		</GameData>
+	</SuspensionSet>
+	
+
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="5000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="suspensions_gg_arctos_10x6-4_op1"
+	>
+		<Suspension Height="0.06" Strength="0.06" Damping="0.28" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.06" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.06" Strength="0.06" Damping="0.28" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.06" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_STOCK_PLUS_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_STOCK_PLUS_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="8000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="suspensions_gg_arctos_10x6-4_op2"
+	>
+		<Suspension Height="0.09" Strength="0.06" Damping="0.32" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.09" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.09" Strength="0.06" Damping="0.32" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.09" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_BAIXA_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_BAIXA_1_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="12000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="suspensions_gg_arctos_10x6-4_op3"
+	>
+		<Suspension Height="0.12" Strength="0.07" Damping="0.36" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.12" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.12" Strength="0.07" Damping="0.36" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.12" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_BAIXA_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_BAIXA_2_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="16000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="suspensions_gg_arctos_10x6-4_op4"
+	>
+		<Suspension Height="0.15" Strength="0.07" Damping="0.40" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.15" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.15" Strength="0.07" Damping="0.40" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.15" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_MEDIA_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_MEDIA_1_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="22000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="suspensions_gg_arctos_10x6-4_op5"
+	>
+		<Suspension Height="0.19" Strength="0.08" Damping="0.44" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.19" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.19" Strength="0.08" Damping="0.44" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.19" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_MEDIA_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_MEDIA_2_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="30000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="suspensions_gg_arctos_10x6-4_op6"
+	>
+		<Suspension Height="0.23" Strength="0.09" Damping="0.48" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.23" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.23" Strength="0.09" Damping="0.48" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.23" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_ALTA_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_ALTA_1_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="38000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="suspensions_gg_arctos_10x6-4_op7"
+	>
+		<Suspension Height="0.28" Strength="0.10" Damping="0.52" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.28" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.28" Strength="0.10" Damping="0.52" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.28" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_ALTA_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_ALTA_2_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="48000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="suspensions_gg_arctos_10x6-4_op8"
+	>
+		<Suspension Height="0.33" Strength="0.10" Damping="0.56" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.33" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.33" Strength="0.10" Damping="0.56" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.33" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_LIFTED_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_LIFTED_1_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="58000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="suspensions_gg_arctos_10x6-4_op9"
+	>
+		<Suspension Height="0.39" Strength="0.11" Damping="0.60" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.39" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.39" Strength="0.11" Damping="0.60" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.39" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_LIFTED_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_LIFTED_2_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="68000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="suspensions_gg_arctos_10x6-4_op10"
+	>
+		<Suspension Height="0.46" Strength="0.12" Damping="0.64" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.46" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.46" Strength="0.12" Damping="0.64" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.46" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_MONSTER_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_MONSTER_1_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="80000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="suspensions_gg_arctos_10x6-4_op11"
+	>
+		<Suspension Height="0.54" Strength="0.13" Damping="0.68" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.54" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.54" Strength="0.13" Damping="0.68" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.54" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_MONSTER_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_MONSTER_2_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="92000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="suspensions_gg_arctos_10x6-4_op12"
+	>
+		<Suspension Height="0.65" Strength="0.13" Damping="0.72" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.65" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.65" Strength="0.13" Damping="0.72" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.65" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_EXTREMA_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_EXTREMA_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="99999"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="suspensions_gg_arctos_10x6-4_op13"
+	>
+		<Suspension Height="0.80" Strength="0.14" Damping="0.78" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.80" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.80" Strength="0.14" Damping="0.78" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.80" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_DEUS_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_DEUS_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+</SuspensionSetVariants>
+
+<!--=================================================-->
+<!-- models, textures & code created by Gaskellgames -->
+<!--=================================================-->

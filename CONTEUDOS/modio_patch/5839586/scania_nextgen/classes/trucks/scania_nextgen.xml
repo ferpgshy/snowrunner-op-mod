@@ -1,0 +1,1341 @@
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.02"
+		DiffLockType="Always"
+		EngineIconMesh="env/engine_default"
+		EngineIconScale="1.5"
+		EngineMarkerOffset="(2; 1.2; 0)"
+		GearboxMarkerOffset="(1; 1; 0)"
+		SuspensionMarkerOffset="(-1; 1; 0)"
+		EngineStartDelay="0.8"
+		ExhaustStartTime="0.9"
+		FuelCapacity="684"
+		Responsiveness="0.2"
+		SteerSpeed="0.025"
+		TruckImage="ScaniaNextGenmchr"
+		TruckType="OFFROAD"
+	>
+		<WinchUpgradeSocket Default="scania_winch_default" IsUpgradable="true" Type="winches_scania_nextgen" />
+		<Wheels
+			DefaultRim="scania_rim"
+			DefaultTire="scania_tire"
+			DefaultWheelType="wheels_scania_tire"
+		>
+			<Wheel
+				Pos="(1.601; 0.489; 1.1)"
+				ConnectedToHandbrake="true"
+				Location="front"
+				SteeringAngle="45"
+				SteeringCastor="0"
+				SteeringJointOffset="0.27"
+				Torque="connectable"
+			/>
+			<Wheel
+				RightSide="true"
+				Pos="(1.601; 0.489; 1.1)"
+				ConnectedToHandbrake="true"
+				Location="front"
+				SteeringAngle="45"
+				SteeringCastor="0"
+				SteeringJointOffset="0.27"
+				Torque="connectable"
+			/>
+			<Wheel
+				Pos="(-0.484; 0.465; 1.1)"
+				ConnectedToHandbrake="true"
+				Location="front"
+				SteeringAngle="30"
+				SteeringCastor="0"
+				SteeringJointOffset="0.27"
+				Torque="connectable"
+			/>
+			<Wheel
+				RightSide="true"
+				Pos="(-0.484; 0.465; 1.1)"
+				ConnectedToHandbrake="true"
+				Location="front"
+				SteeringAngle="30"
+				SteeringCastor="0"
+				SteeringJointOffset="0.27"
+				Torque="connectable"
+			/>
+			<Wheel
+				Pos="(-3.923; 0.489; 0.75)"
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+			/>
+			<Wheel
+				RightSide="true"
+				Pos="(-3.923; 0.489; 0.75)"
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+			/>			
+			<Wheel
+				Pos="(-5.277; 0.480; 0.75)"
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+			/>
+			<Wheel
+				RightSide="true"
+				Pos="(-5.277; 0.480; 0.75)"
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+			/>
+		</Wheels>
+		<SuspensionSocket
+			Default="scania_nextgen_suspension_default"
+			Type="suspensions_scania_nextgen"
+			MaxWheelRadiusWithoutSuspension="0.55"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackLeft"
+			FrameSteerRight="BoneRackRight"
+			RackHalfSizeZ="0.78"			
+		/>
+		<SteeringRack
+			Frame="BoneRack2"
+			FrameSteerLeft="BoneRackLeft2"
+			FrameSteerRight="BoneRackRight2"
+			RackHalfSizeZ="0.78"
+		/>
+		<Steam Origin="(0.8; 1; 0)" />
+		<Steam Origin="(2.6; 0.6; 0)" />
+		<SoundsWheels>
+			<WheelWater Sound="surfaces/surf_water_loop" />
+			<WheelSteer Sound="wheels/wheel_steer" />
+			<WheelSpinning Sound="wheels/wheel_spining_loop" />
+			<WheelMud Sound="surfaces/hit/hit_mud_rnd" />
+			<WheelExtrude Sound="" />
+			<WheelDamaged Sound="wheels/wheel_broken_rotate_loop" />
+			<WheelChains Sound="wheels/wheel_tires_chain_loop" />
+			<WaterHit Sound="trucks/common/truck_hit_water_rnd_set/truck_hit_water_rnd" />
+		</SoundsWheels>
+		<SoundsDamage>
+			<Wheels
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Suspension
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Gearbox
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<FuelTank
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Engine
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Critical
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_crit_rnd_set/truck_damage_crit_rnd"
+				VolumeMinMax="(0.5;1.0)"
+			/>
+			<Common
+				DamageAmount="(0.01;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_big_hard_rnd_set/truck_damage_big_hard_rnd"
+				VolumeMinMax="(0.2;1.0)"
+			/>
+		</SoundsDamage>
+		<Sounds
+			AirHissInterval="12.0"
+			DisableReversePitch="false"
+			EngineHeavyVolume="0.4"
+			Origin="(1.7; 1.1; 0)"
+			MinDist="11.0"
+			MaxDist="200.0"
+		>
+			<Honk Sound="trucks/scania_nextgen_honk" />
+			<Handbrake Sound="trucks/scania_nextgen_handbrake_on" />
+			<HandbrakeOff Sound="trucks/scania_nextgen_handbrake_off" />
+			<BrakesSqueal Sound="trucks/scania_nextgen_brakes_squeal" />
+			<BrakeRelease Sound="trucks/scania_nextgen_brake_release" />
+			<Reverse Sound="trucks/scania_nextgen_reverse" />			
+			<EngineStart Sound="trucks/scania_nextgen_start" />
+			<EngineStop Sound="trucks/scania_nextgen_stop" />
+			<EngineIdle Sound="trucks/scania_nextgen_idle" />
+			<EngineIdle_2d Sound="trucks/scania_nextgen_idle_2d" IsSound2D="true" />
+			<EngineLow Sound="trucks/scania_nextgen_low" />
+			<EngineLow_2d Sound="trucks/scania_nextgen_low_2d" IsSound2D="true" />
+			<EngineHigh Sound="trucks/scania_nextgen_high" />
+			<EngineHigh_2d Sound="trucks/scania_nextgen_high_2d" IsSound2D="true" />
+			<EngineHeavy Sound="trucks/scania_nextgen_heavy" />
+			<EngineHeavy_2d Sound="trucks/scania_nextgen_heavy_2d" IsSound2D="true" />
+			<EngineTurbo Sound="trucks/scania_nextgen_turbo" />			
+			<AbruptStop Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+			<HeadLight Sound="trucks/scania_nextgen_switch" />
+			<AWD Sound="trucks/common/truck_awd_rnd_set/truck_awd_rnd" />
+			<DiffLock Sound="trucks/common/truck_diff_lock_rnd_set/truck_diff_lock_rnd" />
+			<Gear Sound="trucks/scania_nextgen_gear_shift" />
+			<ExhaustShot Sound="trucks/common/truck_exhaust_shot_rnd_set/truck_exhaust_shot_rnd" />
+			<BrakePull Sound="trucks/common/truck_brake_pull" />
+			<ChassisStress Sound="trucks/common/truck_stress_small_rnd_set/truck_stress_small_rnd" />
+			<WaterGurgle Sound="trucks/common/truck_exhaust_water_gurgle_loop" />
+			<WaterDropping Sound="" />
+			<EngineStalling Sound="trucks/common/truck_engine_stalling" />
+			<DamagedEngine Sound="trucks/common/truck_engine_damaged" />
+			<Cockpit IsSound2D="true" Sound="trucks/common/truck_cockpit_loop" />
+		</Sounds>
+		<Shafts>
+			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />			
+			<Shaft SocketPointA="Shaft4a" SocketPointB="Shaft4b" />	
+			<Shaft SocketPointA="Shaft5a" SocketPointB="Shaft5b" />			
+		</Shafts>
+		<OcclusionMap HalfSizeZ="1.9" MinX="-7" MaxX="3.8" />
+		<LimitedFluid
+			Center="(-2.05; 0.66; -0.84)"
+			SizeX="0.78"
+			SizeY="0.52"
+			SizeZ="0.59"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-1.833; 0.65; 0.83)"
+			SizeX="1.02"
+			SizeY="0.52"
+			SizeZ="0.59"
+			Type="Box"
+		/>
+		<Intake Dir="(1; 0; 0)" Origin="(2.3; 1.12; -0)" Size="0.5" />
+		<GearboxSocket Default="scania_gearbox_default" Type="gearboxes_scania_nextgen" />
+		<FuelTank DamageCapacity="100" />
+		<EngineSocket Default="scania_nextgen_engine_0" Type="engines_scania_nextgen" />
+		<Driver
+			AnimationSet="Truck"
+			Pos="(1.9; 1.65; 0.665)"
+			SteeringWheelPos="(2.38; 1.98; 0.66)"
+			ParentFrame="BoneCabin_cdt"
+		/>
+		<Dashboard>
+			<Gauge
+				Damping="0.1"
+				Dir="(-0.5; 0.3; 0)"
+				InputRange="(0;1)"
+				InputType="rpm"
+				Mesh="trucks/arrows/scania_nextgen_arrow_02"
+				Org="(2.706; 1.895; 0.554)"
+				OutputAngles="(-25;250)"
+			/>
+			<Gauge
+				Damping="0.1"
+				Dir="(-0.5; 0.3; 0)"
+				InputRange="(0;120)"
+				InputType="speed"
+				Mesh="trucks/arrows/scania_nextgen_arrow_01"
+				Org="(2.706; 1.895; 0.768)"
+				OutputAngles="(-25;150)"
+			/>			
+		</Dashboard>
+		<Damage
+			Capacity="1200"
+			SensationMin="(0.948; 1.171; -1.149)"
+			SensationMax="(2.960; 3.085; 1.149)"
+		>
+			<DamageArea
+				Type="Engine"
+				Min="(1.108; 0.5; -0.45)"
+				Max="(2.516; 1.401; 0.45)"
+			/>
+			<DamageArea
+				Type="FuelTank"
+				Min="(-1.624; 0.368; -0.486)"
+				Max="(-2.475; 0.963; -1.188)"
+			/>
+			<DamageArea
+				Type="FuelTank"
+				Min="(-1.284; 0.365; 0.482)"
+				Max="(-2.373; 0.963; 1.196)"
+			/>
+		</Damage>
+		<CompatibleWheels OffsetZ="-0.12" RearOffsetZ=".22" Scale="0.56" Type="wheels_heavy_offroad_single" />
+		<CompatibleWheels OffsetZ="-0.12" RearOffsetZ=".22" Scale="0.56" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels OffsetZ="-0.12" RearOffsetZ=".22" Scale="0.56" Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels OffsetZ="-0.12" RearOffsetZ=".22" Scale="0.56" Type="wheels_heavy_single" />
+		<CompatibleWheels OffsetZ="-0.12" RearOffsetZ=".22" Scale="0.56" Type="wheels_heavy_single2" />
+		<CompatibleWheels OffsetZ="-0.05" RearOffsetZ=".12" Scale="0.56" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels OffsetZ="-0.05" RearOffsetZ=".12" Scale="0.56" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels OffsetZ="-0.05" RearOffsetZ=".12" Scale="0.56" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels OffsetZ="-0.05" RearOffsetZ=".12" Scale="0.56" Type="wheels_heavy_double1" />
+		<CompatibleWheels OffsetZ="-0.05" RearOffsetZ=".12" Scale="0.56" Type="wheels_heavy_double2" />
+		
+		<CompatibleWheels OffsetZ="-0.12" RearOffsetZ=".22" Scale="0.6"  Type="wheels_heavy_offroad_single" />
+		<CompatibleWheels OffsetZ="-0.14" RearOffsetZ=".2"  Scale="0.6"  Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels OffsetZ="-0.14" RearOffsetZ=".2"  Scale="0.6"  Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels OffsetZ="-0.12" RearOffsetZ=".22" Scale="0.6"  Type="wheels_heavy_single" />
+		<CompatibleWheels OffsetZ="-0.14" RearOffsetZ=".2"  Scale="0.6"  Type="wheels_heavy_single2" />
+		<CompatibleWheels OffsetZ="-0.06" RearOffsetZ=".14" Scale="0.6"  Type="wheels_heavy_highway_double" />
+		<CompatibleWheels OffsetZ="-0.06" RearOffsetZ=".14" Scale="0.6"  Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels OffsetZ="-0.06" RearOffsetZ=".14" Scale="0.6"  Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels OffsetZ="-0.08" RearOffsetZ=".14" Scale="0.6"  Type="wheels_heavy_double1" />
+		<CompatibleWheels OffsetZ="-0.06" RearOffsetZ=".14" Scale="0.6"  Type="wheels_heavy_double2" />
+		
+		<CompatibleWheels OffsetZ="-0.05" RearOffsetZ=".14" Scale="0.56" Type="wheels_scania_tire" />
+		<CompatibleWheels OffsetZ="-0.08" RearOffsetZ=".13" Scale="0.6"  Type="wheels_scania_tire" />
+		
+		<CompatibleWheels OffsetZ="-0.08" RearOffsetZ=".27" Scale="0.56" Type="wheels_zetros_1/138508" />		
+		<CompatibleWheels OffsetZ="-0.05" RearOffsetZ=".25" Scale="0.56" Type="wheels_zetros_2/138508" />				
+		<CompatibleWheels OffsetZ="-0.10" RearOffsetZ=".25" Scale="0.56" Type="wheels_zetros_3/138508" />
+		<CompatibleWheels OffsetZ="-0.12" RearOffsetZ=".22" Scale="0.56" Type="wheels_zetros_4/138508" />
+		<CompatibleWheels OffsetZ="-0.10" RearOffsetZ=".25" Scale="0.56" Type="wheels_zetros_5/138508" />		
+		<CompatibleWheels OffsetZ="-0.08" RearOffsetZ=".27" Scale="0.56" Type="wheels_zetros_6/138508" />
+		<CompatibleWheels OffsetZ="-0.08" RearOffsetZ=".27" Scale="0.56" Type="wheels_tx_michelin/138508" />
+		<CompatibleWheels OffsetZ="-0.1"  RearOffsetZ=".25" Scale="0.56" Type="wheels_mrb_Superheavy_wide/3280471" />
+		<CompatibleWheels OffsetZ="-0.06" RearOffsetZ=".14" Scale="0.56" Type="wheels_mrb_Superheavy_dually/3280471" />
+		<CompatibleWheels OffsetZ="-0.1"  RearOffsetZ=".25" Scale="0.56" Type="wheels_mrb_Superheavy_kaz/3280471" />
+		<CompatibleWheels OffsetZ="-0.06" RearOffsetZ=".16" Scale="0.56" Type="wheels_mrb_Superheavy_tractor/3280471" />
+		<CompatibleWheels OffsetZ="-0.08" RearOffsetZ=".25" Scale="0.56" Type="wheels_mrb_superhvy_superkaz/3280471" />
+		<CompatibleWheels OffsetZ="-0.08" RearOffsetZ=".25" Scale="0.56" Type="wheels_mrb_suphvy_supersingle/3280471" />
+		<CompatibleWheels OffsetZ="-0.09" RearOffsetZ=".16" Scale="0.56" Type="TWM_Titan_Max_Dually/4189187" />
+		<CompatibleWheels OffsetZ="-0.09" RearOffsetZ=".16" Scale="0.56" Type="TWM_Tarmax_HST_Dually/4189187" />
+		<CompatibleWheels OffsetZ="-0.06" RearOffsetZ=".16" Scale="0.56" Type="TWM_Titan_Dually/4189187" />
+		<CompatibleWheels OffsetZ="-0.08" RearOffsetZ=".14" Scale="0.56" Type="TWM_Amalco_Tire/4189187" />
+		<CompatibleWheels OffsetZ="-0.06" RearOffsetZ=".27" Scale="0.56" Type="TWM_Titan_Super_Singles/4189187" />
+		
+		<CompatibleWheels OffsetZ="-0.08" RearOffsetZ=".27" Scale="0.6"  Type="wheels_zetros_1/138508" />		
+		<CompatibleWheels OffsetZ="-0.08" RearOffsetZ=".22" Scale="0.6"  Type="wheels_zetros_2/138508" />				
+		<CompatibleWheels OffsetZ="-0.12" RearOffsetZ=".22" Scale="0.6"  Type="wheels_zetros_3/138508" />
+		<CompatibleWheels OffsetZ="-0.14" RearOffsetZ=".22" Scale="0.6"  Type="wheels_zetros_4/138508" />
+		<CompatibleWheels OffsetZ="-0.12" RearOffsetZ=".22" Scale="0.6"  Type="wheels_zetros_5/138508" />		
+		<CompatibleWheels OffsetZ="-0.08" RearOffsetZ=".27" Scale="0.6"  Type="wheels_zetros_6/138508" />
+		<CompatibleWheels OffsetZ="-0.1"  RearOffsetZ=".25" Scale="0.6"  Type="wheels_tx_michelin/138508" />
+		<CompatibleWheels OffsetZ="-0.1"  RearOffsetZ=".24" Scale="0.6"  Type="wheels_mrb_Superheavy_wide/3280471" />
+		<CompatibleWheels OffsetZ="-0.06" RearOffsetZ=".16" Scale="0.6"  Type="wheels_mrb_Superheavy_dually/3280471" />
+		<CompatibleWheels OffsetZ="-0.1"  RearOffsetZ=".24" Scale="0.6"  Type="wheels_mrb_Superheavy_kaz/3280471" />
+		<CompatibleWheels OffsetZ="-0.06" RearOffsetZ=".18" Scale="0.6"  Type="wheels_mrb_Superheavy_tractor/3280471" />
+		<CompatibleWheels OffsetZ="-0.04" RearOffsetZ=".26" Scale="0.6"  Type="wheels_mrb_superhvy_superkaz/3280471" />
+		<CompatibleWheels OffsetZ="-0.06" RearOffsetZ=".26" Scale="0.6"  Type="wheels_mrb_suphvy_supersingle/3280471" />
+		<CompatibleWheels OffsetZ="-0.09" RearOffsetZ=".16" Scale="0.6"  Type="TWM_Titan_Max_Dually/4189187" />
+		<CompatibleWheels OffsetZ="-0.1"  RearOffsetZ=".16" Scale="0.6"  Type="TWM_Tarmax_HST_Dually/4189187" />
+		<CompatibleWheels OffsetZ="-0.06" RearOffsetZ=".16" Scale="0.6"  Type="TWM_Titan_Dually/4189187" />
+		<CompatibleWheels OffsetZ="-0.08" RearOffsetZ=".16" Scale="0.6"  Type="TWM_Amalco_Tire/4189187" />
+		<CompatibleWheels OffsetZ="-0.06" RearOffsetZ=".27" Scale="0.6"  Type="TWM_Titan_Super_Singles/4189187" />
+		
+		<CompatibleWheels OffsetZ="-0.05" RearOffsetZ="0.3" Scale="0.58" Type="wheels_heavymud_kolob_tatra_single_op_op" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.728" Type="wheels_heavy_offroad_single" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.812" Type="wheels_heavy_offroad_single" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.896" Type="wheels_heavy_offroad_single" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.728" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.812" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.896" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.728" Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.812" Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.896" Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.728" Type="wheels_heavy_single" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.812" Type="wheels_heavy_single" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.896" Type="wheels_heavy_single" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.728" Type="wheels_heavy_single2" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.812" Type="wheels_heavy_single2" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.896" Type="wheels_heavy_single2" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.728" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.812" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.896" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.728" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.812" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.896" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.728" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.812" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.896" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.728" Type="wheels_heavy_double1" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.812" Type="wheels_heavy_double1" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.896" Type="wheels_heavy_double1" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.728" Type="wheels_heavy_double2" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.812" Type="wheels_heavy_double2" />
+		<CompatibleWheels RearOffsetZ=".12" OffsetZ="-0.05" Scale="0.896" Type="wheels_heavy_double2" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.78" Type="wheels_heavy_offroad_single" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.87" Type="wheels_heavy_offroad_single" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.96" Type="wheels_heavy_offroad_single" />
+		<CompatibleWheels RearOffsetZ=".2" OffsetZ="-0.14" Scale="0.78" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels RearOffsetZ=".2" OffsetZ="-0.14" Scale="0.87" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels RearOffsetZ=".2" OffsetZ="-0.14" Scale="0.96" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels RearOffsetZ=".2" OffsetZ="-0.14" Scale="0.78" Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels RearOffsetZ=".2" OffsetZ="-0.14" Scale="0.87" Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels RearOffsetZ=".2" OffsetZ="-0.14" Scale="0.96" Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.78" Type="wheels_heavy_single" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.87" Type="wheels_heavy_single" />
+		<CompatibleWheels RearOffsetZ=".22" OffsetZ="-0.12" Scale="0.96" Type="wheels_heavy_single" />
+		<CompatibleWheels RearOffsetZ=".2" OffsetZ="-0.14" Scale="0.78" Type="wheels_heavy_single2" />
+		<CompatibleWheels RearOffsetZ=".2" OffsetZ="-0.14" Scale="0.87" Type="wheels_heavy_single2" />
+		<CompatibleWheels RearOffsetZ=".2" OffsetZ="-0.14" Scale="0.96" Type="wheels_heavy_single2" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.06" Scale="0.78" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.06" Scale="0.87" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.06" Scale="0.96" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.06" Scale="0.78" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.06" Scale="0.87" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.06" Scale="0.96" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.06" Scale="0.78" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.06" Scale="0.87" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.06" Scale="0.96" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.08" Scale="0.78" Type="wheels_heavy_double1" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.08" Scale="0.87" Type="wheels_heavy_double1" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.08" Scale="0.96" Type="wheels_heavy_double1" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.06" Scale="0.78" Type="wheels_heavy_double2" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.06" Scale="0.87" Type="wheels_heavy_double2" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.06" Scale="0.96" Type="wheels_heavy_double2" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.05" Scale="0.728" Type="wheels_scania_tire" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.05" Scale="0.812" Type="wheels_scania_tire" />
+		<CompatibleWheels RearOffsetZ=".14" OffsetZ="-0.05" Scale="0.896" Type="wheels_scania_tire" />
+		<CompatibleWheels RearOffsetZ=".13" OffsetZ="-0.08" Scale="0.78" Type="wheels_scania_tire" />
+		<CompatibleWheels RearOffsetZ=".13" OffsetZ="-0.08" Scale="0.87" Type="wheels_scania_tire" />
+		<CompatibleWheels RearOffsetZ=".13" OffsetZ="-0.08" Scale="0.96" Type="wheels_scania_tire" />
+		<CompatibleWheels RearOffsetZ="0.3" OffsetZ="-0.05" Scale="0.754" Type="wheels_heavymud_kolob_tatra_single_op_op" />
+		<CompatibleWheels RearOffsetZ="0.3" OffsetZ="-0.05" Scale="0.841" Type="wheels_heavymud_kolob_tatra_single_op_op" />
+		<CompatibleWheels RearOffsetZ="0.3" OffsetZ="-0.05" Scale="0.928" Type="wheels_heavymud_kolob_tatra_single_op_op" />	
+		
+		<Camera Center="(-1.95; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Cockpit
+				WindshieldDiffuseTexture="trucks/scania_glass_mat__d_a.tga"
+				WindshieldShadingTexture="trucks/scania_glass_mat__sh_d.tga"
+				ViewPos="(1.8; 2.3; 0.661)"
+				LimitsHor="(-2.8; 2.4)"
+				LimitsVer="(-0.32; 0.2)"
+				ViewDir="(1; -0.1; 0)"
+				ZoomViewDirOffset="(0; -0.05; 0)"
+				ZoomViewPosOffset="(0.2; 0; 0)"
+			>
+				<Rear
+					HorTransitionEnd="-1.5"
+					HorTransitionStart="-1.2"
+					LimitsVer="(-1.2; 0.2)"
+					RollAngle="-15"
+					ViewDir="(1; -0.05; 0)"
+					ViewPosOffset="(0.25; -0.1; 0.7)"
+				/>
+				<Mirror
+					ClipDir="(-0.955; 0.096; 0.032)"
+					FOVScale="2"
+					MeshFrame="mirror_left"
+					ReflectionDir="(-0.955; 0.082; -0.347)"
+					Size="(0.22; 0.42)"
+					Pos="(2.476; 2.089; 1.348)"
+					LookAtOffset="(0; -0.1; 0)"
+				>
+				</Mirror>
+				<Mirror
+					ClipDir="(-0.955; 0.096; 0.032)"
+					FOVScale="3"
+					MeshFrame="mirror_left_1"
+					ReflectionDir="(-0.955; -0.062; -0.287)"
+					Size="(0.2; 0.2)"
+					Pos="(2.443; 2.449; 1.344)"
+					LookAtOffset="(0; -0.1; 0)"
+				>
+				</Mirror>
+				<Mirror
+					ClipDir="(-0.981; 0.062; 0.182)"
+					FOVScale="3"
+					MeshFrame="mirror_right"
+					ReflectionDir="(-0.867; 0.042; 0.544)"
+					Size="(0.25; 0.42)"
+					Pos="(2.476; 2.089; -1.349)"
+					ClipOffset=".1"
+				>
+				</Mirror>
+				<Mirror
+					ClipDir="(-0.981; 0.062; 0.182)"
+					FOVScale="3"
+					MeshFrame="mirror_right_1"
+					ReflectionDir="(-1; -0.062; 0.494)"
+					Size="(0.2; 0.2)"
+					Pos="(2.444; 2.439; -1.346)"
+					ClipOffset=".1"
+					>
+				</Mirror>
+				<Mirror
+					ClipDir="(-0.6; -0.9; 0.2)"
+					FOVScale="4"
+					MeshFrame="mirror_front"
+					ReflectionDir="(-0.3; -0.9; 0.9)"
+					Size="(0.3; 0.3)"
+					Pos="(3.011; 2.426; -0.664)"
+					ClipOffset=".1"
+				/>
+				<Mirror
+					ClipDir="(-0.3; -0.9; 0.2)"
+					FOVScale="3"
+					MeshFrame="mirror_side"
+					ReflectionDir="(-0.4; -0.9; 0.9)"
+					Size="(0.3; 0.3)"
+					Pos="(2.109; 2.492; -1.254)"
+					ClipOffset=".1"
+				/>
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" />
+			<Axle Frame="BoneAxle2" />
+			<Axle Frame="BoneAxle3" />
+			<Axle Frame="BoneAxle4" />
+		</Axles>
+	</TruckData>
+	<Snorkel Origin="(1.422; 10.0; 0)" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneFan" RotationSpeed="15" />
+	<PhysicsModel Mesh="trucks/scania_nextgen">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(-2; -1; 0)"
+			ImpactType="Truck"
+			Mass="4300"
+			NetSync="pv"
+		>
+			<Body
+				CenterOfMassOffset="(0; -0.8; 0)"
+				ImpactType="Truck"
+				Mass="3800"
+				ModelFrame="BoneCabin_cdt"
+				NetSync="pv"								
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-10"
+					MaxLimit="10"
+				>
+					<Motor Damping="10000" Spring="1000000" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light
+				Pos="(-6.341; 0.818; 0)"
+				AttenEnd="4"
+				Color="(102; 1; 1)"
+				Dir="(-1; -0.2; 0)"
+				InnerCone="120"
+				OuterCone="160"
+			/>
+			<Flare
+				Size="0.3"
+				Pos="(-6.01; 0.847; 1.034)"
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.5"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+				Reflections="true"
+				SizeMultAtDay="0.6"
+			/>
+			<Flare
+				Size="0.3"
+				Pos="(-6.01; 0.847; -1.034)"
+				AspectRatio="1.4"
+				Color="g(255; 0; 0) x 0.5"
+				ColorMultAtDay="1.2"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+				Reflections="true"
+				SizeMultAtDay="0.6"
+			/>
+		</StopSignals>
+		<ReverseSignals>
+			<Light
+				Pos="(-6.5; 0.825; 0.98)"
+				AttenEnd="12"
+				Color="(102; 102; 102)"
+				Dir="(-1; -0.3; 0)"
+				InnerCone="120"
+				OuterCone="160"
+			/>
+			<Light
+				Pos="(-6.5; 0.825; -0.98)"
+				AttenEnd="12"
+				Color="(102; 102; 102)"
+				Dir="(-1; -0.3; 0)"
+				InnerCone="120"
+				OuterCone="160"
+			/>
+			<Flare
+				Size="0.4"
+				Pos="(-6.01; 0.831; 0.92)"
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.4"
+				ColorMultAtDay="0.55"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+				Reflections="true"
+				SizeMultAtDay="0.6"
+			/>
+			<Flare
+				Size="0.4"
+				Pos="(-6.01; 0.832; -0.92)"
+				AspectRatio="1.4"
+				Color="g(255; 255; 255) x 0.4"
+				ColorMultAtDay="0.55"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+				Reflections="true"
+				SizeMultAtDay="0.6"
+			/>
+			<Flare
+				Color="g(220; 220; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.4"
+				Pos="(-6.01; 0.831; 0.92)"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				Texture="sfx/flare_line__s_d.tga"
+			/>
+			<Flare
+				Color="g(220; 220; 255) x 0.05"
+				Dir="(-1; 0; 0)"
+				Size="0.4"
+				Pos="(-6.01; 0.832; -0.92)"
+				AspectRatio="4.0"
+				ColorMultAtDay="0"
+				DirAngle="45"
+				Texture="sfx/flare_line__s_d.tga"
+			/>
+		</ReverseSignals>
+		<Ignition>
+			<Light
+				Pos="(-5.6; 0.825; 0)"
+				AttenEnd="5"
+				Color="g(128; 0; 0)"
+				Dir="(-1; -0.2; 0)"
+				InnerCone="20"
+				OuterCone="160"
+			/>
+				<!-- Orange right front -->
+			<Flare
+				Pos="(2.819; 0.878; -1.141)"
+				AttenEnd="200"
+				AttenStart="1"
+				AspectRatio="0.4"
+				Color="g(255; 174; 0) x 0.3"
+				ColorMultAtDay="0.5"
+				Size="0.4"
+				Dir="(0; 0; -0.5)"
+				DirAngle="90"
+			/>
+			<!-- Orange left front-->
+			<Flare 
+				Pos="(2.819; 0.878; 1.141)"
+				AttenEnd="200"
+				AttenStart="1"
+				AspectRatio="0.4"
+				Color="g(255; 174; 0) x 0.3"
+				ColorMultAtDay="0.5"
+				Size="0.4"
+				Dir="(0; 0; 0.5)"
+				DirAngle="90"				
+			/>
+			<!-- Orange left side-->
+			<Flare
+				Pos="(2.229; 0.724; 1.234)"
+				AttenEnd="200"
+				AttenStart="1"
+				AspectRatio="0.8"
+				Color="g(255; 174; 0) x 0.3"
+				ColorMultAtDay="0.5"
+				Size="0.3"
+				Dir="(0; 0; 0.5)"
+				DirAngle="140"
+			/>
+			<Flare
+				Pos="(0.243; 0.684; 1.248)"
+				AttenEnd="200"
+				AttenStart="1"
+				AspectRatio="0.8"
+				Color="g(255; 174; 0) x 0.3"
+				ColorMultAtDay="0.5"
+				Size="0.3"
+				Dir="(0; 0; 0.5)"
+				DirAngle="140"
+			/>
+			<Flare
+				Pos="(-3.269; 0.881; 1.215)"
+				AttenEnd="200"
+				AttenStart="1"
+				AspectRatio="0.8"
+				Color="g(255; 174; 0) x 0.3"
+				ColorMultAtDay="0.5"
+				Size="0.3"
+				Dir="(0; 0; 0.5)"
+				DirAngle="140"
+			/>
+			<Flare
+				Pos="(-5.975; 0.867; 1.229)"
+				AttenEnd="200"
+				AttenStart="1"
+				AspectRatio="0.8"
+				Color="g(255; 174; 0) x 0.3"
+				ColorMultAtDay="0.5"
+				Size="0.3"
+				Dir="(0; 0; 0.5)"
+				DirAngle="140"
+			/>
+			<!-- Orange right side-->
+			<Flare
+				Pos="(2.229; 0.724; -1.234)"
+				AttenEnd="200"
+				AttenStart="1"
+				AspectRatio="0.8"
+				Color="g(255; 174; 0) x 0.3"
+				ColorMultAtDay="0.5"
+				Size="0.3"
+				Dir="(0; 0; -0.5)"
+				DirAngle="140"
+			/>
+			<Flare
+				Pos="(0.182; 0.859; -1.231)"
+				AttenEnd="200"
+				AttenStart="1"
+				AspectRatio="0.8"
+				Color="g(255; 174; 0) x 0.3"
+				ColorMultAtDay="0.5"
+				Size="0.3"
+				Dir="(0; 0; -0.5)"
+				DirAngle="140"
+			/>
+			<Flare
+				Pos="(-3.269; 0.881; -1.215)"
+				AttenEnd="200"
+				AttenStart="1"
+				AspectRatio="0.8"
+				Color="g(255; 174; 0) x 0.3"
+				ColorMultAtDay="0.5"
+				Size="0.3"
+				Dir="(0; 0; -0.5)"
+				DirAngle="140"
+			/>
+			<Flare
+				Pos="(-5.975; 0.867; -1.229)"
+				AttenEnd="200"
+				AttenStart="1"
+				AspectRatio="0.8"
+				Color="g(255; 174; 0) x 0.3"
+				ColorMultAtDay="0.5"
+				Size="0.3"
+				Dir="(0; 0; -0.5)"
+				DirAngle="140"
+			/>	
+			<!-- Red rear-->			
+			<Flare
+				Color="g(169; 0; 0) x 1.0"
+				Size="0.3"
+				Pos="(-6.01; 0.86; -0.835)"
+				AspectRatio="1"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 0)"
+				DirAngle="900"
+			/>
+			<Flare
+				Color="g(169; 0; 0) x 1.0"
+				Size="0.3"
+				Pos="(-6.01; 0.86; 0.835)"
+				AspectRatio="1"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+			/>
+			<Flare
+				Color="g(169; 0; 0) x 1.0"
+				Size="0.15"
+				Pos="(-6.01; 0.879; -0.89)"
+				AspectRatio="1.3"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 0)"
+				DirAngle="900"
+			/>
+			<Flare
+				Color="g(169; 0; 0) x 1.0"
+				Size="0.15"
+				Pos="(-6.01; 0.879; 0.89)"
+				AspectRatio="1.3"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+			/>
+			<Flare
+				Color="g(169; 0; 0) x 1.0"
+				Size="0.15"
+				Pos="(-6.01; 0.801; -0.82)"
+				AspectRatio="0.7"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 0)"
+				DirAngle="900"
+			/>
+			<Flare
+				Color="g(169; 0; 0) x 1.0"
+				Size="0.15"
+				Pos="(-6.01; 0.801; 0.82)"
+				AspectRatio="0.7"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+			/>
+			<Flare
+				Color="g(169; 0; 0) x 0.8"
+				Size="0.15"
+				Pos="(-6.01; 0.885; -1.133)"
+				AspectRatio="0.8"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 0)"
+				DirAngle="900"
+			/>
+			<Flare
+				Color="g(169; 0; 0) x 0.8"
+				Size="0.15"
+				Pos="(-6.01; 0.885; 1.133)"
+				AspectRatio="0.8"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+			/>
+			<Flare
+				Color="g(169; 0; 0) x 0.8"
+				Size="0.15"
+				Pos="(-6.01; 0.845; -1.133)"
+				AspectRatio="0.8"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 0)"
+				DirAngle="900"
+			/>
+			<Flare
+				Color="g(169; 0; 0) x 0.8"
+				Size="0.15"
+				Pos="(-6.01; 0.845; 1.133)"
+				AspectRatio="0.8"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+			/>
+			<Flare
+				Color="g(169; 0; 0) x 0.8"
+				Size="0.15"
+				Pos="(-6.01; 0.805; -1.133)"
+				AspectRatio="0.8"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 0)"
+				DirAngle="900"
+			/>
+			<Flare
+				Color="g(169; 0; 0) x 0.8"
+				Size="0.15"
+				Pos="(-6.01; 0.805; 1.133)"
+				AspectRatio="0.8"
+				ColorMultAtDay="0.3"
+				Dir="(-1; 0; 0)"
+				DirAngle="90"
+			/>
+		</Ignition>
+		<HeadLight>
+			<Model
+				Org="(2.934; 0.852; -0.843)"
+				Dir="(1; -0.1; 0)"
+				Mesh="env_light_ray_white"
+			/>
+			<Model
+				Org="(2.934; 0.852; 0.843)"
+				Dir="(1; -0.1; 0)"
+				Mesh="env_light_ray_white"
+			/>			
+			<!-- Highbeam right -->
+			<Flare
+				Pos="(2.934; 0.852; -0.843)"
+				AspectRatio="1.4"
+				Color="g(220; 220; 255) x 1.6"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="120"
+				Reflections="true"
+				Size="0.3"
+				SizeMultAtDay="0.7"
+			/>
+			<Flare
+				Pos="(2.934; 0.852; -0.843)"
+				AspectRatio="4.0"
+				Color="g(220; 220; 255) x 0.1"
+				ColorMultAtDay="0"
+				Dir="(1; 0; 0)"
+				DirAngle="90"
+				Size="0.2"
+				Texture="sfx/flare_line__s_d.tga"
+			/>
+			<!-- Highbeam left -->
+			<Flare
+				Pos="(2.934; 0.852; 0.843)"
+				AspectRatio="1.4"
+				Color="g(220; 220; 255) x 1.6"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="120"
+				Reflections="true"
+				Size="0.3"
+				SizeMultAtDay="0.7"
+			/>
+			<Flare
+				Pos="(2.934; 0.852; 0.843)"
+				AspectRatio="4.0"
+				Color="g(220; 220; 255) x 0.1"
+				ColorMultAtDay="0"
+				Dir="(1; 0; 0)"
+				DirAngle="90"
+				Size="0.2"
+				Texture="sfx/flare_line__s_d.tga"
+			/>			
+			<!-- Headlight right -->			
+			<Flare
+				Pos="(2.886; 0.872; -1.009)"
+				AspectRatio="1.4"
+				Color="g(220; 220; 255) x 1.6"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="150"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.7"
+			/>
+			<!-- Headlight left -->
+			<Flare
+				Pos="(2.886; 0.872; 1.009)"
+				AspectRatio="1.4"
+				Color="g(220; 220; 255) x 1.6"
+				ColorMultAtDay="0.6"
+				Dir="(1; 0; 0)"
+				DirAngle="150"
+				Reflections="true"
+				Size="0.2"
+				SizeMultAtDay="0.7"
+			/>			
+		</HeadLight>
+	</ModelAttachments>
+	<Landmark Mesh="landmarks/ford_clt9000_lmk" MinScale="1.8" MaxScale="3.8" />
+	<HeadLight
+		Pos="(3.884; 1.4; 0)"
+		ParentFrame="BoneCabin_cdt"
+		AttenEnd="55"
+		AttenStart="-20"
+		Color="g(220; 220; 255) x 6.5"
+		Dir="(1; -0.2; 0)"
+		InnerCone="20"
+		OuterCone="60"
+	/>
+	<GameData
+		Country="US,RU,CAS,NE"
+		Price="89900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>	
+		<WinchSocket Pos="(3.051; 0.593; 0)" />
+		<WinchSocket Pos="(2.973; 0.968; 0.64)" />
+		<WinchSocket Pos="(2.973; 0.968; -0.64)" />
+		<WinchSocket Pos="(-1.225; 1.014; 0.508)" />
+		<WinchSocket Pos="(-1.225; 1.014; -0.508)" />
+		<WinchSocket Pos="(-3.116; 1.014; 0.508)" />
+		<WinchSocket Pos="(-3.116; 1.014; -0.508)" />
+		<WinchSocket Pos="(-6.3; 0.783; 0)" />
+		<UiDesc
+			UiDesc="Next Gen Scania 8x8"
+			UiIcon30x30="offroadVehicleImg30"
+			UiIcon328x458="shopImgScaniaNextGen"
+			UiIcon40x40="offroadVehicleImg"
+			UiIconLogo="ScaniaNextGenLogo80"
+			UiName="Scania NextGen"
+		/>
+		<CustomizationCameras>
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(0.697; 1.869; 0)"  MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.265; 3.31; 8.244)" />
+			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.194; 1.807; 0)"  MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-8.093; 2.337; -6.718)" />
+			<CameraPos FOV="32.0" Name="side_r"  InterestPosition="(4.756; 1.133; 1)"  MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-6.539; 2.191; -4.755)" />
+			<CameraPos FOV="32.0" Name="roof"    InterestPosition="(5.584; 2.015; -1)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.203; 5.354; 2.047)" />
+			<CameraPos FOV="32.0" Name="side_l"  InterestPosition="(1.737; 0.557; 0)"  MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.0; 1.376; -5.37)" />
+			<CameraPos FOV="32.0" Name="hoods"   InterestPosition="(5.275; 1.623; 0)"  MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.823; 1.44; -4.73)" />
+			<CameraPos FOV="32.0" Name="wheels"  InterestPosition="(4.756; 1.133; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-4.539; 2.191; -5.755)" />
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.275; 1.623; 0)"  MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.823; 1.44; -4.73)" />
+			<CameraPos FOV="32.0" Name="rear"    InterestPosition="(4.756; 0.6; 2.5)"  MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7; 2.191; -3.755)" />
+			<CameraPos FOV="32.0" Name="rear2"   InterestPosition="(5.277; 1.589; 0)"  MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.311; 3.681; 4.794)" />
+			<CameraPos FOV="32.0" Name="ledsign" InterestPosition="(5.275; 2.023; -0.8)"  MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(7.323; 2.34; 0.1)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(2.737; 1.557; 0)"      MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.0; 2.376; -5.37)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(4.737; 0.557; 0)"      MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.0; 1.676; 6.37)" />
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head"    InterestPosition="(7.764; 1.629; 1.500)"  Position="(5.816; 2.067; -0.443)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount"   InterestPosition="(7.764; 2.629; 1.500)"  Position="(5.816; 2.367; -0.443)" />
+			<CameraPos FOV="32.0" Interior="true" Name="curtain"        InterestPosition="(7.764; 2.629; 1.300)"  Position="(5.016; 2.367; -0.443)" />
+			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(4.168; 1.291; -0.752)" Position="(8.086; 6.023; -0.748)" />
+		</CustomizationCameras>
+		<CraneSocket Pos="(3.051; 0.593; 0)" />
+		<CraneSocket Pos="(2.973; 0.968; 0.64)" />
+		<CraneSocket Pos="(2.973; 0.968; -0.64)" />
+		<CraneSocket Pos="(-1.225; 1.014; 0.508)" />
+		<CraneSocket Pos="(-1.225; 1.014; -0.508)" />
+		<CraneSocket Pos="(-3.116; 1.014; 0.508)" />
+		<CraneSocket Pos="(-3.116; 1.014; -0.508)" />
+		<CraneSocket Pos="(-6.3; 0.783; 0)" />
+		<AddonSockets>
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-4.2; 1.500; 0)" />
+			<Socket Names="SemitrailerFoldableLog" Offset="(-4.75; 1.380; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-4.2; 1.56; 0)" />
+			<Socket Names="Trailer, LogTrailer, ScautTrailer" Offset="(-6.295; 0.8; 0)"/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenFrameExtensionRear" Offset="(-6.042; 0; 0)" NamesBlock="ScaniaNextGenTatraFrameAddonTank, SaddleHigh, SaddleLow, FrameAddonLogMedium, MinicraneRU, MinicraneUS, TatraCrane, TatraSideboard, TatraFrameAddonTank, SaddleMotorized, FrameAddon3, FrameAddonSideboard3, FrameAddonTankLong, FrameAddonTow, FrameAddonTowPlatform, BigCraneUs, BigCraneRu, BigCrane, FrameAddonSeismicVibrator, FrameAddonMaintainer, RearMinicraneUS, RearMinicraneRU, RearTatraCrane, BunkLog, HeavyRepairSmall" >
+				<AddonsShift Offset="(-0.6; 0; 0)"   Types="OSFrameAddonLogMedium" />
+			</Socket>
+			<Socket Names="ScaniaNextGenFrameExtension" Offset="(0; 0; 0)" NamesBlock="FrameAddonLogMedium, MinicraneRU, MinicraneUS, TatraCrane, TatraFrameAddonTank, SaddleMotorized, FrameAddon3, FrameAddonSideboard3, FrameAddonTankLong, BigCraneUs, BigCraneRu, BigCrane, RearMinicraneUS, RearMinicraneRU, RearTatraCrane, ScaniaNextGenRearLogLift, HeavyRepairSmall, FrameAddonTowPlatform" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenLogLift" Offset="(0.79; 1.22; 0)" NamesBlock="FrameAddonLogMedium, BigCrane, BigCraneUs, BigCraneRu, SaddleMotorized, FrameAddonSideboard3, FrameAddon3, FrameAddonTankLong" >
+				<AddonsShift Offset="(-0.09; 0; 0)" Types="ScaniaNextGenExhaust2" />
+				<AddonsShift Offset="(-0.08; 0; 0)" Types="ScaniaNextGenExhaust3" />
+			</Socket>
+			<Socket Names="MinicraneRU" Offset="(0.36; 1.05; 0)" NamesBlock="FrameAddonTankLong, BigCrane, BigCraneRu, BigCraneUs, FrameAddon3, FrameAddonSideboard3" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.07)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.07)" />
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="ScaniaNextGenExhaust2" />
+				<AddonsShift Offset="(-0.13; 0; 0)" Types="ScaniaNextGenExhaust3" />
+			</Socket>
+			<Socket Names="MinicraneUS" Offset="(0.31; 1.05; 0)" Dir="(0; 0; -1)" NamesBlock="FrameAddonTankLong, BigCrane, BigCraneRu, BigCraneUs, FrameAddon3, FrameAddonSideboard3" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.03)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.03)" />
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="ScaniaNextGenExhaust2" />
+				<AddonsShift Offset="(-0.13; 0; 0)" Types="ScaniaNextGenExhaust3" />
+			</Socket>
+			<Socket Names="TatraCrane" Offset="(-0.5; -0.35; 0)" NamesBlock="FrameAddonTankLong, BigCrane, BigCraneRu, BigCraneUs, FrameAddon3, FrameAddonSideboard3" >
+				<AddonsShift Offset="(-0.1; 0; 0)" Types="ScaniaNextGenExhaust2" />
+				<AddonsShift Offset="(-0.1; 0; 0)" Types="ScaniaNextGenExhaust3" />
+			</Socket>
+			<Socket Names="ScaniaNextGenRearLogLift" Offset="(-6.342; 1.22; 0)" Dir="(0; 0; -1)" NamesBlock="FrameAddonLogMedium, BigCrane, BigCraneUs, BigCraneRu, SaddleMotorized, FrameAddonSideboard3, FrameAddon3, FrameAddonTankLong" >
+				<AddonsShift Offset="(-0.6; 0; 0)"   Types="OSFrameAddonLogMedium" />
+			</Socket>
+			<Socket Names="RearMinicraneRU" Offset="(-5.8; 1.05; 0)" NamesBlock="FrameAddonTankLong, BigCrane, BigCraneRu, BigCraneUs, FrameAddon3, SaddleMotorized, FrameAddonSideboard3" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.04)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.04)" />
+			</Socket>
+			<Socket Names="RearMinicraneUS" Offset="(-5.7; 1.06; 0)" NamesBlock="FrameAddonTankLong, BigCrane, BigCraneRu, BigCraneUs, FrameAddon3, FrameAddonSideboard3" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.03)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.03)" />
+			</Socket>
+			<Socket Names="RearTatraCrane" Offset="(-5.2; -0.22; 0)" Dir="(0; 0; -1)" NamesBlock="FrameAddonTowPlatform, FrameAddonTankLong, BigCrane, BigCraneRu, BigCraneUs, FrameAddon3, FrameAddonSideboard3" >
+				<AddonsShift Offset="(5.6; 0; 0)" Dir="(0; 0; 1)" Types="FrameAddonTow" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="BunkLog" Offset="(-6.046; 1.074; 0)" NamesBlock="SaddleD, ScaniaNextGenRearLogLift, RearMinicraneUS, RearMinicraneRU, RearTatraCrane" />
+			<Socket Names="FrameAddon3" Offset="(-3.15; 1.06; 0)" >
+				<AddonsShift Offset="(-0.08; 0; 0)" Types="ScaniaNextGenExhaust2" />
+				<AddonsShift Offset="(-0.06; 0; 0)" Types="ScaniaNextGenExhaust3" />
+			</Socket>
+			<Socket Names="FrameAddonSideboard3" Offset="(-3.3; 1.06; 0)" >
+				<AddonsShift Offset="(-0.08; 0; 0)" Types="ScaniaNextGenExhaust2" />
+				<AddonsShift Offset="(-0.06; 0; 0)" Types="ScaniaNextGenExhaust3" />
+			</Socket>
+			<Socket Names="FrameAddonTankLong" Offset="(-3.3; 1.06; 0)" />
+			<Socket Names="FrameAddonTowPlatform" Offset="(-1.7; 0.985; 0)" NamesBlock="SaddleD, ScaniaNextGenRearLogLift, RearMinicraneUS, RearMinicraneRU, RearTatraCrane, TatraCrane, ScaniaNextGenLogLift, MinicraneUS, MinicraneRU" />
+			<Socket Names="HeavyRepairSmall" Offset="(-2.9; 1.16; 0)" NamesBlock="SaddleD, ScaniaNextGenLogLift, MinicraneUS, MinicraneRU, TatraCrane, ScaniaNextGenRearLogLift, RearMinicraneUS, RearMinicraneRU, RearTatraCrane" />
+			<Socket Names="FrameAddonTow" Offset="(-4.0; 1.045; 0)" NamesBlock="SaddleD, ScaniaNextGenRearLogLift, RearMinicraneUS, RearMinicraneRU, RearTatraCrane" />
+			<Socket Names="ScaniaNextGenFrameAddonLogShort" Offset="(-3.1; 1.06; 0)" >
+				<AddonsShift Offset="(1.5; 0; 0)" Types="ScaniaNextGenRearLogLift" />
+				<AddonsShift Offset="(1.5; 0; 0)" Types="RearMinicraneRU" />
+				<AddonsShift Offset="(1.5; 0; 0)" Types="RearMinicraneUS" />
+				<AddonsShift Offset="(1.5; 0; 0)" Types="RearTatraCrane" />
+			</Socket>
+			<Socket Names="FrameAddonLogMedium" Offset="(-1.8; 1.07; 0)" NamesBlock="SaddleD, ScaniaNextGenLogLift, MinicraneUS, MinicraneRU, TatraCrane, ScaniaNextGenRearLogLift, RearMinicraneUS, RearMinicraneRU, RearTatraCrane" />
+			<Socket Names="OSFrameAddonLogShort" Offset="(-3; 1.06; 0)" >
+				<AddonsShift Offset="(1.45; 0; 0)" Types="ScaniaNextGenRearLogLift" />
+				<AddonsShift Offset="(1.45; 0; 0)" Types="RearMinicraneRU" />
+				<AddonsShift Offset="(1.45; 0; 0)" Types="RearMinicraneUS" />
+				<AddonsShift Offset="(1.45; 0; 0)" Types="RearTatraCrane" />
+			</Socket>
+			<Socket Names="OSFrameAddonLogMedium" Offset="(-2.8; 1.06; 0)" NamesBlock="SaddleD, RearMinicraneUS, RearMinicraneRU, RearTatraCrane" >
+				<AddonsShift Offset="(1.3; 0; 0)" Types="ScaniaNextGenRearLogLift" />
+			</Socket>
+			<Socket Names="SaddleLow" Offset="(-4.2; 1.06; 0)" NamesBlock="SaddleD, ScaniaNextGenRearLogLift, RearMinicraneUS, RearMinicraneRU, RearTatraCrane" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
+			</Socket>
+			<Socket Names="SaddleHigh" Offset="(-3.4; 1.06; 0)" NamesBlock="SaddleD, ScaniaNextGenRearLogLift, RearMinicraneUS, RearMinicraneRU, RearTatraCrane" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.04)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.04)" />
+			</Socket>
+			
+			<Socket Names="FrameAddon"     Offset="(-3.2; 1.06; 0)" >
+				<AddonsShift Offset="(1.3; 0; 0)" Types="ScaniaNextGenRearLogLift" />
+				<AddonsShift Offset="(1.3; 0; 0)" Types="RearMinicraneRU" />
+				<AddonsShift Offset="(1.3; 0; 0)" Types="RearMinicraneUS" />
+				<AddonsShift Offset="(1.3; 0; 0)" Types="RearTatraCrane" />
+			</Socket>
+			<Socket Names="ScaniaNextGenTatraSideboard" Offset="(-1.9; -0.13; 0)" >
+				<AddonsShift Offset="(1.4; 0; 0)" Types="ScaniaNextGenRearLogLift" />
+				<AddonsShift Offset="(1.4; 0; 0)" Types="RearMinicraneRU" />
+				<AddonsShift Offset="(1.4; 0; 0)" Types="RearMinicraneUS" />
+				<AddonsShift Offset="(1.4; 0; 0)" Types="RearTatraCrane" />
+			</Socket>
+			<Socket Names="FrameAddonKung" Offset="(-2.2; 1.12; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.16)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.16)" />
+				<AddonsShift Offset="(-1.4; 0; 0)" Types="ScaniaNextGenLogLift" />
+				<AddonsShift Offset="(-1.4; 0; 0)" Types="MinicraneRU" />
+				<AddonsShift Offset="(-1.4; 0; 0)" Types="MinicraneUS" />
+				<AddonsShift Offset="(-1.4; 0; 0)" Types="TatraCrane" />
+			</Socket>
+			<Socket Names="BigCraneRu" Offset="(-4; 1.06; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="ScaniaNextGenSpoiler">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.073; -0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.073; 0.05)" />
+			</Socket>
+			<Socket Names="BigCraneUs" Offset="(-4.1; 1.06; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.073; -0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.073; 0.05)" />
+			</Socket>
+			<Socket Names="BigCrane" Offset="(-2.6; 1.13; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.08; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.08; 0)" />
+			</Socket>			
+			<Socket Names="FrameAddonTank" Offset="(-3.95; 1.06; 0)" NamesBlock="TatraCrane" >
+				<AddonsShift Offset="(1.3; 0; 0)" Types="ScaniaNextGenRearLogLift" />
+				<AddonsShift Offset="(1.3; 0; 0)" Types="RearMinicraneRU" />
+				<AddonsShift Offset="(1.3; 0; 0)" Types="RearMinicraneUS" />
+				<AddonsShift Offset="(1.3; 0; 0)" Types="RearTatraCrane" />
+			</Socket>
+			<Socket Names="ScaniaNextGenTatraFrameAddonTank" Offset="(-2.22; -0.13; 0)" NamesBlock="TatraCrane, MinicraneUS, MinicraneRU, ScaniaNextGenLogLift, ScaniaNextGenRearLogLift, RearMinicraneUS, RearMinicraneRU, RearTatraCrane" />
+			<Socket Names="FrameAddonSeismicVibrator" Offset="(-1.31; 0.98; 0)" NamesBlock="ScaniaNextGenRearLogLift, RearMinicraneUS, RearMinicraneRU, RearTatraCrane" />
+			<Socket Names="FrameAddonMaintainer" Offset="(-3.74; -0.05; 0)" NamesBlock="Trailer, LogTrailer, ScaniaNextGenRearLogLift, RearMinicraneUS, RearMinicraneRU, RearTatraCrane" />
+			<Socket Names="SaddleMotorized" Offset="(-3.4; -0.24; 0.000)" ParentFrame="BoneChassis_cdt" NamesBlock="ScaniaNextGenRearLogLift, RearMinicraneUS, RearMinicraneRU, RearTatraCrane" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.068)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.068)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.068)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; -0.068)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.000)" />
+			</Socket>
+			
+			<Socket Names="SaddleHighD" NamesBlock="ScaniaNextGenRearLogLift, RearMinicraneUS, RearMinicraneRU, RearTatraCrane" Offset="(-4.2; 1.05; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
+			</Socket>
+			
+		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket Names="SaddleD" NamesBlock="FrameAddon3, FrameAddon" Offset="(-4.2; 1.05; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.015)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.015)" />
+			</Socket>
+		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket Names="Toolbox_invisible" />
+		</AddonSockets>
+		
+		<AddonSockets DefaultAddon="scania_nextgen_diff_lock_default">
+			<Socket Names="ScaniaNextGenDiffLock" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="scania_nextgen_transferbox_default">
+			<Socket Names="ScaniaNextGenTransferBox" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="scania_nextgen_bumper1" >
+			<Socket Names="ScaniaNextGenBumper"  Offset="(0; 0; 0)" />
+			<Socket Names="ScaniaNextGenBumper2" Offset="(0; 0; 0)" />
+			<Socket Names="ScaniaNextGenBumper3" Offset="(0; 0; 0)" />
+			<Socket Names="ScaniaNextGenBumper4" Offset="(0; 0; 0)" />
+			<Socket Names="ScaniaNextGenBumper5" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenTrim" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenDRL" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="scania_nextgen_grill_lights1">
+			<Socket Names="ScaniaNextGenGrill" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="scania_nextgen_roof_lights1">
+			<Socket Names="ScaniaNextGenRoofLights"  Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="ScaniaNextGenRoofLights2" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="ScaniaNextGenMichelin" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenSpoiler" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="scania_nextgen_sunroof1">
+			<Socket Names="ScaniaNextGenSunroof" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="scania_nextgen_windshield_lights">
+			<Socket Names="ScaniaNextGenSunvisor" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenXT" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="ScaniaNextGenMarkerLightsFront" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenStroboFront" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenStroboBack" Offset="(0; 0; 0)" >
+				<AddonsShift Offset="(-0.79; -0.1; 0)" Types="FrameAddonMaintainer" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenStroboRoof" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenStroboRound" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" >
+				<AddonsShift Offset="(0.1; 0.024; 0)" Types="ScaniaNextGenRoofPipe"  />
+				<AddonsShift Offset="(0.1; 0.024; 0)" Types="ScaniaNextGenRoofPipe2" />
+				<AddonsShift Offset="(0.1; 0.024; 0)" Types="ScaniaNextGenRoofPipe3" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenV8Front" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenV8Sides" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="derryLonghorn4520Sticker_Door_L, derryLonghorn4520Sticker_Door_R" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenMarkerLightsSide" Offset="(0; 0; 0)" >
+				<AddonsShift Offset="(0; 0.1; 0)"  Types="ScaniaNextGenBumper5" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenFogLights" Offset="(0; 0; 0)" NamesBlock="ScaniaNextGenFrontPipe" >
+				<AddonsShift Offset="(0; 0.077; 0)" Types="ScaniaNextGenBumper"  />
+				<AddonsShift Offset="(0; 0.03; 0)"  Types="ScaniaNextGenBumper2" />
+				<AddonsShift Offset="(0; 0.06; 0)"  Types="ScaniaNextGenBumper4" />
+				<AddonsShift Offset="(0; 0.144; 0)" Types="ScaniaNextGenBumper5" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenFrontPipe" Offset="(0; 0; 0)" NamesBlock="ScaniaNextGenFogLights, ScaniaNextGenMarkerLightsLow" >
+				<AddonsShift Offset="(0; 0.077; 0)"  Types="ScaniaNextGenBumper"  />
+				<AddonsShift Offset="(0; 0.03; 0)"   Types="ScaniaNextGenBumper2" />
+				<AddonsShift Offset="(0; 0.06; 0)"   Types="ScaniaNextGenBumper4" />
+				<AddonsShift Offset="(0; 0.129; 0)"  Types="ScaniaNextGenBumper5" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenSidePipe" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenSuper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenBullbar"  Offset="(0; 0; 0)" NamesBlock="ScaniaNextGenBumper5" />
+			<Socket Names="ScaniaNextGenBullbar2" Offset="(0; 0; 0)" NamesBlock="ScaniaNextGenBumper5" />
+			<Socket Names="ScaniaNextGenBullbar3" Offset="(0; 0; 0)" NamesBlock="ScaniaNextGenBumper5" />
+			<Socket Names="ScaniaNextGenBullbar4" Offset="(0; 0; 0)" NamesBlock="ScaniaNextGenBumper5" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenMarkerLightsRoof" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenMarkerLightsFront" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenMarkerLightsRear" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenMarkerLightsRear2" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenMarkerLightsMirror" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenMarkerLightsLow" Offset="(0; 0; 0)" NamesBlock="ScaniaNextGenFrontPipe" >
+				<AddonsShift Offset="(0; 0.077; 0)" Types="ScaniaNextGenBumper"  />
+				<AddonsShift Offset="(0; 0.03; 0)"  Types="ScaniaNextGenBumper2" />
+				<AddonsShift Offset="(0; 0.06; 0)"  Types="ScaniaNextGenBumper4" />
+				<AddonsShift Offset="(0; 0.144; 0)" Types="ScaniaNextGenBumper5" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenRoofPipe"  Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="ScaniaNextGenRoofLights2" />
+			<Socket Names="ScaniaNextGenRoofPipe2" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="ScaniaNextGenRoofLights2" />
+			<Socket Names="ScaniaNextGenRoofPipe3" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="ScaniaNextGenRoofLights2" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenMichelin" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" >
+				<AddonsShift Offset="(0.06; 0.02; 0)" Types="ScaniaNextGenRoofPipe"  />
+				<AddonsShift Offset="(0.06; 0.04; 0)" Types="ScaniaNextGenRoofPipe2" />
+				<AddonsShift Offset="(0.05; 0.02; 0)" Types="ScaniaNextGenRoofPipe3" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="scania_nextgen_exhaust">
+			<Socket Names="ScaniaNextGenExhaust"  Offset="(0; 0; 0)" />
+			<Socket Names="ScaniaNextGenExhaust2" Offset="(0; 0; 0)" />
+			<Socket Names="ScaniaNextGenExhaust3" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenWorkLightCabin" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenWorkLights" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenSticker" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="derryLonghorn4520Sticker_Door_L, derryLonghorn4520Sticker_Door_R" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenAuxLights" Offset="(0; 0; 0)" >
+				<AddonsShift Offset="(-0.2; 0.278; 0)"   Types="ScaniaNextGenBullbar"  />
+				<AddonsShift Offset="(-0.035; 0.244; 0)" Types="ScaniaNextGenBullbar2" />
+				<AddonsShift Offset="(-0.022; -0.02; 0)" Types="ScaniaNextGenBullbar3" />
+				<AddonsShift Offset="(0.035; -0.144; 0)" Types="ScaniaNextGenBullbar4" />
+				<AddonsShift Offset="(0; 0.07; 0)"       Types="ScaniaNextGenBumper5" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenAuxLightsRoof" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" >
+				<AddonsShift Offset="(0.01; 0.075; 0)"  Types="ScaniaNextGenRoofPipe"  />
+				<AddonsShift Offset="(0.016; 0.138; 0)" Types="ScaniaNextGenRoofPipe2" />
+				<AddonsShift Offset="(0; 0.127; 0)"     Types="ScaniaNextGenRoofPipe3" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenHorns" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenHorns2" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" >
+				<AddonsShift Offset="(-0.144; 0.024; 0)" Types="ScaniaNextGenStroboRoof" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenLogoBL" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScaniaNextGenSuperBL" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="ScaniaNextGenLedSign" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="derryLonghorn4520Sticker_Door_L" Offset="(0.26; -0.52; 0.009)" ParentFrame="BoneCabin_cdt" NamesBlock="ScaniaNextGenV8Sides, ScaniaNextGenSticker" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="derryLonghorn4520Sticker_Door_R" Offset="(0.26; -0.52; -0.009)" ParentFrame="BoneCabin_cdt" NamesBlock="ScaniaNextGenV8Sides, ScaniaNextGenSticker" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="StuffAirfreshener" Offset="(2.568; 2.588; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="StuffDashboard" Offset="(2.373; 1.725; -0.139)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="StuffCurtainAzov4220Antarctic" Offset="(-1.99; -0.69; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket _template="Cabin2Chassis" Names="freightliner114SdSticker_Capote" Offset="(-2.27; 1.295; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+	</GameData>
+</Truck>

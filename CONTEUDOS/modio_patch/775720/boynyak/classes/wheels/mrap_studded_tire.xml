@@ -1,0 +1,57 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1.13"
+	Width="1.45"
+	WidthRear="1.45"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/mrap_studded_tire"
+			Name="mrap_studded_tire"
+			RearMassScale="2"
+			Mass="250"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Studded tire made by me" UiName="Mrap_studded_tire" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset=".2" SoftForceScale="0.29" />
+			<WheelFriction
+				BodyFriction="3.0"
+				BodyFrictionAsphalt="2"
+				SubstanceFriction="4"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/mrap_studded_tire" Name="op_mstire_mrap_studded_tire_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+
+	<TruckRims>
+		
+		<TruckRim 
+			Mesh="wheels/mrap_rim" 
+			Name="mrap_rim" 
+		>
+		
+			<GameData>
+				<UiDesc UiDesc="Cgtrader Rim" UiName="Mrap rim" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

@@ -1,0 +1,19 @@
+<TruckAddon>
+	<Snorkel Origin="(1.1; 10.0; -0.976)" />
+	<PhysicsModel Mesh="trucks/hummerh1_tuning/snorkel_short" />
+	<GameData
+		CameraPreset="side_r"
+		Category="BODY TUNNING"
+		Price="600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc=""
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Snorkel - Short"
+		/>
+		<InstallSocket Type="H1Snorkel" />
+	</GameData>
+</TruckAddon>

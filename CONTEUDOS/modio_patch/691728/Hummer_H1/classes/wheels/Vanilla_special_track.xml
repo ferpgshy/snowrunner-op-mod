@@ -1,0 +1,69 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.998"
+	WidthRear="1.998"
+>
+			<!-- Tire giude iceberg
+			<Tire Types>
+				UI_TIRE_TYPE_OFFROAD_NAME
+				UI_TIRE_TYPE_MUDTIRES_NAME
+				UI_TIRE_TYPE_HIGHWAY_NAME
+				UI_TIRE_TYPE_CHAINS_NAME
+				UI_TIRE_TYPE_ALLTERRAIN_NAME			
+			</Tire Types>
+			<WheelSoftness>
+				<Stiff RadiusOffset="0.02" SoftForceScale="0.32" />
+				<Soft RadiusOffset="0.03" SoftForceScale="0.12" />
+				<ScoutStiff RadiusOffset="0.02" SoftForceScale="0.32" />
+				<ScoutSoft RadiusOffset="0.1" SoftForceScale="0.2" />
+				<ScoutDefault RadiusOffset="0.025" SoftForceScale="0.24" />
+				<Average RadiusOffset="0.025" SoftForceScale="0.24" />
+			</WheelSoftness>
+			-->			
+	<TruckTires>		
+		<TruckTire
+			Mesh="wheels/tire_s_c_new"
+			Name="Vanilla_s_c"
+			RearMassScale="1"
+			Mass="300"
+		>
+			<GameData
+				Price="3500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Vanilla [Dirt 1.7 / Asphalt 0.5 / Mud 3.0]" UiName="Vanilla: Insa Turbo Special Track" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.04" SoftForceScale="0.19" />
+			<WheelFriction
+				BodyFriction="1.7"
+				BodyFrictionAsphalt="0.5"
+				SubstanceFriction="3.0"
+				UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
+			/>
+		</TruckTire>		
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_s_c_new" Name="op_Vstrack_Vanilla_s_c_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+
+	<TruckRims>
+		<TruckRim Mesh="wheels/wheel_tire_s_c_black" Name="pro_wheel_black">
+			<GameData>
+				<UiDesc UiDesc="pro_wheel_black" UiName="Pro wheel black" />
+			</GameData>
+		</TruckRim>
+
+	</TruckRims>
+</TruckWheels>

@@ -1,4 +1,5 @@
 @echo off
+setlocal EnableDelayedExpansion
 chcp 65001 >nul
 title SnowRunner OP Mod - Instalador
 color 0A
@@ -16,6 +17,17 @@ if not exist "%SCRIPT_DIR%initial.pak" (
     color 0C
     echo ERRO: initial.pak nao encontrado na pasta do instalador!
     echo Certifique-se de que todos os arquivos estao na mesma pasta.
+    pause
+    exit /b 1
+)
+
+:: Detectar WinRAR
+set "WINRAR=C:\Program Files\WinRAR\WinRAR.exe"
+if not exist "%WINRAR%" set "WINRAR=C:\Program Files (x86)\WinRAR\WinRAR.exe"
+if not exist "%WINRAR%" (
+    color 0C
+    echo ERRO: WinRAR nao encontrado! Instale o WinRAR para continuar.
+    echo https://www.win-rar.com/download.html
     pause
     exit /b 1
 )
@@ -42,18 +54,15 @@ if not exist "%GAME_DIR%" (
     exit /b 1
 )
 
-:: Detectar pasta de mods (Documents\My Games\SnowRunner\base\Mods)
-set "MODS_DIR=%USERPROFILE%\Documents\My Games\SnowRunner\base\Mods"
-if not exist "%MODS_DIR%" (
-    mkdir "%MODS_DIR%"
-)
+:: Detectar pasta de mods
+set "MODS_DIR=%USERPROFILE%\Documents\My Games\SnowRunner\base\Mods\.modio\mods"
 
 echo Pasta do jogo:  %GAME_DIR%
 echo Pasta de mods:  %MODS_DIR%
 echo.
 
 :: Confirmar
-echo Isso vai substituir o initial.pak e copiar os mods.
+echo Isso vai instalar o initial.pak e injetar os mods nos seus .paks.
 echo Feche o SnowRunner antes de continuar!
 echo.
 set /p "CONFIRM=Deseja continuar? (S/N): "
@@ -75,18 +84,39 @@ if errorlevel 1 (
 echo       OK!
 
 echo.
-echo [2/2] Copiando mods (.modio)...
-if exist "%SCRIPT_DIR%.modio" (
-    xcopy "%SCRIPT_DIR%.modio" "%MODS_DIR%\.modio" /E /I /Y /Q
-    if errorlevel 1 (
-        color 0C
-        echo ERRO ao copiar mods!
-        pause
-        exit /b 1
+echo [2/2] Injetando mods nos .paks existentes...
+if exist "%SCRIPT_DIR%modio_patch" (
+    set "MOD_COUNT=0"
+    set "MOD_OK=0"
+    set "MOD_SKIP=0"
+    for /d %%M in ("%SCRIPT_DIR%modio_patch\*") do (
+        set /a MOD_COUNT+=1
+        :: Pegar o mod_id (nome da pasta)
+        set "MOD_ID=%%~nxM"
+        :: Dentro de cada mod_id tem uma subpasta com o nome do pak
+        for /d %%P in ("%%M\*") do (
+            set "PAK_NAME=%%~nxP.pak"
+            set "PAK_PATH=%MODS_DIR%\%%~nxM\%%~nxP.pak"
+            if exist "!PAK_PATH!" (
+                echo   Injetando em !PAK_NAME!...
+                pushd "%%P"
+                "%WINRAR%" a -afzip -o+ -r "!PAK_PATH!" *
+                popd
+                if errorlevel 1 (
+                    echo     ERRO ao injetar!
+                ) else (
+                    set /a MOD_OK+=1
+                )
+            ) else (
+                echo   %PAK_NAME% nao encontrado, pulando...
+                set /a MOD_SKIP+=1
+            )
+        )
     )
-    echo       OK!
+    echo.
+    echo   Mods injetados com sucesso!
 ) else (
-    echo       Pasta .modio nao encontrada, pulando mods.
+    echo       Pasta modio_patch nao encontrada, pulando mods.
 )
 
 echo.

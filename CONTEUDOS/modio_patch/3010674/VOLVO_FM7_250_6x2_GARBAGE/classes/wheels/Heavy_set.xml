@@ -1,0 +1,53 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1.0"
+	Width="1.695"
+	WidthRear="3.95"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/alcoa_duallys"
+			Name="alcoa_duallys"
+			RearMassScale="2"
+			Mass="450"
+		>
+			<GameData
+				Price="5000"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>			
+				<UiDesc UiDesc="heavy_offroad_tyre" UiName="heavy_offroad" />
+			</GameData>
+			
+			<WheelTracks TextureAlpha="tracks/default_double_alpha__s_d.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/default_double_alpha__s_d.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.02" SoftForceScale="0.5" />
+			<WheelFriction
+				BodyFriction="3.2"
+				BodyFrictionAsphalt="3.5"
+				SubstanceFriction="3.4"
+				UiName="UI_TIRE_TYPE_HIGHWAY_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/alcoa_duallys" Name="op_Hset_alcoa_duallys_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	
+	
+	<TruckRims>
+		<TruckRim Mesh="wheels/alcoa_alloys" Name="alcoa_alloys">
+			<GameData>
+				<UiDesc UiDesc="heavy_offroad_alloys" UiName="heavy_offroad_alloys" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

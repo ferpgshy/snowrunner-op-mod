@@ -1,0 +1,141 @@
+<_templates Include="trucks">
+	<Wheel>
+		<WheelNarrow
+			Location="front"
+			SuspensionHeight="0.0"
+			SuspensionStrength="0.01"
+			Torque="default"
+			SuspensionMin="0.0"
+			ParentFrame="BoneRaise_cdt"
+			ConnectedToHandbrake="true"
+		/>
+	</Wheel>
+</_templates>
+<Truck Type="Trailer">
+	<TruckData>
+		<Wheels
+			DefaultRim="invisible"
+			DefaultTire="invisible"
+			DefaultWheelType="wheel_cargo_cabin_01_narrow"
+		>
+			<Wheel _template="WheelNarrow" RightSide="true" Pos="(-14; 0.8; 1.6)" />
+			<Wheel _template="WheelNarrow" Pos="(-14; 0.8; 1.6)" />					
+		</Wheels>		
+		<CompatibleWheels Scale="0.247" Type="wheel_cargo_cabin_01_narrow" />
+		<CompatibleWheels Scale="0.321" Type="wheel_cargo_cabin_01_narrow" />
+		<CompatibleWheels Scale="0.358" Type="wheel_cargo_cabin_01_narrow" />
+		<CompatibleWheels Scale="0.395" Type="wheel_cargo_cabin_01_narrow" />
+		<Camera Center="(-20; 0; 0)" />
+		<Constraint
+			AxisLocal="(0;0;1)"
+			MinLimit="-1"
+			MaxLimit="1"
+			Name="Front"
+			Type="Hinge"
+		>
+			<Motor Force="60000000" Tau="0.4" Type="Position" />
+		</Constraint>
+	</TruckData>
+	<ControlledConstraints>			
+		<Constraint Action="9"  Id="front" LocaleUid="Raise" Name="Raise" SpeedMult="0.7" />
+		<Constraint Action="11" Id="mid" LocaleUid="Fold" Name="Fold" SpeedMult="1" />
+	</ControlledConstraints>	
+	<PoweredConstraints>
+		<Group Id="_trailer_foot">
+			<Constraint
+				InitialFix="true"
+				Name="Leg1"
+				TerminalFix="true"
+				Position="-169"
+			/>
+		</Group>
+	</PoweredConstraints>
+	<PhysicsModel Mesh="trucks/trailers/bridge_white">
+		<NetSync Legacy="true" />
+		<Body
+			CenterOfMassOffset="(0; -0.2; 0)"
+			ImpactType="Truck"
+			Mass="3100"
+			NetSync="pv"
+			NoSoftContacts="true"
+			Friction="50"
+		>
+		<Body NetSync="pv" NoSoftContacts="true" Friction="50" Mass="250" ModelFrame="BoneFrictionHelper_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+		<Body NetSync="pv" NoSoftContacts="true" Friction="550" Mass="250" ModelFrame="BoneFrictionHelper2_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+			<Body NetSync="pv" ForceBodyParams="true" NoSoftContacts="true" Mass="2500" ModelFrame="BoneRaise_cdt" >
+				<Constraint
+					AxisLocal="(0; 0; -1)"
+					Type="Hinge"
+					Name="Raise"
+					MinLimit="1"
+					MaxLimit="168.5"
+				>
+					<Motor Force="60000000" Tau="1" Type="Position" />
+				</Constraint>
+				<Body NetSync="pv" ForceBodyParams="true" NoSoftContacts="true" Mass="2500" ModelFrame="BoneFold_cdt">
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Type="Hinge"
+						Name="Fold"
+						MinLimit="0"
+						MaxLimit="179.5"
+					>
+						<Motor Force="60000000" Tau="0.4" Type="Position" />
+					</Constraint>
+				</Body>			
+				<Body
+					Mass="1"
+					ModelFrame="BoneLeg1_cdt"					
+					Collisions="None"					
+					NetSync="pv"
+				>
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="Leg1"
+						Type="Hinge"
+						MinLimit="-180"
+						MaxLimit="0"
+					>
+						<Motor Damping="1" Force="45000" Type="Position" />
+					</Constraint>
+				</Body>			
+			</Body>
+		</Body>	
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/bridge_lmk" MinScale="1.6" MaxScale="3.6" /> 
+	  <GameData Price="4500" SoundForEachConstraint="true">        
+        <ConstraintSounds>
+            <SoundIKStop Name="trucks/cat_th357/cat_th357_crane_move_stop" Range="20" Volume="1" ConstraintName="Raise"/>
+            <SoundIKStart Name="trucks/cat_th357/cat_th357_crane_move_start" Range="20" Volume="1" ConstraintName="Raise"/>
+            <SoundIKLoop Name="trucks/cat_th357/cat_th357_crane_move_loop" Range="20" Volume="1" ConstraintName="Raise"/>
+            
+            <SoundIKStop Name="trucks/cat_th357/cat_th357_shaft_move_stop" Range="20" Volume="1" ConstraintName="Fold"/>
+            <SoundIKStart Name="trucks/cat_th357/cat_th357_shaft_move_start" Range="20" Volume="1" ConstraintName="Fold"/>
+            <SoundIKLoop Name="trucks/cat_th357/cat_th357_shaft_move_loop" Range="20" Volume="1" ConstraintName="Fold"/>
+        </ConstraintSounds>
+		<InstallSocket Offset="(-7.5232; 1.1301; 0)" Type="Trailer" ParentFrame="BoneRoot" />
+		<RequiredAddon Types="bridge_layer"/>
+		<WinchSocket Pos="(-9.803; 0.436; 1.575)" ParentFrame="BoneRaise_cdt" />
+		<WinchSocket Pos="(-9.803; 0.436; -1.575)" ParentFrame="BoneRaise_cdt" />
+		<WinchSocket Pos="(-13.09; 0.517; 1.575)" ParentFrame="BoneRaise_cdt" />
+		<WinchSocket Pos="(-13.09; 0.517; -1.575)" ParentFrame="BoneRaise_cdt" />
+		<WinchSocket Pos="(-18.03; 0.517; 1.575)" ParentFrame="BoneFold_cdt" />
+		<WinchSocket Pos="(-18.03; 0.517; -1.575)" ParentFrame="BoneFold_cdt" />
+		<WinchSocket Pos="(-21.333; 0.436; 1.575)" ParentFrame="BoneFold_cdt" />
+		<WinchSocket Pos="(-21.333; 0.436; -1.575)" ParentFrame="BoneFold_cdt" />		
+		<CraneSocket Pos="(-9.803; 0.436; 1.575)" ParentFrame="BoneRaise_cdt" />
+		<CraneSocket Pos="(-9.803; 0.436; -1.575)" ParentFrame="BoneRaise_cdt" />		
+		<CraneSocket Pos="(-21.333; 0.436; 1.575)" ParentFrame="BoneFold_cdt" />
+		<CraneSocket Pos="(-21.333; 0.436; -1.575)" ParentFrame="BoneFold_cdt" />
+		<UiDesc
+			UiDesc="RNG TX Prototype BRIDGE - WWHITE Color"
+			UiIcon30x30="trailerImg30"
+			UiIcon40x40="trailerImg"
+			UiName="RNG TX BRIDGE - WHITE"
+		/>
+	</GameData>	
+</Truck>

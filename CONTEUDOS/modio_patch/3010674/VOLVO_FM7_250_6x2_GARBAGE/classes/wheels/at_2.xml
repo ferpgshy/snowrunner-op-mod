@@ -1,0 +1,49 @@
+<TruckWheels DamageCapacity="999999" Radius="0.89" Width="2.0" WidthRear="3.2">
+	<TruckTires>
+		<TruckTire Mass="900" Mesh="wheels/tire_polarwil3" Name="offroad_1">
+			<WheelTracks _template="Offroad" />
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness RadiusOffset="0.05" SoftForceScale="0.08" />
+			<WheelFriction
+				BodyFriction="6.3"
+				BodyFrictionAsphalt="6.4"
+				IsIgnoreIce="true"
+				SubstanceFriction="6"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+			<WheelFriction
+				BodyFriction="6.0"
+				BodyFrictionAsphalt="6.2"
+				IsIgnoreIce="true"
+				SubstanceFriction="6"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+				Rear="true"
+			/>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_OFFROAD_DESC" UiName="ТРЭКОЛ" />
+			</GameData>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_polarwil3" Name="op_a2_offroad_1_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_polarwil3_1" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_disk2_DESC" UiName="UI_disk2_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

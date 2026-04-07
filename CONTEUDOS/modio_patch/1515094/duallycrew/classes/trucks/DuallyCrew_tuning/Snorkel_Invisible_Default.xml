@@ -1,0 +1,21 @@
+<TruckAddon>
+
+	<Snorkel Origin="(0.36; 10.0; 0.80)" />
+	
+	<PhysicsModel Mesh="trucks/addons/invisible_mesh" />
+	<GameData
+		CameraPreset="snorkel"
+		Category="OFF ROAD PARTS & ACCESSORIES"
+		Price="0"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc=""
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Snorkel - Invisible"
+		/>
+		<InstallSocket Type="Snorkel_78DuallyCrew" />
+	</GameData>
+</TruckAddon>

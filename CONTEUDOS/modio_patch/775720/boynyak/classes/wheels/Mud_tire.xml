@@ -1,0 +1,57 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1.13"
+	Width="1.45"
+	WidthRear="1.45"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/Mud_tire"
+			Name="Mud_Max"
+			RearMassScale="2"
+			Mass="250"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="OP Mud Tire made by me" UiName="Mud_tire" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset=".2" SoftForceScale="0.29" />
+			<WheelFriction
+				BodyFriction="7"
+				BodyFrictionAsphalt="0.8"
+				SubstanceFriction="8"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/Mud_tire" Name="op_Mtire_Mud_Max_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+
+	<TruckRims>
+		
+		<TruckRim 
+			Mesh="wheels/mud_rim" 
+			Name="mud_rim" 
+		>
+		
+			<GameData>
+				<UiDesc UiDesc="CGtrader free rim" UiName="Mud_rim2" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

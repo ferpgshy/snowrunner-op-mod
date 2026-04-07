@@ -1,0 +1,1207 @@
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.058"
+		DiffLockType="Always"
+		EngineIconMesh="env/engine_small"
+		EngineIconScale="1.5"
+		EngineStartDelay="1.7"
+		ExhaustStartTime="1.6"
+		FuelCapacity="1135"
+		Responsiveness="0.5"
+		SteerSpeed="0.03"
+		TruckImage="devastatormchr"
+		TruckType="SCOUT"
+	>
+		<WinchUpgradeSocket Default="w_kwc500_default" IsUpgradable="true" Type="winches_kwc500" />
+		<Wheels
+			DefaultRim="alcoa"
+			DefaultTire="ATSemi"
+			DefaultWheelType="wheels_atsemi"
+		>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="front"
+				SteeringAngle="40"
+				SteeringCastor="8"
+				Torque="full"
+				_template="FirstAxle"
+				Pos="(5.386; 0.65947; 1.15844)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="front"
+				RightSide="true"
+				SteeringAngle="40"
+				SteeringCastor="8"
+				Torque="full"
+				_template="FirstAxle"
+				Pos="(5.386; 0.65947; 1.15844)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="front"
+				SteeringAngle="40"
+				SteeringCastor="8"
+				Torque="full"
+				_template="SecondAxle"
+				Pos="(3.28936; 0.65947; 1.15844)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="front"
+				RightSide="true"
+				SteeringAngle="40"
+				SteeringCastor="8"
+				Torque="full"
+				_template="SecondAxle"
+				Pos="(3.28936; 0.65947; 1.15844)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+				_template="RearAxle"
+				Pos="(-4.88297; 0.660871; 1.15844)"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="rear"
+				RightSide="true"
+				Torque="default"
+				_template="RearAxle"
+				Pos="(-4.88297; 0.660871; 1.15844)"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+				_template="RearAxle"
+				Pos="(-6.52502; 0.660871; 1.15844)"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="rear"
+				RightSide="true"
+				Torque="default"
+				_template="RearAxle"
+				Pos="(-6.52502; 0.660871; 1.15844)"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+				_template="RearAxle"
+				Pos="(-8.16663; 0.660871; 1.15844)"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="rear"
+				RightSide="true"
+				Torque="default"
+				_template="RearAxle"
+				Pos="(-8.16663; 0.660871; 1.15844)"
+			/>
+		</Wheels>
+		<SuspensionSocket
+			Default="kwc500_suspension_default"
+			HardpointY="0.424"
+			Type="s_kwc500"
+			MaxWheelRadiusWithoutSuspension="0.6"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack1"
+			FrameSteerLeft="BoneRack1L"
+			FrameSteerRight="BoneRack1R"
+			RackHalfSizeZ="0.845"
+		/>
+		<SteeringRack
+			Frame="BoneRack2"
+			FrameSteerLeft="BoneRack2L"
+			FrameSteerRight="BoneRack2R"
+			RackHalfSizeZ="0.845"
+		/>
+		<Steam Origin="(1.241; 0.866; 0)" />
+		<SoundsWheels>
+			<WheelWater Sound="surfaces/surf_water_loop" />
+			<WheelSteer Sound="wheels/wheel_steer" />
+			<WheelSpinning Sound="wheels/wheel_spining_loop" />
+			<WheelMud Sound="surfaces/hit/hit_mud_rnd" />
+			<WheelExtrude Sound="" />
+			<WheelDamaged Sound="wheels/wheel_broken_rotate_loop" />
+			<WheelChains Sound="wheels/wheel_tires_chain_loop" />
+			<WaterHit Sound="trucks/common/truck_hit_water_rnd_set/truck_hit_water_rnd" />
+		</SoundsWheels>
+		<SoundsDamage>
+			<Wheels
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Suspension
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Gearbox
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<FuelTank
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Engine
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Critical
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_crit_rnd_set/truck_damage_crit_rnd"
+				VolumeMinMax="(0.5;1.0)"
+			/>
+			<Common
+				DamageAmount="(0.01;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_small_hard_rnd_set/truck_damage_small_hard_rnd"
+				VolumeMinMax="(0.2;1.0)"
+			/>
+		</SoundsDamage>
+		<Sounds
+			_template="Default"
+			AirHissInterval="12.0"
+			DisableReversePitch="false"
+			Origin="(3.32; 1.512; 0)"
+			MinDist="10.0"
+			ParentFrame="BoneCabin_cdt"
+		>
+			<Reverse		Sound="" />
+			<EngineTrans	Sound="" />
+			<BrakeRelease	Sound="trucks/gmc_9500/gmc_9500_brake_release" />
+			<Honk			Sound="kwc500/semi" />
+			<EngineRev		Sound="kwc500/isx15high" />
+			<EngineAccel	Sound="" />
+			<EngineStart	Sound="kwc500/isx15start" />
+			<BrakesSqueal	Sound="kwc500/isxbrake" />
+			<EngineStop		Sound="kwc500/12V_Cummins_stop" />
+			<EngineIdle		Sound="kwc500/isx15idle" />
+			<EngineIdle_2d	Sound="kwc500/isx15idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="kwc500/isx15low" />
+			<EngineLow_2d	Sound="kwc500/isx15low_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="" />
+			<EngineHeavy_2d	Sound=""	IsSound2D="true" />
+			<ChassisStress	Sound="trucks/common/truck_stress_rnd_set/truck_stress_rnd" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_old_rnd_set/truck_swing_big_old_rnd" />
+		</Sounds>
+		<Shafts>
+			<Shaft Mesh="env/shafts" SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft Mesh="env/shafts" SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft Mesh="env/shafts" SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+			<Shaft Mesh="env/shafts" SocketPointA="Shaft4a" SocketPointB="Shaft4b" />
+			<Shaft Mesh="env/shafts" SocketPointA="Shaft5a" SocketPointB="Shaft5b" />
+			<Shaft Mesh="env/shafts" SocketPointA="Shaft6a" SocketPointB="Shaft6b" />
+		</Shafts>
+		<OcclusionMap
+			HalfSizeZ="1.4"
+			Texture="trucks/occlusion/chassis_small__s_d_a.tga"
+			MinX="-2.2"
+			MaxX="2.2"
+		/>
+		<GearboxSocket Default="g_kwc500_default" Type="gearboxes_kwc500" />
+		<FuelTank DamageCapacity="5000" />
+		
+		<EngineSocket Default="kwc500_engine_0" Type="e_kwc500" />
+		<Driver AnimationSet="HeavyTruck" Pos="(3.7; 2.34; 0.42)" SteeringWheelPos="(4.2; 2.7; 0.45)" />
+		<Dashboard>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.37079; 2.5718; -0.26685)"
+				OutputAngles="(-105;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.39889; 2.64867; -0.266781)"
+				OutputAngles="(-105;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.38361; 2.56704; -0.187974)"
+				OutputAngles="(-90;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.41171; 2.64391; -0.187905)"
+				OutputAngles="(-90;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.39643; 2.56228; -0.109098)"
+				OutputAngles="(-105;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.42453; 2.63915; -0.109028)"
+				OutputAngles="(-90;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.40926; 2.55752; -0.030221)"
+				OutputAngles="(-90;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.43736; 2.63439; -0.030151)"
+				OutputAngles="(-90;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.42208; 2.55276; 0.048656)"
+				OutputAngles="(-90;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.45018; 2.62963; 0.048726)"
+				OutputAngles="(-90;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.43555; 2.54779; 0.764802)"
+				OutputAngles="(-90;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.46352; 2.6247; 0.764751)"
+				OutputAngles="(-95;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.44763; 2.54335; 0.685791)"
+				OutputAngles="(-105;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.44773; 2.54324; 0.206409)"
+				OutputAngles="(-110;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.47583; 2.62011; 0.206479)"
+				OutputAngles="(-110;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.47561; 2.62025; 0.68574)"
+				OutputAngles="(-120;0)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="fuel"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.463; 2.62487; 0.127602)"
+				OutputAngles="(-90;90)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;1)"
+				InputType="fuel"
+				Mesh="trucks/arrows/t800small"
+				Org="(4.4349; 2.548; 0.127533)"
+				OutputAngles="(-90;90)"
+			/>
+			<Gauge
+				Damping="0.7"
+				Dir="(-0.9277; 0.3376; 0.1595)"
+				InputRange="(0;160)"
+				InputType="speed"
+				Mesh="trucks/arrows/t800large"
+				Org="(4.48504; 2.60844; 0.370355)"
+				OutputAngles="(-118;140)"
+			/>
+			<Gauge 
+				Damping="0.8" 
+				Dir="(-0.9277; 0.3376; 0.1595)" 
+				InputRange="(0;1)" 
+				InputType="rpm" 
+				Mesh="trucks/arrows/t800large" 
+				Org="(4.48504; 2.60844; 0.523441)"
+				OutputAngles="(-118; 140)"
+				/>
+		</Dashboard>
+		<Damage
+			Capacity="300"
+			SensationMin="(-0.8; 1.2; -0.7)"
+			SensationMax="(0.6; 1.8; 0.7)"
+		>
+			<DamageArea
+				Type="Engine"
+				Min="(0.6; 0.45; -0.4)"
+				Max="(1.8; 1.3; 0.4)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<DamageArea
+				Type="FuelTank"
+				Min="(-1.85; 0.4; -0.8)"
+				Max="(-0.7; 0.9; 0.8)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</Damage>
+		<CompatibleWheels Scale="0.545" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.545" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.545" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.545" Type="wheels_military" />
+		<CompatibleWheels Scale="0.545" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.545" Type="wheels_xzlsemi" />
+
+		<CompatibleWheels Scale="0.58" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.58" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.58" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.58" Type="wheels_military" />
+		<CompatibleWheels Scale="0.58" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.58" Type="wheels_xzlsemi" />
+
+		<CompatibleWheels Scale="0.61" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.61" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.61" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.61" Type="wheels_military" />
+		<CompatibleWheels Scale="0.61" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.61" Type="wheels_xzlsemi" />
+
+		<CompatibleWheels Scale="0.63" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.63" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.63" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.63" Type="wheels_military" />
+		<CompatibleWheels Scale="0.63" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.63" Type="wheels_xzlsemi" />
+
+		<CompatibleWheels Scale="0.66" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.66" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.66" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.66" Type="wheels_military" />
+		<CompatibleWheels Scale="0.66" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.66" Type="wheels_xzlsemi" />
+
+		<CompatibleWheels Scale="0.68" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.68" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.68" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.68" Type="wheels_military" />
+		<CompatibleWheels Scale="0.68" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.68" Type="wheels_xzlsemi" />
+
+		<CompatibleWheels Scale="0.71" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.71" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.71" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.71" Type="wheels_military" />
+		<CompatibleWheels Scale="0.71" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.71" Type="wheels_xzlsemi" />
+
+		<CompatibleWheels Scale="0.75" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.75" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.75" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.75" Type="wheels_military" />
+		<CompatibleWheels Scale="0.75" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.75" Type="wheels_xzlsemi" />
+
+		<CompatibleWheels Scale="0.82" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.82" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.82" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.82" Type="wheels_military" />
+		<CompatibleWheels Scale="0.82" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.82" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.709" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.79" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.872" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.709" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.79" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.872" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.709" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.79" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.872" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.709" Type="wheels_military" />
+		<CompatibleWheels Scale="0.79" Type="wheels_military" />
+		<CompatibleWheels Scale="0.872" Type="wheels_military" />
+		<CompatibleWheels Scale="0.709" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.79" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.872" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.709" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.79" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.872" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.754" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.841" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.928" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.754" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.841" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.928" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.754" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.841" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.928" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.754" Type="wheels_military" />
+		<CompatibleWheels Scale="0.841" Type="wheels_military" />
+		<CompatibleWheels Scale="0.928" Type="wheels_military" />
+		<CompatibleWheels Scale="0.754" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.841" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.928" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.754" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.841" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.928" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.793" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.884" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.976" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.793" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.884" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.976" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.793" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.884" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.976" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.793" Type="wheels_military" />
+		<CompatibleWheels Scale="0.884" Type="wheels_military" />
+		<CompatibleWheels Scale="0.976" Type="wheels_military" />
+		<CompatibleWheels Scale="0.793" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.884" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.976" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.793" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.884" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.976" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.819" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.913" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="1.008" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.819" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.913" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="1.008" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.819" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.913" Type="wheels_loader" />
+		<CompatibleWheels Scale="1.008" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.819" Type="wheels_military" />
+		<CompatibleWheels Scale="0.913" Type="wheels_military" />
+		<CompatibleWheels Scale="1.008" Type="wheels_military" />
+		<CompatibleWheels Scale="0.819" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.913" Type="wheels_scraper" />
+		<CompatibleWheels Scale="1.008" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.819" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.913" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="1.008" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.858" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.957" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="1.056" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.858" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.957" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="1.056" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.858" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.957" Type="wheels_loader" />
+		<CompatibleWheels Scale="1.056" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.858" Type="wheels_military" />
+		<CompatibleWheels Scale="0.957" Type="wheels_military" />
+		<CompatibleWheels Scale="1.056" Type="wheels_military" />
+		<CompatibleWheels Scale="0.858" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.957" Type="wheels_scraper" />
+		<CompatibleWheels Scale="1.056" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.858" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.957" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="1.056" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.986" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="1.088" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.986" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="1.088" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.986" Type="wheels_loader" />
+		<CompatibleWheels Scale="1.088" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.986" Type="wheels_military" />
+		<CompatibleWheels Scale="1.088" Type="wheels_military" />
+		<CompatibleWheels Scale="0.986" Type="wheels_scraper" />
+		<CompatibleWheels Scale="1.088" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.986" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="1.088" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.923" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="1.029" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="1.136" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.923" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="1.029" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="1.136" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.923" Type="wheels_loader" />
+		<CompatibleWheels Scale="1.029" Type="wheels_loader" />
+		<CompatibleWheels Scale="1.136" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.923" Type="wheels_military" />
+		<CompatibleWheels Scale="1.029" Type="wheels_military" />
+		<CompatibleWheels Scale="1.136" Type="wheels_military" />
+		<CompatibleWheels Scale="0.923" Type="wheels_scraper" />
+		<CompatibleWheels Scale="1.029" Type="wheels_scraper" />
+		<CompatibleWheels Scale="1.136" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.923" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="1.029" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="1.136" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="0.975" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="1.087" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="1.2" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="0.975" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="1.087" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="1.2" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="0.975" Type="wheels_loader" />
+		<CompatibleWheels Scale="1.087" Type="wheels_loader" />
+		<CompatibleWheels Scale="1.2" Type="wheels_loader" />
+		<CompatibleWheels Scale="0.975" Type="wheels_military" />
+		<CompatibleWheels Scale="1.087" Type="wheels_military" />
+		<CompatibleWheels Scale="1.2" Type="wheels_military" />
+		<CompatibleWheels Scale="0.975" Type="wheels_scraper" />
+		<CompatibleWheels Scale="1.087" Type="wheels_scraper" />
+		<CompatibleWheels Scale="1.2" Type="wheels_scraper" />
+		<CompatibleWheels Scale="0.975" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="1.087" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="1.2" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="1.066" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="1.189" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="1.312" Type="wheels_atsemi" />
+		<CompatibleWheels Scale="1.066" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="1.189" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="1.312" Type="wheels_hdsemi" />
+		<CompatibleWheels Scale="1.066" Type="wheels_loader" />
+		<CompatibleWheels Scale="1.189" Type="wheels_loader" />
+		<CompatibleWheels Scale="1.312" Type="wheels_loader" />
+		<CompatibleWheels Scale="1.066" Type="wheels_military" />
+		<CompatibleWheels Scale="1.189" Type="wheels_military" />
+		<CompatibleWheels Scale="1.312" Type="wheels_military" />
+		<CompatibleWheels Scale="1.066" Type="wheels_scraper" />
+		<CompatibleWheels Scale="1.189" Type="wheels_scraper" />
+		<CompatibleWheels Scale="1.312" Type="wheels_scraper" />
+		<CompatibleWheels Scale="1.066" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="1.189" Type="wheels_xzlsemi" />
+		<CompatibleWheels Scale="1.312" Type="wheels_xzlsemi" />
+		<Camera Center="(-1.2; 0; 0)" RadiusMultiplier="0.8">
+			<Cockpit
+				LimitsHor="(-2.8; 2.4)"
+				LimitsVer="(-0.32; 0.2)"
+				ViewDir="(1; -0.05; 0)"
+				ZoomViewDirOffset="(0; -0.05; 0)"
+				ViewPos="(3.6; 3.1; 0.44)"
+				ZoomViewPosOffset="(0.2; 0; 0)"
+			>
+				<Rear
+					HorTransitionEnd="-1.2"
+					HorTransitionStart="-1.1"
+					LimitsVer="(-1.2; 0.2)"
+					RollAngle="-15"
+					ViewDir="(1; -0.05; 0)"
+					ViewPosOffset="(0.2; -0.1; 0.55)"
+				/>
+				<Mirror
+					ClipDir="(-1; 0; 0)"
+					ClipOffset="0.1"
+					FOVScale="2"
+					MeshFrame="leftmirror"
+					ReflectionDir="(-1; 0.1; -0.35)"
+					Size="(0.3; 0.6)"
+					Pos="(1.61611; 1.49293; 1.34413)"
+				/>
+				<Mirror
+					ClipDir="(-1; 0; 0)"
+					ClipOffset="0.1"
+					FOVScale="2"
+					MeshFrame="rightmirror"
+					ReflectionDir="(-0.994; 0.099; 0.625)"
+					Size="(0.3; 0.6)"
+					Pos="(1.61611; 1.49293; -1.34882)"
+				/>
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" />
+			<Axle Frame="BoneAxle2" />
+			<Axle Frame="BoneAxle3" />
+			<Axle Frame="BoneAxle4" />
+			<Axle Frame="BoneAxle5" />
+		</Axles>
+	</TruckData>
+	<Snorkel Origin="(2.49883; 10.0; -0.616336)" />
+	<Rotator EngineTorqueFactor="0.6" Frame="BoneFan" RotationSpeed="30" />
+	<PhysicsModel Mesh="trucks/kwc500">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(0; -0.4; 0)"
+			ImpactType="Truck"
+			Mass="10000"
+			NetSync="pv"
+		>
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				ImpactType="Truck"
+				Mass="10000"
+				ModelFrame="BoneCabin_cdt"
+				NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-10"
+					MaxLimit="10"
+				>
+					<Motor Damping="45000" Spring="1000000" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/paystar_5600ts_lmk" MinScale="1.8" MaxScale="3.8" />
+	<HeadLight 
+		AttenEnd="10000"
+		AttenStart="-20"
+		Color="g(150; 150; 150) x 6.5"
+		Dir="(1; -0.2; 0)"
+		InnerCone="0"
+		OuterCone="150"
+		Pos="(5; 1.58145; 0)"
+		ParentFrame="BoneCabin_cdt"
+	/>
+	<GameData
+		Country=""
+		Price="8100"
+		Recallable="true"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(6.5; 1.2; -0.381)" />
+		<WinchSocket Pos="(6.5; 1.2; 0.381)" />
+		<WinchSocket Pos="(5.5; 1.2; -0.381)" />
+		<WinchSocket Pos="(5.5; 1.2; 0.381)" />
+		<WinchSocket Pos="(4.5; 1.2; -0.381)" />
+		<WinchSocket Pos="(4.5; 1.2; 0.381)" />
+		<WinchSocket Pos="(3.5; 1.2; -0.381)" />
+		<WinchSocket Pos="(3.5; 1.2; 0.381)" />
+		<WinchSocket Pos="(2.8; 1.2; -0.381)" />
+		<WinchSocket Pos="(2.8; 1.2; 0.381)" />
+		<WinchSocket Pos="(1.859; 1.2; -0.381)" />
+		<WinchSocket Pos="(1.859; 1.2; 0.381)" />
+		<WinchSocket Pos="(-9; 1.2; 0)" />
+		<WinchSocket Pos="(-1.5; 1.2; 0.381)" />
+		<WinchSocket Pos="(-1.5; 1.2; -0.381)" />
+		<WinchSocket Pos="(-3; 1.2; 0.381)" />
+		<WinchSocket Pos="(-3; 1.2; -0.381)" />
+		<WinchSocket Pos="(-5; 1.2; 0.381)" />
+		<WinchSocket Pos="(-5; 1.2; -0.381)" />
+		<WinchSocket Pos="(-7; 1.2; 0.381)" />
+		<WinchSocket Pos="(-7; 1.2; -0.381)" />
+		<WinchSocket Pos="(-9; 1.2; 0.381)" />
+		<WinchSocket Pos="(-9; 1.2; -0.381)" />
+		<WinchSocket Pos="(-0.119; 1.2; 0.381)" />
+		<WinchSocket Pos="(-0.119; 1.2; -0.381)" />
+		<WinchSocket Pos="(1; 1.2; 0.381)" />
+		<WinchSocket Pos="(1; 1.2; -0.381)" />
+		<UiDesc
+			UiDesc="Classic road hauler from a bygone era heavily modified for all terrain use"
+			UiIcon30x30="scoutVehicleImg30"
+			UiIcon328x458="devastatorExp"
+			UiIcon40x40="scoutVehicleImg"
+			UiIconLogo="logoskull"
+			UiName="Devastator"
+		/>
+		<CustomizationCameras>
+			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(5.267; 2.724; -0.813)" Position="(7.274; 6.491; -0.228)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(5.586; 1.912; 1.193)" Position="(4.576; 2.395; -0.542)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(-2.629; 1.692; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-11.556; 4.444; 8.243)" />
+			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.194; 1.807; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-8.093; 2.337; -6.718)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(7.164; 2.597; 0.002)" Position="(4.19; 2.68; -0.513)" />
+			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(5.613; 2.384; 0.246)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.535; 3.452; 4.053)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(6.581; 1.692; 2.100)" Position="(4.598; 2.413; 0.144)" />
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(5.32; 2.634; -0.821)" Position="(9.104; 3.254; 0.614)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(7.275; 1.4; -0.737)" Position="(3.874; 2.163; 2.761)" />
+			<CameraPos FOV="32.0" Name="roof" InterestPosition="(4.758; 2.358; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.787; 4.806; -3.717)" />
+			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(5.501; 0.274; -0.49)" Position="(9.225; 5.807; -0.367)" />
+			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5.997; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.57; 1.44; -3.425)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(6.414; 2.642; 0.324)" Position="(4.332; 2.736; -0.615)" />
+			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6.27; 2.278; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.866; 5.284; -4.55)" />
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(10.038; 1.131; 1.086)" Position="(4.557; 2.664; -0.329)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(3.716; 0.535; 0.075)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.423; 1.45; -4.393)" />
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.197; 1.735; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.641; 1.384; -4.536)" />
+			<CameraPos FOV="32.0" Name="rear" InterestPosition="(0.479; 0.992; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-5.767; 1.805; 2.899)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(5.93; 1.335; 1.608)" Position="(3.906; 2.23; -2.734)" />
+			<CameraPos FOV="32.0" Interior="true" Name="hood_ornament" InterestPosition="(7.921; 2.123; -1.708)" Position="(8.972; 2.439; -1.708)" />
+			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(7.164; 2.597; 0.002)" Position="(4.19; 2.68; -0.513)" />
+		</CustomizationCameras>
+		<CraneSocket Pos="(1.859; 0.738; -0.381)" />
+		<CraneSocket Pos="(1.859; 0.738; 0.381)" />
+		<CraneSocket Pos="(-1.872; 0.727; 0)" />
+		<CraneSocket Pos="(-0.119; 0.503; 0.854)" />
+		<CraneSocket Pos="(-0.119; 0.503; -0.854)" />
+
+
+		
+		<AddonSockets>
+			<Socket Names="LogLift" NamesBlock="FrameAddonLogMediumHigh, SemitrailerOiltank, BigCraneUs, BigCrane, MinicraneUS, FrameAddon3, FrameAddonSideboard3, FrameAddonTankLong, FrameAddonKung" Offset="(2.8; 1.3; 0)" ParentFrame="BoneCabin_cdt"/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="FrameAddonTowPlatform" Offset="(-5; 1.3; 0)"  NamesBlock="FrameAddonKung, Trailer"/>
+			<Socket Names="BunkLog" Offset="(-10; 1.3; 0)" />
+			<Socket Names="FrameAddonLogShort" Offset="(-2.857; 1.3; 0)" />
+			<Socket Names="FrameAddonLogMediumHigh" Offset="(-1.89; 1.3; 0)" />
+			<Socket Names="FrameAddon3" Offset="(-2.226; 1.3; 0)" ParentFrame="BoneChassis_cdt">
+				<AddonsShift Offset="(-0.43; 0; 0)" Types="MinicraneUS" />
+			</Socket>
+			<Socket Names="c500ts5slot" Offset="(0; 0; 0)" NamesBlock="MinicraneUS, FrameAddonTowPlatform, LogLift, FemmSideboard, BigCraneda66, FrameAddonLogMediumHigh, BunkLog, FrameAddonLogShort, FrameAddon3, FrameAddonSideboard3, FrameAddonTankLong, BigCraneUs, BigCrane, FrameAddonTankLong, FrameAddonKung, c500deck, c500hrack" ParentFrame="BoneChassis_cdt">
+			</Socket>
+			<Socket Names="FrameAddonSideboard3" Offset="(-2.05; 1.3; 0)" ParentFrame="BoneChassis_cdt">
+				<AddonsShift Offset="(-0.745; 0; 0)" Types="MinicraneUS" />
+			</Socket>
+			<Socket Names="FrameAddonTankLong" Offset="(-1.85; 1.3; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneCabin_cdt" />
+			</Socket>
+			<Socket Names="BigCraneUs" Offset="(-3.8; 1.3; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.08; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.08; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+		<Socket Names="BunkLogFront" ParentFrame="BoneChassis_cdt" Offset="(-3.8; 1.3; 0)">
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SaddleLow" NamesBlock="FemmSideboard, BunkLogFront, BunkLogRear, LogLift, c500ts5slot, FrameAddonTowPlatform" Offset="(-7.2; 1.32; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.01)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.01)" />
+			</Socket>
+			<Socket Names="SaddleHigh" NamesBlock="FemmSideboard, BunkLogFront, BunkLogRear, LogLift, c500ts5slot, FrameAddonTowPlatform" Offset="(-7.2; 1.32; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.015)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.015)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+		<Socket Names="BunkLogRear" ParentFrame="BoneChassis_cdt" Offset="(-11.5; 1.3; 0)">
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+		<Socket Names="FemmSideboard" ParentFrame="BoneChassis_cdt" Offset="(-0.65; -0.4; 0)">
+				<AddonsShift Offset="(-1.5; -0.05; 0.01)" Types="MinicraneUS" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+		<Socket Names="BigCrane" Offset="(-1.1; 1.33; 0)" NamesBlock="FrameAddon3, BigCraneUs, c500deck, c500ts5slot, FemmSideboard, FrameAddonSideboard3">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.08; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.08; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+		<Socket Names="BigCraneda66" Offset="(-1.1; 1.33; 0)" NamesBlock="FrameAddonTowPlatform, LogLift, FemmSideboard, BigCraneda66, FrameAddonLogMediumHigh, BunkLog, FrameAddonLogShort, FrameAddon3, FrameAddonSideboard3, FrameAddonTankLong, BigCraneUs, BigCrane, FrameAddonTankLong, FrameAddonKung">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.08; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.08; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="FrameAddonKung"
+				NamesBlock="FrameAddonLogMediumHigh, BunkLog, FrameAddonLogShort, FrameAddon3, FrameAddonSideboard3, FrameAddonTankLong, BigCraneUs, BigCrane, SemitrailerOiltank"
+				Offset="(-0.15; 1.3; 0)"
+				ParentFrame="BoneCabin_cdt"
+			>
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="MinicraneUS"
+				NamesBlock="BigCraneUs, BigCrane, FrameAddonTankLong, FrameAddonKung"
+				Offset="(1.7; 1.135; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-7.2; 1.8; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-7.2; 1.7; 0)" />
+			<Socket Names="SemitrailerCat770g" Offset="(-7.2; 1.7; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.98; 1.44; 0)" />
+			<Socket Names="Trailer" Offset="(-9.385; 0.9; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="c500bump1">
+			<Socket Names="c500bump1" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="c500bump2" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="stacks1">
+			<Socket Names="stacks1" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt"/>
+			<Socket Names="stacks2" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt"/>
+			<Socket Names="stacks4" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt"/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="c500deck" >
+			<Socket Names="c500deck" NamesBlock="FrameAddonTowPlatform, LogLift, FemmSideboard, BigCraneda66, FrameAddonLogMediumHigh, BunkLog, FrameAddonLogShort, FrameAddon3, FrameAddonSideboard3, FrameAddonTankLong, BigCraneUs, BigCrane, FrameAddonTankLong, FrameAddonKung" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="c500hrack">
+			<Socket Names="c500hrack" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="c500tsfront_flaps" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="hoodtop">
+			<Socket Names="hoodtop" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScautTrailer"  Offset="(-9.39; 0.9; 0)">
+                <AddonsShift Offset="(-1.2; 0; 0)" Types="rv1" />
+            </Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="StuffAirfreshener" ParentFrame="BoneCabin_cdt" Offset="(4.55; 3.23; -0.11)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="StuffDashboard" ParentFrame="BoneCabin_cdt" Offset="(4.2; 2.23; -0.084)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="StuffHoodChevroletCk1500" ParentFrame="BoneCabin_cdt" Offset="(4; 1.4; 0.0025)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="DodgeRamGooseneck" Offset="(-1.91; 0.95; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="DodgeRamFifthWheelHitch" Offset="(-3.2; 0.3; 0)" />
+		</AddonSockets>
+		<!-- <AddonSockets DefaultAddon="stockbumpr" ParentFrame="BoneCabin_cdt">
+			<Socket Names="stockbumpr" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="bumperlights">
+			<Socket Names="bumperlights" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="steps">
+			<Socket Names="steps" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="tailgate">
+			<Socket Names="tailgate" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="hitch">
+			<Socket Names="hitch" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="skull" Offset="(0; 0; 0)" />
+			<Socket Names="logo" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="cablights2">
+			<Socket Names="cablights2" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="horn" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="bed">
+			<Socket Names="bed" Offset="(0; 0; 0)" />
+			<Socket Names="flatbed3" Offset="(0.22; -0.12; 0)" NamesBlock="tailgate" />
+			<Socket Names="utilitybox" NamesBlock="Goosenecktrailer, GooseneckHitch, glitchgoosetrailer, glitchgoosehitch, DodgeRamFifthWheelHitch, DodgeRamGooseneck, steps, stockbumpr, stacks7, tailgate, dualmitre, aussiestack, dozer, single"/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="stacks7">
+			<Socket Names="stacks7" Offset="(0; 0; 0)" />
+			<Socket Names="dualmitre" Offset="(0; 0; 0)" />
+			<Socket Names="aussiestack" Offset="(0; 0; 0)" />
+			<Socket Names="dozer" Offset="(0; 0; 0)" />
+			<Socket Names="single" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScautTrailer"  Offset="(-3.5; 0.15; 0)">
+                <AddonsShift Offset="(-0.325; -0.1; 0.01)" Types="utilitybox" />
+				<AddonsShift Offset="(-0.425; 0.02; 0.01)" Types="flatbed3" />
+            </Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Trailer"  Offset="(-3.5; 0.1; 0)">
+                <AddonsShift Offset="(-0.325; -0.05; 0.01)" Types="utilitybox" />
+				<AddonsShift Offset="(-0.425; 0.05; 0.01)" Types="flatbed3" />
+            </Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="DodgeRamGooseneck" Offset="(-1.91; 0.95; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="DodgeRamFifthWheelHitch" Offset="(-0.5; -0.4; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="glitchgoosehitch" Offset="(-2; 0.75; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="glitchgoosetrailer" Offset="(-2; 0.78; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="GooseneckHitch" Offset="(-0.3; -0.25; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Goosenecktrailer" Offset="(-1.98; 1.05; 0)" />
+		</AddonSockets> -->
+	</GameData>
+<AutomaticIK>
+	<!-- Tie Rod-->
+  		<IKBone ModelFrame="BoneTieRod1L" ParentFrame="BoneRack1L">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone AttachOffset="(0; 0; 0)" AttachToFrame="BoneRack1R" ModelFrame="BoneTieRod1R">
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+		<IKBone ModelFrame="BoneTieRod2L" ParentFrame="BoneRack2L">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone AttachOffset="(0; 0; 0)" AttachToFrame="BoneRack2R" ModelFrame="BoneTieRod2R">
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	<!-- Aux Front Shocks -->
+	
+		<IKBone ModelFrame="BoneShock1LT" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BoneShock1LB"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+			</IKBone>
+
+		<IKBone ModelFrame="BoneShock1RT" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BoneShock1RB"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+			</IKBone>
+<!-- Aux Front Shocks -->
+
+<!-- Aux Front Shocks -->
+			<IKBone ModelFrame="BoneShock2LT" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneShock2LB"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+			</IKBone>
+
+		<IKBone ModelFrame="BoneShock2RT" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneShock2RB"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+			</IKBone>
+<!-- Aux Front Shocks -->
+
+<!-- Rear Shocks -->
+		<IKBone ModelFrame="BoneShock3LT" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneShock3LB"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Rear Shocks -->
+
+<!-- Rear Shocks -->
+		<IKBone ModelFrame="BoneShock3RT" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneShock3RB"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Rear Shocks -->
+
+<!-- Rear Shocks -->
+		<IKBone ModelFrame="BoneShock4LT" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle4"
+				ModelFrame="BoneShock4LB"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Rear Shocks -->
+
+<!-- Rear Shocks -->
+		<IKBone ModelFrame="BoneShock4RT" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle4"
+				ModelFrame="BoneShock4RB"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Rear Shocks -->
+
+<!-- Rear Shocks -->
+		<IKBone ModelFrame="BoneShock5LT" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle5"
+				ModelFrame="BoneShock5LB"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Rear Shocks -->
+
+<!-- Rear Shocks -->
+		<IKBone ModelFrame="BoneShock5RT" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle5"
+				ModelFrame="BoneShock5RB"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Rear Shocks -->
+
+<!-- Panhard Bars -->
+		<IKBone ModelFrame="BonePanhard1T" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BonePanhard1B"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Panhard Bars -->
+
+<!-- Panhard Bars -->
+		<IKBone ModelFrame="BonePanhard2T" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BonePanhard2B"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Panhard Bars -->
+
+<!--Rear Track Bar/Panhard Bar-->
+        <IKBone ModelFrame="BonePanhard3T" ParentFrame="BoneChassis_cdt">
+            <IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+            <IKBone
+                AttachOffset="(0; 0; 0)"
+                AttachToFrame="BoneAxle3"
+                ModelFrame="BonePanhard3B"
+            >
+                <IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+            </IKBone>
+        </IKBone>
+<!--Rear Track Bar/Panhard Bar-->
+
+<!--Rear Track Bar/Panhard Bar-->
+		<IKBone ModelFrame="BonePanhard4T" ParentFrame="BoneChassis_cdt">
+            <IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+            <IKBone
+                AttachOffset="(0; 0; 0)"
+                AttachToFrame="BoneAxle4"
+                ModelFrame="BonePanhard4B"
+            >
+                <IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+            </IKBone>
+        </IKBone>
+<!--Rear Track Bar/Panhard Bar-->
+
+<!--Rear Track Bar/Panhard Bar-->
+		<IKBone ModelFrame="BonePanhard5T" ParentFrame="BoneChassis_cdt">
+            <IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+            <IKBone
+                AttachOffset="(0; 0; 0)"
+                AttachToFrame="BoneAxle5"
+                ModelFrame="BonePanhard5B"
+            >
+                <IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+            </IKBone>
+        </IKBone>
+<!--Rear Track Bar/Panhard Bar-->
+</AutomaticIK>
+</Truck>

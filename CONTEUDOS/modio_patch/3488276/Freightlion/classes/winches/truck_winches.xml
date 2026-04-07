@@ -1,0 +1,86 @@
+<WinchVariants>
+	<Winch
+		Name="w_truck_default"
+		Length="14"
+		StrengthMult="1.0"
+		IsEngineIgnitionRequired="true"
+	>
+		<GameData
+			Price="1000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc=""
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Stock"
+			/>
+		</GameData>
+	</Winch>
+	<Winch
+		Name="w_truck_battery"
+		Length="20"
+		StrengthMult="1.25"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="5000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc=""
+				UiIcon30x30="Battery powered winch."
+				UiIcon40x40=""
+				UiName="Autonomous Heavy"
+			/>
+		</GameData>
+	</Winch>
+	<Winch
+		Name="w_truck_sherpa"
+		Length="25"
+		StrengthMult="1.6"
+		IsEngineIgnitionRequired="true"
+	>
+		<GameData
+			Price="21500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="A heavy duty self contained winch capable of achieving over 30000lbs of pulling power with a steel cable"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Sherpa Stallion"
+			/>
+		</GameData>
+	</Winch>
+
+	<Winch
+		Name="op_winch_deus"
+		Length="100"
+		StrengthMult="20.0"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="UI_WINCH_DEUS_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_WINCH_DEUS_NAME"
+			/>
+		</GameData>
+	</Winch>
+</WinchVariants>

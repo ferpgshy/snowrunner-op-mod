@@ -1,0 +1,19 @@
+<TruckAddon>
+	<Snorkel Origin="(0.904; 10.0; -0.710)" />
+	<PhysicsModel Mesh="trucks/mtvr_mk27_tuning/mtvr27_snorkel_1" />
+	<GameData
+		CameraPreset="side_r"
+		Category="snorkel"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="M-8092-Snorkel"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="M-8092-Snorkel"
+		/>
+		<InstallSocket Type="MtvrMk27Snorkel" />
+	</GameData>
+</TruckAddon>

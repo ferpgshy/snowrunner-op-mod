@@ -1,0 +1,236 @@
+<_templates Include="trucks">
+	<Wheel>
+		<TrailerWheelRear
+			Location="rear"
+			SuspensionHeight="0.24"
+			SuspensionStrength="0.026"
+			Torque="default"
+			ConnectedToHandbrake="true"
+			SuspensionMin="-0.8"
+		/>
+		<TrailerWheelFront
+			SuspensionHeight="0.01"
+			SuspensionStrength="1"
+			Torque="default"
+			Type="scout_trailer_frontzx"
+			SuspensionMin="0.01"
+			ParentFrame="BoneRotFrontWheel_cdt"
+		/>
+	</Wheel>
+	<Flare>
+		<IgnitionSignalYellow
+			AspectRatio="1.4"
+			Color="g(238; 195; 34) x 0.4"
+			ColorMultAtDay="0.6"
+			Dir="(1; 0; 0)"
+			DirAngle="135"
+			Size="0.1"
+		/>
+		<IgnitionSignalRedSmall
+			AspectRatio="1.4"
+			Color="g(169; 0; 0) x 0.6"
+			ColorMultAtDay="0.6"
+			Dir="(-1; 0; 0)"
+			DirAngle="135"
+			Size="0.1"
+		/>
+	</Flare>
+</_templates>
+<Truck Type="Trailer">
+	<TruckData
+		FuelCapacity="1555"
+		RepairsCapacity="64000"
+		WheelRepairsCapacity="64000"
+	>
+		<Wheels
+			DefaultRim="rim_1"
+			DefaultTire="chains_1"
+			DefaultWheelType="wheels_TrailerWheel2"
+		>
+			<Wheel _template="TrailerWheelRear" Pos="(0.742; 0.411; 1.153)" />
+			<Wheel _template="TrailerWheelRear" RightSide="true" Pos="(0.742; 0.411; 1.153)" />
+		</Wheels>
+		<ExtraWheels>
+			<Wheel _template="TrailerWheelFront" Pos="(3.821; 0.11; 0)" />
+		</ExtraWheels>		
+		<CompatibleWheels OffsetZ="0.26" Scale="0.45" Type="wheels_TrailerWheel2" />
+		<CompatibleWheels OffsetZ="0.26" Scale="0.585" Type="wheels_TrailerWheel2" />
+		<CompatibleWheels OffsetZ="0.26" Scale="0.652" Type="wheels_TrailerWheel2" />
+		<CompatibleWheels OffsetZ="0.26" Scale="0.72" Type="wheels_TrailerWheel2" />	
+		<OcclusionMap
+			HalfSizeZ="1.8"
+			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
+			MinX="-1.5"
+			MaxX="4"
+		/>
+		<Constraint _template="TrailerRagdoll">
+			<TwistMotor _inheritRemove="true" />
+		</Constraint>
+		<Camera Center="(0; 0; 0)" />
+		<Axles>
+			<Axle Frame="BoneAxle1" />
+		</Axles>
+	</TruckData>
+
+	<PhysicsModel Mesh="trucks/trailers/scout_trailer_flatbed_1">
+		<Body
+			CenterOfMassOffset="(0; -0.44; 0)"
+			ImpactType="Truck"
+			Mass="800"
+		>
+			<Body Collisions="None" Mass="100" ModelFrame="BoneMoveFrontWheel_cdt">
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					Name="Leg"
+					Type="Prismatic"
+					MinLimit="-2.66"
+					MaxLimit="0.6"
+				>
+					<Motor Force="95000" Type="Position" />
+				</Constraint>
+				<Body
+					AngularDamping="10.0"
+					Collisions="None"
+					Mass="100"
+					ModelFrame="BoneRotFrontWheel_cdt"
+					NoFoliageCollisions="true"
+				>
+					<Constraint
+						AxisLocal="(0; 1; 0)"
+						Type="Hinge"
+						MinLimit="-0"
+						MaxLimit="0"
+					/>
+				</Body>
+			</Body>
+			<Body Mass="5" ModelFrame="BoneHandle_cdt">
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					Name="Handle"
+					Type="Hinge"
+					MinLimit="-180"
+					MaxLimit="180"
+				>
+					<Motor Damping=".2" Spring="2" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Color="g(255; 17; 0) x 0.9" Pos="(-1.272; 0.815; 0)" />
+			<Flare _template="StopSignal" Color="g(255; 17; 0) x 0.9" Pos="(-1.211; 0.86; -1.072)" />
+			<Flare _template="StopSignal" Color="g(255; 17; 0) x 0.9" Pos="(-1.211; 0.86; 1.072)" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Color="g(255; 255; 255) x 8.9" Pos="(-1.204; 0.86; -0.977)" />
+			<Light _template="ReverseSignal" Color="g(255; 255; 255) x 8.9" Pos="(-1.204; 0.86; 0.977)" />
+			<Flare _template="ReverseSignal" Color="g(255; 255; 255) x 8.9" Pos="(-1.204; 0.86; -0.977)" />
+			<Flare _template="ReverseSignal" Color="g(255; 255; 255) x 8.9" Pos="(-1.204; 0.86; 0.977)" />
+			<Flare _template="BlueStreak"  Color="g(255; 255; 255) x 8.9" Dir="(-1; 0; 0)" Size="0.4" Pos="(-1.206; 0.86; -0.977)" />
+			<Flare _template="BlueStreak"  Color="g(255; 255; 255) x 8.9" Dir="(-1; 0; 0)" Size="0.4" Pos="(-1.206; 0.86; 0.977)" />
+		</ReverseSignals>
+		<Ignition>
+			<Light _template="IgnitionSignalRed" Pos="(-1.272; 0.815; 0)" />
+			<Flare _template="IgnitionSignalRed" Pos="(-1.211; 0.86; -1.072)" />
+			<Flare _template="IgnitionSignalRed" Pos="(-1.211; 0.86; 1.072)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(2.603; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(2.635; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(2.603; 0.942; 1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(2.635; 0.942; 1.318)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(1.558; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(1.59; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(1.558; 0.942; 1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(1.59; 0.942; 1.318)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(0.016; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(0.048; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(0.016; 0.942; 1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(0.048; 0.942; 1.318)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(-0.954; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(-0.922; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(-0.954; 0.942; 1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(-0.922; 0.942; 1.318)" />
+		</Ignition>
+		<HeadLight>
+			<Light _template="StopSignal" Pos="(-1.272; 0.815; 0)" />
+			<Flare _template="StopSignal" Pos="(-1.211; 0.86; -1.072)" />
+			<Flare _template="StopSignal" Pos="(-1.211; 0.86; 1.072)" />
+			<Light _template="IgnitionSignalRed" Pos="(-1.272; 0.815; 0)" />
+			<Flare _template="IgnitionSignalRed" Pos="(-1.211; 0.86; -1.072)" />
+			<Flare _template="IgnitionSignalRed" Pos="(-1.211; 0.86; 1.072)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(2.603; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(2.635; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(2.603; 0.942; 1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(2.635; 0.942; 1.318)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(1.558; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(1.59; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(1.558; 0.942; 1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(1.59; 0.942; 1.318)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(0.016; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(0.048; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(0.016; 0.942; 1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(0.048; 0.942; 1.318)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(-0.954; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(-0.922; 0.942; -1.318)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(-0.954; 0.942; 1.318)" />
+			<Flare _template="IgnitionSignalYellow" Pos="(-0.922; 0.942; 1.318)" />
+		</HeadLight>
+	</ModelAttachments>
+	<Landmark Mesh="landmarks/scout_trailer_flatbed_1_lmk" MinScale="1.5" MaxScale="3.5" />
+	<GameData Price="0">
+		<CraneSocket Pos="(4.5; 0.75; 0)" />
+		<CraneSocket Pos="(-1.221; 0.815; 0.0)" />
+		<CraneSocket Pos="(-1.221; 0.815; 0.847)" />
+		<CraneSocket Pos="(-1.221; 0.815; -0.847)" />
+		<CraneSocket Pos="(1.; 0.93; 0.0)" />
+		<WinchSocket Pos="(-1.221; 0.815; 0.0)" />
+		<WinchSocket Pos="(4.5; 0.75; 0)" />
+		<WinchSocket Pos="(-1.221; 0.815; 0.847)" />
+		<WinchSocket Pos="(-1.221; 0.815; -0.847)" />
+		<WinchSocket Pos="(1.; 0.93; 0.0)" />
+		<UiDesc
+			UiDesc="trailer wheel leg is manual, to allow trailer to be push up so trucks can be loaded and pack more easy"
+			UiIcon30x30="trailerSemiImg30"
+			UiIcon40x40="trailerSemiImg"
+			UiName="(Truck)Scout Flatbed 1 SLOT"
+		/>
+		<InstallSocket Offset="(4.5; 0.75; 0)" Type="Trailer" />
+
+
+		<AddonSlots InitialOffset="(0.742; 0.977; 0)" OffsetStep="(-3.198; 0; 0)" Quantity="1" />
+	</GameData>
+	<AutomaticIK>
+		<IKBone ModelFrame="BonePistonBaseR" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BonePistonR"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BonePistonBaseL" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BonePistonL"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+	<ControlledConstraints>
+		<Constraint Action="9" BelongToCategorie="tow_control2" Id="Leg_wheel" LocaleUid="UI_RAMP_LOWER" Name="Leg" SpeedMult="5.5" />
+	</ControlledConstraints>
+	<ActionCategories>
+		<ActionCategory
+			Action="1"
+			AvailableForFastMode="true"
+			Id="tow_control2"
+			LocaleUid="Leg Wheel UP/DOWN"
+			RemoveChildActionsFromCustomPanelShowCounter="true"
+		/>
+	</ActionCategories>
+</Truck>

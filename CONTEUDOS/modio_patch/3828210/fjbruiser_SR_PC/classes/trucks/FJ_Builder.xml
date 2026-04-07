@@ -1,0 +1,2196 @@
+<Truck>
+	<TruckData
+		DiffLockType="Always"
+		DiffLockInstalled="true"
+		EngineIconMesh="env/engine_default"
+		EngineIconScale="0.9"
+		EngineStartDelay="1.5"
+		ExhaustStartTime="1.6"
+		FuelCapacity="92"
+		Responsiveness="0.62"
+		BackSteerSpeed="0.035"
+		SteerSpeed="0.025"
+		TruckImage="FJBruiser_TopBar_Image_Builder"
+		TruckType="SCOUT"
+	>
+
+		<Wheels
+			DefaultRim="MR 305 Beadlock"
+			DefaultTire="Stock-ish KrawlerRunner"
+			DefaultWheelType="Stock-ish KrawlerRunner"
+		>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="front"
+				SteeringAngle="42"
+				SteeringCastor="8"
+				Torque="full"
+				Pos="(1.51; 0.25; 1.1)"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="front"
+				RightSide="true"
+				SteeringAngle="42"
+				SteeringCastor="8"
+				Torque="full"
+				Pos="(1.51; 0.25; 1.1)"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+				Pos="(-1.63; 0.25; 1.1)"
+			/>
+			<Wheel
+				ConnectedToHandbrake="true"
+				Location="rear"
+				RightSide="true"
+				Torque="default"
+				Pos="(-1.63; 0.25; 1.1)"
+			/>
+		</Wheels>
+
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackDriver"
+			FrameSteerRight="BoneRackPass"
+			RackHalfSizeZ="0.7975"
+		/>
+		<Steam Origin="(1.241; 0.866; 0)" />
+		<SoundsWheels>
+			<WheelWater Sound="surfaces/surf_water_loop" />
+			<WheelSteer Sound="wheels/wheel_steer" />
+			<WheelSpinning Sound="wheels/wheel_spining_loop" />
+			<WheelMud Sound="surfaces/hit/hit_mud_rnd" />
+			<WheelExtrude Sound="" />
+			<WheelDamaged Sound="wheels/wheel_broken_rotate_loop" />
+			<WheelChains Sound="wheels/wheel_tires_chain_loop" />
+			<WaterHit Sound="trucks/common/truck_hit_water_rnd_set/truck_hit_water_rnd" />
+		</SoundsWheels>
+		<SoundsDamage>
+			<Wheels
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Suspension
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Gearbox
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<FuelTank
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Engine
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Critical
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_crit_rnd_set/truck_damage_crit_rnd"
+				VolumeMinMax="(0.5;1.0)"
+			/>
+			<Common
+				DamageAmount="(0.01;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_small_hard_rnd_set/truck_damage_small_hard_rnd"
+				VolumeMinMax="(0.2;1.0)"
+			/>
+		</SoundsDamage>
+		
+		
+		
+		<!--Green Engine Marker Icon is Orgin Below-->		
+		
+		<!--PC & Console Sounds-->	
+		
+		
+		<Sounds
+			DisableReversePitch="true"
+			EngineHeavyVolume="0.6"
+			MinDist="8.0"
+			Origin="(0.75; 0.75; 0)"
+			MaxDist="200.0"
+		>
+			<Handbrake Sound="trucks/jeep_wrangler/jeep_wrangler_handbrake_on" />
+			<HandbrakeOff Sound="trucks/jeep_wrangler/jeep_wrangler_handbrake_off" />
+			<Gear Sound="trucks/jeep_wrangler/jeep_wrangler_gear_shift" />
+			<DiffLock Sound="trucks/tuz_166/tuz_166_diff_lock" />
+			<Reverse Sound="" />
+			<BrakePull Sound="" />
+			<BrakeRelease Sound="trucks/tuz_166/tuz_166_brake_release" />
+			<BrakesSqueal Sound="trucks/land_rover_defender_110/land_rover_defender_110_brakes_squeal" />
+			<Honk Sound="tuning/RaceSiren" />
+			<EngineTurbo Sound="" />	
+			<EngineTurbo_2d Sound="" IsSound2D="true" />	
+			<EngineRev Sound="" />
+			<EngineAccel Sound="" />
+			<EngineAccel Sound="" IsSound2D="true" />
+			<EngineStart Sound="engine_NASCAR_V8/NASCAR_Start" />
+			<EngineStop Sound="engine_NASCAR_V8/NASCAR_Stop" />
+			<EngineIdle Sound="engine_NASCAR_V8/NASCAR_Idle" />
+			<EngineIdle_2d Sound="engine_NASCAR_V8/NASCAR_Idle_2d" IsSound2D="true" />
+			<EngineLow Sound="engine_NASCAR_V8/NASCAR_Low_Long" />
+			<EngineLow_2d Sound="engine_NASCAR_V8/NASCAR_Low_Long_2d" IsSound2D="true" />
+			<EngineHigh Sound="" />
+			<EngineHigh_2d Sound="" IsSound2D="true" />
+			<EngineHeavy Sound="" />
+			<EngineHeavy_2d Sound="" IsSound2D="true" />
+			<HeadLight Sound="trucks/common/truck_headlight_switch" />
+			<HandbrakeOff Sound="trucks/common/truck_handbrake_switch_off" />
+			<AWD		Sound="trucks/common/truck_awd_rnd_set/truck_awd_rnd" />
+			<ExhaustShot Sound="trucks/common/truck_exhaust_shot_rnd_set/truck_exhaust_shot_rnd" />
+			<ChassisStress	Sound="trucks/common/truck_stress_small_rnd_set/truck_stress_small_rnd" />
+			<AbruptStop Sound="trucks/common/truck_swing_small_rnd_set/truck_swing_small_rnd" />
+			<WaterGurgle Sound="trucks/common/truck_exhaust_water_gurgle_loop" />
+			<WaterDropping Sound="" />
+			<EngineStalling Sound="trucks/common/truck_engine_stalling" />
+			<DamagedEngine Sound="trucks/common/truck_engine_damaged" />
+			<Cockpit IsSound2D="true" Sound="trucks/common/truck_cockpit_loop" />
+		</Sounds>	
+		
+				
+		<!--PC & Console Sounds-->			
+		
+	<!--Switch Sounds - Generic V8 Hummer Mix-->
+	
+<!-- 		<Sounds
+			DisableReversePitch="true"
+			EngineHeavyVolume="0.6"
+			MinDist="8.0"
+			Origin="(0.75; 0.75; 0)"
+			MaxDist="200.0"
+
+		>
+			<Handbrake Sound="trucks/jeep_wrangler/jeep_wrangler_handbrake_on" />
+			<HandbrakeOff Sound="trucks/jeep_wrangler/jeep_wrangler_handbrake_off" />
+			<Gear Sound="trucks/jeep_wrangler/jeep_wrangler_gear_shift" />
+			<GearFail		Sound="trucks/common/truck_gear_wrong/truck_gear_wrong_small_modern" />
+			<DiffLock Sound="trucks/tuz_166/tuz_166_diff_lock" />
+			<Reverse		Sound="trucks/hummer_h2/hummer_h2_reverse" />
+			<BrakePull Sound="" />
+			<BrakeRelease Sound="trucks/tuz_166/tuz_166_brake_release" />
+			<BrakesSqueal Sound="trucks/land_rover_defender_110/land_rover_defender_110_brakes_squeal" />
+			<Honk			Sound="trucks/jeep_wrangler/jeep_wrangler_honk" />
+			<AWD			Sound="trucks/hummer_h2/hummer_h2_awd" />
+			<EngineRev		Sound="" />
+			<EngineAccel	Sound="trucks/hummer_h2/hummer_h2_acc" />
+			<EngineStart	Sound="trucks/hummer_h2/hummer_h2_start" />
+			<EngineStop		Sound="trucks/hummer_h2/hummer_h2_stop" />
+			<EngineIdle		Sound="trucks/hummer_h2/hummer_h2_idle" />
+			<EngineIdle_2d	Sound="trucks/hummer_h2/hummer_h2_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/hummer_h2/hummer_h2_low" />
+			<EngineLow_2d	Sound="trucks/hummer_h2/hummer_h2_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/hummer_h2/hummer_h2_high" />
+			<EngineHigh_2d	Sound="trucks/hummer_h2/hummer_h2_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="trucks/hummer_h2/hummer_h2_heavy" />
+			<EngineHeavy_2d	Sound="trucks/hummer_h2/hummer_h2_heavy_2d"	IsSound2D="true" />
+			<HeadLight Sound="trucks/common/truck_headlight_switch" />
+			<HandbrakeOff Sound="trucks/common/truck_handbrake_switch_off" />
+			<AWD Sound="trucks/common/truck_awd_rnd_set/truck_awd_rnd" />
+			<ExhaustShot Sound="trucks/common/truck_exhaust_shot_rnd_set/truck_exhaust_shot_rnd" />
+			<ChassisStress Sound="trucks/common/truck_stress_small_rnd_set/truck_stress_small_rnd" />
+			<AbruptStop Sound="trucks/common/truck_swing_small_rnd_set/truck_swing_small_rnd" />
+			<WaterGurgle Sound="trucks/common/truck_exhaust_water_gurgle_loop" />
+			<WaterDropping Sound="" />
+			<EngineStalling Sound="trucks/common/truck_engine_stalling" />
+			<DamagedEngine Sound="trucks/common/truck_engine_damaged" />
+			<Cockpit IsSound2D="true" Sound="trucks/common/truck_cockpit_loop" />
+		</Sounds>		
+		
+	 -->
+	 
+	 <!--Switch Sounds - Generic V8 Hummer Mix-->	
+	
+	
+		<Shafts>
+			<!--Drive Shafts-->	
+			<Shaft Mesh="env/RedLine_Driveshaft_2_Med" SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft Mesh="env/RedLine_Driveshaft_2_Med" SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft Mesh="env/RedLine_Driveshaft_2_Med" SocketPointA="Shaft3a" SocketPointB="Shaft3b" />	
+			
+			<!--Front Axle-->	
+			<Shaft Mesh="env/RedLine_RCV_Axles" SocketPointA="Shaft4a" SocketPointB="Shaft4b" />	
+				
+			<!--Disk Brake Sets-->	
+			<Shaft Mesh="env/RedLine_DiskBrake_Set" SocketPointA="Shaft5a" SocketPointB="Shaft5b" />
+			<Shaft Mesh="env/RedLine_DiskBrake_Set" SocketPointA="Shaft6a" SocketPointB="Shaft6b" />	
+		</Shafts>
+		
+		<OcclusionMap
+			HalfSizeZ="2.6"
+			Texture="trucks/occlusion/chassis_small__s_d_a.tga"
+			MinX="-2.2"
+			MaxX="2.2"
+		/>
+		
+		<Axles>
+			<Axle Frame="BoneAxleFront" />
+			<Axle Frame="BoneAxleRear" />
+		</Axles>
+		
+		
+		<!--------EXPEDITIONS-------->
+<!-- 		<DeployCost Cost = "1"/>
+		
+		<Inventory MaxLimit="4"/>	 -->
+		<!--------EXPEDITIONS-------->
+	
+
+		<FuelTank DamageCapacity="80" />
+	
+	
+		<Damage>
+			<DamageArea Type="Engine" Min="(1.20; 0.42; -0.33)" Max="(0.52; 0.88; 0.33)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="FuelTank" Min="(-1.22; 0.91; -0.48)" Max="(-0.63; 0.60; 0.17)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="GearBox" Min="(0.56; 0.28; -0.14)" Max="(-0.49; 0.50; 0.14)" ParentFrame="BoneChassis_cdt" />				
+		</Damage>
+
+
+		<Exhaust Dir="(-0.037; -0.575; 0.817)" IsLight="true" Origin="(-0.43; 0.38; 0.82)" Speed="3.82" />
+		<Exhaust Dir="(-0.037; -0.575; -0.817)" IsLight="true" Origin="(-0.43; 0.38; -0.82)" Speed="3.82" />
+
+		<Shakers>
+			<Shaker
+				Frame="BoneShaker"
+				MinAngle="(0.2; 0.2; 0.2)"
+				MaxAngle="(0.2; 0.2; 0.2)"
+				MaxFrequency="0.5"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</Shakers>
+
+		<SuspensionSocket Default="TrailRunner Ultra: Stage 1" HardpointY="0.424" Type="s_FJ_Bruiser" MaxWheelRadiusWithoutSuspension="0.60" />
+	
+		<EngineSocket Default="LVL 1:  Stock-ish" Type="e_FJ_Bruiser" />
+		
+		<GearboxSocket Default="LVL 1: Stock-ish" Type="gearboxes_FJ_Bruiser" />
+
+		<WinchUpgradeSocket Default="TrailRunner Premium Winch" IsUpgradable="true" Type="winches_RedlineSpec" />		
+
+
+
+<!---------------------------------------------WHEELS--------------------------------------------->
+
+<!--STOCK-ISH DEFAULT WHEELS-->
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Stock-ish KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Stock-ish KrawlerRunner" />
+	
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Stock-ish MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Stock-ish MudRunner-Terrain" />	
+	
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Stock-ish SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Stock-ish SwampRunner SX2" />	
+	
+<!--STOCK-ISH BAJA PACK WHEELS-->
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Stock-ish BajaRunner Boss X/3828301" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Stock-ish BajaRunner Boss X/3828301" />
+
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Stock-ish GrapplerRunner/3828301" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Stock-ish GrapplerRunner/3828301" />
+
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Stock-ish TrepadorRunner/3828301" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Stock-ish TrepadorRunner/3828301" />
+		
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Stock-ish BajaRunner XS Spikes/3828301" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Stock-ish BajaRunner XS Spikes/3828301" />	
+		
+<!--STOCK-ISH CRAWLER PACK WHEELS-->	
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Stock-ish BajaRunner Pro X/3834021" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Stock-ish BajaRunner Pro X/3834021" />
+		
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Stock-ish SwampRunner/3834021" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Stock-ish SwampRunner/3834021" />
+
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Stock-ish BogRunner/3834021" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Stock-ish BogRunner/3834021" />	
+
+		
+	
+<!--REDLINE DEFAULT WHEELS-->
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Redline KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Redline KrawlerRunner" />
+	
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Redline MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Redline MudRunner-Terrain" />	
+	
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Redline SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Redline SwampRunner SX2" />	
+	
+<!--REDLINE BAJA PACK WHEELS-->
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Redline BajaRunner Boss X/3828301" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Redline BajaRunner Boss X/3828301" />
+		
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Redline GrapplerRunner/3828301" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Redline GrapplerRunner/3828301" />		
+
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Redline TrepadorRunner/3828301" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Redline TrepadorRunner/3828301" />
+
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Redline BajaRunner XS Spikes/3828301" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Redline BajaRunner XS Spikes/3828301" />	
+
+<!--REDLINE CRAWLER PACK WHEELS-->		
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Redline BajaRunner Pro X/3834021" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Redline BajaRunner Pro X/3834021" />
+		
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Redline SwampRunner/3834021" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Redline SwampRunner/3834021" />
+
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Redline BogRunner/3834021" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Redline BogRunner/3834021" />	
+
+
+
+<!--CHEATER DEFAULT WHEELS-->
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Cheater KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Cheater KrawlerRunner" />
+	
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Cheater MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Cheater MudRunner-Terrain" />	
+	
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Cheater SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Cheater SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.754" Type="Stock-ish KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.841" Type="Stock-ish KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.928" Type="Stock-ish KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.786" Type="Stock-ish KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.877" Type="Stock-ish KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.968" Type="Stock-ish KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.754" Type="Stock-ish MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.841" Type="Stock-ish MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.928" Type="Stock-ish MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.786" Type="Stock-ish MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.877" Type="Stock-ish MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.968" Type="Stock-ish MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.754" Type="Stock-ish SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.841" Type="Stock-ish SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.928" Type="Stock-ish SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.786" Type="Stock-ish SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.877" Type="Stock-ish SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.968" Type="Stock-ish SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.754" Type="Redline KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.841" Type="Redline KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.928" Type="Redline KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.786" Type="Redline KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.877" Type="Redline KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.968" Type="Redline KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.754" Type="Redline MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.841" Type="Redline MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.928" Type="Redline MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.786" Type="Redline MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.877" Type="Redline MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.968" Type="Redline MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.754" Type="Redline SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.841" Type="Redline SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.928" Type="Redline SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.786" Type="Redline SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.877" Type="Redline SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.968" Type="Redline SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.754" Type="Cheater KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.841" Type="Cheater KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.928" Type="Cheater KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.786" Type="Cheater KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.877" Type="Cheater KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.968" Type="Cheater KrawlerRunner" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.754" Type="Cheater MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.841" Type="Cheater MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.928" Type="Cheater MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.786" Type="Cheater MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.877" Type="Cheater MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.968" Type="Cheater MudRunner-Terrain" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.754" Type="Cheater SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.841" Type="Cheater SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.928" Type="Cheater SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.786" Type="Cheater SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.877" Type="Cheater SwampRunner SX2" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.968" Type="Cheater SwampRunner SX2" />	
+	
+<!--CHEATER BAJA PACK WHEELS-->
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Cheater BajaRunner Boss X/3828301" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Cheater BajaRunner Boss X/3828301" />
+
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Cheater GrapplerRunner/3828301" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Cheater GrapplerRunner/3828301" />
+
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Cheater TrepadorRunner/3828301" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Cheater TrepadorRunner/3828301" />
+		
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Cheater BajaRunner XS Spikes/3828301" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Cheater BajaRunner XS Spikes/3828301" />		
+
+<!--CHEATER CRAWLER PACK WHEELS-->
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Cheater BajaRunner Pro X/3834021" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Cheater BajaRunner Pro X/3834021" />
+		
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Cheater SwampRunner/3834021" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Cheater SwampRunner/3834021" />
+
+		<CompatibleWheels OffsetZ="-0.08" Scale="0.58" Type="Cheater BogRunner/3834021" />
+		<CompatibleWheels OffsetZ="-0.06" Scale="0.605" Type="Cheater BogRunner/3834021" />
+
+<!---------------------------------------------END WHEELS--------------------------------------------->	
+		
+		
+		
+		
+		<!--INTERIOR & DASH-->	
+		<Driver AnimationSet="Scout" Pos="(-0.16; 0.68; 0.35)" SteeringWheelPos="(0.22; 1.06; 0.35)" LegsOffset="(0.01; -0.083; 0.007)" />
+		
+		<Dashboard>
+		<!--TACH LEFT -->			
+			<Gauge
+				Damping="0.5"
+				Scale="0.8"
+				Dir="(-0.996; 0.087; 0)"
+				InputRange="(0;1)"
+				InputType="rpm"
+				Mesh="trucks/arrows/gauge_needle_FJ"
+				Org="(0.370; 0.955; 0.086)"
+				OutputAngles="(-140;250)"
+			/>			
+
+		<!--SPEEDO RIGHT-->
+			<Gauge
+				Damping="0.9"
+				Scale="1"
+				Dir="(-0.996; 0.087; 0)"
+				InputRange="(0;120)"
+				InputType="speed"
+				Mesh="trucks/arrows/gauge_needle_FJ"
+				Org="(0.370; 0.955; -0.027)"
+				OutputAngles="(-125;240)"
+			/>	
+		</Dashboard>
+				
+		<Camera Center="(-1.0; 0; 0)" RadiusMultiplier="0.60">
+			<Cockpit
+				_template="Default"
+				LimitsHor="(-2.8; 2.8)"
+				LimitsVer="(-1.0; 1.0)"
+				ViewDir="(1; -0.05; 0)"
+				WindshieldDiffuseTexture=""
+				WindshieldShadingTexture=""
+                WindshieldDetailDensity="0.1"
+				ZoomViewDirOffset="(0; -0.05; 0)"
+				ViewPos="(-0.25; 1.32; 0.33)"
+				ZoomViewPosOffset="(0.2; 0; 0)"
+			>
+				<Rear
+					HorTransitionEnd="-1.2"
+					HorTransitionStart="-1.1"
+					LimitsVer="(-1.2; 0.2)"
+					RollAngle="-15"
+					ViewDir="(1; -0.05; 0)"
+					ViewPosOffset="(0.2; -0.1; 0.55)"
+				/>
+<!-- 				<Mirror
+					ClipDir="(-0.935; -0.5; 0.1)"
+					ClipOffset="4.5"
+					FOVScale="2.2"
+					MeshFrame="Rearview_Mirror"
+					ReflectionDir="(-0.5; -0.11; 0.15)"
+					LookAtOffset="(0; 0.07; 0)"
+					Size="(0.3; 0.16)"
+					Pos="(0.44; 1.675; 0)"
+				/>				
+				<Mirror
+					ClipDir="(-0.866; 0; -0.5)"
+					ClipOffset="0.1"
+					FOVScale="1.5"
+					MeshFrame="Door_Mirror_Driver"
+					ReflectionDir="(-0.60; 0.05; -0.2)"
+					Size="(0.3; 0.3)"
+					Pos="(0.536; 1.11; 0.85)"
+				/>	 -->										
+	
+				<!--ReflectionDir -- X will angle towards the driver more or less-->
+						
+			</Cockpit>
+		</Camera>
+	</TruckData>
+	
+	<Snorkel Origin="(0.85; 10.0; 0)" />
+
+	<Rotator EngineTorqueFactor="0.1" Frame="BoneRadiatorFanDriver" RotationSpeed="100" RotationAxis="(0; 1; 0)" />
+	<Rotator EngineTorqueFactor="0.1" Frame="BoneRadiatorFanPass" RotationSpeed="100" RotationAxis="(0; 1; 0)" />	
+	<Rotator EngineTorqueFactor="0.1" Frame="BoneOilCoolerFan" RotationSpeed="20" RotationAxis="(0; 1; 0)" />	
+	<Rotator EngineTorqueFactor="0.9" Frame="BonePulley1" RotationSpeed="180" RotationAxis="(0; 1; 0)" />	
+	<Rotator EngineTorqueFactor="0.9" Frame="BonePulley2" RotationSpeed="180" RotationAxis="(0; 1; 0)" />		
+	<Rotator EngineTorqueFactor="0.9" Frame="BonePulley3" RotationSpeed="180" RotationAxis="(0; 1; 0)" />		
+	<Rotator EngineTorqueFactor="0.9" Frame="BonePulley4" RotationSpeed="180" RotationAxis="(0; 1; 0)" />		
+	<Rotator EngineTorqueFactor="0.9" Frame="BonePulley5" RotationSpeed="180" RotationAxis="(0; 1; 0)" />	
+	
+	<PhysicsModel AcceptVisualDamage="false" Mesh="trucks/fj_bruiser">
+		<NetSync Legacy="false" />
+		<Body CenterOfMassOffset="(-0.25; -0.35; 0)" GravityFactor="1.45" ImpactType="Truck" Mass="2000">
+			<Body
+				CenterOfMassOffset="(-0.25; -0.35; 0)"
+				GravityFactor="1.15"
+				ImpactType="Truck"
+				Mass="1900"
+				ModelFrame="BoneChassis_cdt"
+			>
+				<Constraint Type="Fixed" />
+			</Body>
+			
+<!-- 			<Body Mass="0.2" ModelFrame="BoneKeyChain_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-50"
+					MaxLimit="50"
+				>
+					<Motor Damping="0.001" Spring="0.001" Type="Spring" />
+				</Constraint>
+			</Body>			
+		
+			<Body ModelFrame="BoneSteeringPivot_cdt" Mass="1" Collisions="None">
+				<Constraint AxisLocal="(0; -1; 0)" Name="SteeringArmPivot" MinLimit="-38" MaxLimit="38" Type="Hinge">
+					<Motor Damping="1.0" Force="10" Tau="1" Type="Position" />
+				</Constraint>
+			</Body>	 -->
+		</Body>
+	</PhysicsModel>
+
+
+	<ModelAttachments>
+	
+		<StopSignals>	
+		</StopSignals>	
+
+		<Ignition>
+		</Ignition>	
+
+		<HeadLight>				
+		</HeadLight>
+
+		<ReverseSignals>
+		</ReverseSignals>	
+
+	</ModelAttachments>
+
+	<Landmark Mesh="landmarks_chevrolet_ck1500_lmk" MinScale="1.8" MaxScale="3.8" />
+
+	
+<!-- 	<HeadLight
+		AttenEnd="55"
+		AttenStart="-20"
+		Color="g(242; 243; 244) x 5.5"
+		Dir="(1; -0.2; 0)"
+		InnerCone="0"
+		OuterCone="80"
+		Pos="(2.0; 1.2; 0)"
+		ParentFrame="BoneChassis_cdt"
+	/> -->
+
+	<GameData
+		Country=""
+		Price="46000"
+		Recallable="true"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+	
+		<UiDesc
+			UiDesc="FJ Builder"
+			UiIcon30x30=""
+			UiIcon328x458="shopImg_FJ_Builder"
+			UiIcon40x40=""
+			UiIconLogo="RedLineCreationsLogo"
+			UiName="FJ Builder"
+		/>
+			
+	
+		<!------------WINCH------------->		
+	
+		<!--Front Frame-->
+		<WinchSocket Pos="(1.70; 0.515; 0)" />
+
+		<!--Rear Frame-->
+		<WinchSocket Pos="(-2.63; 0.475; 0.77)" />
+		<WinchSocket Pos="(-2.63; 0.475; -0.77)" />
+		
+		<WinchSocket Pos="(-2.63; 0.475; 0)" />	
+		
+		<!--Top Roll Cage-->
+		<WinchSocket Pos="(-0.57; 1.59; 0.715)" />
+		<WinchSocket Pos="(-0.57; 1.59; -0.715)" />		
+			
+		<!--Lower Middle Roll Cage-->
+		<WinchSocket Pos="(0.04; 0.26; 0.88)" />
+		<WinchSocket Pos="(0.04; 0.26; -0.88)" />	
+							
+		
+		<!------------CRANE------------->		
+		<!--Front Frame-->
+		<CraneSocket Pos="(1.70; 0.515; 0)" />
+
+		<!--Rear Frame-->
+		<CraneSocket Pos="(-2.63; 0.475; 0.77)" />
+		<CraneSocket Pos="(-2.63; 0.475; -0.77)" />
+		
+		<CraneSocket Pos="(-2.63; 0.475; 0)" />	
+		
+		<!--Top Roll Cage-->
+		<CraneSocket Pos="(-0.57; 1.59; 0.715)" />
+		<CraneSocket Pos="(-0.57; 1.59; -0.715)" />		
+			
+		<!--Lower Middle Roll Cage-->
+		<CraneSocket Pos="(0.04; 0.26; 0.88)" />
+		<CraneSocket Pos="(0.04; 0.26; -0.88)" />	
+
+
+
+		<!------------GARAGE CAMERAS------------->		
+		
+		<CustomizationCameras>	
+		
+		<!------------SORTED CAMERAS------------->		
+
+	<!--MAIN DEFAULT CAM-->
+			<CameraPos
+				FOV="30.0"
+				Name="default"
+				InterestPosition="(6.0; 0.6; -1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="6"
+				Position="(11.0; 1.3; -5.5)"
+			/>
+			<CameraPos
+				FOV="34.0"
+				Name="IN_GARAGE_WIDE"
+				InterestPosition="(-2.0; 0.6; 2.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="6"
+				Position="(15.0; 1.3; -4.5)"
+			/>		
+
+			<CameraPos
+				FOV="30.0"
+				Name="XXL_GARAGE_WIDE_SIDE"
+				InterestPosition="(5.5; 0.8; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZRotation="360"
+				MaxZoom="15"
+				Position="(5.5; 1.5; -18.0)"
+			/>	
+			
+			<!--WHEELS-->
+			<CameraPos
+				FOV="28.0"
+				Name="wheels"
+				InterestPosition="(4.6; 0.5; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="6"
+				Position="(11.0; 1.2; -6.7)"
+			/>
+			
+			<!--BOBBLE HEAD-->
+			<CameraPos
+				FOV="34.0"
+				InterestPosition="(10.8; 1.1; 1.5)"
+				Interior="true"
+				Name="bubble_head"
+				Position="(5.0; 1.2; -0.2)"
+			/>
+		
+			<!--AIR FRESHENER-->
+			<CameraPos
+				FOV="32.0"
+				InterestPosition="(10.813; 0.7; 2.5)"
+				Interior="true"
+				Name="mirror_mount"
+				Position="(4.9; 1.4; -0.3)"
+			/>			
+
+
+		<!------------HOOD CAMERAS------------->	
+
+			<!--HOOD FRONT ON LOOKING DOWN-->
+			<CameraPos
+				FOV="32.0"
+				Name="HOOD_1"
+				InterestPosition="(4.5; 0.5; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(9.6; 1.6; -1.4)"
+			/>
+
+			<!--HOOD SIDE ON-->
+			<CameraPos
+				FOV="22.0"
+				Name="HOOD_2"
+				InterestPosition="(5.735; 0.976; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(10.78; 1.486; -3.957)"
+			/>
+			
+			<!--HOOD FRONT SIDE-->
+			<CameraPos
+				FOV="28.0"
+				Name="HOOD_3"
+				InterestPosition="(6.0; 1.1; -1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.5; 1.3; -2.5)"
+			/>
+
+			<!--HOOD FRONT ON LOOKING DOWN TOWARDS ENGINE-->
+			<CameraPos
+				FOV="22.0"
+				Name="HOOD_4"
+				InterestPosition="(4.5; 0.2; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(9.0; 1.8; -1.4)"
+			/>
+
+			
+		<!------------FRONT CAMERAS------------->		
+			
+			<!--FRONT SIDE-->
+			<CameraPos
+				FOV="28.0"
+				Name="FRONT_DRIVER_SIDE_1"
+				InterestPosition="(5.6; 1.1; -1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.0; 1.3; -2.5)"
+			/>
+			
+			<!--FRONT SIDE-->
+			<CameraPos
+				FOV="22.0"
+				Name="FRONT_DRIVER_SIDE_2"
+				InterestPosition="(5.5; 1.0; -1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.0; 1.4; -3.0)"
+			/>			
+		
+			<!--FRONT SIDE WIDE-->
+			<CameraPos
+				FOV="40.0"
+				Name="FRONT_DRIVER_SIDE_3"
+				InterestPosition="(4.0; 0.98; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(7.5; 1.486; -1.5)"
+			/>
+			
+			<!--DRIVER SIDE LEVEL WIDER-->
+			<CameraPos
+				FOV="34.0"
+				Name="FRONT_DRIVER_SIDE_4"
+				InterestPosition="(4.0; 0.5; 2.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.2; 1.2; -3.5)"
+			/>		
+			
+			<!--DRIVER SIDE CU ON FENDER-->
+			<CameraPos
+				FOV="34.0"
+				Name="FRONT_DRIVER_SIDE_5"
+				InterestPosition="(3.0; 0; 2.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.2; 1.0; -1.7)"
+			/>				
+			
+			
+			<!--FENDER EMBLEMS-->
+			<CameraPos
+				FOV="28.0"
+				Name="FENDER_EMBLEM_DRIVER_DOOR"
+				InterestPosition="(4.5; 0.6; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(7.5; 1.1; -2.5)"
+			/>	
+			
+			
+			<!--FENDER EMBLEM-->
+			<CameraPos
+				FOV="28.0"
+				Name="FENDER_EMBLEM_DRIVER_FRONT"
+				InterestPosition="(4.5; 0.6; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.5; 1.1; -2.5)"
+			/>		
+							
+				
+		<!------------GRILL CAMERAS------------->	
+			<!--GRILL CU-->
+			<CameraPos
+				FOV="32.0"
+				Name="GRILL_1"
+				InterestPosition="(3.0; 0.7; 1.5)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(10.5; 0.9; -2.2)"
+			/>	
+			<!--GRILL WIDE-->
+			<CameraPos
+				FOV="32.0"
+				Name="GRILL_2"
+				InterestPosition="(2.5; 0.95; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(11.0; 1.2; -0.9)"
+			/>	
+
+			<!--GRILL VERY CLOSE HEAD ON - GOOD FOR GRILL EMBLEMS-->
+			<CameraPos
+				FOV="30.0"
+				Name="GRILL_3"
+				InterestPosition="(2.5; 0.4; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="4"
+				Position="(9.5; 0.7; -0.5)"
+			/>	
+			
+			<!--GRILL VERY CLOSE SIDE ON - GOOD FOR HEADLIGHTS-->
+			<CameraPos
+				FOV="25.0"
+				Name="GRILL_4"
+				InterestPosition="(2.2; 1.0; 1.5)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="4"
+				Position="(11.0; 0.9; -1.35)"
+			/>	
+
+			<!--GRILL VERY CLOSE HEAD ON - GOOD FOR GRILL EMBLEMS-->
+			<CameraPos
+				FOV="30.0"
+				Name="GRILL_5"
+				InterestPosition="(2.5; 0.2; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="4"
+				Position="(9.0; 0.5; -0.5)"
+			/>				
+
+		<!------------ROOF CAMERAS------------->					
+				
+			<!--FRONT TOP OF ROOF - MARKER LIGHTS-->
+			<CameraPos
+				FOV="30.0"
+				Name="ROOF_FRONT_1"
+				InterestPosition="(5.474; 1.8; -1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(9.0; 1.9; -0.6)"
+			/>	
+
+			<!--ROOF DRIVER SIDE LEVEL-->
+			<CameraPos
+				FOV="25.0"
+				Name="ROOF_FRONT_2"
+				InterestPosition="(4.0; 1.5; 2.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.5; 1.8; -4.0)"
+			/>
+
+			<!--ROOF DRIVER HIGH LOOKING DOWN - MARKER LIGHTS-->
+			<CameraPos
+				FOV="30.0"
+				Name="ROOF_FRONT_3"
+				InterestPosition="(-1.5; 0.5; 2.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(7.5; 2.3; -1.5)"
+			/>
+			
+			<!--ROOF DRIVER HIGH LOOKING DOWN - MARKER LIGHTS-->
+			<CameraPos
+				FOV="30.0"
+				Name="ROOF_FRONT_4"
+				InterestPosition="(0; 0.7; 2.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.5; 1.8; -1.5)"
+			/>			
+
+			<!--ROOF PASS LEVEL-->
+			<CameraPos
+				FOV="35.0"
+				Name="ROOF_FRONT_5"
+				InterestPosition="(-1.5; 1.8; -7.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="6"
+				Position="(8.0; 1.9; 3.0)"
+			/>			
+
+
+
+		<!------------SNORKEL CAMERAS------------->	
+			<!--WIDE SHOT FRONT TO REAR BUMPER SHOWS FENDERS WELL-->
+			<CameraPos
+				FOV="32.0"
+				Name="SNORKEL_1"
+				InterestPosition="(4.0; 1.1; -3.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="4"
+				Position="(8.0; 1.6; 2.5)"
+			/>			
+
+			<!--WIDE SHOT FRONT TO REAR BUMPER SHOWS FENDERS WELL-->
+			<CameraPos
+				FOV="32.0"
+				Name="SNORKEL_2"
+				InterestPosition="(5.944; 2.2; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(8.22; 2.4; 3.401)"
+			/>
+			
+			<!--WIDE SHOT FRONT TO REAR BUMPER SHOWS FENDERS WELL-->
+			<CameraPos
+				FOV="50.0"
+				Name="SNORKEL_3"
+				InterestPosition="(-2.5; 2.2; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(1.0; 2.4; 3.4)"
+			/>	
+
+
+		<!------------BED CAMERAS------------->	
+
+			<!--GOOD DRIVER BED SIDE-->
+			<CameraPos
+				FOV="32.0"
+				Name="BED_SIDE_1"
+				InterestPosition="(4.0; 0.75; 3.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(2.0 1.5; -5.0)"
+			/>
+					
+			<!--AT SIDE LOOKING INTO BED-->
+			<CameraPos
+				FOV="45.0"
+				Name="BED_SIDE_2"
+				InterestPosition="(6.0; 0.2; -0.5)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(2.5; 2.2; 2.0)"
+			/>
+
+			<!--DRIVER BEDSIDE FACING BACK-->
+			<CameraPos
+				FOV="35.0"
+				Name="BED_SIDE_3"
+				InterestPosition="(2.5; 1.0; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(5.6; 2.0; -4.0)"
+			/>
+			
+			<!--DRIVER BEDSIDE FACING BACK CU ON REAR FENDER-->
+			<CameraPos
+				FOV="25.0"
+				Name="BED_SIDE_4"
+				InterestPosition="(3.6; 0.8; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(2.5; 1.8; -4.0)"
+			/>	
+			
+			<!--DRIVER BEDSIDE FACING FORWARD WIDER-->
+			<CameraPos
+				FOV="30.0"
+				Name="BED_SIDE_5"
+				InterestPosition="(2.8; 1.5; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(1.2; 2.0; -4.5)"
+			/>	
+			
+			<!--BED SIDE PASSENGER-->
+			<CameraPos
+				FOV="32.0"
+				Name="BED_SIDE_6"
+				InterestPosition="(5.8; 0.5; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(2.0; 1.5; 2.3)"
+			/>
+			
+			<!--BED SIDE PASSENGER FACING FORWARD-->
+			<CameraPos
+				FOV="38.0"
+				Name="BED_SIDE_7"
+				InterestPosition="(7.8; 0.6; 1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(3.7; 1.7; 1.0)"
+			/>	
+			
+			<!--BED SIDE PASSENGER FACING FORWARD CU-->
+			<CameraPos
+				FOV="22.0"
+				Name="BED_SIDE_8"
+				InterestPosition="(7.8; 1.0; 2.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(3.2; 1.7; 0)"
+			/>	
+			
+			<!--GOOD DRIVER BED SIDE-->
+			<CameraPos
+				FOV="22.0"
+				Name="BED_SIDE_9"
+				InterestPosition="(5.0; 0.75; 3.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(3.8 1.5; -3.0)"
+			/>
+			
+			<!--DRIVER BEDSIDE FACING BACK CU ON REAR FENDER-->
+			<CameraPos
+				FOV="28.0"
+				Name="BED_SIDE_10"
+				InterestPosition="(2.4; 0.5; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(2.8; 1.2; -2.4)"
+			/>	
+			
+			<!--DRIVER BEDSIDE FACING BACK-->
+			<CameraPos
+				FOV="40.0"
+				Name="BED_SIDE_11"
+				InterestPosition="(2.5; 0.5 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(4.5; 0.7; -2.0)"
+			/>		
+			
+			<!--DRIVER BEDSIDE FACING FORWARD WIDER-->
+			<CameraPos
+				FOV="35.0"
+				Name="BED_SIDE_12"
+				InterestPosition="(2.8; 1.3; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(1.2; 2.5; -2.5)"
+			/>				
+			
+			
+		<!------------BED BACK CAMERAS------------->	
+
+				
+			<!--AT BACK LOOKING INTO BED CU-->
+			<CameraPos
+				FOV="40.0"
+				Name="BED_BACK_1"
+				InterestPosition="(5.0; 0; 1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(1.5; 2.4; 0.2)"
+			/>	
+
+
+			<!--AT BACK LOOKING INTO BED CU-->
+			<CameraPos
+				FOV="40.0"
+				Name="BED_BACK_2"
+				InterestPosition="(5.0; 0; 1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(2.0; 2.1; 0.2)"
+			/>	
+			
+			<!--DRIVER BEDSIDE HIGH LOOKING INTO BED - GOOD FOR ROOF RACK TOO-->
+			<CameraPos
+				FOV="35.0"
+				Name="BED_BACK_3"
+				InterestPosition="(2.8; 1.0; 0.7)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(1.2; 2.5; -1.0)"
+			/>				
+				
+			<!--DRIVER BEDSIDE WIDE AND HIGH LOOKING INTO BED - GOOD FOR ROOF RACK TOO-->
+			<CameraPos
+				FOV="40.0"
+				Name="BED_BACK_4"
+				InterestPosition="(3.0; 1.3; 1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="4"
+				Position="(0; 2.0; -5.5)"
+			/>
+
+			<!--HIGHER SHOT LOOKING INTO THE BED FROM PASS SIDE GOOD-->
+			<CameraPos
+				FOV="35.0"
+				Name="BED_BACK_5"
+				InterestPosition="(4.0; 1.0; 1.4)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(1.0; 2.2; 1.2)"
+			/>		
+			
+			<!--CU HIGHER SHOT LOOKING INTO THE BED CU-->
+			<CameraPos
+				FOV="30.0"
+				Name="BED_BACK_6"
+				InterestPosition="(3.0; 1.2; 1.3)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(2.2; 1.6; 0.8)"
+			/>	
+			<!--HIGHER SHOT LOOKING INTO THE BED FROM DRIVER SIDE - GOOD-->
+			<CameraPos
+				FOV="30.0"
+				Name="BED_BACK_7"
+				InterestPosition="(4.0; 1.0; 1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(1.3; 1.8; -1.0)"
+			/>				
+
+
+		<!------------TAILGATE AND BACK BUMPER CAMERAS------------->	
+
+			<!--REAR BUMPER OR TAILGATE LOWER CU-->		
+			<CameraPos
+				FOV="25.0"
+				Name="BED_TAILGATE_1"
+				InterestPosition="(4.5; 1.0; 1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="4"
+				Position="(0.5; 1.0; 2.0)"
+			/>
+			
+			<!--TAILGATE LOWER CU - KINDOF DARK FROM PASS SIDE-->
+			<CameraPos
+				FOV="33.0"
+				Name="BED_TAILGATE_2"
+				InterestPosition="(7.44; 0.9; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(1.0; 0.8; 0.55)"
+			/>
+			
+			<!--REAR BUMPER OR TAILGATE WIDER FROM PASS SIDE-->		
+			<CameraPos
+				FOV="40.0"
+				Name="BED_TAILGATE_3"
+				InterestPosition="(7.0; 0.5; -1.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(1.5; 1.4; 2.0)"
+			/>
+
+			<!--TAILGATE - DRIVER SIDE CLOSER-->	
+			<CameraPos
+				FOV="25.0"
+				Name="BED_TAILGATE_4"
+				InterestPosition="(6.0; 0.5; 3.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(1.2; 0.8; -2.1)"
+			/>				
+			
+			<!--LOWER BACK BUMPER - GOOD FOR LICENSE PLATES OR HITCH-->
+			<CameraPos
+				FOV="30.0"
+				Name="BACK_BUMPER_1"
+				InterestPosition="(6.0; 0.5; 6.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(2.0; 0.3; -1.2)"
+			/>		
+			
+			<!--LOWER BACK BUMPER PASS SIDE - GOOD FOR LICENSE PLATES OR HITCH-->
+			<CameraPos
+				FOV="30.0"
+				Name="BACK_BUMPER_2"
+				InterestPosition="(6.0; 0.2; -2.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(2.0; 0.6; 2.0)"
+			/>	
+
+
+		<!------------ROCK SLIDERS CAMERAS------------->			
+		    <!--LOWER PASS ROCK SLIDER FACING BACK-->
+			<CameraPos
+				FOV="35.0"
+				Name="ROCK_SLIDERS_1"
+				InterestPosition="(6.0; 0.4; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(6.0; 0.2; 3.2)"
+			/>	
+			
+		   <!--LOWER PASS ROCK SLIDER FACING FORWARD-->
+			<CameraPos
+				FOV="30.0"
+				Name="ROCK_SLIDERS_2"
+				InterestPosition="(9; 0.5; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(4.0; 0.6; 2.8)"
+			/>
+				
+					
+		<!------------DOORS CAMERAS------------->				
+			<!--DOOR DRIVER SIDE-->			
+			<CameraPos
+				FOV="20.0"
+				Name="DOORS_1"
+				InterestPosition="(5.0; 0.8; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(7.5; 2.0; -5.5)"
+			/>										
+				
+		   <!--DOOR PASS SIDE - ROCK SLIDERS-->
+			<CameraPos
+				FOV="45.0"
+				Name="DOORS_2"
+				InterestPosition="(6.4; 0.75; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(6.5; 1.2; 3.2)"
+			/>	
+	
+				
+		<!------------CHASSIS AND EXHAUST CAMERAS------------->		
+				
+		   <!--BACK PASS WHEEL LOW FACING FRONT - GOOD FOR EXHAUST EXIT-->
+			<CameraPos
+				FOV="30.0"
+				Name="EXHAUST_LOW_1"
+				InterestPosition="(8; 0.5; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(0.5; 0.6; 2.8)"
+			/>
+
+			<!--UNDER CHASSIS - FACING FORWARD - MIDDLE OF TRUCK-->		
+			<CameraPos
+				FOV="30.0"
+				Name="UNDER_CHASSIS_1"
+				InterestPosition="(6.0; 0.7; 2.0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(4.0; 0; -0.6)"
+			/>	
+										
+			<!--UNDER CHASSIS - FACING BACKWARD BY FRONT AXLE-->	
+			<CameraPos
+				FOV="35.0"
+				Name="UNDER_CHASSIS_2"
+				InterestPosition="(2.2; 0.1; 1.5)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="4"
+				Position="(8.0; 0; -1.0)"
+			/>				
+		
+		
+			<!--UNDER CHASSIS - FACING BACKWARD BY FRONT AXLE-->	
+			<CameraPos
+				FOV="32.0"
+				Name="UNDER_CHASSIS_3"
+				InterestPosition="(1.0; 0.7; 1.5)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="4"
+				Position="(7.1; 0; -0.5)"
+			/>				
+
+		<!------------SORTED CAMERAS------------->				
+		
+		
+
+		<!------------UNSORTED INTERIOR CAMERAS------------->		
+			<!--FOCUS ON SEATS FACING BACK FROM DRIVER SIDE-->
+			<CameraPos
+				FOV="46.0"
+				Name="INTERIOR_1"
+				InterestPosition="(5.0; 0.8; -0.8)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="4"
+				Interior="true"
+				Position="(6.5; 1.4; -0.08)"
+			/>
+						
+			<!--FOCUS ON SEATS FACING BACK FROM PASS SIDE-->
+			<CameraPos
+				FOV="55.0"
+				Name="INTERIOR_2"
+				InterestPosition="(4.0; 0; -2.6)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="4"
+				Interior="true"
+				Position="(6.2; 1.3; 0.6)"
+			/>	
+			
+			<!--FOCUS ON PASS SEAT CU FACING BACK FROM PASS SIDE-->
+			<CameraPos
+				FOV="60.0"
+				Name="INTERIOR_3"
+				InterestPosition="(2.0; 0; 2.2)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="4"
+				Interior="true"
+				Position="(6.0; 1.3; -0.4)"
+			/>			
+	
+
+	
+	
+	
+			<CameraPos
+				FOV="70.0"
+				Name="cargo_area1"
+				InterestPosition="(5.0; 0; -0.8)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="4"
+				Interior="true"
+				Position="(5.28; 1.4; -0.08)"
+			/>
+
+			<CameraPos
+				FOV="80.0"
+				Name="cargo_area2"
+				InterestPosition="(1.0; -0.8; -2.5)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="4"
+				Interior="true"
+				Position="(4.0; 1.7; -0.08)"
+			/>	
+
+			<CameraPos
+				FOV="40.0"
+				Name="headliner"
+				InterestPosition="(3.0; 1.8; -0.8)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="4"
+				Interior="true"
+				Position="(6.1; 1.4; -0.4)"
+			/>
+	
+			<!--INTERIOR-->
+			<CameraPos
+				FOV="45.0"
+				InterestPosition="(10.813; 0.5; 2.5)"
+				Interior="true"
+				Name="interior"
+				Position="(6.2; 1.95; -0.4)"
+			/>
+
+			<!--INTERIOR-->
+			<CameraPos
+				FOV="45.0"
+				InterestPosition="(12.0; 0.9; 1.2)"
+				Interior="true"
+				Name="interior2"
+				Position="(4.8; 1.4; 0)"
+			/>
+			
+			<!--INTERIOR-->
+			<CameraPos
+				FOV="55.0"
+				Name="interior3"
+				Interior="true"
+				InterestPosition="(6.0; 0.05; 1.2)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(2.8; 1.35; 0.3)"
+			/>		
+			
+			<!--INTERIOR-->
+			<CameraPos
+				FOV="35.0"
+				InterestPosition="(10.813; 0.5; 2.5)"
+				Interior="true"
+				Name="interior4"
+				Position="(5.0; 1.30; 0.2)"
+			/>			
+			
+			<!--UPPER A BIT WIDE INTERIOR-->
+			<CameraPos
+				FOV="35.0"
+				InterestPosition="(10.8; 0.3; -1.5)"
+				Interior="true"
+				Name="steeringwheel"
+				Position="(4.8; 1.4; 0.1)"
+			/>
+			
+			<!--UPPER A BIT WIDE INTERIOR-->
+			<CameraPos
+				FOV="30.0"
+				InterestPosition="(10.8; 0.5; 4.0)"
+				Interior="true"
+				Name="steeringwheel2"
+				Position="(4.9; 1.3; -0.5)"
+			/>		
+			
+
+			<!--UPPER A BIT WIDE INTERIOR-->
+			<CameraPos
+				FOV="30.0"
+				InterestPosition="(10.8; 0.5; 1.5)"
+				Interior="true"
+				Name="gauges"
+				Position="(4.6; 1.4; -0.05)"
+			/>
+			
+			<!--UPPER A BIT WIDE INTERIOR-->
+			<CameraPos
+				FOV="40.0"
+				InterestPosition="(10.813; 0.5; -4.0)"
+				Interior="true"
+				Name="backheadrests"
+				Position="(3.5; 1.65; 0.95)"
+			/>
+			
+		
+			
+			<CameraPos
+				FOV="48.0"
+				Name="interior_door_panels1"
+				InterestPosition="(6.2; 0.9; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(3.9; 1.5; 0.8)"
+			/>
+					
+		<!------------UNSORTED INTERIOR CAMERAS------------->	
+		</CustomizationCameras>
+	
+		
+	
+
+<!---------------------------------------------ADDONS--------------------------------------------->	
+	
+<!--**PC VERSION**-->
+
+
+		<AddonSockets DefaultAddon="">
+			<Socket Names="AirIntake_TRD_PC_FJBruiser" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="AirIntake_GFX_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Logos_TRD_Bed_PC_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		
+		
+<!--**PC VERSION**-->
+
+<!--**CONSOLE VERSION**-->
+
+
+<!-- 		<AddonSockets DefaultAddon="">
+			<Socket Names="AirIntake_GFX_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets> -->
+
+
+<!--**CONSOLE VERSION**-->
+
+	
+<!--BODY **LOCKED ON BRUISER VERSION**-->				
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Cab_FJBruiser" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Cab_Locked_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>		
+
+		<AddonSockets DefaultAddon="">
+			<Socket InCockpit="true" Names="Cab_Interior_FJBruiser" ParentFrame="BoneChassis_cdt" />
+			<Socket InCockpit="true" Names="Cab_Locked_Interior_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Grill_Mesh_FJBruiser" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Grill_Mesh_Locked_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+
+<!--BODY-->	
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Doors_Outter_Panels_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>		
+		
+		<AddonSockets DefaultAddon="" >
+			<Socket InCockpit="true" Names="Interior_Door_Panels_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>		
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Power_Windows_FJBruiser" ParentFrame="BoneChassis_cdt" />
+			<Socket InCockpit="true" Names="Window_Net_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+		
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Hood_Standard_FJBruiser" NamesBlock="AirIntake_FJBruiser" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Hood_AirIntake_FJBruiser" NamesBlock="AirCleaner_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+			
+		<AddonSockets DefaultAddon="">
+			<Socket Names="FrontFendres_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>					
+							
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Mirror_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>			
+		
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Emblem_Fender_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Emblem_Grill_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>			
+		
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Headlights_Classic_FJBruiser" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Headlights_LED_FJBruiser" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Headlights_AirDuct_FJBruiser" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Headlights_BDLP6_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>			
+
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Headlights_Classic_Tape_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Side_Panels_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+
+<!--BED-->		
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Bedsides_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+		
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Tailgate_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+		
+<!--AIR CELEANER & SNORKEL-->
+		<AddonSockets DefaultAddon="Engine_Air_Cleaner">
+			<Socket Names="AirIntake_FJBruiser" NamesBlock="Snorkel_Fender_FJBruiser" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="AirCleaner_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>		
+		
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Snorkel_FJBruiser" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Snorkel_Fender_FJBruiser"  NamesBlock="Emblem_Fender_FJBruiser" ParentFrame="BoneChassis_cdt" />	
+		</AddonSockets>
+
+<!--LIGHTS-->		
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Lights_AUX_Fog_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Lights_AUX_Chase_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+
+	
+<!--LICENSE PLATE-->
+		<AddonSockets DefaultAddon="" >
+			<Socket InCockpit="true" Names="LicensePlate_FJBruiser" ParentFrame="BoneChassis_cdt" >
+			</Socket>	
+		</AddonSockets>			
+
+		
+<!--SPARE TIRE-->
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Spare_Tire_FJBruiser" ParentFrame="BoneChassis_cdt" >
+			</Socket>	
+		</AddonSockets>			
+	
+	
+<!--TRACK-->
+		<AddonSockets DefaultAddon="Chassis_Center_Support" >
+			<Socket Names="Track_FJBruiser" ParentFrame="BoneChassis_cdt" >
+			</Socket>	
+		</AddonSockets>		
+
+
+<!--ADDONS-->
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Winch_Bumper_FJBruiser" ParentFrame="BoneChassis_cdt" >
+			</Socket>	
+		</AddonSockets>	
+
+		<AddonSockets DefaultAddon="" >
+			<Socket InCockpit="true" Names="VP_Fuel_1_FJBruiser" NamesBlock="Interior_Pass_Seat_PC_FJBruiser,Interior_Pass_Seat_FJBruiser" ParentFrame="BoneChassis_cdt" >
+			</Socket>	
+		</AddonSockets>	
+		
+		<AddonSockets DefaultAddon="" >
+			<Socket InCockpit="true" Offset="(0.32; 0; 0)" Names="VP_Fuel_2_FJBruiser" NamesBlock="Interior_Pass_Seat_PC_FJBruiser,Interior_Pass_Seat_FJBruiser" ParentFrame="BoneChassis_cdt" >
+			</Socket>	
+		</AddonSockets>		
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Lights_Roof_Lightbar_FJBruiser" ParentFrame="BoneChassis_cdt" >
+			</Socket>	
+		</AddonSockets>	
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="HiLift_FJBruiser" ParentFrame="BoneChassis_cdt" >
+			</Socket>	
+		</AddonSockets>	
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Fire_Extinguisher_FJBruiser" ParentFrame="BoneChassis_cdt" >
+			</Socket>	
+		</AddonSockets>	
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Traction_Boards_FJBruiser" ParentFrame="BoneChassis_cdt" >
+			</Socket>	
+		</AddonSockets>	
+
+
+<!--**EXPEDITIONS RACK PARTS**-->
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Expedition_Rack_FJBruiser" NamesBlock="" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Expedition_Rack_SideMounts_FJBruiser" NamesBlock="" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		
+	<!--**SLOT 1 FUEL/CASES**-->		
+		<AddonSockets DefaultAddon="">
+			<Socket Offset="(0; 0; 0.47)" Names="Expedition_Slot_1_FJBruiser" NamesBlock="ScoutMetalDetector" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>		
+		
+	<!--**SLOT 2 FUEL/CASES**-->				
+		<AddonSockets DefaultAddon="">
+			<Socket Offset="(0; 0; 0)" Names="Expedition_Slot_2_FJBruiser" NamesBlock="ScoutMetalDetector" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>			
+			
+	<!--**SLOT 3 FUEL/CASES**-->				
+		<AddonSockets DefaultAddon="">
+			<Socket Offset="(0; 0; -0.47)" Names="Expedition_Slot_3_FJBruiser" NamesBlock="ScoutMetalDetector" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>			
+			
+	<!--**SLOT 4 FUEL/CASES**-->
+		<AddonSockets DefaultAddon="">
+			<Socket Dir="(1;0;0)" Offset="(-1.14; 0; -1.775)" Names="Expedition_Slot_4_FJBruiser" NamesBlock="ScoutMetalDetector" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>		
+
+
+	<!--**FUEL SIDES**-->	
+		<AddonSockets DefaultAddon="">
+			<Socket Dir="(0; -1; 0)" Offset="(-3.645; 1.22; 2.31)" Names="Expedition_Fuel_Side_1_FJBruiser" NamesBlock="" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+
+		<AddonSockets DefaultAddon="">
+			<Socket Dir="(0; -1; 0)" Offset="(-3.645; 1.22; 0.725)" Names="Expedition_Fuel_Side_2_FJBruiser" NamesBlock="" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		
+		
+	<!--**LARGE ADDON CASES--SLOT 1&3**-->	
+		<AddonSockets DefaultAddon="">
+			<Socket Offset="(0; 0; 0)" Names="Expedition_Case_LG_1_FJBruiser" NamesBlock="Expedition_Case_LG_3_FJBruiser,ScoutMetalDetector,Expedition_Slot_1_FJBruiser,Expedition_Slot_2_FJBruiser,Expedition_Slot_4_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+
+<!-- 		<AddonSockets DefaultAddon="">
+			<Socket Dir="(0;0;-1)" UpDir="(0;1;0)" Offset="(-3.327; 0; 0)" Names="Expedition_Case_LG_2_FJBruiser" NamesBlock="ScoutMetalDetector,Expedition_Slot_2_FJBruiser,Expedition_Slot_3_FJBruiser,Expedition_Slot_4_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>		 -->
+		
+		<AddonSockets DefaultAddon="">
+			<Socket Offset="(0; 0; 0)" Names="Expedition_Case_LG_3_FJBruiser" NamesBlock="ScoutMetalDetector,Expedition_Slot_1_FJBruiser,Expedition_Slot_2_FJBruiser,Expedition_Slot_4_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+
+		<AddonSockets DefaultAddon="">
+			<Socket Dir="(0;0;-1)" UpDir="(0;1;0)" Offset="(-3.327; 0; 0)" Names="Expedition_Case_LG_4_FJBruiser" NamesBlock="ScoutMetalDetector,Expedition_Slot_2_FJBruiser,Expedition_Slot_3_FJBruiser,Expedition_Slot_4_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+		
+		
+	<!--**DEFAULT EMERGENCY RESERVES**-->				
+		<AddonSockets DefaultAddon="Emergency_Reserves_estock_default">
+			<Socket Names="EmergencyReserves_FJBruiser" ParentFrame="" />
+		</AddonSockets>			
+		
+		
+	<!--**DEFAULT METAL DETECTOR**-->		
+		<AddonSockets>
+			<Socket InCockpit="true" Names="ScoutMetalDetector" Offset="(-1.562; 1.405; 0)" ParentFrame="BoneChassis_cdt" >
+					<ExtraParent Offset="(0; -0.008; 0)" Frame="BoneChassis_cdt"/>
+					<ExtraParent Offset="(2.12; -0.3375; -0.115)" Frame="BoneChassis_cdt"/>
+			</Socket>
+		</AddonSockets>
+		
+		<AddonSockets DefaultAddon="">
+			<Socket Names="Expedition_Trailer_FJBruiser" NamesBlock="" ParentFrame="" />
+		</AddonSockets>		
+			
+<!--**EXPEDITIONS RACK PARTS**-->
+
+
+<!--INTERIOR CABIN-->
+		<AddonSockets DefaultAddon="Interior_Seat_Driver_Default" >
+			<Socket InCockpit="true" Names="Interior_Driver_Seat_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Offset="(0; 0; -0.7)" InCockpit="true" Names="Interior_Pass_Seat_FJBruiser" ParentFrame="BoneChassis_cdt" />			
+		</AddonSockets>	
+
+<!-- 		<AddonSockets>
+			<Socket InCockpit="true" Offset="(0.30; 1.541; 0)" Names="BrassKnuckles_FJBruiser" ParentFrame="BoneChassis_cdt">
+			</Socket>
+		</AddonSockets>	 -->	 
+			 
+		<AddonSockets DefaultAddon="Interior_Glass_Gauges_Default" >
+			<Socket InCockpit="true" Names="Interior_GaugeGlass_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+
+
+<!--DEFAULT ADDONS-->
+		<AddonSockets DefaultAddon="Diff_Lock_Default">
+			<Socket Names="DiffLock_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+
+
+<!--DEFAULT - DAMAGE CONTROL & GOODIES-->
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="DamageControl_FJBruiser" />
+		</AddonSockets>
+			
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Goodies1_FJBruiser" />
+		</AddonSockets>
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Goodies2_FJBruiser" />
+		</AddonSockets>
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Goodies3_FJBruiser" />
+		</AddonSockets>
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Goodies4_FJBruiser" />
+		</AddonSockets>
+		
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Goodies5_FJBruiser" />
+		</AddonSockets>		
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Goodies6_FJBruiser" />
+		</AddonSockets>	
+
+
+
+<!--SNOWRUNNER ONLY ADDONS-->
+
+<!--HITCHES-->
+		<AddonSockets DefaultAddon="">
+			<Socket Names="ChassisHitch_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+
+		<AddonSockets DefaultAddon="" >
+			<Socket Names="Animated_Hitch_Shorty_FJBruiser" NamesBlock="" ParentFrame="BoneChassis_cdt" >
+			</Socket>
+
+			<Socket Names="DRing_Hitch_FJBruiser" NamesBlock="" ParentFrame="BoneChassis_cdt" >
+			</Socket>
+		</AddonSockets>
+
+<!--TRAILERS-->
+		<AddonSockets>
+			<Socket Names="Trailer" Offset="(-2.84; 0.385; 0)" >
+			</Socket>		
+				
+			<Socket Names="ScautTrailer" Offset="(-2.84; 0.428; 0)" >		
+			</Socket>					
+		</AddonSockets>
+
+<!--DASH RADAR-->
+		<AddonSockets DefaultAddon="Interior_Radar_Unit_Default" >
+			<Socket InCockpit="true" Names="RadarUnit_FJBruiser" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>	
+
+<!--DEFAULT BOBBLE HEADS-->
+
+
+		<AddonSockets>
+			<Socket InCockpit="true" Names="StuffDashboard" Offset="(0.45; 1.055; -0.1)" ParentFrame="BoneChassis_cdt">
+			<ExtraParent Offset="(0; 0; 0)" Frame="BoneChassis_cdt"/>
+			</Socket>
+		</AddonSockets>
+
+		<AddonSockets>
+			<Socket InCockpit="true" Names="StuffAirfreshener" Offset="(0.30; 1.541; 0)" ParentFrame="BoneChassis_cdt">
+			<ExtraParent Offset="(0; 0; 0)" Frame="BoneChassis_cdt"/>
+			</Socket>
+		</AddonSockets>
+		
+		
+<!--DEFAULT BOBBLE HEADS-->
+
+
+<!--SNOWRUNNER ONLY ADDONS-->
+
+<!---------------------------------------------END ADDONS--------------------------------------------->	
+
+	</GameData>
+
+
+
+<!-- 	<ControlledConstraints>
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="SteeringArmPivot"/>
+	</ControlledConstraints>
+ -->
+
+<AutomaticIK>
+<!--Rear Coilovers-->	
+		<IKBone ModelFrame="BoneRDriverTopCoil" ParentFrame="">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneBottomLink2RDriver"
+				ModelFrame="BoneRDriverBottomCoil"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+
+		<IKBone ModelFrame="BoneRPassTopCoil" ParentFrame="">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneBottomLink2RPass"
+				ModelFrame="BoneRPassBottomCoil"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!--Rear Coilovers-->	
+
+<!--Rear Aux Coilovers-->			
+		<IKBone ModelFrame="BoneRDriverTopAuxShock" ParentFrame="">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneBottomLink2RDriver"
+				ModelFrame="BoneRDriverBottomAuxShock"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		
+		<IKBone ModelFrame="BoneRPassTopAuxShock" ParentFrame="">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneBottomLink2RPass"
+				ModelFrame="BoneRPassBottomAuxShock"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!--Rear Aux Coilovers-->						 
+
+
+
+<!--Rear Control Arms-->			
+<!--Rear Control Arms Bottom Links-->			
+		<IKBone ModelFrame="BoneBottomLink1RDriver" ParentFrame="">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneBottomLink2RDriver"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		
+		<IKBone ModelFrame="BoneBottomLink1RPass" ParentFrame="">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneBottomLink2RPass"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>	
+<!--Rear Control Arms Bottom Links-->	
+		
+
+<!--Rear Control Arms Top Links-->
+		<IKBone ModelFrame="BoneTopLink1RDriver" ParentFrame="">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneTopLink2RDriver"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		
+		
+		<IKBone ModelFrame="BoneTopLink1RPass" ParentFrame="">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleRear"
+				ModelFrame="BoneTopLink2RPass"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!--Rear Control Arms Top Links-->		
+<!--Rear Control Arms-->	
+
+
+<!--Rear Swaybars 4-Bone IK-->
+		<IKBone ModelFrame="BoneRSwaybarArm2Driver" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0;1;0)" Type="Hinge" />
+			<IKBone ModelFrame="BoneRSwaybarArm1Driver" ParentFrame="BoneRSwaybarArm2Driver">
+				<IKJoint AxisLocal="(0;1;0)" Type="Hinge2" />
+				<IKBone ModelFrame="BoneRSwaybarLink2Driver" ParentFrame="BoneRSwaybarArm1Driver">
+					<IKJoint AxisLocal="(0;0;1)" Type="Hinge2" />
+					<IKBone
+						AttachOffset="(0; 0; 0)"
+						AttachToFrame="BoneAxleRear"
+						ModelFrame="BoneRSwaybarLink1Driver"
+					>
+						<IKJoint AxisLocal="(1;0;0)" Type="Hinge" />
+					</IKBone>
+				</IKBone>
+			</IKBone>
+		</IKBone>
+
+		<IKBone ModelFrame="BoneRSwaybarArm2Pass" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0;1;0)" Type="Hinge" />
+			<IKBone ModelFrame="BoneRSwaybarArm1Pass" ParentFrame="BoneRSwaybarArm2Pass">
+				<IKJoint AxisLocal="(0;1;0)" Type="Hinge2" />
+				<IKBone ModelFrame="BoneRSwaybarLink2Pass" ParentFrame="BoneRSwaybarArm1Pass">
+					<IKJoint AxisLocal="(0;0;1)" Type="Hinge2" />
+					<IKBone
+						AttachOffset="(0; 0; 0)"
+						AttachToFrame="BoneAxleRear"
+						ModelFrame="BoneRSwaybarLink1Pass"
+					>
+						<IKJoint AxisLocal="(1;0;0)" Type="Hinge" />
+					</IKBone>
+				</IKBone>
+			</IKBone>
+		</IKBone>
+<!--Rear Swaybars 4-Bone IK-->
+
+<!--Front Coilovers-->
+		<IKBone ModelFrame="BoneFDriverTopCoil" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneFDriverBottomCoil"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+			</IKBone>
+
+		<IKBone ModelFrame="BoneFPassTopCoil" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneFPassBottomCoil"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />		
+			</IKBone>
+			</IKBone>
+<!--Front Coilovers-->
+
+<!--Front Aux Coilovers-->
+		<IKBone ModelFrame="BoneFDriverTopAuxShock" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneFDriverBottomAuxShock"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+			</IKBone>
+
+		<IKBone ModelFrame="BoneFPassTopAuxShock" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneFPassBottomAuxShock"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+			</IKBone>
+<!--Front Aux Coilovers-->
+
+<!--Front Control Arms-->
+		<IKBone ModelFrame="BoneTopLink1FDriver" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneTopLink2FDriver"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneTopLink1FPass" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneTopLink2FPass"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		
+		<IKBone ModelFrame="BoneBottomLink1FDriver" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneBottomLink2FDriver"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneBottomLink1FPass" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront"
+				ModelFrame="BoneBottomLink2FPass"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!--Front Control Arms-->
+
+<!-- Front Hydro Steering Pass -->
+		<IKBone ModelFrame="BoneSteerStabilizerP2" ParentFrame="BoneAxleFront">
+			<IKJoint AxisLocal="(0; -1; -1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackPass"
+				ModelFrame="BoneSteerStabilizerP1"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Front Hydro Steering Pass -->
+
+<!-- Front Hydro Steering Driver -->
+		<IKBone ModelFrame="BoneSteerStabilizerD2" ParentFrame="BoneAxleFront">
+			<IKJoint AxisLocal="(0; -1; -1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackDriver"
+				ModelFrame="BoneSteerStabilizerD1"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+<!-- Front Hydro Steering Driver -->
+
+</AutomaticIK>
+</Truck>

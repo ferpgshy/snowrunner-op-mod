@@ -1,0 +1,53 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1.03"
+	Width="1.625"
+	WidthRear="1.625"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_mod_ss2"
+			Name="Super S"
+			RearMassScale="1"
+			Mass="400"
+		>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="super tires" UiName="Super" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/tire_heavy_mudtires_single_tayga_1.tga" TextureHeight="tracks/default_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/tire_heavy_mudtires_single_tayga_1.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.02" SoftForceScale="0.4" />
+			<WheelFriction
+				BodyFriction="8.0"
+				BodyFrictionAsphalt="8.0"
+				SubstanceFriction="8.0"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"			
+				IsIgnoreIce="true"
+			/>
+		</TruckTire>
+		
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mod_ss2" Name="op_ss2_Super_S_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+			<TruckRim Mesh="wheels/rim_mod_ss2" Name="am rims">
+			<GameData>
+				<UiDesc UiDesc="AM" UiName="AM Custom" />
+			</GameData>
+		</TruckRim>
+	
+	</TruckRims>
+</TruckWheels>

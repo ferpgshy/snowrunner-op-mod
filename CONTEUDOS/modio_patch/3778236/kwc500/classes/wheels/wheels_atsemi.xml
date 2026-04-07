@@ -1,0 +1,74 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1.0"
+	Width="1.925"
+	WidthRear="1.45"
+>
+	<TruckTires>
+
+		<TruckTire
+			Mesh="wheels/atsemi"
+			Name="ATSemi"
+			RearMassScale="2"
+			Mass="400"
+		>
+			<GameData
+				Price="2800"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="All terrain semi tire" UiName="All terrain" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="10"
+				BodyFrictionAsphalt="10"
+				SubstanceFriction="10"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>	
+		
+	
+		<TruckTire _template="Offroad" Mesh="wheels/atsemi" Name="op_atsemi_ATSemi_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+
+	<TruckRims>
+		<TruckRim Mesh="wheels/alcoa" Name="rim6">
+			<GameData>
+				<UiDesc UiDesc="A familiar brand's rim for single wheels" UiName="Semi Super Single" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/army" Name="rim5">
+			<GameData>
+				<UiDesc UiDesc="An old military rim reworked for civilian use" UiName="Military Surplus 2" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/dozer" Name="rim4">
+			<GameData>
+				<UiDesc UiDesc="A rim more commonly seen on wheeled dozers" UiName="Construction rim 1" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/offroad" Name="rim3">
+			<GameData>
+				<UiDesc UiDesc="Industrial rim" UiName="Construction rim 2" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/supersingle" Name="rim2">
+			<GameData>
+				<UiDesc UiDesc="Another super single from a military surplus yard" UiName="Military Surplus 2" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

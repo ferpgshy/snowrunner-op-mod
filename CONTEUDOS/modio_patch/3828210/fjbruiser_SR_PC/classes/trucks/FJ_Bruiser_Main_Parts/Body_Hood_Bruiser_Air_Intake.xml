@@ -1,0 +1,39 @@
+<TruckAddon>
+
+	<Snorkel Origin="(1.20; 10.0; 0)" />
+	
+	<PhysicsModel AcceptVisualDamage="false" Mesh="trucks/Bruiser_Parts/addon_Engine_Air_Intake">
+			<Body ImpactType="Truck" Mass="2" ModelFrame="BoneAddon_cdt" >		
+			<Constraint Type="Rigid" />
+			</Body>
+	</PhysicsModel>
+
+	<TruckData>
+		<Shakers>
+			<Shaker
+				Frame="BoneEngineShaker"
+				MinAngle="(0.2; 0.2; 0.2)"
+				MaxAngle="(0.2; 0.2; 0.2)"
+				MaxFrequency="0.5"
+				ParentFrame=""
+			/>
+		</Shakers>		
+	</TruckData>
+
+	<GameData
+		CameraPreset="HOOD_3"
+		Category="HOOD - ENGINE - SNORKEL"
+		IsCustomizable="true"
+		Price="2700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="Acts as a Snorkel due to its elevated air intake level."
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Hood: Bruiser Air Intake"
+		/>
+		<InstallSocket Type="AirIntake_FJBruiser" />
+	</GameData>
+</TruckAddon>

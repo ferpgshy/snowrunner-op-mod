@@ -1,0 +1,395 @@
+<_templates Include="trucks">
+	<Wheel>
+		<RearWheel
+			ConnectedToHandbrake="true"
+			Location="rear"
+			Torque="default"
+		/>
+		<FrontWheel
+			Location="front"
+			SteeringAngle="36"
+			SteeringCastor="6"
+			SteeringJointOffset="0.00"
+			Torque="full"
+		/>
+	</Wheel>
+</_templates>
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.03"
+		DiffLockType="Always"
+		EngineIconMesh="env/engine_default"
+		EngineIconScale="0.0"
+		EngineStartDelay="1.8"
+		ExhaustStartTime="0.9"
+		FuelCapacity="630"
+		Responsiveness="0.23"
+		SteerSpeed="0.03"
+		TruckImage="volvocmch"
+		TruckType="HIGHWAY"
+	>
+		<WinchUpgradeSocket Default="OMArS_RECOVERY_110T" IsUpgradable="true" Type="winches_volvo" />
+		<Wheels
+			DefaultRim="rim_1"
+			DefaultTire="tire_magnum_double_1"
+			DefaultWheelType="magnum_defolt"
+		>
+			<Wheel _template="FrontWheel" Pos="(3.387; 0.699; 1.05)" />
+			<Wheel _template="FrontWheel" Pos="(3.387; 0.699; 1.05)" RightSide="true" />
+			<Wheel _template="RearWheel" Pos="(-0.152; 0.661; 0.95)" />
+			<Wheel _template="RearWheel" Pos="(-0.152; 0.661; 0.95)" RightSide="true" />
+			<Wheel _template="RearWheel" Pos="(-1.532; 0.661; 0.95)" />
+			<Wheel _template="RearWheel" Pos="(-1.532; 0.661; 0.95)" RightSide="true" />
+		</Wheels>
+		<SuspensionSocket
+			Default="volvo_fm_250_6x2_garbage_suspension_default"
+			Type="s_volvo_fm_250_6x2_garbage"
+			MaxWheelRadiusWithoutSuspension="0.47"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackL"
+			FrameSteerRight="BoneRackR"
+			RackHalfSizeZ="0.872"
+		/>
+		<Steam Origin="(1.972; 1.122; 0)" ParentFrame="BoneCabin_cdt" />
+		<SoundsWheels _template="Default" />
+		<SoundsDamage _template="Heavy" />
+		<Sounds
+			_template="Default"
+			DisableReversePitch="true"
+			MinDist="15.0"
+			Origin="(3.289; 1.4; 0)"
+		>
+			<Honk			Sound="trucks/mack_defense_m917/mack_defense_m917_honk" />
+			<Handbrake		Sound="trucks/mack_defense_m917/mack_defense_m917_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/mack_defense_m917/mack_defense_m917_handbrake_off" />
+			<BrakePull		Sound="trucks/mack_defense_m917/mack_defense_m917_brake_pull" />
+			<BrakeRelease	Sound="trucks/mack_defense_m917/mack_defense_m917_brake_release" />
+			<BrakesSqueal	Sound="trucks/mack_defense_m917/mack_defense_m917_brakes_squeal" />
+			<Reverse		Sound="trucks/mack_defense_m917/mack_defense_m917_back_beeper" />
+			<EngineAccel	Sound="trucks/mack_defense_m917/mack_defense_m917_acc" />
+			<EngineRev		Sound="trucks/mack_defense_m917/mack_defense_m917_rev" />
+			<EngineStart	Sound="trucks/mack_defense_m917/mack_defense_m917_start" />
+			<EngineStop		Sound="trucks/mack_defense_m917/mack_defense_m917_stop" />
+			<EngineIdle		Sound="trucks/mack_defense_m917/mack_defense_m917_idle" />
+			<EngineIdle_2d	Sound="trucks/mack_defense_m917/mack_defense_m917_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/mack_defense_m917/mack_defense_m917_low" />
+			<EngineLow_2d	Sound="trucks/mack_defense_m917/mack_defense_m917_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/mack_defense_m917/mack_defense_m917_high" />
+			<EngineHigh_2d	Sound="trucks/mack_defense_m917/mack_defense_m917_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="" />
+			<EngineHeavy_2d	Sound=""	IsSound2D="true" />
+			<EngineTurbo	Sound="" />
+			<ChassisStress	Sound="trucks/common/truck_swing_big_old_rnd_set/truck_swing_big_old_rnd" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+		</Sounds>
+		<Shafts>
+			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+		</Shafts>
+		<LimitedFluid Center="(1.391; 0.904; -0.843)" SizeX="0.881" SizeY="0.697" SizeZ="0.715" Type="Box" />
+		<Intake Dir="(1; 0; 0)" Origin="(4.544; 10.301; 0)" Size="1.01" />
+		<GearboxSocket Default="VT2412B_IShift" Type="VolvoFM_G" />
+		<FuelTank DamageCapacity="900" />
+		<Exhaust
+			Dir="(-0.35; -0.35; 1.5)"
+			IsLight="true"
+			Origin="(2.306; 0.506; 1.125)"
+			Speed="2.4"
+		/>
+		<EngineSocket Default="D11A330" Type="e_volvo_truck" />
+		<Driver RearOffsetX="0.55" RearOffsetY="0.55" RearOffsetZ="0.55"
+			AnimationSet="HeavyTruck"
+			Pos="(3.55; 1.72; 0.689)"
+			SteeringWheelPos="(3.95; 2.142; 0.689)"
+			ParentFrame="BoneCabin_cdt"
+		/>
+		<Dashboard>
+			<Gauge Dir="(-0.884; 0.468; 0)" InputRange="(0;135)" InputType="speed" Mesh="trucks/arrows/volvo_fm_250_6x2_arrow_1" Org="(4.344; 2.086; 0.689)" OutputAngles="(-110; 110)" />
+			<Gauge Damping="0.97" Dir="(-0.884; 0.468; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/volvo_fm_250_6x2_arrow_2" Org="(4.325; 2.049; 0.686)" OutputAngles="(-74; 73)" />
+		</Dashboard>
+		<Damage>
+			<DamageArea Type="Engine" Min="(2.802; 0.929; -1.008)" Max="(4.493; 1.758; 1.008)" />
+			<DamageArea Type="FuelTank" Min="(-0.519; 0.389; -1.124)" Max="(0.709; 1.03; 1.133)" />
+		</Damage>
+		<CompatibleWheels Scale="0.56" Type="magnum_defolt" />
+		<CompatibleWheels OffsetZ="0.00" Scale="0.71" Type="at" />
+		<CompatibleWheels RearOffsetZ=".0" Scale="0.71" Type="at_2" />
+		<CompatibleWheels Scale="0.728" Type="magnum_defolt" />
+		<CompatibleWheels Scale="0.812" Type="magnum_defolt" />
+		<CompatibleWheels Scale="0.896" Type="magnum_defolt" />
+		<CompatibleWheels OffsetZ="0.00" Scale="0.923" Type="at" />
+		<CompatibleWheels OffsetZ="0.00" Scale="1.029" Type="at" />
+		<CompatibleWheels OffsetZ="0.00" Scale="1.136" Type="at" />
+		<CompatibleWheels RearOffsetZ=".0" OffsetZ=".0" Scale="0.923" Type="at_2" />
+		<CompatibleWheels RearOffsetZ=".0" OffsetZ=".0" Scale="1.029" Type="at_2" />
+		<CompatibleWheels RearOffsetZ=".0" OffsetZ=".0" Scale="1.136" Type="at_2" />
+		<Camera Center="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Cockpit
+				_template="Default"
+				WindshieldDiffuseTexture="trucks/GlassHUM2__d_a.tga"
+				WindshieldShadingTexture="trucks/ChaborzSH2__sh_d.tga"
+				ViewPos="(3.4; 2.451; 0.689)"
+			>
+				<Mirror
+					ClipDir="(-0.902; 0; -0.432)"
+					ClipOffset="0.05"
+					FOVScale="2.5"
+					MeshFrame="mirror_left"
+					ReflectionDir="(-0.902; 0; -0.432)"
+					Size="(0.198; 0.47)"
+					Pos="(4.145; 2.484; 1.36)"
+				>
+					<SecondaryView
+						ClipDir="(-0.902; 0; -0.432)"
+						CurveAngle="10"
+						FOVScale="1"
+						MeshFrame="mirror_left_convex"
+						Size="(0.228; 0.16)"
+						Pos="(4.174; 2.145; 1.318)"
+					/>
+				</Mirror>
+				<Mirror
+					ClipDir="(-0.809; -0.029; 0.587)"
+					ClipOffset="0.05"
+					FOVScale="4"
+					MeshFrame="mirror_right"
+					ReflectionDir="(-0.809; -0.029; 0.587)"
+					Size="(0.198; 0.47)"
+					Pos="(4.145; 2.484; -1.35)"
+				>
+					<SecondaryView
+						ClipDir="(-0.809; -0.029; 0.587)"
+						CurveAngle="10"
+						FOVScale="1"
+						MeshFrame="mirror_right_convex"
+						Size="(0.228; 0.16)"
+						Pos="(4.174; 2.145; -1.318)"
+					/>
+				</Mirror>
+				<Mirror
+					ClipDir="(-0.8; 0; 0)"
+					ClipOffset="0"
+					FOVScale="4.5"
+					MeshFrame="mirror_left2"
+					ReflectionDir="(-0.8; 5; 0)"
+					Size="(0.198; 0.47)"
+					Pos="(-2.133; 1.005; 0)"
+				>
+					<SecondaryView
+						ClipDir="(-0.2; 0; 0)"
+						CurveAngle="0.005"
+						FOVScale="5"
+						MeshFrame="hp_cab_mirror_left_convex2"
+						Size="(0.228; 0.16)"
+						Pos="(4.354; 2.100; 0.816)"
+					/>
+				</Mirror>
+				<Mirror
+					ClipDir="(-0.8; 0; 0.48)"
+					ClipOffset="0.05"
+					FOVScale="3"
+					MeshFrame="mirror_right2"
+					ReflectionDir="(-0.8; 0.25; 0.48)"
+					Size="(0.198; 0.47)"
+					Pos="(4.564; 0.866; -1.412)"
+				>
+					<SecondaryView
+						ClipDir="(-0.2; 0.1; 0)"
+						ClipOffset="0.005"
+						CurveAngle="0.005"
+						FOVScale="5"
+						MeshFrame="hp_cab_mirror_right_convex2"
+						Size="(0.228; 0.16)"
+						Pos="(4.354; 2.101; 0.563)"
+					/>
+				</Mirror>
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="AxleBone1" />
+			<Axle Frame="AxleBone2" />
+			<Axle Frame="AxleBone3" />
+		</Axles>
+	</TruckData>
+	<Snorkel Origin="(2.547; 10.0; 0)" />
+	<PhysicsModel Mesh="trucks/VOLVO_FM_250_6x2_GARBAGE">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(0.0; -1.0; 0)"
+			ImpactType="Truck"
+			Mass="20000"
+			NetSync="pv"
+			GravityFractor="1"
+			LinearDamping="0.2"
+			AngularDamping="3.0"
+		>
+		<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="0"
+					MaxLimit="0"
+				>
+					<Motor Damping="25000" Spring="250000" Type="Spring" />
+				</Constraint>
+			<Body
+				CenterOfMassOffset="(-0.8; 0.0; 0)"
+				ImpactType="Truck"
+				Mass="20000"
+				ModelFrame="BoneCabin_cdt"
+				NetSync="pv"
+				
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-1.5"
+					MaxLimit="2"
+				>
+					<Motor Damping="30000" Spring="600000" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare Pos="(4.612; 1.237; 1.035)" Color="g(255; 255; 255) x 0.3" ColorMultAtDay="1" Size="0.3" Dir="(1; 0; 0)" DirAngle="120" Reflections="true" />
+			<Light Dir="(1; 0; 0)" Pos="(4.612; 1.237; 1.035)" AttenEnd="38" Color="g(155; 155; 155) x 0.5" InnerCone="90" OuterCone="120" />
+			<Flare Pos="(4.612; 1.237; -1.035)" Color="g(255; 255; 255) x 0.3" ColorMultAtDay="1" Size="0.3" Dir="(1; 0; 0)" DirAngle="120" Reflections="true" />
+			<Light Dir="(1; 0; 0)" Pos="(4.612; 1.237; -1.035)" AttenEnd="38" Color="g(155; 155; 155) x 0.5" InnerCone="90" OuterCone="120" />
+		</Ignition>
+		<HeadLight>
+			<Flare Pos="(4.629; 1.133; 1.019)" Color="g(255; 255; 255) x 0.5" ColorMultAtDay="0.9" Size="0.5" Dir="(1; 0; 0)" DirAngle="120" Reflections="true" />
+			<Flare Pos="(4.629; 1.133; -1.019)" Color="g(255; 255; 255) x 0.5" ColorMultAtDay="0.9" Size="0.5" Dir="(1; 0; 0)" DirAngle="120" Reflections="true" />
+			<Model Org="(4.629; 1.133; 1.019)" Mesh="env/light_ray" Dir="(1; 0; 0)" />
+			<Model Org="(4.629; 1.133; -1.019)" Mesh="env/light_ray" Dir="(1; 0; 0)" />
+		</HeadLight>
+	</ModelAttachments>
+	<Landmark Mesh="landmarks/VOLVO_FM_250_6x2_Landmark" MinScale="1.8" MaxScale="3.8" />
+	<HeadLight
+		Pos="(5.5; 1.133; 0)"
+		AttenEnd="350"
+		AttenStart="1"
+		Color="g(255; 255; 255) x 0.5"
+		Dir="(1; 0; 0)"
+		InnerCone="0"
+		OuterCone="45"
+	/>
+	<GameData
+		Country=""
+		Price="9"
+		Recallable="true"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(4.039; 0.966; 0.383)" />
+		<WinchSocket Pos="(4.039; 0.966; -0.383)" />
+		<WinchSocket Pos="(1.339; 0.966; 0.383)" />
+		<WinchSocket Pos="(1.339; 0.966; -0.383)" />
+		<WinchSocket Pos="(-0.845; 1.317; -1.202)" />
+		<WinchSocket Pos="(-0.845; 1.317; 1.202)" />
+		<WinchSocket Pos="(-0.413; 0.987; 0.0)" />
+		<UiDesc
+			UiDesc="VOLVO_FM_250_Farraday"
+			UiIcon30x30=""
+			UiIcon328x458="ShopImgVolvo"
+			UiIcon40x40=""
+			UiIconLogo="BenLogo"
+			UiName="VOLVO FM 250"
+		/>
+		<CustomizationCameras>
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(6.764; 2.229; 1.419)" Position="(4.716; 2.867; -0.443)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(-1.419; 1.692; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-10.801; 2.075; 8.04)" />
+			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.194; 1.807; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-8.093; 2.337; -6.718)" />
+			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(4.764; 1.97; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.226; 4.969; -4.508)" />
+			<CameraPos FOV="32.0" Name="roof" InterestPosition="(4.758; 2.358; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.787; 4.806; -3.717)" />
+			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6.27; 2.278; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.866; 5.284; -4.55)" />
+			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5.997; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.57; 1.44; -3.425)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4.806; 0.522; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.486; 2.14; -5.7)" />
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.997; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.57; 1.44; -3.425)" />
+			<CameraPos FOV="32.0" Name="rear" InterestPosition="(0.479; 0.992; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-5.767; 1.805; 2.899)" />
+		</CustomizationCameras>
+		<CraneSocket Pos="(4.699; 0.723; 0)" />
+		<CraneSocket Pos="(-2.095; 1.002; 0)" />
+		<AddonSockets>
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(0.0; 1.650; -0.002)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(0.45; 1.7; -0.002)">
+			<Socket Names="Treler_mack" Offset="(0.0; 1.650; -0.002)" />
+			<Socket Names="semitrailer_flatbed_M" Offset="(0.0; 1.650; -0.002)" />
+			<Socket Names="semitrailer_sideboard_M" Offset="(0.0; 1.650; -0.002)" />
+			<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="" Types="" />
+			</Socket>
+			<Socket Names="Trailer" Offset="(-2.150; 0.9; 0)">
+				<AddonsShift Offset="(0; 0; 0)" Types="" />
+				<AddonsShift Offset="(-0.444; 0; 0)" Types="" />
+				<AddonsShift Offset="(-0.444; 0; 0)" Types="" />	
+				<AddonsShift Offset="(-0.775; 0; 0)" Types="ChassisExtension" />				
+			</Socket>			
+		</AddonSockets>	
+		
+		
+		
+		<AddonSockets> <Socket Names="HighDouble" Offset="(1.650; 0.1; 0.0)"/> </AddonSockets>
+		
+<AddonSockets>
+		<Socket Names="US"  Offset="(2.410; 1.0; 0.0)" NamesBlock="FrameAddonLogsShortAramatsu, BunkLog, VolvoFrameAddonKung" />
+		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket Names="BumperMagnumHrom" Offset="(2.350; 0.0; 0)"  ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		
+		
+		<AddonSockets >
+		
+		<Socket Names="FrameAddonLogsShortAramatsu" NamesBlock="BunkLog, VolvoFrameAddonKung, US, TatSideboard" Offset="(2.6; 0; 0)" />
+		<Socket Names="TatSideboard" NamesBlock="BunkLog, VolvoFrameAddonKung, US, SaddleLow, SaddleHigh" Offset="(1; 0; 0)" />
+		
+		<Socket Names="BunkLog" NamesBlock="VolvoFrameAddonKung, US, TatSideboard, FrameAddonLogsShortAramatsu" Offset="(-4.098; 1.368; 0)" />
+<Socket Names="SaddleLow" NamesBlock="BunkLog, VolvoFrameAddonKung, TatSideboard" Offset="(0; 1.4; -0.002)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
+			</Socket>
+			<Socket Names="SaddleHigh" NamesBlock="BunkLog, VolvoFrameAddonKung, TatSideboard" Offset="(0.45; 1.4; -0.002)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.015)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.015)" />
+			</Socket>		
+		</AddonSockets>
+		
+		<AddonSockets>
+		<Socket Names="Volvo_RoofLights"  Offset="(1.685; -2.250; 0.0)" NamesBlock="" />
+		</AddonSockets>
+		
+		
+		<AddonSockets>
+			<Socket Names="dLights" Offset="(2.350; -0.2; 0.0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="chassis_extension_default">
+			<Socket Names="ChassisExtension" Offset="(3.520; -0.03; 0.0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="VolvoFMBagjnik" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="VolvoFMSpoiler" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="VolvoFMBeacon" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="VolvoFMVisor" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="VolvoFMBokStavki" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="VolvoFMRearBumper" Offset="(0.0; -0.150; 0.0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="VolvoFrameAddonKung" NamesBlock="US, SaddleHigh, SaddleLow, TatSideboard, FrameAddonLogsShortAramatsu, BunkLog" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="StuffDashboard" Offset="(4.27; 2.21; 0.245)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+	</GameData>
+</Truck>

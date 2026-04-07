@@ -1,0 +1,155 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="0.992"
+	Width="2.0"
+	WidthRear="0.897"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_atv"
+			Name="offroad_atv"
+			RearMassScale="2"
+			Mass="400"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Generic UTV Tire 1" UiName="Generic UTV Tire 1" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_atv1"
+			Name="offroad_atv1"
+			RearMassScale="2"
+			Mass="400"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Generic UTV Tire 2" UiName="Generic UTV Tire 2" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_atv1_studded"
+			Name="offroad_atv1_studded"
+			RearMassScale="2"
+			Mass="400"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Generic UTV Tire 2 - Studded" UiName="Generic UTV Tire 2 - Studded" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_bogger"
+			Name="offroad_bogger"
+			RearMassScale="2"
+			Mass="400"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Interco Boggers" UiName="Interco Boggers" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_atv" Name="op_atv_offroad_atv_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_atv1" Name="op_atv_offroad_atv1_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_atv1_studded" Name="op_atv_offroad_atv1_studded_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_bogger" Name="op_atv_offroad_bogger_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_atv" Name="atv_rims">
+			<GameData>
+				<UiDesc UiDesc="Generic ATV Rims" UiName="Generic ATV Rims" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_atv_black" Name="atv_rims_black">
+			<GameData>
+				<UiDesc UiDesc="Generic ATV Rims - Black" UiName="Generic ATV Rims - Black" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

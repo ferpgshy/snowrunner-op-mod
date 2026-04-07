@@ -1,0 +1,60 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.75"
+	WidthRear="1.75"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_Toyo_OpenCountry_19_Single"
+			Name="Redline OpenCountry-Terrain"
+			RearMassScale="1"
+			Mass="400"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="True Specs: DIRT 4.7 - MUD 8.7 - PAVEMENT 8.3 - DAMAGE RESISTANCE 2X" UiName="Redline: OpenCountry-Terrain"/>
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.032" SoftForceScale="0.20" />
+			<WheelFriction
+				BodyFriction="4.7"
+				BodyFrictionAsphalt="8.3"
+				SubstanceFriction="8.7"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_Toyo_OpenCountry_19_Single" Name="op_Redline _Redline_OpenCountry_Terrain_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+
+<!--DEFAULT WHEELS-->
+		<TruckRim Mesh="wheels/wheels_TRX_19_Single" Mass="500" Name="OE Beadlock">
+			<GameData>
+				<UiDesc UiDesc="OE Beadlock" UiName="OE Beadlock" />
+			</GameData>
+		</TruckRim>	
+
+		<TruckRim Mesh="wheels/wheels_Method_305_19_Single" Mass="500" Name="MR 305 Beadlock">
+			<GameData>
+				<UiDesc UiDesc="MR 305 Beadlock" UiName="MR 305 Beadlock" />
+			</GameData>
+		</TruckRim>	
+
+
+	</TruckRims>
+</TruckWheels>

@@ -1,0 +1,859 @@
+<_templates Include="trucks" />
+<SuspensionSetVariants>
+
+<!--------------------------------------------STOCKISH-------------------------------------------->
+<!--Stock-ish-->	
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="200"
+		Name="Stock-ish: Active  (35-37in Tire)"
+		UiName="Stock-ish: Active  (35-37in Tire)"
+		DeviationDelta=".005"
+	>
+		<Suspension
+			Damping="0.14"
+			Height="0.18"
+			Strength="0.014"
+			WheelType="front"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.40"
+			DeviationMax="0.1"
+		/>
+		<Suspension
+			Damping="0.12"
+			Height="0.23"
+			Strength="0.012"
+			WheelType="rear"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.35"
+			DeviationMax="0.1"
+		/>
+		<GameData
+			Price="0"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Spec'd for the 35in AT or 37in Ice Tires. This is a stock-ish height and performing suspension with active lift."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Stock-ish: Active  (35-37in Tire)"
+			/>
+		</GameData>
+	</SuspensionSet>
+	
+	
+<!--------------------------------------------TRAILSCOUT-------------------------------------------->
+<!--TrailScout Stage 1-->	
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="400"
+		Name="TrailScout: Stage 1  (40in Tire)"
+		UiName="TrailScout: Stage 1  (40in Tire)"
+		DeviationDelta=".005"
+	>
+		<Suspension
+			Damping="0.14"
+			Height="0.32"
+			Strength="0.014"
+			WheelType="front"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.45"
+			DeviationMax="0.1"
+		/>
+		<Suspension
+			Damping="0.12"
+			Height="0.36"
+			Strength="0.012"
+			WheelType="rear"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.45"
+			DeviationMax="0.1"
+		/>
+		<GameData
+			Price="1000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Spec'd for 40in tires. The Swiss Army Knife of suspension setups to conquer most terrain. This versatile tune does well towing most medium to heavy-ish bumper-pull loads. Also has active lift."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="TrailScout: Stage 1  (40in Tire)"
+			/>
+		</GameData>
+	</SuspensionSet>	
+
+<!--TrailScout Stage 2-->	
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="400"
+		Name="TrailScout: Stage 2  (43in Tire)"
+		UiName="TrailScout: Stage 2  (43in Tire)"
+		DeviationDelta=".005"
+	>
+		<Suspension
+			Damping="0.14"
+			Height="0.40"
+			Strength="0.014"
+			WheelType="front"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.44"
+			DeviationMax="0.1"
+		/>
+		<Suspension
+			Damping="0.12"
+			Height="0.44"
+			Strength="0.012"
+			WheelType="rear"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.44"
+			DeviationMax="0.1"
+		/>
+		<GameData
+			Price="1000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Spec'd for 43in tires. The Swiss Army Knife of suspension setups to conquer most terrain. This versatile tune does well towing most medium to heavy-ish bumper-pull loads. Also has active lift."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="TrailScout: Stage 2  (43in Tire)"
+			/>
+		</GameData>
+	</SuspensionSet>	
+
+<!--------------------------------------------TRAILRUNNER-------------------------------------------->
+<!--TrailRunner Stage 1-->	
+	<SuspensionSet
+		_template="Active"	
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="600"
+		Name="TrailRunner: Stage 1  (40in Tire)"
+		UiName="TrailRunner: Stage 1  (40in Tire)"
+		DeviationDelta=".005"
+	>
+		<Suspension
+			Damping="0.21"
+			Height="0.40"
+			Strength="0.0084"
+			WheelType="front"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.42"
+			DeviationMax="0.1"			
+		/>
+		<Suspension
+			Damping="0.20"
+			Height="0.44"
+			Strength="0.0075"
+			WheelType="rear"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.42"
+			DeviationMax="0.1"			
+		/>
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Spec'd for 40in tires. A plush suspension for faster trailblazing and track days. Has less heigth than the other Stage 1 setups. Also has active lift."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="TrailRunner: Stage 1  (40in Tire)"
+			/>
+		</GameData>
+	</SuspensionSet>
+
+<!--TrailRunner Stage 2-->	
+	<SuspensionSet
+		_template="Active"	
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="600"
+		Name="TrailRunner: Stage 2  (43in Tire)"
+		UiName="TrailRunner: Stage 2  (43in Tire)"
+		DeviationDelta=".005"
+	>
+		<Suspension
+			Damping="0.21"
+			Height="0.48"
+			Strength="0.0084"
+			WheelType="front"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.40"
+			DeviationMax="0.1"			
+		/>
+		<Suspension
+			Damping="0.20"
+			Height="0.51"
+			Strength="0.0075"
+			WheelType="rear"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.40"
+			DeviationMax="0.1"			
+		/>
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Spec'd for 43in tires. A plush suspension for faster trailblazing and track days. Has less heigth than the other Stage 2 setups. Also has active lift."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="TrailRunner: Stage 2  (43in Tire)"
+			/>
+		</GameData>
+	</SuspensionSet>
+
+
+<!--------------------------------------------TRAILCRAWLER-------------------------------------------->
+<!--TrailCrawler Stage 1-->	
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="1000"
+		Name="TrailCrawler: Stage 1  (40in Tire)"
+		UiName="TrailCrawler: Stage 1  (40in Tire)"
+		DeviationDelta=".005"
+	>
+		<Suspension
+			Damping="0.21"
+			Height="0.50"
+			Strength="0.0062"
+			WheelType="front"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.60"
+			DeviationMax="0.1"			
+		/>
+		<Suspension
+			Damping="0.15"
+			Height="0.55"
+			Strength="0.0056"
+			WheelType="rear"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.60"
+			DeviationMax="0.1"
+		/>
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Spec'd for 40in tires. This is the Crawler setup of the bunch. Also has active lift."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="TrailCrawler: Stage 1  (40in Tire)"
+			/>
+		</GameData>
+	</SuspensionSet>
+
+<!--TrailCrawler Stage 2-->	
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="1000"
+		Name="TrailCrawler: Stage 2  (43in Tire)"
+		UiName="TrailCrawler: Stage 2  (43in Tire)"
+		DeviationDelta=".005"
+	>
+		<Suspension
+			Damping="0.21"
+			Height="0.60"
+			Strength="0.0062"
+			WheelType="front"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.52"
+			DeviationMax="0.1"			
+		/>
+		<Suspension
+			Damping="0.15"
+			Height="0.66"
+			Strength="0.0056"
+			WheelType="rear"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.52"
+			DeviationMax="0.1"
+		/>
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Spec'd for 43in tires. This is the Crawler setup of the bunch. Also has active lift."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="TrailCrawler: Stage 2  (43in Tire)"
+			/>
+		</GameData>
+	</SuspensionSet>
+
+<!--TrailCrawler Stage 3 Maxx-->	
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="1000"
+		Name="TrailCrawler: Stage 3  (49in Tire)"
+		UiName="TrailCrawler: Stage 3  (49in Tire)"
+		DeviationDelta=".005"
+	>
+		<Suspension
+			Damping="0.21"
+			Height="0.75"
+			Strength="0.0062"
+			WheelType="front"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.55"
+			DeviationMax="0.1"			
+		/>
+		<Suspension
+			Damping="0.15"
+			Height="0.78"
+			Strength="0.0056"
+			WheelType="rear"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.55"
+			DeviationMax="0.1"
+		/>
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Spec'd for 49in Vintage or Standard tires. This Crawler tune has limited suspension flex due to the XXL tires so it is not ideal for extreme terrain. Also has active lift."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="TrailCrawler: Stage 3  (49in Tire)"
+			/>
+		</GameData>
+	</SuspensionSet>
+		
+
+<!--------------------------------------------VINTAGE SPEC-------------------------------------------->
+<!--Vintage Spec Lift-->	
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="600"
+		Name="Vintage Spec  (49in Tire)"
+		UiName="Vintage Spec  (49in Tire)"
+		DeviationDelta=".005"
+	>
+		<Suspension
+			Damping="0.16"
+			Height="0.49"
+			Strength="0.018"
+			WheelType="front"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.30"
+			DeviationMax="0.1"
+		/>
+		<Suspension
+			Damping="0.14"
+			Height="0.51"
+			Strength="0.015"
+			WheelType="rear"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.30"
+			DeviationMax="0.1"
+		/>
+		<GameData
+			Price="1000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Spec'd for 49in Vintage or Standard tires. Relive the era when having huge tires on your 4X4 was all that mattered. This vintage setup has limited travel and a slightly stiffer ride. Also has active lift."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Vintage Spec  (49in Tire)"
+			/>
+		</GameData>
+	</SuspensionSet>	
+
+
+<!--------------------------------------------TRAILHAULER-------------------------------------------->
+<!--TrailHauler Stage 0 -->
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="400"
+		Name="TrailHauler: Stage 0  (35-37in Tire)"
+		UiName="TrailHauler: Stage 0  (35-37in Tire)"
+		DeviationDelta=".005"
+	>
+		<Suspension
+			Damping="0.3"
+			Height="0.25"
+			Strength="0.02"
+			WheelType="front"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.35"
+			DeviationMax="0.1"
+		/>
+		<Suspension
+			Damping="0.45"
+			Height="0.17"
+			Strength="0.035"
+			WheelType="rear"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.20"
+			DeviationMax="0.1"
+		/>
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Use the additional front-end weight with this tune. A stiffer setup for gooseneck trailers and heavy loads. Spec'd for the 35in AT or 37in Ice Tires. Also has active lift."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="TrailHauler: Stage 0  (35-37in Tire)"
+			/>
+		</GameData>
+	</SuspensionSet>
+
+<!--TrailHauler Stage 1 -->
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="400"
+		Name="TrailHauler: Stage 1  (40in Tire)"
+		UiName="TrailHauler: Stage 1  (40in Tire)"
+		DeviationDelta=".005"
+	>
+		<Suspension
+			Damping="0.3"
+			Height="0.40"
+			Strength="0.02"
+			WheelType="front"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.35"
+			DeviationMax="0.1"
+		/>
+		<Suspension
+			Damping="0.45"
+			Height="0.32"
+			Strength="0.035"
+			WheelType="rear"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.20"
+			DeviationMax="0.1"
+		/>	
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Use the additional front-end weight with this tune. A stiffer setup for gooseneck trailers and heavy loads. Spec'd for 40in tires. Also has active lift."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="TrailHauler: Stage 1  (40in Tire)"
+			/>
+		</GameData>
+	</SuspensionSet>
+
+<!--TrailHauler Stage 2 -->
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="400"
+		Name="TrailHauler: Stage 2  (43in Tire)"
+		UiName="TrailHauler: Stage 2  (43in Tire)"
+		DeviationDelta=".005"
+	>
+		<Suspension
+			Damping="0.3"
+			Height="0.48"
+			Strength="0.02"
+			WheelType="front"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.35"
+			DeviationMax="0.1"
+		/>
+		<Suspension
+			Damping="0.45"
+			Height="0.40"
+			Strength="0.035"
+			WheelType="rear"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.20"
+			DeviationMax="0.1"
+		/>	
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Use the additional front-end weight with this tune. A stiffer setup for gooseneck trailers and heavy loads. Spec'd for 43in tires. Also has active lift."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="TrailHauler: Stage 2  (43in Tire)"
+			/>
+		</GameData>
+	</SuspensionSet>
+
+<!--TrailHauler Stage 3 Maxx -->
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="400"
+		Name="TrailHauler: Stage 3  (49in Tire)"
+		UiName="TrailHauler: Stage 3  (49in Tire)"
+		DeviationDelta=".005"
+	>
+		<Suspension
+			Damping="0.3"
+			Height="0.54"
+			Strength="0.02"
+			WheelType="front"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.35"
+			DeviationMax="0.1"
+		/>
+		<Suspension
+			Damping="0.45"
+			Height="0.46"
+			Strength="0.035"
+			WheelType="rear"
+			BrokenSuspensionMax="0.3"
+			SuspensionMin="-0.20"
+			DeviationMax="0.1"
+		/>	
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Use the additional front-end weight with this tune. A stiffer setup for gooseneck trailers and heavy loads. Spec'd for 49in Vintage or Standard tires. Also has active lift."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="TrailHauler: Stage 3  (49in Tire)"
+			/>
+		</GameData>
+	</SuspensionSet>
+
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="5000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="s_ShortySquarebody_op1"
+	>
+		<Suspension Height="0.06" Strength="0.06" Damping="0.28" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.06" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.06" Strength="0.06" Damping="0.28" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.06" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_STOCK_PLUS_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_STOCK_PLUS_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="8000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="s_ShortySquarebody_op2"
+	>
+		<Suspension Height="0.09" Strength="0.06" Damping="0.32" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.09" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.09" Strength="0.06" Damping="0.32" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.09" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_BAIXA_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_BAIXA_1_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="12000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="s_ShortySquarebody_op3"
+	>
+		<Suspension Height="0.12" Strength="0.07" Damping="0.36" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.12" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.12" Strength="0.07" Damping="0.36" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.12" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_BAIXA_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_BAIXA_2_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="16000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="s_ShortySquarebody_op4"
+	>
+		<Suspension Height="0.15" Strength="0.07" Damping="0.40" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.15" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.15" Strength="0.07" Damping="0.40" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.15" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_MEDIA_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_MEDIA_1_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="22000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="s_ShortySquarebody_op5"
+	>
+		<Suspension Height="0.19" Strength="0.08" Damping="0.44" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.19" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.19" Strength="0.08" Damping="0.44" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.19" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_MEDIA_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_MEDIA_2_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="30000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="s_ShortySquarebody_op6"
+	>
+		<Suspension Height="0.23" Strength="0.09" Damping="0.48" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.23" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.23" Strength="0.09" Damping="0.48" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.23" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_ALTA_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_ALTA_1_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="38000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="s_ShortySquarebody_op7"
+	>
+		<Suspension Height="0.28" Strength="0.10" Damping="0.52" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.28" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.28" Strength="0.10" Damping="0.52" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.28" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_ALTA_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_ALTA_2_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="48000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="s_ShortySquarebody_op8"
+	>
+		<Suspension Height="0.33" Strength="0.10" Damping="0.56" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.33" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.33" Strength="0.10" Damping="0.56" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.33" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_LIFTED_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_LIFTED_1_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="58000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="s_ShortySquarebody_op9"
+	>
+		<Suspension Height="0.39" Strength="0.11" Damping="0.60" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.39" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.39" Strength="0.11" Damping="0.60" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.39" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_LIFTED_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_LIFTED_2_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="68000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="s_ShortySquarebody_op10"
+	>
+		<Suspension Height="0.46" Strength="0.12" Damping="0.64" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.46" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.46" Strength="0.12" Damping="0.64" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.46" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_MONSTER_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_MONSTER_1_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="80000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="s_ShortySquarebody_op11"
+	>
+		<Suspension Height="0.54" Strength="0.13" Damping="0.68" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.54" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.54" Strength="0.13" Damping="0.68" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.54" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_MONSTER_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_MONSTER_2_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="92000"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="s_ShortySquarebody_op12"
+	>
+		<Suspension Height="0.65" Strength="0.13" Damping="0.72" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.65" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.65" Strength="0.13" Damping="0.72" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.65" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_EXTREMA_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_EXTREMA_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="99999"
+		BrokenWheelDamageMultiplier="0.01"
+		DeviationDelta=".002"
+		Name="s_ShortySquarebody_op13"
+	>
+		<Suspension Height="0.80" Strength="0.14" Damping="0.78" WheelType="front" BrokenSuspensionMax="0.0" SuspensionMin="-0.80" SuspensionMax="0.3" DeviationMax="0.15" />
+		<Suspension Height="0.80" Strength="0.14" Damping="0.78" WheelType="rear" BrokenSuspensionMax="0.0" SuspensionMin="-0.80" SuspensionMax="0.3" DeviationMax="0.15" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSP_DEUS_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSP_DEUS_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+</SuspensionSetVariants>

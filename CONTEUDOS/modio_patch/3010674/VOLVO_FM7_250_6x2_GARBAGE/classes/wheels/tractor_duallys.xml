@@ -1,0 +1,57 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.75"
+	WidthRear="1.75"
+>
+	<TruckTires>
+	
+	<TruckTire
+			Mesh="wheels/tractor_dually_tyre"
+			Name="tractor_dually_tyre"
+			RearMassScale="2"
+			Mass="700"
+		>
+			<GameData
+				Price=""
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="tractor_dually_tyre" UiName="tractor_dually_tyre" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga"  />
+			<WheelSoftness RadiusOffset="0.04" SoftForceScale="0.6" />
+			<WheelFriction
+				BodyFriction="3.70"
+				BodyFrictionAsphalt="4"
+				SubstanceFriction="4.2"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+			</TruckTire>
+		
+	
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tractor_dually_tyre" Name="op_tduallys_tractor_dually_tyre_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+
+	<TruckRims>
+		
+		<TruckRim Mesh="wheels/tractor_dually_rim" Name="tractor_dually_rim">
+			<GameData>
+				<UiDesc UiDesc="tractor_dually_rim" UiName="tractor_dually_rim" />
+			</GameData>
+		</TruckRim>
+		
+	</TruckRims>
+</TruckWheels>

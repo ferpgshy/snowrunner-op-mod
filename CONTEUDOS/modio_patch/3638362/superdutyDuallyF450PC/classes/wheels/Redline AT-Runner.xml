@@ -1,0 +1,65 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.725"
+	WidthRear="3.5"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_BFG_AT_20Dually"
+			Name="Redline: AT-Runner"
+			RearMassScale="2"
+			Mass="400"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="True Specs out of 10: DIRT 3.6 - MUD 6.5 - PAVEMENT 8 - DAMAGE RESISTANCE 2X" UiName="Redline: AT-Runner" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.032" SoftForceScale="0.20" />
+			<WheelFriction
+				BodyFriction="3.6"
+				BodyFrictionAsphalt="8.0"
+				SubstanceFriction="6.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_BFG_AT_20Dually" Name="op_Redline _Redline__AT_Runner_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+	
+
+		<TruckRim Mesh="wheels/wheels_Stock_8Hole_20Dually" Name="Stock 8-Hole Dually">
+			<GameData>
+				<UiDesc UiDesc="Stock 8-Hole Dually" UiName="Stock 8-Hole Dually" />
+			</GameData>
+		</TruckRim>
+		
+		<TruckRim Mesh="wheels/wheels_Stock_5Hole_20Dually" Name="Stock 5-Hole Dually">
+			<GameData>
+				<UiDesc UiDesc="Stock 5-Hole Dually" UiName="Stock 5-Hole Dually" />
+			</GameData>
+		</TruckRim>		
+				
+		<TruckRim Mesh="wheels/wheels_Fuel_Maverick_20Dually" Name="Maverick Dually">
+			<GameData>
+				<UiDesc UiDesc="Maverick Dually" UiName="Maverick Dually" />
+			</GameData>
+		</TruckRim>
+
+	</TruckRims>
+</TruckWheels>

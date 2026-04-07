@@ -1,0 +1,65 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.775"
+	WidthRear="1.775"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_BFG_AllTerrain_20_Single"
+			Name="Vanilla AT-Runner"
+			RearMassScale="1"
+			Mass="400"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Default Specs - Source Tire: AS I -- True Specs: DIRT 1.4 - MUD 1 - PAVEMENT 1 - DEFAULT DAMAGE" UiName="Vanilla: AT-Runner"/>
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.032" SoftForceScale="0.20" />
+			<WheelFriction
+			BodyFriction="1.4"
+			BodyFrictionAsphalt="1.0"
+			SubstanceFriction="1.0"
+			UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_BFG_AllTerrain_20_Single" Name="op_Vanilla _Vanilla_AT_Runner_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+	
+<!--DEFAULT WHEELS-->
+		<TruckRim Mesh="wheels/wheels_SuperDuty_20_Single" Mass="500" Name="OE Spoke Wheel">
+			<GameData>
+				<UiDesc UiDesc="OE Spoke Wheel" UiName="OE Spoke Wheel" />
+			</GameData>
+		</TruckRim>	
+		
+		<TruckRim Mesh="wheels/wheels_BlackRhino_Armory_20_Single" Mass="500" Name="BR Armory">
+			<GameData>
+				<UiDesc UiDesc="BR Armory" UiName="BR Armory" />
+			</GameData>
+		</TruckRim>		
+		
+		<TruckRim Mesh="wheels/wheels_Raceline_Avenger_20_Single" Mass="500" Name="RL Avenger Beadlock">
+			<GameData>
+				<UiDesc UiDesc="RL Avenger Beadlock" UiName="RL Avenger Beadlock" />
+			</GameData>
+		</TruckRim>	
+
+	</TruckRims>
+</TruckWheels>

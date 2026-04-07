@@ -1,0 +1,313 @@
+<GearboxVariants>
+	<Gearbox
+		AWDConsumptionModifier="1.4"
+		CriticalDamageThreshold="0.4"
+		DamageCapacity="100"
+		DamagedConsumptionModifier="1.7"
+		FuelConsumption="1.4"
+		IdleFuelModifier="0.2"
+		Name="g_h1_default"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="27.0"
+	>
+		<ReverseGear AngVel="1.5" FuelModifier="0.9" />
+		<HighGear AngVel="14.0" FuelModifier="1.5" />
+		<Gear AngVel="2.0" FuelModifier="1.9" />
+		<Gear AngVel="6.0" FuelModifier="1.7" />
+		<Gear AngVel="9.0" FuelModifier="1.5" />
+		<Gear AngVel="12.0" FuelModifier="1.3" />
+		<Gear AngVel="15.0" FuelModifier="1.0" />
+		<Gear AngVel="20.0" FuelModifier="1.0" />
+		<GameData
+			Price="1900"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+			/>
+			<UiDesc
+				UiDesc="The Allison 1000 is a 6 speed transmission, rated to handle up to 620 lb·ft (841 N·m) of torque."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Allison 1000 6 speed Automatic"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.8"
+		CriticalDamageThreshold="0.6"
+		DamageCapacity="150"
+		DamagedConsumptionModifier="1.5"
+		FuelConsumption="2.2"
+		IdleFuelModifier="0.2"
+		Name="g_h1_offroad"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="35.0"
+	>
+		<ReverseGear AngVel="1.0" FuelModifier="0.9" />
+		<HighGear AngVel="8.0" FuelModifier="1.5" />
+		<Gear AngVel="2.0" FuelModifier="1.7" />
+		<Gear AngVel="6.0" FuelModifier="1.5" />
+		<Gear AngVel="8.0" FuelModifier="1.3" />
+		<Gear AngVel="12.0" FuelModifier="1.0" />
+		<GameData
+			Price="2100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsLowerMinusGearExists="true"
+				IsManualLowGear="true"	
+			/>
+			<UiDesc
+				UiDesc="The 4L80-E was a series of heavy-duty automatic transmissions from General Motors designed for longitudinal engine configurations."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="GM 4L80-E 4 speed w/ Manual Low"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.8"
+		CriticalDamageThreshold="0.6"
+		DamageCapacity="150"
+		DamagedConsumptionModifier="1.5"
+		FuelConsumption="2.2"
+		IdleFuelModifier="0.2"
+		Name="g_h1_offroad_alternate"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="35.0"
+	>
+		<ReverseGear AngVel="1.0" FuelModifier="0.9" />
+		<HighGear AngVel="8.0" FuelModifier="1.5" />
+		<Gear AngVel="2.0" FuelModifier="1.7" />
+		<Gear AngVel="6.0" FuelModifier="1.5" />
+		<Gear AngVel="8.0" FuelModifier="1.3" />
+		<Gear AngVel="12.0" FuelModifier="1.0" />
+		<GameData
+			Price="2100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsLowerMinusGearExists="true"
+				IsManualLowGear="false"	
+			/>
+			<UiDesc
+				UiDesc="An alternate 4L80-E option without the Manual Low Gear control."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="GM 4L80-E 4 speed Standard"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.1"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="400"
+		DamagedConsumptionModifier="1.4"
+		FuelConsumption="1.2"
+		IdleFuelModifier="0.2"
+		Name="trail_6speed"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="20.0"
+	>
+		<ReverseGear AngVel="2.0" FuelModifier="0.9" />
+		<HighGear AngVel="21.0" FuelModifier="0.9" />
+		<Gear AngVel="2.0" FuelModifier="1.4" />		
+		<Gear AngVel="6.0" FuelModifier="1.4" />
+		<Gear AngVel="10.5" FuelModifier="1.3" />
+		<Gear AngVel="14.5" FuelModifier="1.2" />
+		<Gear AngVel="18.5" FuelModifier="1.0" />
+		<Gear AngVel="25.0" FuelModifier="1.0" />		
+		<GameData
+			Price="3000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsLowerMinusGearExists="true"
+			/>
+			<UiDesc
+				UiDesc="An allround 6-speed transmission built for Ofroad Trails and Highways."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="6-Speed Trailing Kit"
+			/>
+		</GameData>
+	</Gearbox>
+
+	<Gearbox
+		AWDConsumptionModifier="0.0"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="99999"
+		DamagedConsumptionModifier="1.0"
+		FuelConsumption="1.0"
+		IdleFuelModifier="0.1"
+		Name="op_gearbox_8a"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="0.0"
+	>
+		<ReverseGear AngVel="1.5" FuelModifier="1.1" />
+		<HighGear AngVel="20.8" FuelModifier="1.0" />
+		<Gear AngVel="1.41" FuelModifier="1.8" />
+		<Gear AngVel="2.13" FuelModifier="1.66" />
+		<Gear AngVel="3.21" FuelModifier="1.51" />
+		<Gear AngVel="4.83" FuelModifier="1.37" />
+		<Gear AngVel="7.29" FuelModifier="1.23" />
+		<Gear AngVel="10.99" FuelModifier="1.09" />
+		<Gear AngVel="16.58" FuelModifier="0.94" />
+		<Gear AngVel="25.0" FuelModifier="0.8" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+			/>
+			<UiDesc
+				UiDesc="UI_GEARBOX_8A_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_8A_NAME"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="0.0"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="99999"
+		DamagedConsumptionModifier="1.0"
+		FuelConsumption="1.0"
+		IdleFuelModifier="0.1"
+		Name="op_gearbox_8b"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="0.0"
+	>
+		<ReverseGear AngVel="1.5" FuelModifier="1.1" />
+		<HighGear AngVel="22.4" FuelModifier="1.0" />
+		<Gear AngVel="1.41" FuelModifier="1.8" />
+		<Gear AngVel="2.15" FuelModifier="1.66" />
+		<Gear AngVel="3.28" FuelModifier="1.51" />
+		<Gear AngVel="5.0" FuelModifier="1.37" />
+		<Gear AngVel="7.62" FuelModifier="1.23" />
+		<Gear AngVel="11.62" FuelModifier="1.09" />
+		<Gear AngVel="17.71" FuelModifier="0.94" />
+		<Gear AngVel="27.0" FuelModifier="0.8" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+			/>
+			<UiDesc
+				UiDesc="UI_GEARBOX_8B_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_8B_NAME"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="0.0"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="99999"
+		DamagedConsumptionModifier="1.0"
+		FuelConsumption="1.0"
+		IdleFuelModifier="0.1"
+		Name="op_gearbox_8c"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="0.0"
+	>
+		<ReverseGear AngVel="1.5" FuelModifier="1.1" />
+		<HighGear AngVel="23.9" FuelModifier="1.0" />
+		<Gear AngVel="1.41" FuelModifier="1.8" />
+		<Gear AngVel="2.17" FuelModifier="1.66" />
+		<Gear AngVel="3.35" FuelModifier="1.51" />
+		<Gear AngVel="5.15" FuelModifier="1.37" />
+		<Gear AngVel="7.94" FuelModifier="1.23" />
+		<Gear AngVel="12.22" FuelModifier="1.09" />
+		<Gear AngVel="18.83" FuelModifier="0.94" />
+		<Gear AngVel="29.0" FuelModifier="0.8" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+			/>
+			<UiDesc
+				UiDesc="UI_GEARBOX_8C_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_8C_NAME"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="0.0"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="99999"
+		DamagedConsumptionModifier="1.0"
+		FuelConsumption="1.0"
+		IdleFuelModifier="0.1"
+		Name="op_gearbox_8d"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="0.0"
+	>
+		<ReverseGear AngVel="1.5" FuelModifier="1.1" />
+		<HighGear AngVel="25.5" FuelModifier="1.0" />
+		<Gear AngVel="1.41" FuelModifier="1.8" />
+		<Gear AngVel="2.19" FuelModifier="1.66" />
+		<Gear AngVel="3.41" FuelModifier="1.51" />
+		<Gear AngVel="5.3" FuelModifier="1.37" />
+		<Gear AngVel="8.24" FuelModifier="1.23" />
+		<Gear AngVel="12.82" FuelModifier="1.09" />
+		<Gear AngVel="19.94" FuelModifier="0.94" />
+		<Gear AngVel="31.0" FuelModifier="0.8" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+			/>
+			<UiDesc
+				UiDesc="UI_GEARBOX_8D_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_8D_NAME"
+			/>
+		</GameData>
+	</Gearbox>
+</GearboxVariants>

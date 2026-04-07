@@ -1,0 +1,62 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="0.98"
+	Width="2.25"
+	WidthRear="2.25"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_mod_monster"
+			Name="monster"
+			RearMassScale="1"
+			Mass="950"
+		>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Monster tire" UiName="Monster" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/tire_heavy_mudtires_single_tayga_1.tga" TextureHeight="tracks/default_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/tire_heavy_mudtires_single_tayga_1.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.06" SoftForceScale="9" />
+			<WheelFriction
+				BodyFriction="8.0"
+				BodyFrictionAsphalt="8.0"
+				SubstanceFriction="8.0"
+				UiName="UI_TIRE_TYPE_HIGHWAY_NAME"
+			/>
+		</TruckTire>
+		
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mod_monster" Name="op_monster_monster_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+	
+		<TruckRim Mesh="wheels/rim_mod_monster" Name="Silver mt rim">
+			<GameData>
+				<UiDesc UiDesc="Silver Custom Built Rim" UiName="Silver Custom Rim" />
+			</GameData>
+		</TruckRim>
+				<TruckRim Mesh="wheels/rim_mod_monsterblack" Name="Black mt rim">
+			<GameData>
+				<UiDesc UiDesc="Black Custom Built Rim" UiName="Black Custom Rim" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_mod_monsterbus" Name="orange mt rim">
+			<GameData>
+				<UiDesc UiDesc="orange Custom Built" UiName="Orange Custom Rim" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

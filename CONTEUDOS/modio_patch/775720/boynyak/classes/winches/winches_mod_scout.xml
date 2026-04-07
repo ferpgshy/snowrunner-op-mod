@@ -1,0 +1,106 @@
+<WinchVariants>
+	<Winch
+		Name="w_mod_scout_default"
+		Length="14"
+		StrengthMult="1.0"
+		IsEngineIgnitionRequired="true"
+	>
+		<GameData
+			Price="1000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="Default"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Default"
+			/>
+		</GameData>
+	</Winch>
+	
+	
+	<Winch
+		Name="w_mod_scout_ext_pow"
+		Length="40"
+		StrengthMult="3"
+		IsEngineIgnitionRequired="true"
+	>
+		<GameData
+			Price="12200"
+			UnlockByExploration="false"
+			UnlockByRank="20"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="Extreme pow"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Extreme pow"
+			/>
+		</GameData>
+	</Winch>
+	<Winch
+		Name="w_mod_truck_offline"
+		Length="40"
+		StrengthMult="3"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="20000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="OP Winch FOR CONSOLE"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Extreme Offline FOR CONSOLE"
+			/>
+		</GameData>
+	</Winch>
+	<Winch
+		Name="w_mod_scout_offline"
+		Length="80"
+		StrengthMult="3"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="20000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="OP Winch"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Extreme Offline"
+			/>
+		</GameData>
+	</Winch>
+
+	<Winch
+		Name="op_winch_deus"
+		Length="100"
+		StrengthMult="20.0"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="UI_WINCH_DEUS_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_WINCH_DEUS_NAME"
+			/>
+		</GameData>
+	</Winch>
+</WinchVariants>

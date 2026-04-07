@@ -1,0 +1,590 @@
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.02"
+		DiffLockType="Always"
+		EngineIconMesh="env/engine_default"
+		EngineIconScale="1.3"
+		EngineStartDelay="3.2"
+		ExhaustStartTime="2.8"
+		FuelCapacity="170"
+		Responsiveness="0.2"
+		SteerSpeed="0.025"
+		TruckImage="G53mchr"
+		TruckType="OFFROAD"
+	>
+	<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
+	<Wheels
+			DefaultRim="rim_1"
+			DefaultTire="offroad_1"
+			DefaultWheelType="wheels_gaz53"
+		>
+			<Wheel
+				Pos="(1.973; 0.531; 1)"
+				Location="front"
+				SteeringAngle="35"
+				SteeringCastor="0"
+				SteeringJointOffset="0.27"
+				Torque="connectable"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Wheel
+				RightSide="true"
+				Pos="(1.973; 0.531; 1)"
+				Location="front"
+				SteeringAngle="35"
+				SteeringCastor="0"
+				SteeringJointOffset="0.27"
+				Torque="connectable"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Wheel
+				Pos="(-1.926; 0.529; 0.794)"
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+			/>
+			<Wheel
+				RightSide="true"
+				Pos="(-1.926; 0.529; 0.794)"
+				ConnectedToHandbrake="true"
+				Location="rear"
+				Torque="default"
+			/>
+			<Wheel
+				Pos="(-3.211; 0.529; 1)"
+				ConnectedToHandbrake="true"
+				Location="front"
+				Torque="default"
+			/>
+			<Wheel
+				RightSide="true"
+				Pos="(-3.211; 0.529; 1)"
+				ConnectedToHandbrake="true"
+				Location="front"
+				Torque="default"
+			/>		
+		</Wheels>
+		<SuspensionSocket
+			Default="gaz53_default"
+			Type="s_gaz53"
+			MaxWheelRadiusWithoutSuspension="0.47"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackLeft"
+			FrameSteerRight="BoneRackRight"
+			RackHalfSizeZ="0.756"
+		/>
+		<Steam Origin="(0.594; 1.406; 0)" />
+		<Steam Origin="(2.238; 1.15; 0)" />
+		<SoundsWheels>
+			<WheelWater Sound="surfaces/surf_water_loop" />
+			<WheelSteer Sound="wheels/wheel_steer" />
+			<WheelSpinning Sound="wheels/wheel_spining_loop" />
+			<WheelMud Sound="surfaces/hit/hit_mud_rnd" />
+			<WheelExtrude Sound="" />
+			<WheelDamaged Sound="wheels/wheel_broken_rotate_loop" />
+			<WheelChains Sound="wheels/wheel_tires_chain_loop" />
+			<WaterHit Sound="trucks/common/truck_hit_water_rnd_set/truck_hit_water_rnd" />
+		</SoundsWheels>
+		<SoundsDamage>
+			<Wheels
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Suspension
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Gearbox
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<FuelTank
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Engine
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound=""
+				VolumeMinMax="(0.2;1.0)"
+			/>
+			<Critical
+				DamageAmount="(0.1;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_crit_rnd_set/truck_damage_crit_rnd"
+				VolumeMinMax="(0.5;1.0)"
+			/>
+			<Common
+				DamageAmount="(0.01;1.0)"
+				Range="15.0"
+				Sound="trucks/common/truck_damage_big_hard_rnd_set/truck_damage_big_hard_rnd"
+				VolumeMinMax="(0.2;1.0)"
+			/>
+		</SoundsDamage>
+		<Sounds
+			AirHissInterval="12.0"
+			DisableReversePitch="false"
+			EngineHeavyVolume="0.4"
+			Origin="(1.838; 1.28; 0)"
+			MinDist="11.0"
+			ParentFrame="BoneCabin_cdt"
+			MaxDist="200.0"
+		>
+			<Honk Sound="trucks/voron_d53233/voron_d53233_honk" />
+			<Handbrake Sound="trucks/voron_d53233/voron_d53233_handbrake_on" />
+			<HandbrakeOff Sound="trucks/voron_d53233/voron_d53233_handbrake_off" />
+			<BrakePull		Sound="" />
+			<BrakeRelease	Sound="" />
+			<BrakesSqueal	Sound="trucks/cat_ct680/cat_ct680_brakes_squeal" />
+			<Reverse Sound="trucks/voron_d53233/voron_d53233_reverse" />
+			<EngineRev		Sound="" />
+			<EngineAccel	Sound="trucks/chevrolet_ck1500/chevrolet_ck1500_acc" />
+			<EngineStart	Sound="trucks/derry_longhorn_3194/derry_longhorn_3194_start" />
+			<EngineStop		Sound="trucks/derry_longhorn_3194/derry_longhorn_3194_stop" />
+			<EngineIdle		Sound="trucks/ziks_5368/ziks_5368_idle" />
+			<EngineIdle_2d	Sound="trucks/ziks_5368/ziks_5368_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/tuz_108_warthog/tuz_108_warthog_low" />
+			<EngineLow_2d	Sound="trucks/tuz_108_warthog/tuz_108_warthog_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/tuz_108_warthog/tuz_108_warthog_high" />
+			<EngineHigh_2d	Sound="trucks/tuz_108_warthog/tuz_108_warthog_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="trucks/tuz_108_warthog/tuz_108_warthog_heavy" />
+			<EngineHeavy_2d	Sound="trucks/tuz_108_warthog/tuz_108_warthog_heavy_2d"	IsSound2D="true" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+			<HeadLight Sound="trucks/common/truck_headlight_switch" />
+			<AWD Sound="trucks/common/truck_awd_rnd_set/truck_awd_rnd" />
+			<DiffLock Sound="trucks/common/truck_diff_lock_rnd_set/truck_diff_lock_rnd" />
+			<Gear Sound="trucks/common/truck_gear_shift_heavy_rnd_set/truck_gear_shift_heavy_rnd" />
+			<ExhaustShot Sound="trucks/common/truck_exhaust_shot_rnd_set/truck_exhaust_shot_rnd" />		
+			<ChassisStress Sound="trucks/common/truck_stress_small_rnd_set/truck_stress_small_rnd" />
+			<WaterGurgle Sound="trucks/common/truck_exhaust_water_gurgle_loop" />
+			<WaterDropping Sound="" />
+			<EngineStalling Sound="trucks/common/truck_engine_stalling" />
+			<DamagedEngine Sound="trucks/common/truck_engine_damaged" />
+			<Cockpit IsSound2D="true" Sound="trucks/common/truck_cockpit_loop" />
+		</Sounds>
+		<Shakers>			
+			<Shaker Frame="BoneGearstick" MinAngle="(0.8; 0.8; 0.8)" MaxAngle="(3; 3; 3)" MaxFrequency="0.1" />
+		</Shakers>
+		<Shafts>
+			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />			
+		</Shafts>
+		<OcclusionMap HalfSizeZ="1.9" MinX="-5" MaxX="3" />
+		<LimitedFluid
+			Center="(0.625; 0.96; -0.012)"
+			SizeX="0.515"
+			SizeY="0.175"
+			SizeZ="0.818"
+			Type="Box"
+			ParentFrame="BoneCabin_cdt"
+		/>
+		<Intake Dir="(1; 0; 0)" Origin="(3.503; 1.662; -0)" Size="1.219" />
+		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
+		<FuelTank DamageCapacity="80" />		
+		<EngineSocket Default="ru_truck_old_engine_0" Type="e_ru_truck_old" />
+		<Driver
+			AnimationSet="Truck"
+			Pos="(0.696; 1.467; 0.432)"
+			SteeringWheelPos="(1.078; 1.94; 0.432)"
+			ParentFrame="BoneCabin_cdt"
+		/>
+		<Dashboard>		
+			<Gauge
+				Damping="0.9"
+				Dir="(-1; 0; 0)"
+				InputRange="(0;120)"
+				InputType="speed"
+				Mesh="trucks/arrows/gaz53_arrow_02"
+				Org="(1.263; 1.851; 0.432)"
+				OutputAngles="(-118;180)"
+			/>			
+			<Gauge
+				Damping="0.9"
+				Dir="(-1; 0; 0)"
+				InputRange="(0;1)"
+				InputType="fuel"
+				Mesh="trucks/arrows/gaz53_arrow_01"
+				Org="(1.263; 1.851; 0.33)"
+				OutputAngles="(-48;44)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-1; 0; 0)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/gaz53_arrow_01"
+				Org="(1.263; 1.851; 0.534)"
+				OutputAngles="(-42;14)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-1; 0; 0)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/gaz53_arrow_01"
+				Org="(1.26; 1.762; 0.318)"
+				OutputAngles="(-48;20)"
+			/>
+			<Gauge
+				Damping="0.9"
+				Dir="(-1; 0; 0)"
+				InputRange="(0;1)"
+				InputType="engineEnabled"
+				Mesh="trucks/arrows/gaz53_arrow_01"
+				Org="(1.26; 1.762; 0.546)"
+				OutputAngles="(-48;18)"
+			/>
+		</Dashboard>
+		<Damage
+			Capacity="600"
+			SensationMin="(0.412; 2.204; -0.949)"
+			SensationMax="(2.24; 2.945; 0.949)"
+			ParentFrame="BoneCabin_cdt"
+		>
+			<DamageArea
+				Type="Engine"
+				Min="(1.373; 0.9; -0.8)"
+				Max="(2.684; 1.796; 0.8)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<DamageArea
+				Type="FuelTank"
+				Min="(0.35; 0.84; -0.522)"
+				Max="(0.9; 1.074; 0.321)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</Damage>
+		<CompatibleWheels OffsetZ="-0.01" RearOffsetZ="0.18" Scale="0.52" Type="wheels_gaz53" />
+		<CompatibleWheels RearOffsetZ="0.18" OffsetZ="-0.01" Scale="0.676" Type="wheels_gaz53" />
+		<CompatibleWheels RearOffsetZ="0.18" OffsetZ="-0.01" Scale="0.754" Type="wheels_gaz53" />
+		<CompatibleWheels RearOffsetZ="0.18" OffsetZ="-0.01" Scale="0.832" Type="wheels_gaz53" />		
+		<Camera Center="(-1.95; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Cockpit
+				WindshieldDiffuseTexture="trucks/glass__d_a.tga"
+				WindshieldShadingTexture="trucks/glass__sh_d.tga"
+				ViewPos="(0.587; 2.132; 0.432)"
+				LimitsHor="(-2.8; 2.4)"
+				LimitsVer="(-0.32; 0.2)"
+				ViewDir="(1; -0.05; 0)"
+				ZoomViewDirOffset="(0; -0.05; 0)"
+				ZoomViewPosOffset="(0.2; 0; 0)"
+			>
+				<Rear
+					HorTransitionEnd="-1.5"
+					HorTransitionStart="-1.2"
+					LimitsVer="(-1.2; 0.2)"
+					RollAngle="-15"
+					ViewDir="(1; -0.05; 0)"
+					ViewPosOffset="(0.25; -0.1; 0.7)"
+				/>
+				<Mirror
+					ClipDir="(-0.906; 0; -0.422)"
+					FOVScale="2.3"
+					MeshFrame="mirror_left"
+					ReflectionDir="(-0.906; -0.09; -0.35)"
+					Size="(0.16; 0.25)"
+					Pos="(1.452; 2.114; 1.304)"
+					LookAtOffset="(0; -0.05; 0)"
+				>					
+				</Mirror>
+				<Mirror
+					ClipDir="(-0.906; 0; -0.422)"
+					FOVScale="2.4"
+					MeshFrame="mirror_right"
+					ReflectionDir="(-0.906; -0.09; 0.55)"
+					Size="(0.16; 0.25)"
+					Pos="(1.452; 2.114; -1.304)"
+					ClipOffset=".1"
+				>
+				</Mirror>
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" />
+			<Axle Frame="BoneAxle2" />
+			<Axle Frame="BoneAxle3" />					
+		</Axles>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/gaz53_prototype">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(-0.9; -0.25; 0)"
+			ImpactType="Truck"
+			Mass="2000"
+			NetSync="pv"
+		>
+			<Body
+				CenterOfMassOffset="(1.1; 0.2; 0)"
+				ImpactType="Truck"
+				Mass="1550"
+				ModelFrame="BoneCabin_cdt"
+				NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-10"
+					MaxLimit="10"
+				>
+					<Motor Damping="10000" Spring="1500000" Type="Spring" />
+				</Constraint>
+				
+					<Body ModelFrame="BoneMirrorLeft_cdt" Collisions="None" Mass="5">
+						<Constraint
+							AxisLocal="(0; 1; 0)"
+							Type="Hinge"
+							MinLimit="-15"
+							MaxLimit="15"
+						>
+							<Motor Damping="1" Spring="250" Type="Spring" />
+						</Constraint>
+					</Body>
+					<Body ModelFrame="BoneMirrorRight_cdt" Collisions="None" Mass="5">
+						<Constraint
+							AxisLocal="(0; 1; 0)"
+							Type="Hinge"
+							MinLimit="-15"
+							MaxLimit="15"
+						>
+							<Motor Damping="1" Spring="250" Type="Spring" />
+						</Constraint>
+					</Body>
+					<Body Mass="0.2" ModelFrame="BoneKeyRing_cdt">
+						<Constraint
+							AxisLocal="(1; 0; 0)"
+							Type="Hinge"
+							MinLimit="-50"
+							MaxLimit="50"
+						>
+							<Motor Damping="0.001" Spring="0.001" Type="Spring" />
+						</Constraint>
+						<Body Mass="0.2" ModelFrame="BoneKey_cdt">
+							<Constraint
+								AxisLocal="(0; 0; 1)"
+								Type="Hinge"
+								MinLimit="-20"
+								MaxLimit="20"
+							>
+								<Motor Damping="0.001" Spring="0.001" Type="Spring" />
+							</Constraint>
+						</Body>
+					</Body>		
+			</Body>
+		</Body>
+	</PhysicsModel>	
+	<Landmark Mesh="landmarks/gaz53_lmk" MinScale="1.6" MaxScale="3.6" />
+	<HeadLight
+		Pos="(3.284; 1.4; 0)"
+		ParentFrame="BoneCabin_cdt"
+		AttenEnd="55"
+		AttenStart="-20"
+		Color="g(255; 212; 154) x 6.5"
+		Dir="(1; -0.2; 0)"
+		InnerCone="0"
+		OuterCone="80"
+	/>
+	<GameData
+		Country=""
+		Price="26100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(2.879; 0.902; 0.467)" ParentFrame="BoneCabin_cdt" />
+		<WinchSocket Pos="(2.879; 0.902; -0.467)" ParentFrame="BoneCabin_cdt" />
+		<WinchSocket Pos="(-0.361; 0.859; 0.524)" />
+		<WinchSocket Pos="(-0.361; 0.859; -0.524)" />
+		<WinchSocket Pos="(-4.496; 0.849; 0)" />		
+		<UiDesc
+			UiDesc="The G53-A Prototype is a 6x2 truck produced by RNG between 1961 and 1993. Introduced first as G53F, it was joined by the virtually identical 2.5-ton G52 in 1962, which was produced until 1989."
+			UiIcon30x30="offroadVehicleImg30"
+			UiIcon328x458="shopImgRngGazA"
+			UiIcon40x40="offroadVehicleImg"
+			UiIconLogo="G53Logo80"
+			UiName="RNG G53-A Prototype"
+		/>
+		<CustomizationCameras>
+			<CameraPos
+				FOV="32.0"
+				Name="addon_1"
+				InterestPosition="(0.697; 1.869; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-7.265; 3.31; 8.244)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="addon_2"
+				InterestPosition="(3.194; 1.807; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-4.593; 2.337; -6.718)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="side_r"
+				InterestPosition="(4.764; 1.97; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-0.226; 4.969; -4.508)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="roof"
+				InterestPosition="(5.584; 1.615; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(9.203; 3.854; 5.047)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="side_l"
+				InterestPosition="(4.737; 2.557; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(9.507; 4.376; -3.37)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="hoods"
+				InterestPosition="(5.275; 1.623; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(12.823; 1.44; -4.73)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="wheels"
+				InterestPosition="(4.756; 1.133; -0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(-4.539; 2.191; -5.755)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="default"
+				InterestPosition="(5.275; 1.623; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(12.823; 1.44; -4.73)"
+			/>
+			<CameraPos
+				FOV="32.0"
+				Name="rear"
+				InterestPosition="(4.777; 1.589; 0)"
+				MaxXRotation="360"
+				MaxYRotation="360"
+				MaxZoom="2"
+				Position="(0.811; 3.681; 4.794)"
+			/>
+			<CameraPos
+				FOV="36.0"
+				InterestPosition="(7.805;1.392;2.100)"
+				Interior="true"
+				Name="bubble_head"
+				Position="(4.900;2.150;-0.4)"
+			/>
+		</CustomizationCameras>
+		<CraneSocket Pos="(2.879; 0.902; 0.467)" ParentFrame="BoneCabin_cdt" />
+		<CraneSocket Pos="(2.879; 0.902; -0.467)" ParentFrame="BoneCabin_cdt" />
+		<CraneSocket Pos="(-0.361; 0.859; 0.524)" />
+		<CraneSocket Pos="(-0.361; 0.859; -0.524)" />
+		<CraneSocket Pos="(-4.496; 0.849; 0)" />		
+		<AddonSockets>			
+			<Socket Names="Trailer" Offset="(-4.496; 0.849; 0)">
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="Minicrane, FrameAddon" />
+			</Socket>
+		</AddonSockets>		
+		
+		
+		<AddonSockets DefaultAddon="gaz53_transferbox_default">
+			<Socket Names="Gaz53TransferBox" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+				<ExtraParent Frame="BoneAxle1" />
+				<ExtraParent Frame="BoneRack" />	
+				<ExtraParent Frame="BoneAxle2" />
+				<ExtraParent Frame="BoneChassis_cdt" />
+			
+			</Socket>
+		</AddonSockets>
+		
+		<AddonSockets DefaultAddon="gaz53_diff_lock_default">
+			<Socket Names="Gaz53DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		
+		<AddonSockets DefaultAddon="gaz53_bumper_default">
+			<Socket Names="Gaz53Bumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+
+		<AddonSockets>
+			<Socket Names="Gaz53SideboardLong" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket Names="Gaz53SearchLight" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+
+		<AddonSockets DefaultAddon="gaz53_exhaust_default">
+			<Socket Names="Gaz53Exhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+
+		<AddonSockets>
+			<Socket Names="Gaz53Snorkel" Offset="(0.14; 0.33; 0.09)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+
+		<AddonSockets DefaultAddon="gaz53_grill_new">
+			<Socket Names="Gaz53Grill" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+
+
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffDashboard"
+				Offset="(1.369; 1.889; 0.085)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>		
+
+	</GameData>
+	<AutomaticIK>
+		<IKBone ModelFrame="BoneDamperFL1" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BoneDamperFL2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	
+	  <IKBone ModelFrame="BoneDamperFR1" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BoneDamperFR2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>

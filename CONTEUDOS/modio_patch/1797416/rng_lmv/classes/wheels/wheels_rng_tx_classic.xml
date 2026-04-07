@@ -1,0 +1,92 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Mudtires _template="Heavy">			
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Mudtires>
+		<Chains _template="Heavy">			
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Chains> 		
+	</TruckTire>
+</_templates>
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="2.0"
+	WidthRear="2.0"
+>
+	<TruckTires>		
+		<TruckTire
+			_template="Mudtires"
+			Mesh="wheels/tire_rng_tx"
+			Name="offroad_1"
+			RearMassScale="2"
+			Mass="280"	
+		>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="RNG TX Tire" UiName="RNG TX Tire" />
+			</GameData>
+			<WheelTracks TextureAlpha="trucks/Sample_tracks_alpha__s_d.tga" TextureHeight="trucks/Sample_tracks_height__s_d.tga" />
+			<WheelFriction
+				BodyFriction="2.4"
+				BodyFrictionAsphalt="2.1"
+				SubstanceFriction="2.4"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			_template="Chains"		
+			Mesh="wheels/tire_rng_tx_chains"
+			Name="chains_2"
+			RearMassScale="2"
+			Mass="280"				
+		>
+			<GameData
+				Price="3700"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="RNG TX Tire Chains" UiName="RNG TX Tire Chains" />
+			</GameData>
+			<WheelTracks TextureAlpha="trucks/Sample_tracks_alpha__s_d.tga" TextureHeight="trucks/Sample_tracks_height__s_d.tga" />	
+			<WheelFriction
+				BodyFriction="2.4"
+				BodyFrictionAsphalt="2.1"
+				SubstanceFriction="2.4"
+				IsIgnoreIce="True"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+		</TruckTire>				
+	
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_rng_tx" Name="op_rtclassic_offroad_1_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Chains" Mesh="wheels/tire_rng_tx_chains" Name="op_rtclassic_chains_2_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>		
+		<TruckRim Mesh="wheels/rim_rng_tx" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="RNG TX Rim" UiName="RNG TX Rim" />
+			</GameData>
+		</TruckRim>		
+	</TruckRims>
+</TruckWheels>

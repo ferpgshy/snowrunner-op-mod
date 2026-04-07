@@ -1,0 +1,72 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.8"
+	WidthRear="1.8"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_Maxxis_Trepador_19_Single"
+			Name="Redline TrepadorRunner"
+			RearMassScale="1"
+			Mass="400"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="True Specs out of 10: DIRT 4.5 - MUD 8 - PAVEMENT 8 - DAMAGE RESISTANCE 2X" UiName="Redline: TrepadorRunner"/>
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.032" SoftForceScale="0.20" />
+			<WheelFriction
+				BodyFriction="4.5"
+				BodyFrictionAsphalt="8.0"
+				SubstanceFriction="8.0"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_Maxxis_Trepador_19_Single" Name="op_Redline _Redline_TrepadorRunner_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+
+
+		<TruckRim Mesh="wheels/wheels_RamHD_19_Single" Name="HD Wheel">
+			<GameData>
+				<UiDesc UiDesc="HD Wheel" UiName="HD Wheel" />
+			</GameData>
+		</TruckRim>		
+
+		<TruckRim Mesh="wheels/wheels_method_305_19_Single" Name="305 Beadlock">
+			<GameData>
+				<UiDesc UiDesc="305 Beadlock" UiName="305 Beadlock" />
+			</GameData>
+		</TruckRim>		
+
+		<TruckRim Mesh="wheels/wheels_method_312_19_Single" Name="312 Beadlock">
+			<GameData>
+				<UiDesc UiDesc="312 Beadlock" UiName="312 Beadlock" />
+			</GameData>
+		</TruckRim>		
+
+		<TruckRim Mesh="wheels/wheels_RhinoArmory_19_Single" Name="Armory">
+			<GameData>
+				<UiDesc UiDesc="Armory" UiName="Armory" />
+			</GameData>
+		</TruckRim>
+		
+
+	</TruckRims>
+</TruckWheels>

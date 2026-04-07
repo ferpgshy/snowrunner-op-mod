@@ -1,0 +1,52 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.725"
+	WidthRear="1.725"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_stockish_AT_18_Single"
+			Name="Cheater AT-Runner"
+			RearMassScale="1"
+			Mass="400"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="True Specs out of 10: DIRT 6.6 - MUD 7.2 - PAVEMENT 7.5 - DAMAGE RESISTANCE 5X" UiName="Cheater: AT-Runner" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.032" SoftForceScale="0.20" />
+			<WheelFriction
+				BodyFriction="6.6"
+				BodyFrictionAsphalt="7.5"
+				SubstanceFriction="7.2"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_stockish_AT_18_Single" Name="op_Cheater _Cheater_AT_Runner_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		
+		<TruckRim Mesh="wheels/wheels_chevy_Stockish_4x4_18_Single" Name="Classic OEM Stock 4X4">
+			<GameData>
+				<UiDesc UiDesc="Classic OEM Stock 4X4" UiName="Classic OEM Stock 4X4" />
+			</GameData>
+		</TruckRim>		
+		
+	</TruckRims>
+</TruckWheels>

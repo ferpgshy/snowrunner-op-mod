@@ -1,0 +1,446 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="0.992"
+	Width="2.0"
+	WidthRear="0.897"
+>
+	<TruckTires>
+		
+		<TruckTire
+			Mesh="wheels/tire_pitbull_rockers"
+			Name="offroad_pitbull_rockers"
+			RearMassScale="2"
+			Mass="150"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Risky's Pitbull Rockers" UiName="Risky's Pitbull Rockers" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_bogger_tsl"
+			Name="offroad_bogger_tsl"
+			RearMassScale="2"
+			Mass="150"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Risky's Bogger TSL" UiName="Risky's Bogger TSL" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_creepy_crawler"
+			Name="offroad_creepy_crawler"
+			RearMassScale="2"
+			Mass="150"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Risky's Creepy Crawler" UiName="Risky's Creepy Crawler" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_diffuse"
+			Name="offroad_diffuse"
+			RearMassScale="2"
+			Mass="150"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Risky's Diffuse Tire" UiName="Risky's Diffuse Tire" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_super_swamper"
+			Name="offroad_super_swamper"
+			RearMassScale="2"
+			Mass="150"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Risky's Super Swamper" UiName="Risky's Super Swamper" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_tractor_tire"
+			Name="offroad_tractor_tire"
+			RearMassScale="2"
+			Mass="150"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Risky's Tractor Tires" UiName="Risky's Tractor Tires" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_trepador"
+			Name="offroad_trepador"
+			RearMassScale="2"
+			Mass="150"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Risky's Trepador" UiName="Risky's Trepador" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_ix_heavy2"
+			Name="ix_heavytire2"
+			RearMassScale="2"
+			Mass="150"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Puppy Master's Bug Tires (thanks to PuppyMaster for supplying these)" UiName="Puppy Master's Bug Tires" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_super_terra_grip"
+			Name="offroad_super_terra_grip"
+			RearMassScale="2"
+			Mass="150"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="R&R Good Year Super Terra Grip HF-2" UiName="R&R Good Year Super Terra Grip HF-2" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_bfgat"
+			Name="offroad_bfgat"
+			RearMassScale="2"
+			Mass="150"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="R&R BFG A/T" UiName="R&R BFG A/T" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_bfgkm3"
+			Name="offroad_bfgkm3"
+			RearMassScale="2"
+			Mass="150"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="R&R BFG KM3" UiName="R&R BFG KM3" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_pitbull_rockers" Name="op_prockers_offroad_pitbull_rockers_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_bogger_tsl" Name="op_prockers_offroad_bogger_tsl_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_creepy_crawler" Name="op_prockers_offroad_creepy_crawler_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_diffuse" Name="op_prockers_offroad_diffuse_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_super_swamper" Name="op_prockers_offroad_super_swamper_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_tractor_tire" Name="op_prockers_offroad_tractor_tire_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_trepador" Name="op_prockers_offroad_trepador_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_ix_heavy2" Name="op_prockers_ix_heavytire2_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_super_terra_grip" Name="op_prockers_offroad_super_terra_grip_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_bfgat" Name="op_prockers_offroad_bfgat_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_bfgkm3" Name="op_prockers_offroad_bfgkm3_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_aev" Name="aev_rims">
+			<GameData>
+				<UiDesc UiDesc="R&R AEV Rims White Bolts" UiName="R&R AEV Rims White Bolts" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_aevblue" Name="aev_rimsblue">
+			<GameData>
+				<UiDesc UiDesc="R&R AEV Rims Blue Bolts" UiName="R&R AEV Rims Blue Bolts" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_aevpink" Name="aev_rimspink">
+			<GameData>
+				<UiDesc UiDesc="R&R AEV Rims Pink Bolts" UiName="R&R AEV Rims Pink Bolts" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_aevred" Name="aev_rimsred">
+			<GameData>
+				<UiDesc UiDesc="R&R AEV Rims Red Bolts" UiName="R&R AEV Rims Red Bolts" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_aevorange" Name="aev_rimsorange">
+			<GameData>
+				<UiDesc UiDesc="R&R AEV Rims Orange Bolts" UiName="R&R AEV Rims Orange Bolts" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_aevgreen" Name="aev_rimsgreen">
+			<GameData>
+				<UiDesc UiDesc="R&R AEV Rims Green Bolts" UiName="R&R AEV Rims Green Bolts" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_decoy" Name="decoy_rims">
+			<GameData>
+				<UiDesc UiDesc="Risky's Decoy Rims" UiName="Risky's Decoy Rims" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_method_xd_fitted" Name="method_xd_fitted_rims">
+			<GameData>
+				<UiDesc UiDesc="R&R Method XD Rims Black" UiName="R&R Method XD Rims Black" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_method_xd_fitted_white" Name="method_xd_fitted_rims_white">
+			<GameData>
+				<UiDesc UiDesc="R&R Method XD Rims White" UiName="R&R Method XD Rims White" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_method_xd_fitted_blue" Name="method_xd_fitted_rims_blue">
+			<GameData>
+				<UiDesc UiDesc="R&R Method XD Rims Blue" UiName="R&R Method XD Rims Blue" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_method_xd_fitted_red" Name="method_xd_fitted_rims_red">
+			<GameData>
+				<UiDesc UiDesc="R&R Method XD Rims Red" UiName="R&R Method XD Rims Red" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_method_xd_fitted_orange" Name="method_xd_fitted_rims_orange">
+			<GameData>
+				<UiDesc UiDesc="R&R Method XD Rims Orange" UiName="R&R Method XD Rims Orange" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_method_xd_fitted_green" Name="method_xd_fitted_rims_green">
+			<GameData>
+				<UiDesc UiDesc="R&R Method XD Rims Green" UiName="R&R Method XD Rims Green" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_method_xd_fitted_pink" Name="method_xd_fitted_rims_pink">
+			<GameData>
+				<UiDesc UiDesc="R&R Method XD Rims Pink" UiName="R&R Method XD Rims Pink" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

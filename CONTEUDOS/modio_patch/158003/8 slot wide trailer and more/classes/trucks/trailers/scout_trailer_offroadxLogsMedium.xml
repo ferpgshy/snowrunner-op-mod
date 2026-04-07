@@ -1,0 +1,240 @@
+<_templates Include="trucks">
+	<Wheel>
+		<TrailerWheel
+			ConnectedToHandbrake="true"
+			Location="rear"
+			SuspensionHeight="0.2"
+			SuspensionStrength="0.04"
+			SuspensionMin="-1.2"
+			Torque="default"
+		/>
+	</Wheel>
+	<Body>
+		<AnchorRotate Mass="150" NoFoliageCollisions="true">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Name="LegRotate"
+				Type="Hinge"
+				MinLimit="0"
+				MaxLimit="90"
+			>
+				<Motor Force="95000" Type="Position" />
+			</Constraint>
+		</AnchorRotate>
+		<AnchorRotate2 Mass="150" NoFoliageCollisions="true">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Name="LegRotate2"
+				Type="Hinge"
+				MinLimit="0"
+				MaxLimit="90"
+			>
+				<Motor Force="95000" Type="Position" />
+			</Constraint>
+		</AnchorRotate2>
+		<AnchorRotate3 Mass="150" NoFoliageCollisions="true">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Name="LegRotate3"
+				Type="Hinge"
+				MinLimit="0"
+				MaxLimit="90"
+			>
+				<Motor Force="95000" Type="Position" />
+			</Constraint>
+		</AnchorRotate3>
+		<AnchorRotate4 Mass="150" NoFoliageCollisions="true">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Name="LegRotate4"
+				Type="Hinge"
+				MinLimit="0"
+				MaxLimit="90"
+			>
+				<Motor Force="95000" Type="Position" />
+			</Constraint>
+		</AnchorRotate4>
+		<AnchorExt Mass="100" NoFoliageCollisions="true">
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				Name="LegExt"
+				Type="Prismatic"
+					MinLimit="-2.66"
+					MaxLimit="0.6"
+			>
+				<Motor Force="95000" Type="Position" />
+			</Constraint>
+		</AnchorExt>
+		<AnchorExt2 Mass="100" NoFoliageCollisions="true">
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				Name="LegExt2"
+				Type="Prismatic"
+					MinLimit="-2.66"
+					MaxLimit="0.6"
+			>
+				<Motor Force="95000" Type="Position" />
+			</Constraint>
+		</AnchorExt2>
+		<AnchorExt3 Mass="100" NoFoliageCollisions="true">
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				Name="LegExt3"
+				Type="Prismatic"
+					MinLimit="-2.66"
+					MaxLimit="0.6"
+			>
+				<Motor Force="95000" Type="Position" />
+			</Constraint>
+		</AnchorExt3>
+		<AnchorExt4 Mass="100" NoFoliageCollisions="true">
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				Name="LegExt4"
+				Type="Prismatic"
+					MinLimit="-2.66"
+					MaxLimit="0.6"
+			>
+				<Motor Force="95000" Type="Position" />
+			</Constraint>
+		</AnchorExt4>
+
+
+	</Body>
+</_templates>
+<Truck Type="Trailer">
+	<TruckData
+		FuelCapacity="1555"
+		RepairsCapacity="64000"
+		WheelRepairsCapacity="64000"
+	>
+		<Wheels
+			DefaultRim="rim_offroad_2"
+			DefaultTire="chains_all"
+			DefaultWheelType="wheels_TrailerWheel"
+		>
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-0.728; 0.42; 1.5)" />
+			<Wheel _template="TrailerWheel" Pos="(-0.728; 0.42; 1.5)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-1.868; 0.42; 1.5)" />
+			<Wheel _template="TrailerWheel" Pos="(-1.868; 0.42; 1.5)" />
+		</Wheels>
+		<CompatibleWheels OffsetZ="0.16" RearOffsetZ="0.16" Scale="0.51" Type="wheels_TrailerWheel" />
+		<CompatibleWheels RearOffsetZ="0.16" OffsetZ="0.16" Scale="0.663" Type="wheels_TrailerWheel" />
+		<CompatibleWheels RearOffsetZ="0.16" OffsetZ="0.16" Scale="0.739" Type="wheels_TrailerWheel" />
+		<CompatibleWheels RearOffsetZ="0.16" OffsetZ="0.16" Scale="0.816" Type="wheels_TrailerWheel" />
+		<OcclusionMap
+			HalfSizeZ="2.2"
+			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
+			MinX="-5"
+			MaxX="4.5"
+		/>
+		<Foot Origin="(1.502; -0.18; -1.226)" />
+		<Foot Origin="(1.502; -0.18; 1.226)" />
+		<Foot Origin="(-4.098; -0.18; -1.226)" />
+		<Foot Origin="(-4.098; -0.18; 1.226)" />
+		<Constraint _template="TrailerRagdoll">
+			<TwistMotor _inheritRemove="true" />
+		</Constraint>
+		<Camera Center="(0; 0; 0)" />
+		<Axles>
+			<Axle Frame="BoneAxle1" />
+			<Axle Frame="BoneAxle2" />
+		</Axles>
+	</TruckData>
+
+	<PhysicsModel Mesh="trucks/trailers/scout_trailer_offroad">
+		<Body
+			CenterOfMassOffset="(0; -0.44; 0)"
+			ImpactType="Truck"
+			Mass="600"
+		>
+			<Body _template="AnchorRotate" ModelFrame="BoneAnchorFront_L_Rotate_cdt">
+				<Body _template="AnchorExt" ModelFrame="BoneAnchorFront_L_Ext_cdt" />
+			</Body>
+			<Body _template="AnchorRotate2" ModelFrame="BoneAnchorFront_R_Rotate_cdt">
+				<Body _template="AnchorExt2" ModelFrame="BoneAnchorFront_R_Ext_cdt" />
+			</Body>
+			<Body _template="AnchorRotate3" ModelFrame="BoneAnchorBack_L_Rotate_cdt">
+				<Body _template="AnchorExt3" ModelFrame="BoneAnchorBack_L_Ext_cdt" />
+			</Body>
+			<Body _template="AnchorRotate4" ModelFrame="BoneAnchorBack_R_Rotate_cdt">
+				<Body _template="AnchorExt4" ModelFrame="BoneAnchorBack_R_Ext_cdt" />
+			</Body>
+			<Body _template="Mudguard" ModelFrame="BoneMudguard_L_cdt">
+				<Constraint AxisLocal="(0; 0; 1)" MinLimit="0" MaxLimit="30" />
+			</Body>
+			<Body _template="Mudguard" ModelFrame="BoneMudguard_R_cdt">
+				<Constraint AxisLocal="(0; 0; 1)" MinLimit="0" MaxLimit="30" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/scout_trailer_offroad_lmk" MinScale="1.5" MaxScale="3.5" />
+	<GameData 
+		Price="0"		
+		IncludedCargoTypes="CargoLogsShort, CargoLogsMedium, CargoLogsMedium_Burnt"
+		>
+		<CraneSocket Pos="(-4.652; 0.874; 0.0)" />
+		<CraneSocket Pos="(2.024; 0.874; 0.0)" />
+		<CraneSocket Pos="(3.995; 0.865; 0)" />
+		<CraneSocket Pos="(2.024; 0.874; -1.247)" />
+		<CraneSocket Pos="(2.024; 0.874; 1.247)" />
+		<CraneSocket Pos="(-4.652; 0.874; -1.247)" />
+		<CraneSocket Pos="(-4.652; 0.874; 1.247)" />
+		<WinchSocket Pos="(-4.652; 0.874; 0.0)" />
+		<WinchSocket Pos="(2.024; 0.874; 0.0)" />
+		<WinchSocket Pos="(3.995; 0.865; 0)" />
+		<WinchSocket Pos="(2.024; 0.874; -1.247)" />
+		<WinchSocket Pos="(2.024; 0.874; 1.247)" />
+		<WinchSocket Pos="(-4.652; 0.874; -1.247)" />
+		<WinchSocket Pos="(-4.652; 0.874; 1.247)" />
+		<UiDesc
+			UiDesc="trailer legs are manual, to allow trailer to be push up so trucks can be loaded and pack more easy"
+			UiIcon30x30="trailerSemiImg30"
+			UiIcon40x40="trailerSemiImg"
+			UiName="Logs Medium, Short Scout Trailer Offroad"
+		/>
+		<InstallSocket Offset="(3.995; 0.865; 0)" Type="ScautTrailer" />
+
+		<LoadArea Subtype="TrailerLogMedium11"  TrailerLoad="true" Type="CargoLogsMedium" Min="(-7.352; -0.694; -3)" Max="(7.352; 2.694; 3)" />
+		<LoadArea Subtype="TrailerLogMedium11"  TrailerLoad="true" Type="CargoLogsMedium" Min="(7.352; 0.694; 3)" Max="(7.352; 2.694; 3)" />
+		<AddonSlots InitialOffset="(-1.2; -0.6; 0)" OffsetStep="(-2.44; 0; 0)" Quantity="1" AllowedCargo="CargoLogsMedium" />
+
+		<LoadArea Subtype="FrameAddonLog"  TrailerLoad="true" Type="CargoLogsShort" Min="(-7.352; -0.694; -3)" Max="(7.352; 2.694; 3)" />
+		<LoadArea Subtype="FrameAddonLog"  TrailerLoad="true" Type="CargoLogsShort" Min="(7.352; 0.694; 3)" Max="(7.352; 2.694; 3)" />
+		<AddonSlots InitialOffset="(1.99; 0.7; 0)" OffsetStep="(-2.44; 0; 0)" Quantity="1" AllowedCargo="CargoLogsShort" />
+
+		<LoadArea Subtype="TrailerLogMedium11"  TrailerLoad="true" Type="CargoLogsMedium_Burnt" Min="(-7.352; -0.694; -3)" Max="(7.352; 2.694; 3)" />
+		<LoadArea Subtype="TrailerLogMedium11"  TrailerLoad="true" Type="CargoLogsMedium_Burnt" Min="(7.352; 0.694; 3)" Max="(7.352; 2.694; 3)" />
+		<AddonSlots InitialOffset="(-1.2; -0.6; 0)" OffsetStep="(-2.44; 0; 0)" Quantity="1" AllowedCargo="CargoLogsMedium_Burnt" />
+
+
+	</GameData>
+	<ControlledConstraints>
+		<Constraint Action="9" Id="ramp_lower" BelongToCategorie="tow_control2" LocaleUid="LegRotate Front" Name="LegRotate" SpeedMult="6.5" />
+		<Constraint Action="9" Id="ramp_lower" BelongToCategorie="tow_control2" Name="LegRotate2" SpeedMult="6.5" />
+		<Constraint Action="11" Id="ramp_lower" BelongToCategorie="tow_control2" LocaleUid="LegRotate Rear" Name="LegRotate3" SpeedMult="6.5" />
+		<Constraint Action="11" Id="ramp_lower" BelongToCategorie="tow_control2" Name="LegRotate4" SpeedMult="6.5" />
+
+		<Constraint Action="9" Id="ramp_lower" BelongToCategorie="tow_control3" LocaleUid="Leg Push Front" Name="LegExt" SpeedMult="6.5" />
+		<Constraint Action="9" Id="ramp_lower" BelongToCategorie="tow_control3" Name="LegExt2" SpeedMult="6.5" />
+		<Constraint Action="11" Id="ramp_lower" BelongToCategorie="tow_control3" LocaleUid="Leg Push Rear" Name="LegExt3" SpeedMult="6.5" />
+		<Constraint Action="11" Id="ramp_lower" BelongToCategorie="tow_control3" Name="LegExt4" SpeedMult="6.5" />
+
+	</ControlledConstraints>
+	<ActionCategories>
+		<ActionCategory
+			Action="1"
+			AvailableForFastMode="true"
+			Id="tow_control2"
+			LocaleUid="Leg Rotate"
+			RemoveChildActionsFromCustomPanelShowCounter="true"
+		/>
+		<ActionCategory
+			Action="1"
+			AvailableForFastMode="true"
+			Id="tow_control3"
+			LocaleUid="Leg Push"
+			RemoveChildActionsFromCustomPanelShowCounter="true"
+		/>
+	</ActionCategories>
+</Truck>

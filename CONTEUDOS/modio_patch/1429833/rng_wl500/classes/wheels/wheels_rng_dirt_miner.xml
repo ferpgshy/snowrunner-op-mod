@@ -1,0 +1,64 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Mudtires _template="Heavy">			
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Mudtires>
+		<Chains _template="Heavy">			
+			<WheelSoftness RadiusOffset="0.025" SoftForceScale="0.24" />
+		</Chains> 		
+	</TruckTire>
+</_templates>
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.75"
+	WidthRear="1.75"
+>
+	<TruckTires>		
+		<TruckTire
+			_template="Mudtires"
+			Mesh="wheels/tire_rng_dirt_miner"
+			Name="offroad_1"
+			RearMassScale="2"
+			Mass="280"	
+		>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="RNG Dirt Miner" UiName="RNG Dirt Miner" />
+			</GameData>
+			<WheelTracks TextureAlpha="trucks/RNGTireDirtMiner_tracks_alpha__s_d.tga" TextureHeight="trucks/RNGTireDirtMiner_tracks_height__s_d.tga" />
+			<WheelFriction
+				BodyFriction="2.4"
+				BodyFrictionAsphalt="2.1"
+				SubstanceFriction="2.4"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>			
+	
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_rng_dirt_miner" Name="op_rdminer_offroad_1_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>		
+		<TruckRim Mesh="wheels/rim_rng_heavy_big" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="RNG Loader Rim Color" UiName="RNG Loader Rim Color" />
+			</GameData>
+		</TruckRim>	
+		<TruckRim Mesh="wheels/rim_rng_heavy_big_color" Name="rim_2">
+			<GameData>
+				<UiDesc UiDesc="RNG Loader Rim" UiName="RNG Loader Rim" />
+			</GameData>
+		</TruckRim>		
+	</TruckRims>
+</TruckWheels>

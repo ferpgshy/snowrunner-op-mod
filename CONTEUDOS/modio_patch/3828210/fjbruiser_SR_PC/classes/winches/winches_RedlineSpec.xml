@@ -1,0 +1,226 @@
+<WinchVariants>
+
+<!---------SNOWRUNNER VANILLA WINCHES---------->		
+		<Winch
+		Name="Vanilla High-power Scout Winch"
+		Length="14"
+		StrengthMult="1.4"
+		IsEngineIgnitionRequired="true"
+	>
+		<GameData
+			Price="9400"
+			UnlockByExploration="false"
+			UnlockByRank="10"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="A high-power scout winch setup. Extended motor pull strength makes it more viable on heavier scouts with trailers or for especially rough terrain. Source Tune: High-power Scout."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Vanilla High-power Scout Winch"
+			/>
+		</GameData>
+	</Winch>
+		<Winch
+		Name="Vanilla Advanced Scout Winch"
+		Length="21"
+		StrengthMult="1.4"
+		IsEngineIgnitionRequired="true"
+	>
+		<GameData
+			Price="12200"
+			UnlockByExploration="false"
+			UnlockByRank="14"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="An advanced scout winch setup. Featuring both an extended length and a more powerful motor, it almost bridges the gap between scout winches and heavier, truck-oriented setups. Source Tune: Advanced Scout."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Vanilla Advanced Scout Winch"
+			/>
+		</GameData>
+	</Winch>
+	<Winch
+		Name="Vanilla Autonomous Scout Winch"
+		Length="14"
+		StrengthMult="1.0"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="9400"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="A low-strength winch setup with a dedicated battery unit. Not as powerful as more common variants, but can operate even when the vehicle's engine is turned off or stalled. Source Tune: Autonomous Scout."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Vanilla Autonomous Scout Winch"
+			/>
+		</GameData>
+	</Winch>
+	
+<!-- 	<Winch
+		Name="Vanilla Extended Scout Winch"
+		Length="21"
+		StrengthMult="1.0"
+		IsEngineIgnitionRequired="true"
+	>
+		<GameData
+			Price="7500"
+			UnlockByExploration="false"
+			UnlockByRank="6"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="An extended scout winch setup with a longer rope. Its relatively small size and impressive reach makes it a perfect tool for lightweight scouting vehicles. Source Tune: Extended Scout."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Vanilla Extended Scout Winch"
+			/>
+		</GameData>
+	</Winch> -->
+	
+	<!---------EXPEDITIONS VANILLA WINCHES---------->		
+	
+<!-- 	<Winch
+		Name="Vanilla Hi-Power Winch"
+		Length="14"
+		StrengthMult="1.5"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="5000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="A high-power autonomous scout winch, with a higher motor pulling power that makes it more viable for heavier scouts, or especially rough terrain. Source Tune: Hi-Power Winch."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Vanilla Hi-Power Winch"
+			/>
+		</GameData>
+	</Winch>
+	
+	<Winch
+		Name="Vanilla Advanced Winch"
+		Length="20"
+		StrengthMult="1.35"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="7000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="An advanced autonomous scout winch, featuring both extended rope length and more powerful motor. Source Tune: Advanced Winch."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Vanilla Advanced Winch"
+			/>
+		</GameData>
+	</Winch>
+	
+	<Winch
+		Name="Vanilla Heavy Advanced Winch"
+		Length="25"
+		StrengthMult="1.5"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="9000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="A high-power winch with a dedicated battery unit, featuring both extended rope length and more powerful motor than the advanced winch. It almost bridges the gap between scout winches and heavier, truck-oriented setups. Source Tune: Heavy Advanced Winch."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Vanilla Heavy Advanced Winch"
+			/>
+		</GameData>
+	</Winch>	
+ -->
+
+		
+<!----------TRAILRUNNER WINCH---------->		
+		
+	<Winch
+		Name="TrailRunner Base Winch"
+		Length="25"
+		StrengthMult="5.0"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="2700"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="The TrailRunner Base Winch has 5X more strength and a longer reach (25m)."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="TrailRunner Base Winch"
+			/>
+		</GameData>
+	</Winch>		
+
+	<Winch
+		Name="TrailRunner Premium Winch"
+		Length="40"
+		StrengthMult="8.0"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="3500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="The TrailRunner Premium Winch has 8X more strength and a longer reach (40m)."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="TrailRunner Premium Winch"
+			/>
+		</GameData>
+	</Winch>
+	
+
+	<Winch
+		Name="op_winch_deus"
+		Length="100"
+		StrengthMult="20.0"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="UI_WINCH_DEUS_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_WINCH_DEUS_NAME"
+			/>
+		</GameData>
+	</Winch>
+</WinchVariants>

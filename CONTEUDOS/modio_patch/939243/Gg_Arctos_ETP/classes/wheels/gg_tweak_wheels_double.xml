@@ -1,0 +1,669 @@
+<_templates>
+	<TruckWheels>
+		<ggWheelsSingle
+			Width="2.0"
+			WidthRear="2.0"
+		/>
+		<ggWheelsDouble
+			Width="1.5"
+			WidthRear="3.0"
+		/>
+		<ggWheelsWide
+			Width="3.5"
+			WidthRear="3.5"
+		/>
+	</TruckWheels>
+	<WheelFriction>
+		<gg_OPFriction
+			BodyFrictionAsphalt="5.0"
+			BodyFriction="5.0"
+			SubstanceFriction="5.0"
+			IsIgnoreIce="true"
+		/>
+	</WheelFriction>
+	<TruckTire>
+		<ggTireSingle
+			RearMassScale="1"
+			Mass="200"
+		>
+			<WheelTracks
+				TextureAlpha="tracks/default_alpha__s_d.tga"
+				TextureHeight="tracks/default_height__s_d.tga"
+			/>
+			<WheelTracks
+				TextureAlpha="tracks/default_alpha__s_d.tga"
+				TextureHeight="tracks/default_height__s_d.tga"
+				Rear="true"
+			/>
+			<WheelSoftness
+				RadiusOffset="0.025"
+				SoftForceScale="0.320"
+			/>
+		</ggTireSingle>
+		<ggTireDouble
+			RearMassScale="2"
+			Mass="200"
+		>
+			<WheelTracks
+				TextureAlpha="tracks/default_alpha__s_d.tga"
+				TextureHeight="tracks/default_height__s_d.tga"
+			/>
+			<WheelTracks
+				Rear="true"
+				TextureAlpha="tracks/default_double_alpha__s_d.tga"
+				TextureHeight="tracks/default_double_height__s_d.tga"
+			/>
+			<WheelSoftness
+				RadiusOffset="0.025"
+				SoftForceScale="0.320"
+			/>
+		</ggTireDouble>
+		<ggTireWide
+			RearMassScale="1"
+			Mass="400"
+		>
+			<WheelTracks
+				TextureAlpha="tracks/default_alpha__s_d.tga"
+				TextureHeight="tracks/default_height__s_d.tga"
+			/>
+			<WheelTracks
+				TextureAlpha="tracks/default_alpha__s_d.tga"
+				TextureHeight="tracks/default_height__s_d.tga"
+				Rear="true"
+			/>
+			<WheelSoftness
+				RadiusOffset="0.025"
+				SoftForceScale="0.320"
+			/>
+		</ggTireWide>
+	</TruckTire>
+	<TiresInflationSystemSettings>
+		<gg_TireInflation>
+			<Low
+				OnModelFriction="10.0"
+				BodyFriction="10.0"
+				BodyFrictionAsphalt="10.0"
+				SubstanceFriction="10.0"
+				FuelConsumptionModifier="1.5"
+				SteeringSpeedModifier="0.7"
+				AdditionalRadiusOffset="0.1"
+			>
+				<TickDamageParams
+					MinVel = "2.55"
+					MaxVel = "5.0"
+					MinDamage = "2"
+					MaxDamage = "4"
+					DamageTick = "5"
+				/>
+			</Low>
+			<Reduced
+				OnModelFriction="7.5"
+				BodyFriction="7.5"
+				BodyFrictionAsphalt="7.5"
+				SubstanceFriction="7.5"
+				FuelConsumptionModifier="1.25"
+				SteeringSpeedModifier="0.85"
+				AdditionalRadiusOffset="0.05"
+			>
+				<TickDamageParams
+					MinVel = "7.0"
+					MaxVel = "10.0"
+					MinDamage = "2"
+					MaxDamage = "4"
+					DamageTick = "5"
+				/>
+			</Reduced>
+			<Increased
+				OnModelFriction="5.0"
+				BodyFriction="5.0"
+				BodyFrictionAsphalt="5.0"
+				SubstanceFriction="5.0"
+				DamageMult = "1.25"
+				FuelConsumptionModifier="0.9"
+			/>
+			<High
+				OnModelFriction="2.5"
+				BodyFriction="2.5"
+				BodyFrictionAsphalt="2.5"
+				SubstanceFriction="2.5"
+				DamageMult = "1.75"
+				FuelConsumptionModifier="0.75"
+			/>
+		</gg_TireInflation>
+	</TiresInflationSystemSettings>
+</_templates>
+
+<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ END OF TEMPLATES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
+<TruckWheels
+	Radius="1.0"
+	DamageCapacity="999999"
+	_template="ggWheelsDouble"
+>
+
+<!--tires-->
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_medium_highway_double_1"
+			Name="highway_1"
+			_template="ggTireDouble"
+		>
+			<GameData
+				Price="2300"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Regular tire set. Provides great traction on the road but offers next to no advantage on dirt or mud. (Asphalt: 3.0 | Allterrain: 1.0 | Mud: 0.4 | Ice: No)"
+					UiName="UHD I [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="3.0"
+				BodyFriction="1.0"
+				SubstanceFriction="0.4"
+				IsIgnoreIce="false"
+				UiName="UI_TIRE_TYPE_HIGHWAY_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_medium_highway_double_2"
+			Name="highway_2"
+			_template="ggTireDouble"
+		>
+			<GameData
+				Price="2500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Regular tire set. Provides great traction on the road but offers next to no advantage on dirt or mud. (Asphalt: 3.0 | Allterrain: 1.2 | Mud: 0.2 | Ice: No)"
+					UiName="UHD II [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="3.0"
+				BodyFriction="1.2"
+				SubstanceFriction="0.2"
+				IsIgnoreIce="false"
+				UiName="UI_TIRE_TYPE_HIGHWAY_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_medium_highway_double_3"
+			Name="highway_3"
+			_template="ggTireDouble"
+		>
+			<GameData
+				Price="2900"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Regular tire set. Provides great traction on the road but offers next to no advantage on dirt or mud. (Asphalt: 3.2 | Allterrain: 1.0 | Mud: 0.2 | Ice: No)"
+					UiName="UHD III [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="3.2"
+				BodyFriction="1.0"
+				SubstanceFriction="0.2"
+				IsIgnoreIce="false"
+				UiName="UI_TIRE_TYPE_HIGHWAY_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_medium_allterrain_double_1"
+			Name="allterrain_1"
+			_template="ggTireDouble"
+		>
+			<GameData
+				Price="3800"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Advanced tire set designed for balanced performance on and off the road. (Asphalt: 1.9 | Allterrain: 1.5 | Mud: 1.0 | Ice: No)"
+					UiName="UAD I [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="1.9"
+				BodyFriction="1.5"
+				SubstanceFriction="1.0"
+				IsIgnoreIce="false"
+				UiName="UI_TIRE_TYPE_ALLTERRAIN_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_medium_allterrain_double_2"
+			Name="allterrain_2"
+			_template="ggTireDouble"
+		>
+			<GameData
+				Price="4200"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Advanced tire set designed for balanced performance on and off the road. (Asphalt: 1.5 | Allterrain: 1.5 | Mud: 1.2 | Ice: No)"
+					UiName="UAD II [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="1.5"
+				BodyFriction="1.5"
+				SubstanceFriction="1.2"
+				IsIgnoreIce="false"
+				UiName="UI_TIRE_TYPE_ALLTERRAIN_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_medium_allterrain_double_3"
+			Name="allterrain_3"
+			_template="ggTireDouble"
+		>
+			<GameData
+				Price="4500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Advanced tire set designed for balanced performance on and off the road. (Asphalt: 1.5 | Allterrain: 1.7 | Mud: 1.0 | Ice: No)"
+					UiName="UAD III [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="1.5"
+				BodyFriction="1.7"
+				SubstanceFriction="1.0"
+				IsIgnoreIce="false"
+				UiName="UI_TIRE_TYPE_ALLTERRAIN_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_medium_offroad_double_1"
+			Name="offroad_1"
+			_template="ggTireDouble"
+		>
+			<GameData
+				Price="4900"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Specialised tire set providing great traction in the worst of circumstances without sacrificing too much on-road performance. (Asphalt: 1.0 | Allterrain: 3.0 | Mud: 1.5 | Ice: No)"
+					UiName="UOD I [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="1.0"
+				BodyFriction="3.0"
+				SubstanceFriction="1.5"
+				IsIgnoreIce="false"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_medium_offroad_double_2"
+			Name="offroad_2"
+			_template="ggTireDouble"
+		>
+			<GameData
+				Price="5100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Specialised tire set providing great traction in the worst of circumstances without sacrificing too much on-road performance. (Asphalt: 0.8 | Allterrain: 3.0 | Mud: 1.9 | Ice: No)"
+					UiName="UOD II [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="0.8"
+				BodyFriction="3.0"
+				SubstanceFriction="1.9"
+				IsIgnoreIce="false"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_medium_offroad_double_3"
+			Name="offroad_3"
+			_template="ggTireDouble"
+		>
+			<GameData
+				Price="5700"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Specialised tire set providing great traction in the worst of circumstances without sacrificing too much on-road performance. (Asphalt: 0.8 | Allterrain: 3.2 | Mud: 1.5 | Ice: No)"
+					UiName="UOD III [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="0.8"
+				BodyFriction="3.2"
+				SubstanceFriction="1.5"
+				IsIgnoreIce="false"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_medium_chains_rear_double"
+			Name="chains_rear"
+			_template="ggTireDouble"
+		>
+			<GameData
+				Price="6100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Specialised tire set with chains running over the treads for maximum traction on iced-over roads. (Asphalt: 1.2 | Allterrain: 3.0 | Mud: 1.3 | Ice: Rear)"
+					UiName="UAD III Rear Chains [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				Rear="true"
+				BodyFrictionAsphalt="1.2"
+				BodyFriction="3.0"
+				SubstanceFriction="1.3"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+			<WheelFriction
+				BodyFrictionAsphalt="1.2"
+				BodyFriction="3.0"
+				SubstanceFriction="1.3"
+				IsIgnoreIce="false"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+		<TruckTire
+			Mesh="wheels/tire_medium_chains_all_double"
+			Name="chains_all"
+			_template="ggTireDouble"
+		>
+			<GameData
+				Price="6400"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc
+					UiDesc="Specialised tire set with chains running over the treads for maximum traction on iced-over roads. (Asphalt: 1.2 | Allterrain: 3.0 | Mud: 1.3 | Ice: Yes)"
+					UiName="UAD III All Chains [V]"
+				/>
+			</GameData>
+			<WheelFriction
+				BodyFrictionAsphalt="1.2"
+				BodyFriction="3.0"
+				SubstanceFriction="1.3"
+				IsIgnoreIce="true"
+				UiName="UI_TIRE_TYPE_CHAINS_NAME"
+			/>
+			<TiresInflationSystemSettings _template="gg_TireInflation"/>
+		</TruckTire>
+	
+		<TruckTire _template="ggTireDouble" Mesh="wheels/tire_medium_highway_double_1" Name="op_gtdouble_highway_1_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="ggTireDouble" Mesh="wheels/tire_medium_highway_double_2" Name="op_gtdouble_highway_2_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="ggTireDouble" Mesh="wheels/tire_medium_highway_double_3" Name="op_gtdouble_highway_3_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="ggTireDouble" Mesh="wheels/tire_medium_allterrain_double_1" Name="op_gtdouble_allterrain_1_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="ggTireDouble" Mesh="wheels/tire_medium_allterrain_double_2" Name="op_gtdouble_allterrain_2_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="ggTireDouble" Mesh="wheels/tire_medium_allterrain_double_3" Name="op_gtdouble_allterrain_3_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="ggTireDouble" Mesh="wheels/tire_medium_offroad_double_1" Name="op_gtdouble_offroad_1_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="ggTireDouble" Mesh="wheels/tire_medium_offroad_double_2" Name="op_gtdouble_offroad_2_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="ggTireDouble" Mesh="wheels/tire_medium_offroad_double_3" Name="op_gtdouble_offroad_3_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="ggTireDouble" Mesh="wheels/tire_medium_chains_rear_double" Name="op_gtdouble_chains_rear_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="ggTireDouble" Mesh="wheels/tire_medium_chains_all_double" Name="op_gtdouble_chains_all_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+
+
+<!-- rims -->
+	<TruckRims>
+		<!--gg rims-->
+		<TruckRim
+			Mesh="wheels/rims/gg_rim_double_nutcheck"
+			Name="rim_double_01"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="Gg Nut Checker Rims (double-series)"
+					UiName="Gg DS I"
+				/>
+			</GameData>
+		</TruckRim>
+
+		<!--gg tweak: wheels_medium_double-->
+		<TruckRim
+			Mesh="wheels/rim_medium_highway_allterrain_double_1"
+			Name="rim_double_02"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_DOUBLE_1_DESC"
+					UiName="UI_RIM_MEDIUM_DOUBLE_1_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_highway_allterrain_double_2"
+			Name="rim_double_03"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_DOUBLE_2_DESC"
+					UiName="UI_RIM_MEDIUM_DOUBLE_2_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_highway_allterrain_double_3"
+			Name="rim_double_04"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_DOUBLE_3_DESC"
+					UiName="UI_RIM_MEDIUM_DOUBLE_3_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_highway_allterrain_double_4"
+			Name="rim_double_05">
+			>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_DOUBLE_4_DESC"
+					UiName="UI_RIM_MEDIUM_DOUBLE_4_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_highway_allterrain_double_5"
+			Name="rim_double_06"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_DOUBLE_5_DESC"
+					UiName="UI_RIM_MEDIUM_DOUBLE_5_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_highway_allterrain_double_6"
+			Name="rim_double_07"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_DOUBLE_6_DESC"
+					UiName="UI_RIM_MEDIUM_DOUBLE_6_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_offroad_double_1"
+			Name="rim_double_08"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_OFFROAD_DOUBLE_1_DESC"
+					UiName="UI_RIM_MEDIUM_OFFROAD_DOUBLE_1_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_offroad_double_2"
+			Name="rim_double_09"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_OFFROAD_DOUBLE_2_DESC"
+					UiName="UI_RIM_MEDIUM_OFFROAD_DOUBLE_2_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_offroad_double_3"
+			Name="rim_double_10"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_OFFROAD_DOUBLE_3_DESC"
+					UiName="UI_RIM_MEDIUM_OFFROAD_DOUBLE_3_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+		<TruckRim
+			Mesh="wheels/rim_medium_offroad_double_4"
+			Name="rim_double_11"
+		>
+			<GameData>
+				<UiDesc
+					UiDesc="UI_RIM_MEDIUM_OFFROAD_DOUBLE_4_DESC"
+					UiName="UI_RIM_MEDIUM_OFFROAD_DOUBLE_4_NAME"
+				/>
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>
+
+<!--
+UI_TIRE_TYPE_HIGHWAY_NAME
+UI_TIRE_TYPE_ALLTERRAIN_NAME
+UI_TIRE_TYPE_OFFROAD_NAME
+UI_TIRE_TYPE_MUDTIRES_NAME
+UI_TIRE_TYPE_CHAINS_NAME
+-->

@@ -1,0 +1,19 @@
+<TruckAddon>
+	<Snorkel Origin="(0.904; 10.0; -0.710)" />
+	<PhysicsModel Mesh="trucks/mtvr_mk31_tuning/mtvr31_snorkel_1" />
+	<GameData
+		CameraPreset="side_r"
+		Category="snorkel"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="Stock Snorkel"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Stock Snorkel"
+		/>
+		<InstallSocket Type="MtvrMk31Snorkel" />
+	</GameData>
+</TruckAddon>

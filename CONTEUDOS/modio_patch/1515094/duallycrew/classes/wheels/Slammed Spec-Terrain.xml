@@ -1,0 +1,52 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.8"
+	WidthRear="3.65"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_SlammedSpec_Dually"
+			Name="Slammed Spec-Terrain"
+			RearMassScale="2"
+			Mass="400"
+		>
+			<GameData
+				Price="1"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="True Specs: DIRT 7 out of 10 - MUD 6 out of 10 - PAVEMENT 5.5 out of 10" UiName="Slammed Spec-Terrain" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.012" SoftForceScale="0.50" />
+			<WheelFriction
+				BodyFriction="7.0"
+				BodyFrictionAsphalt="5.5"
+				SubstanceFriction="6.0"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_SlammedSpec_Dually" Name="op_Slammed _Slammed_Spec_Terrain_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+	
+		<TruckRim Mesh="wheels/wheels_SlammedSpec_Dually" Name="Slammed Spec Dually">
+			<GameData>
+				<UiDesc UiDesc="Slammed Spec Dually" UiName="Slammed Spec Dually" />
+			</GameData>
+		</TruckRim>
+	
+	</TruckRims>
+</TruckWheels>

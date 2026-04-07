@@ -1,0 +1,67 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad _template="Superheavy" RearMassScale="2">
+			<WheelTracks _template="Default" />
+			<WheelTracks _template="DefaultDouble" Rear="true" />
+			<WheelSoftness _template="Soft" />
+			<WheelFriction _template="Mudtires" />
+		</Offroad>
+	</TruckTire>
+</_templates>
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.373"
+	WidthRear="3.0"
+>
+	<TruckTires>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_double_cat_770g" Name="mudtires_1">
+			<WheelFriction _template="Chains" SubstanceFriction="3.5" />
+			<GameData
+				Price="7900"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_MUDTIRES_DESC" UiName="UI_TIRE_MUDTIRES_SUPERHEAVY_CAT770G_DOUBLE_1_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_chains_double_1" Name="chains_2">
+			<WheelFriction _template="Chains" SubstanceFriction="3.5" />
+			<GameData
+				Price="6800"
+				UnlockByExploration="false"
+				UnlockByRank="14"
+			>
+				<UiDesc UiDesc="UI_TIRE_CHAINS_DESC" UiName="UI_TIRE_HEAVY_CHAINS_DOUBLE_1_NAME" />
+			</GameData>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_double_cat_770g" Name="op_1cdouble_mudtires_1_god">
+			<WheelFriction _template="Chains" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_chains_double_1" Name="op_1cdouble_chains_2_god">
+			<WheelFriction _template="Chains" BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_double_cat_770g" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MUDTIRES_DESC" UiName="UI_RIM_MUDTIRES_SUPERHEAVY_CAT770G_DOUBLE_1_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

@@ -1,0 +1,44 @@
+<WinchVariants>
+	<Winch
+		Name="w_mod_rexxy_wj_offline"
+		Length="50"
+		StrengthMult="2"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="5000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="This winch runs on a battery. You can use this winch even when the motor is not running."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Battery Powered Winch"
+			/>
+		</GameData>
+	</Winch>
+
+	<Winch
+		Name="op_winch_deus"
+		Length="100"
+		StrengthMult="20.0"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="UI_WINCH_DEUS_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_WINCH_DEUS_NAME"
+			/>
+		</GameData>
+	</Winch>
+</WinchVariants>

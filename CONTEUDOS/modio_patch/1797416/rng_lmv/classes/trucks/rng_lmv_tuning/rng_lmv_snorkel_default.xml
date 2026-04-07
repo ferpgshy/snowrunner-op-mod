@@ -1,0 +1,19 @@
+<TruckAddon>
+	<Snorkel Origin="(1.208; 10.0; 1.010)" />
+	<PhysicsModel Mesh="trucks/rng_lmv_tuning/rng_lmv_snorkel_default" />
+	<GameData
+		CameraPreset="addon_2"
+		Category="snorkel"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="Default Snorkel"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Default Snorkel"
+		/>
+		<InstallSocket Type="RngLMVSnorkel" />
+	</GameData>
+</TruckAddon>

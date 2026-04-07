@@ -1,0 +1,482 @@
+<GearboxVariants>
+
+	<Gearbox
+		AWDConsumptionModifier="1.8"
+		CriticalDamageThreshold="0.6"
+		DamageCapacity="150"
+		DamagedConsumptionModifier="1.5"
+		FuelConsumption="2.2"
+		IdleFuelModifier="0.2"
+		Name="LVL 0: Vanilla Offroad"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="25.0"
+	>
+		<ReverseGear AngVel="1.5" FuelModifier="0.9" />
+		<HighGear AngVel="8.0" FuelModifier="1.5" />
+		<Gear AngVel="3.0" FuelModifier="1.7" />
+		<Gear AngVel="6.0" FuelModifier="1.5" />
+		<Gear AngVel="12.0" FuelModifier="1.3" />
+		<Gear AngVel="16.0" FuelModifier="1.0" />
+		<GameData
+			Price="1800"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams 
+				IsHighGearExists="true" 
+				IsLowerGearExists="true" 
+				IsLowerPlusGearExists="true" 
+				IsLowerMinusGearExists="true"
+			/>
+			<UiDesc
+				UiDesc="Default Scout Specs. Source Tune: G-Scout OffRoad. A gearbox customized for better off-road performance sacrificing gear count...top speed and fuel efficiency but offering three Low Gear stages."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="LVL 0: Vanilla Offroad"
+			/>
+		</GameData>
+		<GearboxPenaltiesSettings HighAngVel="14.0" />
+	</Gearbox>
+
+	<Gearbox
+		AWDConsumptionModifier="1.1"
+		CriticalDamageThreshold="0.75"
+		DamageCapacity="160"
+		DamagedConsumptionModifier="1.4"
+		FuelConsumption="1.8"
+		IdleFuelModifier="0.2"
+		Name="LVL 1: Stock-ish"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="15.0"
+	>
+		<ReverseGear AngVel="2.0" FuelModifier="0.9" />
+		<HighGear AngVel="15.0" FuelModifier="0.6" />
+		<Gear AngVel="1.5" FuelModifier="1.9" />
+		<Gear AngVel="3.5" FuelModifier="1.6" />
+		<Gear AngVel="6.5" FuelModifier="1.5" />
+		<Gear AngVel="9.5" FuelModifier="1.3" />
+		<Gear AngVel="12.0" FuelModifier="0.2" />
+		<Gear AngVel="14.0" FuelModifier="1.0" />
+		<GameData
+			Price="2000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsLowerMinusGearExists="true"
+			/>
+			<UiDesc
+				UiDesc="6-Speed transmission with stock-ish performance when paired with the Stock-ish engine tune."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="LVL 1: Stock-ish"
+			/>
+		</GameData>
+		<GearboxPenaltiesSettings HighAngVel="14.0" />
+	</Gearbox>
+
+	<Gearbox
+		AWDConsumptionModifier="1.1"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="400"
+		DamagedConsumptionModifier="1.4"
+		FuelConsumption="2.2"
+		IdleFuelModifier="0.2"
+		Name="LVL 1: TrailRider"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="20.0"
+	>
+		<ReverseGear AngVel="2.0" FuelModifier="0.9" />
+		<HighGear AngVel="14.0" FuelModifier="0.9" />
+		<Gear AngVel="1.5" FuelModifier="1.7" />
+		<Gear AngVel="2.5" FuelModifier="1.5" />
+		<Gear AngVel="4.0" FuelModifier="1.3" />
+		<Gear AngVel="6.5" FuelModifier="1.3" />		
+		<Gear AngVel="8.5" FuelModifier="1.0" />
+		<GameData
+			Price="3000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true" 
+				IsLowerGearExists="true" 
+				IsLowerPlusGearExists="true" 
+				IsLowerMinusGearExists="true"
+			/>
+			<UiDesc
+				UiDesc="5-Speed transmission tuned for slower-placed trail riding when paired with the TrailRider engine tune. Has Fine-Tune Low Gear."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="LVL 1: TrailRider"
+			/>
+		</GameData>
+		<GearboxPenaltiesSettings HighAngVel="14.0" />
+	</Gearbox>
+
+	<Gearbox
+		AWDConsumptionModifier="1.1"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="500"
+		DamagedConsumptionModifier="1.4"
+		FuelConsumption="2.3"
+		IdleFuelModifier="0.2"
+		Name="LVL 2: TrailRunner"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="20.0"
+	>
+		<ReverseGear AngVel="2.0" FuelModifier="0.9" />
+		<HighGear AngVel="19.0" FuelModifier="0.9" />
+		<Gear AngVel="2.0" FuelModifier="1.4" />
+		<Gear AngVel="4.0" FuelModifier="1.4" />		
+		<Gear AngVel="6.0" FuelModifier="1.4" />
+		<Gear AngVel="9.0" FuelModifier="1.4" />		
+		<Gear AngVel="12.5" FuelModifier="1.3" />
+		<Gear AngVel="14.5" FuelModifier="1.2" />
+		<GameData
+			Price="3000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsLowerMinusGearExists="true"
+			/>
+			<UiDesc
+				UiDesc="6-Speed with High-Overdrive. Tuned for faster trailblazing when paired with the TrailRunner tuned engine."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="LVL 2: TrailRunner"
+			/>
+		</GameData>
+		<GearboxPenaltiesSettings HighAngVel="14.0" />
+	</Gearbox>
+
+	<Gearbox
+		AWDConsumptionModifier="1.1"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="600"
+		DamagedConsumptionModifier="1.4"
+		FuelConsumption="2.5"
+		IdleFuelModifier="0.2"
+		Name="LVL 3: RedLine"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="20.0"
+	>
+		<ReverseGear AngVel="2.0" FuelModifier="0.9" />
+		<HighGear AngVel="20.0" FuelModifier="0.9" />
+		<Gear AngVel="3.0" FuelModifier="1.4" />		
+		<Gear AngVel="6.5" FuelModifier="1.4" />
+		<Gear AngVel="10.5" FuelModifier="1.3" />
+		<Gear AngVel="14.0" FuelModifier="1.2" />
+		<Gear AngVel="18.0" FuelModifier="1.0" />
+		<Gear AngVel="22.0" FuelModifier="1.0" />		
+		<Gear AngVel="26.0" FuelModifier="0.9" />
+		<Gear AngVel="28.0" FuelModifier="0.9" />
+		<GameData
+			Price="3000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsLowerMinusGearExists="true"
+			/>
+			<UiDesc
+				UiDesc="8-Speed with High-Overdrive. This is the fastest transmissions of the bunch."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="LVL 3: RedLine"
+			/>
+		</GameData>
+		<GearboxPenaltiesSettings HighAngVel="14.0" />
+	</Gearbox>
+	
+	
+	<Gearbox
+		AWDConsumptionModifier="1.1"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="400"
+		DamagedConsumptionModifier="1.6"
+		FuelConsumption="2.3"
+		IdleFuelModifier="0.3"
+		Name="Tow & Haul LVL 1"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="15.0"
+	>
+		<ReverseGear AngVel="0.5" FuelModifier="0.9" />
+		<HighGear AngVel="13.0" FuelModifier="1.5" />
+		<Gear AngVel="1.5" FuelModifier="1.6" />
+		<Gear AngVel="2.5" FuelModifier="1.4" />
+		<Gear AngVel="3.5" FuelModifier="1.1" />
+		<Gear AngVel="4.5" FuelModifier="1.1" />
+		<GameData
+			Price="3000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams 
+				IsHighGearExists="true" 
+				IsLowerGearExists="true" 
+				IsLowerPlusGearExists="true" 
+				IsLowerMinusGearExists="true"
+			/>
+			<UiDesc
+				UiDesc="4-Speed with High-Overdrive. Has less gear hunting and a lower top speed for more control. This is the slowest Tow & Haul tune."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Tow & Haul LVL 1"
+			/>
+		</GameData>
+	</Gearbox>
+
+	<Gearbox
+		AWDConsumptionModifier="1.1"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="400"
+		DamagedConsumptionModifier="1.4"
+		FuelConsumption="2.4"
+		IdleFuelModifier="0.2"
+		Name="Tow & Haul LVL 2"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="15.0"
+	>
+		<ReverseGear AngVel="1.0" FuelModifier="0.8" />
+		<HighGear AngVel="13.0" FuelModifier="0.6" />
+		<Gear AngVel="1.5" FuelModifier="1.4" />
+		<Gear AngVel="2.0" FuelModifier="1.3" />
+		<Gear AngVel="3.5" FuelModifier="1.2" />
+		<Gear AngVel="4.5" FuelModifier="1.0" />
+		<Gear AngVel="6.0" FuelModifier="0.9" />
+		<Gear AngVel="8.0" FuelModifier="0.9" />
+		<GameData
+			Price="3000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsLowerMinusGearExists="true"
+			/>
+			<UiDesc
+				UiDesc="6-Speed with High-Overdrive. Gears 1-4 are similar to the Heavy Tow & Haul 4-Speed but this transmission offers more speed due to the additional 2 gears."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Tow & Haul LVL 2"
+			/>
+		</GameData>
+	</Gearbox>
+
+	<Gearbox
+		AWDConsumptionModifier="1.1"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="400"
+		DamagedConsumptionModifier="1.4"
+		FuelConsumption="2.5"
+		IdleFuelModifier="0.2"
+		Name="Tow & Haul LVL 3"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="15.0"
+	>
+		<ReverseGear AngVel="1.0" FuelModifier="0.8" />
+		<HighGear AngVel="14.0" FuelModifier="0.6" />
+		<Gear AngVel="1.5" FuelModifier="1.4" />
+		<Gear AngVel="2.0" FuelModifier="1.3" />
+		<Gear AngVel="3.5" FuelModifier="1.2" />
+		<Gear AngVel="5.5" FuelModifier="1.0" />
+		<Gear AngVel="7.5" FuelModifier="0.9" />
+		<Gear AngVel="9.5" FuelModifier="0.9" />
+		<Gear AngVel="10.5" FuelModifier="0.8" />
+		<Gear AngVel="13.0" FuelModifier="0.8" />
+		<GameData
+			Price="3000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsLowerMinusGearExists="true"
+			/>
+			<UiDesc
+				UiDesc="8-Speed with High-Overdrive. Gears 1-4 are similar to the Heavy Tow & Haul 4-Speed but this transmission offers even more speed due to the additional 4 gears. This is the fastest Tow & Haul tune."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Tow & Haul LVL 3"
+			/>
+		</GameData>
+	</Gearbox>	
+	
+	
+
+	<Gearbox
+		AWDConsumptionModifier="0.0"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="99999"
+		DamagedConsumptionModifier="1.0"
+		FuelConsumption="1.0"
+		IdleFuelModifier="0.1"
+		Name="op_gearbox_8a"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="0.0"
+	>
+		<ReverseGear AngVel="1.5" FuelModifier="1.1" />
+		<HighGear AngVel="20.8" FuelModifier="1.0" />
+		<Gear AngVel="1.41" FuelModifier="1.8" />
+		<Gear AngVel="2.13" FuelModifier="1.66" />
+		<Gear AngVel="3.21" FuelModifier="1.51" />
+		<Gear AngVel="4.83" FuelModifier="1.37" />
+		<Gear AngVel="7.29" FuelModifier="1.23" />
+		<Gear AngVel="10.99" FuelModifier="1.09" />
+		<Gear AngVel="16.58" FuelModifier="0.94" />
+		<Gear AngVel="25.0" FuelModifier="0.8" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+			/>
+			<UiDesc
+				UiDesc="UI_GEARBOX_8A_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_8A_NAME"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="0.0"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="99999"
+		DamagedConsumptionModifier="1.0"
+		FuelConsumption="1.0"
+		IdleFuelModifier="0.1"
+		Name="op_gearbox_8b"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="0.0"
+	>
+		<ReverseGear AngVel="1.5" FuelModifier="1.1" />
+		<HighGear AngVel="22.4" FuelModifier="1.0" />
+		<Gear AngVel="1.41" FuelModifier="1.8" />
+		<Gear AngVel="2.15" FuelModifier="1.66" />
+		<Gear AngVel="3.28" FuelModifier="1.51" />
+		<Gear AngVel="5.0" FuelModifier="1.37" />
+		<Gear AngVel="7.62" FuelModifier="1.23" />
+		<Gear AngVel="11.62" FuelModifier="1.09" />
+		<Gear AngVel="17.71" FuelModifier="0.94" />
+		<Gear AngVel="27.0" FuelModifier="0.8" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+			/>
+			<UiDesc
+				UiDesc="UI_GEARBOX_8B_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_8B_NAME"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="0.0"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="99999"
+		DamagedConsumptionModifier="1.0"
+		FuelConsumption="1.0"
+		IdleFuelModifier="0.1"
+		Name="op_gearbox_8c"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="0.0"
+	>
+		<ReverseGear AngVel="1.5" FuelModifier="1.1" />
+		<HighGear AngVel="23.9" FuelModifier="1.0" />
+		<Gear AngVel="1.41" FuelModifier="1.8" />
+		<Gear AngVel="2.17" FuelModifier="1.66" />
+		<Gear AngVel="3.35" FuelModifier="1.51" />
+		<Gear AngVel="5.15" FuelModifier="1.37" />
+		<Gear AngVel="7.94" FuelModifier="1.23" />
+		<Gear AngVel="12.22" FuelModifier="1.09" />
+		<Gear AngVel="18.83" FuelModifier="0.94" />
+		<Gear AngVel="29.0" FuelModifier="0.8" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+			/>
+			<UiDesc
+				UiDesc="UI_GEARBOX_8C_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_8C_NAME"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="0.0"
+		CriticalDamageThreshold="0.99"
+		DamageCapacity="99999"
+		DamagedConsumptionModifier="1.0"
+		FuelConsumption="1.0"
+		IdleFuelModifier="0.1"
+		Name="op_gearbox_8d"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="0.0"
+	>
+		<ReverseGear AngVel="1.5" FuelModifier="1.1" />
+		<HighGear AngVel="25.5" FuelModifier="1.0" />
+		<Gear AngVel="1.41" FuelModifier="1.8" />
+		<Gear AngVel="2.19" FuelModifier="1.66" />
+		<Gear AngVel="3.41" FuelModifier="1.51" />
+		<Gear AngVel="5.3" FuelModifier="1.37" />
+		<Gear AngVel="8.24" FuelModifier="1.23" />
+		<Gear AngVel="12.82" FuelModifier="1.09" />
+		<Gear AngVel="19.94" FuelModifier="0.94" />
+		<Gear AngVel="31.0" FuelModifier="0.8" />
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+			/>
+			<UiDesc
+				UiDesc="UI_GEARBOX_8D_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_8D_NAME"
+			/>
+		</GameData>
+	</Gearbox>
+</GearboxVariants>

@@ -1,0 +1,75 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="0.992"
+	Width="2.0"
+	WidthRear="0.897"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_nitto_terra_grappler"
+			Name="offroad_nitto_terra_grappler"
+			RearMassScale="2"
+			Mass="150"
+		>
+			<GameData
+				Price="2600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="Rexxy's Nitto Terra Grappler" UiName="Rexxy's Nitto Terra Grappler" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.09" SoftForceScale="0.9" />
+			<WheelFriction
+				BodyFriction="5.1"
+				BodyFrictionAsphalt="4.9"
+				SubstanceFriction="4.5"
+				UiName="UI_TIRE_TYPE_OFFROAD_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_nitto_terra_grappler" Name="op_ntgrapplers_offroad_nitto_terra_grappler_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_method_xd" Name="method_xd_rims">
+			<GameData>
+				<UiDesc UiDesc="Rexxy's Method XD Rims Black" UiName="Rexxy's Method XD Rims Black" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_method_xd_white" Name="method_xd_rims_white">
+			<GameData>
+				<UiDesc UiDesc="Rexxy's Method XD Rims White" UiName="Rexxy's Method XD Rims White" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_method_xd_blue" Name="method_xd_rims_blue">
+			<GameData>
+				<UiDesc UiDesc="Rexxy's Method XD Rims Blue" UiName="Rexxy's Method XD Rims Blue" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_method_xd_orange" Name="method_xd_rims_orange">
+			<GameData>
+				<UiDesc UiDesc="Rexxy's Method XD Rims Orange" UiName="Rexxy's Method XD Rims Orange" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_method_xd_green" Name="method_xd_rims_green">
+			<GameData>
+				<UiDesc UiDesc="Rexxy's Method XD Rims Green" UiName="Rexxy's Method XD Rims Green" />
+			</GameData>
+		</TruckRim>
+		<TruckRim Mesh="wheels/rim_method_xd_pink" Name="method_xd_rims_pink">
+			<GameData>
+				<UiDesc UiDesc="Rexxy's Method XD Rims Pink" UiName="Rexxy's Method XD Rims Pink" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

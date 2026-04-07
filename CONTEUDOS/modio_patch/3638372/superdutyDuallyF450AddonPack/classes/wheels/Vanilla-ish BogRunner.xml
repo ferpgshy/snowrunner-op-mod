@@ -1,0 +1,66 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1"
+	Width="1.725"
+	WidthRear="3.5"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_Bogger_24Dually"
+			Name="Vanilla-ish BogRunner"
+			RearMassScale="2"
+			Mass="400"
+		>
+			<GameData
+				Price="3800"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="True Specs out of 10: DIRT 2.3 - MUD 3.0 - PAVEMENT 1.2 - DEFAULT DAMAGE" UiName="Vanilla-ish: BogRunner (Wide)" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/offroad_alpha__s_d.tga" TextureHeight="tracks/offroad_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.032" SoftForceScale="0.20" />
+			<WheelFriction
+				BodyFriction="2.3"
+				BodyFrictionAsphalt="1.2"
+				SubstanceFriction="3.0"
+				UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
+			/>
+		</TruckTire>
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_Bogger_24Dually" Name="op_Vanilla-_Vanilla_ish_BogRunner_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+
+
+		<TruckRim Mesh="wheels/wheels_JTX_Combat_24Dually" Name="Combat">
+			<GameData>
+				<UiDesc UiDesc="Combat" UiName="Combat" />
+			</GameData>
+		</TruckRim>
+		
+		<TruckRim Mesh="wheels/wheels_JTX_Cannon_24Dually" Name="Cannon">
+			<GameData>
+				<UiDesc UiDesc="Cannon" UiName="Cannon" />
+			</GameData>
+		</TruckRim>
+
+		<TruckRim Mesh="wheels/wheels_JTX_Silencer_24Dually" Name="Silencer">
+			<GameData>
+				<UiDesc UiDesc="Silencer" UiName="Silencer" />
+			</GameData>
+		</TruckRim>
+
+
+	</TruckRims>
+</TruckWheels>

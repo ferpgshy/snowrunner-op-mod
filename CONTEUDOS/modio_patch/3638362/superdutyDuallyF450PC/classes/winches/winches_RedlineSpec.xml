@@ -1,0 +1,86 @@
+<WinchVariants>
+	<Winch
+		Name="Vanilla Non-12-volt Winch"
+		Length="15"
+		StrengthMult="1.0"
+		IsEngineIgnitionRequired="true"
+	>
+		<GameData
+			Price="0"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="The 15-Foot Vanilla Spec Non-12-volt winch is for those who like doing things the hard way."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Vanilla Non-12-volt Winch"
+			/>
+		</GameData>
+	</Winch>
+
+	<Winch
+		Name="Vanilla 12-volt Winch"
+		Length="15"
+		StrengthMult="1.0"
+		IsEngineIgnitionRequired="true"
+	>
+		<GameData
+			Price="0"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="The 15-Foot Vanilla Spec 12-volt winch is for those who like doing things the hard way."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Vanilla 12-volt Winch"
+			/>
+		</GameData>
+	</Winch>
+
+	<Winch
+		Name="TrailRunner 12-Volt Winch"
+		Length="40"
+		StrengthMult="5.0"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="0"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams/>
+			<UiDesc
+				UiDesc="The 40-Foot TrailRunner Spec 12-volt winch is ready for all your winching needs. It has 5X more strength and a longer reach."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="TrailRunner 12-Volt Winch"
+			/>
+		</GameData>
+	</Winch>
+
+	<Winch
+		Name="op_winch_deus"
+		Length="100"
+		StrengthMult="20.0"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="UI_WINCH_DEUS_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_WINCH_DEUS_NAME"
+			/>
+		</GameData>
+	</Winch>
+</WinchVariants>

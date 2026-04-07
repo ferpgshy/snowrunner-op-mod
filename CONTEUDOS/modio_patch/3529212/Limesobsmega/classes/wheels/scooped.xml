@@ -1,0 +1,59 @@
+<TruckWheels
+	DamageCapacity="999999"
+	Radius="1.11"
+	Width="0.875"
+	WidthRear="0.875"
+>
+	<TruckTires>
+		<TruckTire
+			Mesh="wheels/tire_mod_scooped"
+			Name="scooped"
+			RearMassScale="1"
+			Mass="450"
+		>
+			<GameData
+				Price="0"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="mega truck tire made by TheBgamerBB" UiName="scooped" />
+			</GameData>
+			<WheelTracks TextureAlpha="tracks/tire_heavy_mudtires_single_tayga_1.tga" TextureHeight="tracks/default_height__s_d.tga" />
+			<WheelTracks Rear="true" TextureAlpha="tracks/tire_heavy_mudtires_single_tayga_1.tga" TextureHeight="tracks/default_double_height__s_d.tga" />
+			<WheelSoftness RadiusOffset="0.02" SoftForceScale="0.4" />
+			<WheelFriction
+				BodyFriction="8.5"
+				BodyFrictionAsphalt="8.8"
+				SubstanceFriction="8.5"
+				UiName="UI_TIRE_TYPE_MUDTIRES_NAME"			
+				IsIgnoreIce="true"
+			/>
+		</TruckTire>
+		
+	
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mod_scooped" Name="op_scooped_scooped_god">
+			<WheelFriction BodyFriction="15.0" BodyFrictionAsphalt="15.0" SubstanceFriction="15.0" IsIgnoreIce="true" />
+			<GameData
+				Price="100"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_DEUS_DESC" UiName="UI_TIRE_DEUS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+	
+		<TruckRim Mesh="wheels/rim_mod_scooped" Name="beadlocks  ">
+			<GameData>
+				<UiDesc UiDesc="rims By Capone" UiName="Or" />
+			</GameData>
+		</TruckRim>	
+			<TruckRim Mesh="wheels/rim_mod_scoopedbl" Name="Black beadlocks  ">
+			<GameData>
+				<UiDesc UiDesc="black rims By Capone" UiName="bl" />
+			</GameData>
+		</TruckRim>	
+
+	</TruckRims>
+</TruckWheels>
