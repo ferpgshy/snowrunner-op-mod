@@ -4,20 +4,19 @@
 *.str
 *.cache_block
 
+# Excecao: initial.pak dentro de CONTEUDOS vai pro repo
+!CONTEUDOS/initial.pak
+
 # Pastas de conteudo extraido
 [ssl_cache]/
 [strings]/
 [media]/
-
-# CONTEUDOS - incluir bat e patch, excluir pak
-CONTEUDOS/initial.pak
 
 # Scripts locais (nao vao pro repo)
 build_winrar_v6.py
 build_conteudos.py
 mod_modio.py
 INSTALAR.bat
-README.md
 
 # Temp
 _op_mod_temp/
