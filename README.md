@@ -44,5 +44,5 @@ CONTEUDOS/
 O instalador:
 1. Substitui o `initial.pak` na pasta do jogo
 2. Injeta os XMLs modificados nos `.pak` dos mods do mod.io (sem apagar nada)
-- Os backups são criados automaticamente na primeira execução
+- **O instalador NAO faz backup.** Ele sobrescreve o `initial.pak` e altera os `.pak` dos mods no lugar. Para reverter: *Verificar integridade dos arquivos* na Steam restaura o `initial.pak`; os mods voltam ao original desinscrevendo e reinscrevendo no mod.io.
 - O `INSTALAR.bat` detecta a pasta do jogo em C:, D: ou E: automaticamente

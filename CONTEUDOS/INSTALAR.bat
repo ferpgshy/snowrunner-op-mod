@@ -75,7 +75,16 @@ if not exist "!GAME_DIR!" (
 :: ============================================================
 :: Localizar pasta de mods (.modio)
 :: ============================================================
-set "MODS_DIR=%USERPROFILE%\Documents\My Games\SnowRunner\base\Mods\.modio\mods"
+set "MODS_DIR="
+for %%B in (
+    "%USERPROFILE%\Documents"
+    "%USERPROFILE%\OneDrive\Documents"
+    "%USERPROFILE%\OneDrive\Documentos"
+    "%USERPROFILE%\Documentos"
+) do (
+    if not defined MODS_DIR if exist "%%~B\My Games\SnowRunner\base\Mods\.modio\mods" set "MODS_DIR=%%~B\My Games\SnowRunner\base\Mods\.modio\mods"
+)
+if not defined MODS_DIR set "MODS_DIR=%USERPROFILE%\Documents\My Games\SnowRunner\base\Mods\.modio\mods"
 
 echo Pasta do jogo:  !GAME_DIR!
 echo Pasta de mods:  !MODS_DIR!
@@ -139,8 +148,9 @@ for /d %%M in ("%SCRIPT_DIR%modio_patch\*") do (
             echo   [!MOD_COUNT!] Injetando em %%~nxP.pak...
             pushd "%%P"
             "!WINRAR!" a -afzip -o+ -r "!PAK_PATH!" * >nul
+            set "RC=!errorlevel!"
             popd
-            if errorlevel 1 (
+            if not "!RC!"=="0" (
                 echo          ERRO ao injetar!
             ) else (
                 set /a MOD_OK+=1
