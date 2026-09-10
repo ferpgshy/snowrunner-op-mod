@@ -4,7 +4,7 @@ Mod OP para SnowRunner que modifica **todos os veículos** do jogo base + 48 mod
 
 ## Como instalar
 
-1. Baixe o repositorio em **Code -> Download ZIP** (o `CONTEUDOS.zip` da aba Releases esta desatualizado e nao deve ser usado)
+1. Baixe o **CONTEUDOS.zip** na aba [Releases](https://github.com/ferpgshy/snowrunner-op-mod/releases/latest) (v6.2 ou mais recente)
 2. Extraia a pasta
 3. Execute **INSTALAR.bat** como administrador
 4. Precisa do [WinRAR](https://www.win-rar.com/download.html) instalado
