@@ -4,7 +4,7 @@ Mod OP para SnowRunner que modifica **todos os veículos** do jogo base + 48 mod
 
 ## Como instalar
 
-1. Baixe o **CONTEUDOS.zip** na aba [Releases](https://github.com/ferpgshy/snowrunner-op-mod/releases)
+1. Baixe o repositorio em **Code -> Download ZIP** (o `CONTEUDOS.zip` da aba Releases esta desatualizado e nao deve ser usado)
 2. Extraia a pasta
 3. Execute **INSTALAR.bat** como administrador
 4. Precisa do [WinRAR](https://www.win-rar.com/download.html) instalado
@@ -45,4 +45,4 @@ O instalador:
 1. Substitui o `initial.pak` na pasta do jogo
 2. Injeta os XMLs modificados nos `.pak` dos mods do mod.io (sem apagar nada)
 - **O instalador NAO faz backup.** Ele sobrescreve o `initial.pak` e altera os `.pak` dos mods no lugar. Para reverter: *Verificar integridade dos arquivos* na Steam restaura o `initial.pak`; os mods voltam ao original desinscrevendo e reinscrevendo no mod.io.
-- O `INSTALAR.bat` detecta a pasta do jogo em C:, D: ou E: automaticamente
+- O `INSTALAR.bat` detecta a pasta do jogo automaticamente nos drives C: a G:, nos layouts `Program Files (x86)\Steam`, `SteamLibrary` e `Steam`. Se nao achar, pede o caminho da pasta `client`
